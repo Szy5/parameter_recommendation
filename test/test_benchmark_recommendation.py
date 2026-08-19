@@ -1,0 +1,223 @@
+import unittest
+
+from feature.benchmark_upstream_offline.constants import DIMENSION_FIELDS
+
+from feature.benchmark_recommendation.config import PredictionConfig, RecallConfig, RecommendationConfig
+from feature.benchmark_recommendation.graph_loader import GraphData
+from feature.benchmark_recommendation.prediction_service import predict_style_and_type
+from feature.benchmark_recommendation.recall_service import apply_recall_config
+from feature.benchmark_recommendation.recommend_types import parse_recommend_types
+from feature.benchmark_recommendation.live_recall_service import build_retrieved_pool_from_scores
+from feature.benchmark_recommendation.config import LiveRecallConfig
+from feature.benchmark_recommendation.recommendation_strategies import (
+    recommendation_router,
+    style_guides_recommend_neo4j,
+    style_type_level_recommend_neo4j,
+    style_type_recommend_neo4j,
+)
+from feature.benchmark_recommendation.neo4j_repository import (
+    style_guides_cypher,
+    style_type_cypher,
+    style_type_level_cypher,
+)
+
+
+class RecallFilteringTests(unittest.TestCase):
+    def test_top_k_and_threshold_keeps_top_then_filters(self):
+        retrieved = [
+            {"node_id": "n1", "label": "L", "name": "A", "score": 0.9, "rank": 1, "matched_keywords": []},
+            {"node_id": "n2", "label": "L", "name": "B", "score": 0.59, "rank": 2, "matched_keywords": []},
+            {"node_id": "n3", "label": "L", "name": "C", "score": 0.8, "rank": 3, "matched_keywords": []},
+        ]
+        cfg = RecallConfig(mode="top_k_and_threshold", top_k=2, min_score=0.6, max_candidates=50)
+        out = apply_recall_config(retrieved, cfg)
+        self.assertEqual(["n1"], [row["node_id"] for row in out])
+
+
+class RecommendTypesTests(unittest.TestCase):
+    def test_parse_recommend_types_normalizes_aliases(self):
+        self.assertEqual(
+            ("style_guides", "style_type"),
+            parse_recommend_types("style_parameter_guides, style_type"),
+        )
+
+    def test_parse_recommend_types_rejects_unknown(self):
+        with self.assertRaises(ValueError):
+            parse_recommend_types("style_guides,foo")
+
+
+class LiveRecallPoolTests(unittest.TestCase):
+    def test_live_pool_respects_threshold_mode(self):
+        import numpy as np
+
+        corpus = [
+            {"node_id": "n1", "label": "L", "name": "A", "description": ""},
+            {"node_id": "n2", "label": "L", "name": "B", "description": ""},
+            {"node_id": "n3", "label": "L", "name": "C", "description": ""},
+        ]
+        scores = np.array([0.61, 0.59, 0.70], dtype=np.float32)
+        cfg = RecallConfig(mode="threshold", min_score=0.60, max_candidates=50)
+        live_cfg = LiveRecallConfig(pool_size=50)
+        pool = build_retrieved_pool_from_scores(scores, corpus, ["A"], cfg, live_cfg)
+        out = apply_recall_config(pool, cfg)
+        self.assertEqual(["n3", "n1"], [row["node_id"] for row in out])
+
+
+class PredictionVotingTests(unittest.TestCase):
+    def test_candidate_score_is_sum(self):
+        graph = GraphData(
+            feature_node_by_id={},
+            style_guides={},
+            instances_by_type={},
+            level_by_instance={},
+            styles_by_instance={},
+            instance_props={},
+            style_edges_by_source={
+                "f1": [{"target": "科技", "confidence": 0.8, "reason": "r1"}],
+                "f2": [
+                    {"target": "科技", "confidence": 0.5, "reason": "r2"},
+                    {"target": "运动", "confidence": 0.6, "reason": "r3"},
+                ],
+            },
+            type_edges_by_source={},
+        )
+        recalled_nodes = [
+            {"node_id": "f1", "label": "X", "name": "x", "score": 0.7, "rank": 1, "matched_keywords": []},
+            {"node_id": "f2", "label": "X", "name": "y", "score": 0.9, "rank": 2, "matched_keywords": []},
+        ]
+        style_cands, type_cands, need_confirm, _meta = predict_style_and_type(
+            graph=graph,
+            recalled_nodes=recalled_nodes,
+            prediction_config=PredictionConfig(top_score_diff_ambiguity=1.0),
+        )
+        self.assertTrue(need_confirm)
+        self.assertEqual([], type_cands)
+        self.assertEqual("科技", style_cands[0]["name"])
+        self.assertAlmostEqual(1.01, style_cands[0]["score"], places=6)
+        self.assertEqual(2, style_cands[0]["support"])
+        self.assertEqual("运动", style_cands[1]["name"])
+
+
+class RecommendationAggregationTests(unittest.TestCase):
+    def test_style_type_level_strategy_and_numeric_summary(self):
+        instance_a = "v1"
+        instance_b = "v2"
+        field = "长度(mm)" if "长度(mm)" in DIMENSION_FIELDS else DIMENSION_FIELDS[0]
+
+        graph = GraphData(
+            feature_node_by_id={},
+            style_guides={},
+            instances_by_type={"SUV": {instance_a, instance_b}},
+            level_by_instance={instance_a: {"A"}, instance_b: {"A"}},
+            styles_by_instance={instance_a: {"科技"}, instance_b: {"科技"}},
+            instance_props={
+                instance_a: {field: 100},
+                instance_b: {field: 300},
+            },
+            style_edges_by_source={},
+            type_edges_by_source={},
+        )
+
+        style_candidates = [{"name": "科技", "score": 1.0, "support": 1}]
+        type_candidates = [{"name": "SUV", "score": 1.0, "support": 1}]
+        car_level = {"name": "A", "source": "type_instance_distribution"}
+        cfg = RecommendationConfig(
+            max_styles=2,
+            max_types=2,
+            max_combinations=4,
+            small_sample_threshold=10,
+            fallback_on_small_sample=False,
+        )
+        groups = recommendation_router(
+            graph=graph,
+            car_style_candidates=style_candidates,
+            car_type_candidates=type_candidates,
+            car_level=car_level,
+            recommendation_config=cfg,
+        )
+        self.assertEqual(1, len(groups))
+        self.assertEqual("style_type_level", groups[0]["strategy"])
+        self.assertEqual(2, groups[0]["sample_count"])
+        params = {p["parameter"]: p for p in groups[0]["parameters"]}
+        self.assertIn(field, params)
+        self.assertEqual(200.0, params[field]["median"])
+
+
+class Neo4jRecommendationTests(unittest.TestCase):
+    def test_cypher_templates_match_reference_shape(self):
+        self.assertIn("CONTAINS '豪华'", style_guides_cypher("豪华"))
+        self.assertIn("Guides(指导)", style_guides_cypher("豪华"))
+        query = style_type_cypher("科技", "SUV")
+        self.assertIn("汽车车型", query)
+        self.assertIn("EXPRESSES_STYLE", query)
+        self.assertIn("CONTAINS '科技'", query)
+        self.assertIn("CONTAINS 'SUV'", query)
+        level_query = style_type_level_cypher("科技", "SUV", "A级")
+        self.assertIn("汽车级别", level_query)
+        self.assertIn("CONTAINS 'A级'", level_query)
+
+    def test_neo4j_style_type_aggregates_instance_properties(self):
+        class FakeRepo:
+            def style_guides(self, car_style, limit=250):
+                return [
+                    {
+                        "style_name": car_style,
+                        "parameter_properties": {
+                            "name": "Wheelbase",
+                            "properties": '{"parameterName(参数名称)": "轴距", "range(范围)": "2000-3000", "unit(单位)": "mm"}',
+                        },
+                        "guide_properties": {
+                            "properties": '{"howToGuide(指导方式)": "拉长轴距"}'
+                        },
+                    }
+                ]
+
+            def style_type_instances(self, car_style, car_type, limit=800):
+                return [
+                    {
+                        "vehicle_id": "car_1",
+                        "model_name": "示例车A",
+                        "vehicle_properties": {"长度(mm)": "4000", "车型名称": "示例车A"},
+                    },
+                    {
+                        "vehicle_id": "car_2",
+                        "model_name": "示例车B",
+                        "vehicle_properties": {"长度(mm)": "4200", "车型名称": "示例车B"},
+                    },
+                ]
+
+            def type_baseline_instances(self, car_type, limit=800):
+                return self.style_type_instances("x", car_type)
+
+            def style_type_level_instances(self, car_style, car_type, car_level, limit=800):
+                return self.style_type_instances(car_style, car_type)[:1]
+
+        repo = FakeRepo()
+        guides = style_guides_recommend_neo4j(repo, "豪华")
+        self.assertEqual("轴距", guides["parameters"][0]["parameter"])
+        self.assertIn("CONTAINS '豪华'", guides["cypher"])
+
+        group, count = style_type_recommend_neo4j(repo, "科技", "SUV", small_sample_threshold=10)
+        self.assertEqual(2, count)
+        self.assertEqual("style_type", group["strategy"])
+        params = {row["parameter"]: row for row in group["parameters"]}
+        self.assertEqual(4100.0, params["长度(mm)"]["median"])
+        self.assertEqual(2, len(group["recommended_vehicles"]))
+
+        level_group = style_type_level_recommend_neo4j(
+            repo=repo,
+            car_style="科技",
+            car_type="SUV",
+            car_level="A级",
+            small_sample_threshold=10,
+            fallback_on_small_sample=False,
+            fallback_small_sample_threshold=8,
+        )
+        self.assertEqual("style_type_level", level_group["strategy"])
+        self.assertEqual(1, level_group["sample_count"])
+        self.assertIn("汽车级别", level_group["cypher"])
+
+
+if __name__ == "__main__":
+    unittest.main()
+
