@@ -188,6 +188,13 @@ class PredictOutputShapeTests(unittest.TestCase):
         )
         self.assertEqual([{"path": "科技 -> StyleAssociatedWith -> 直立高坐姿", "hop_count": 1}], paths)
 
+    def test_skip_predict_when_recall_empty(self):
+        from feature.benchmark_recommendation.pipeline import _skip_predict_for_empty_recall
+
+        self.assertTrue(_skip_predict_for_empty_recall([]))
+        self.assertTrue(_skip_predict_for_empty_recall([{"node_id": "", "name": ""}]))
+        self.assertFalse(_skip_predict_for_empty_recall([{"node_id": "n1", "name": "A"}]))
+
 
 class PathNarrativeTests(unittest.TestCase):
     def test_path_to_narrative_includes_descriptions(self):

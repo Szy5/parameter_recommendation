@@ -37,6 +37,10 @@ def _empty_predicted() -> Dict[str, Any]:
     return {"car_style": [], "car_type": [], "car_level": None}
 
 
+def _skip_predict_for_empty_recall(recalled_nodes: List[Any]) -> bool:
+    return not any(row.get("node_id") or row.get("name") for row in (recalled_nodes or []))
+
+
 def _candidate_names(items: Any) -> List[str]:
     names: List[str] = []
     for item in items or []:
@@ -581,6 +585,25 @@ def run_benchmark_recommendation_offline(
                     input={"keywords": keywords},
                     recalled_nodes=_recalled_nodes_payload(recalled_nodes, include_score=True),
                     paths=paths,
+                    postprocess=postprocess_stats,
+                )
+            )
+            continue
+
+        if _skip_predict_for_empty_recall(recalled_nodes):
+            outputs.append(
+                BenchmarkRecommendationResponse(
+                    id=case_id,
+                    input={"keywords": keywords},
+                    recalled_nodes=_recalled_nodes_payload(recalled_nodes),
+                    predicted=_empty_predicted(),
+                    need_user_confirmation=False,
+                    paths=_public_paths(paths),
+                    warnings=["skip_predict_empty_recall"],
+                    recommendation={
+                        "style_parameter_guides": [],
+                        "range_recommendation": {"style_type": [], "style_type_level": []},
+                    },
                     postprocess=postprocess_stats,
                 )
             )
