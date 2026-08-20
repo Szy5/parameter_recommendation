@@ -14,7 +14,7 @@ venv/
 .mypy_cache/
 
 # Generated run outputs
-feature/benchmark_recommendation/artifacts/
+# feature/benchmark_recommendation/artifacts/
 
 # IDE / OS
 .idea/
