@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Stage 1 alias: inspect Cypher paths from recalled nodes (evidence stage).
+# Stage 1: recall + path (+ optional postprocess) -> benchmark_evidence.json
 #
 # Examples:
-#   ./run_path.sh
-#   MIN_SCORE=0.65 TOP_K=10 MAX_HOPS=1 ./run_path.sh
-#   ENABLE_PATH_POSTPROCESS=1 ./run_path.sh
+#   ./run_evidence.sh
+#   ENABLE_PATH_POSTPROCESS=1 MIN_SCORE=0.65 ./run_evidence.sh
+#   RECALL_SOURCE=live ./run_evidence.sh
 
 set -euo pipefail
 # shellcheck source=config.sh

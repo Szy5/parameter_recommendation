@@ -7,6 +7,7 @@ from .recommend_types import VALID_RECOMMEND_TYPES, parse_recommend_types
 
 
 RecallMode = Literal["top_k", "threshold", "top_k_and_threshold"]
+PredictionMode = Literal["llm", "vote"]
 StrategyName = Literal["style_guides", "style_type", "style_type_level", "none"]
 
 
@@ -45,6 +46,21 @@ class PredictionConfig:
 class PathSearchConfig:
     max_hops: int = 5
     include_neighbor: bool = True
+    enable_postprocess: bool = False
+    max_style_heads: int = 3
+    max_type_heads: int = 4
+
+
+@dataclass(frozen=True)
+class LLMPredictionConfig:
+    model: Optional[str] = None
+    temperature: Optional[float] = 0.1
+    timeout_seconds: int = 180
+    max_paths_in_context: int = 30
+    features_jsonl: str = "data/features_all.jsonl"
+    workers: int = 4
+    show_progress: bool = True
+    audit_json: Optional[str] = None
 
 
 @dataclass(frozen=True)
@@ -69,6 +85,8 @@ class BenchmarkRecommendationConfig:
     prediction: PredictionConfig = PredictionConfig()
     recommendation: RecommendationConfig = RecommendationConfig()
     path: PathSearchConfig = PathSearchConfig()
+    llm_prediction: LLMPredictionConfig = LLMPredictionConfig()
+    prediction_mode: PredictionMode = "llm"
 
     # Where to print "level" when we can't infer confidently.
     # `None` means "do not invent a level".

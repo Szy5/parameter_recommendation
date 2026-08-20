@@ -8,7 +8,9 @@
 
 甲方 Benchmark 的主路径形态是：
 
-    科技 -> StyleAssociatedWith -> 极简家庭车 -> ImplementedBy -> 紧凑占地尺寸 -> Indicates -> 直立高坐姿
+```
+科技 -> StyleAssociatedWith -> 极简家庭车 -> ImplementedBy -> 紧凑占地尺寸 -> Indicates -> 直立高坐姿
+```
 
 头是 7 个汽车风格或粗粒度车型，第一跳永远是 `StyleAssociatedWith` / `TypeAssociatedWith`，尾巴是召回的美学特征。AssociatedWith 是稀疏的签名桥，不是每个特征都直接挂风格。
 
@@ -24,17 +26,14 @@
 
 ### 运行时四步
 
-1. **召回**  
-   查询文本是关键词用中文分号拼接。语料是七类美学特征（`data/features_all.jsonl`，9649 个节点），不用风格/车型/实例。BGE-M3 算余弦相似度，取 Top-K 再按 `min_score` 过滤。离线可直接读 `data/recall_top20.jsonl`。
-
-2. **路径**  
-   用召回节点的 `_graph_id` 在 Neo4j 上反查：原图关系 0–4 跳，最后一跳 AssociatedWith 落到风格或车型，再翻成甲方展示顺序。邻接证据只用原图 1 跳，不含 AssociatedWith。
-
-3. **预测**  
-   对路径头投票：每个 (头, 召回节点) 取最短跳数，`score = 召回分 / hops` 再求和。目前没有 LLM 意图过滤，票数多的头不一定等于甲方 `predicted`。
-
-4. **参数推荐**  
-   用预测出的风格 / 车型（可选级别）查 `Guides` 参数，以及风格+车型下的汽车实例尺寸分位。
+1. **召回**
+  查询文本是关键词用中文分号拼接。语料是七类美学特征（`data/features_all.jsonl`，9649 个节点），不用风格/车型/实例。BGE-M3 算余弦相似度，取 Top-K 再按 `min_score` 过滤。离线可直接读 `data/recall_top20.jsonl`。
+2. **路径**
+  用召回节点的 `_graph_id` 在 Neo4j 上反查：原图关系 0–4 跳，最后一跳 AssociatedWith 落到风格或车型，再翻成甲方展示顺序。邻接证据只用原图 1 跳，不含 AssociatedWith。
+3. **预测**
+  路径与节点描述自然语言化后作为 RAG 上下文，由闭源 LLM（`feature/.env`）推理 `car_style` / `car_type`；可用 `PREDICTION_MODE=vote` 回退到路径头投票。
+4. **参数推荐**
+  用预测出的风格 / 车型（可选级别）查 `Guides` 参数，以及风格+车型下的汽车实例尺寸分位。
 
 路径展示若太多，可后处理：每条路径 `召回分/跳数`，每个 (头, 召回节点) 只留最短一条，风格保留 Top 3、车型保留 Top 4。默认不截总条数。
 
@@ -57,6 +56,8 @@ feature/benchmark_upstream_offline/    从 Judge 生成桥接边并合并图谱
 feature/parameter_recommendation/      Neo4j 导入与在线推荐底层
 ```
 
+
+
 ## 环境
 
 ```bash
@@ -74,34 +75,44 @@ export PYTHONPATH=/path/to/extraction
 
 ## 使用
 
-脚本目录：`feature/benchmark_recommendation/scripts/`。超参数在 `config.sh`，也可用环境变量覆盖。默认离线召回、`TOP_K=10`、`MIN_SCORE=0.65`、最多 5 跳。
+脚本目录：`feature/benchmark_recommendation/scripts/`。超参数在 `config.sh`，也可用环境变量覆盖。完整技术说明见 `[feature/benchmark_recommendation/TECHNICAL.md](feature/benchmark_recommendation/TECHNICAL.md)`。
+
+### 三阶段流水线
+
+
+| 阶段       | 脚本                                           | 输出                                                |
+| -------- | -------------------------------------------- | ------------------------------------------------- |
+| 1 证据召回   | `run_evidence.sh` / `PIPELINE=1 ./run.sh`    | `artifacts/benchmark_evidence.json`               |
+| 2 LLM 预测 | `run_predict.sh` / `PIPELINE=12 ./run.sh`    | `artifacts/benchmark_predict.json`                |
+| 3 参数推荐   | `run_recommend.sh` / `PIPELINE=123 ./run.sh` | `artifacts/benchmark_recommendation_results.json` |
+
 
 ```bash
 cd feature/benchmark_recommendation/scripts
 
-# 只看召回节点
-./run_recall.sh
+# 主入口：1=仅召回+路径，12=+预测，123=全流程
+PIPELINE=1 ./run.sh
+PIPELINE=12 ./run.sh
+./run.sh                    # 默认 123
 
-# 召回 + Cypher 路径（不按预测裁剪，适合检查）
-./run_path.sh
-
-# 路径后处理：去重 + 风格 Top3 / 车型 Top4
-./run_postprocess.sh
-
-# 召回 + 路径头投票预测风格/车型
-./run_predict.sh
-
-# 预测后再查参数与实例（默认连 Neo4j）
-./run_recommend.sh
+# 独立脚本
+./run_evidence.sh           # 阶段 1
+./run_predict.sh            # 阶段 2（自动复用已有 evidence.json）
+./run_recommend.sh          # 阶段 3
 ```
 
-常用覆盖：
+默认离线召回、`TOP_K=10`、`MIN_SCORE=0.65`、预测模式 `PREDICTION_MODE=llm`（读 `feature/.env` 闭源模型）。
+
+常用命令：
 
 ```bash
-MIN_SCORE=0.60 TOP_K=20 MAX_HOPS=3 ./run_path.sh
-RECALL_SOURCE=live ./run_recall.sh          # 重新跑 BGE-M3，需要 GPU
-OUTPUT_JSON=/tmp/paths.json ./run_path.sh
-MAX_STYLE_HEADS=3 MAX_TYPE_HEADS=4 ./run_postprocess.sh
+# 第一阶段
+MIN_SCORE=0.65 TOP_K=20 MAX_HOPS=5 PIPELINE=1 ./run.sh
+RECALL_SOURCE=live PIPELINE=1 ./run.sh          # 重新跑 BGE-M3，需要 GPU
+ENABLE_PATH_POSTPROCESS=1 MAX_STYLE_HEADS=3 PIPELINE=1 ./run.sh
+# 第二阶段
+PREDICTION_MODE=llm PIPELINE=12 ./run.sh
+  
 ```
 
 输出默认写到 `feature/benchmark_recommendation/artifacts/`（已 gitignore）。JSON 里每案是 `id`、`input.keywords`、`recalled_nodes`、`paths`；`predict` / `recommend` 还会带 `predicted` 和 `recommendation`。
@@ -120,7 +131,7 @@ python3 -m feature.benchmark_recommendation.run_benchmark_recommendation \
   --output-json feature/benchmark_recommendation/artifacts/benchmark_path_results.json
 ```
 
-`--stage` 可选：`recall` | `path` | `predict` | `recommend`。
+`--stage` 可选：`recall` | `evidence` | `path`（evidence 别名）| `predict` | `recommend`。
 
 ### 重新算向量召回
 
@@ -160,8 +171,11 @@ cd test
 PYTHONPATH=.. python3 -m unittest test_benchmark_recommendation test_benchmark_fixed_type_recall
 ```
 
+
+
 ## 已知边界
 
-- 路径头覆盖多种风格/车型是图连通性导致的，甲方深思版展示路径同样如此，最终答案靠 `predicted` 收口；本仓库尚未做 LLM 意图过滤。
+- 路径头覆盖多种风格/车型来自图连通性；LLM 意图过滤用于收口，不保证与甲方深思版 100% 一致。可用 `PREDICTION_MODE=vote` 对比投票 baseline。
 - `min_score` 过高会出现空召回、空路径案。
 - 后处理压的是头的种类，不是语义对错。B001 仍可能留下「跑车」这类靠多跳投票进来的头。
+

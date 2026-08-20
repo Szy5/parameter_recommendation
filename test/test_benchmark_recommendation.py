@@ -5,7 +5,9 @@ from feature.benchmark_upstream_offline.constants import DIMENSION_FIELDS
 from feature.benchmark_recommendation.config import PredictionConfig, RecallConfig, RecommendationConfig
 from feature.benchmark_recommendation.graph_loader import GraphData
 from feature.benchmark_recommendation.prediction_service import predict_from_main_paths, predict_style_and_type
-from feature.benchmark_recommendation.path_morphology import display_from_reverse_walk, format_path
+from feature.benchmark_recommendation.path_narrative import build_case_rag_context, path_to_narrative
+from feature.benchmark_recommendation.path_morphology import display_from_reverse_walk, format_path, inspect_path
+from feature.benchmark_recommendation.pipeline import _inspect_paths
 from feature.benchmark_recommendation.neo4j_repository import MULTI_STYLE_PATH_QUERY, BATCH_NEIGHBOR_EVIDENCE_QUERY
 from feature.benchmark_recommendation.recall_service import apply_recall_config
 from feature.benchmark_recommendation.recommend_types import parse_recommend_types
@@ -145,9 +147,6 @@ class PathMorphologyTests(unittest.TestCase):
         self.assertIn("Indicates(体现)", BATCH_NEIGHBOR_EVIDENCE_QUERY)
 
     def test_inspect_path_uses_bupt_arrows(self):
-        from feature.benchmark_recommendation.path_morphology import inspect_path
-        from feature.benchmark_recommendation.pipeline import _inspect_paths
-
         self.assertEqual(
             "简约 -> StyleAssociatedWith -> 极简家庭车 -> ImplementedBy -> 直立高坐姿",
             inspect_path("简约 --StyleAssociatedWith--> 极简家庭车 --ImplementedBy(由实现)--> 直立高坐姿"),
@@ -164,6 +163,53 @@ class PathMorphologyTests(unittest.TestCase):
         self.assertEqual(["aesthetic_to_main_combined", "aesthetic_to_neighbor_evidence"], [p["template"] for p in rows])
         self.assertEqual(1, rows[0]["hop_count"])
         self.assertTrue(rows[0]["path"].startswith("简约 -> StyleAssociatedWith ->"))
+
+
+class PredictOutputShapeTests(unittest.TestCase):
+    def test_public_predicted_is_name_lists(self):
+        from feature.benchmark_recommendation.pipeline import _public_paths, _public_predicted
+
+        predicted = _public_predicted(
+            {
+                "car_style": [{"name": "科技", "score": 0.9, "support": 1}],
+                "car_type": ["紧凑型SUV"],
+                "car_level": None,
+                "prediction_mode": "llm",
+                "reasoning": "ok",
+                "confidence": 0.8,
+            }
+        )
+        self.assertEqual(["科技"], predicted["car_style"])
+        self.assertEqual(["紧凑型SUV"], predicted["car_type"])
+        self.assertNotIn("prediction_mode", predicted)
+        self.assertNotIn("confidence", predicted)
+        paths = _public_paths(
+            [{"path": "科技 -> StyleAssociatedWith -> 直立高坐姿", "template": "aesthetic_to_main_combined", "hop_count": 1}]
+        )
+        self.assertEqual([{"path": "科技 -> StyleAssociatedWith -> 直立高坐姿", "hop_count": 1}], paths)
+
+
+class PathNarrativeTests(unittest.TestCase):
+    def test_path_to_narrative_includes_descriptions(self):
+        descriptions = {
+            "直立高坐姿": "较高坐高，常见于城市SUV。",
+            "科技": "强调数字化与灯语。",
+        }
+        path = "科技 -> StyleAssociatedWith -> 直立高坐姿"
+        text = path_to_narrative(path, descriptions)
+        self.assertIn("直立高坐姿", text)
+        self.assertIn("较高坐高", text)
+        self.assertIn("科技", text)
+
+    def test_build_case_rag_context_has_keywords_and_paths(self):
+        ctx = build_case_rag_context(
+            keywords=["城市高坐姿"],
+            recalled_nodes=[{"name": "直立高坐姿", "label": "VehiclePosture", "score": 0.8}],
+            paths=[{"path": "科技 -> StyleAssociatedWith -> 直立高坐姿", "template": "aesthetic_to_main_combined", "hop_count": 1}],
+            descriptions={"直立高坐姿": "较高坐高。"},
+        )
+        self.assertIn("城市高坐姿", ctx["context_text"])
+        self.assertEqual(1, len(ctx["path_narratives"]))
 
 
 class RecommendationAggregationTests(unittest.TestCase):

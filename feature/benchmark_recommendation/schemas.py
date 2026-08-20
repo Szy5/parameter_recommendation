@@ -4,10 +4,13 @@ from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Sequence, TypedDict
 
 
-class RecalledNode(TypedDict):
+class RecalledNode(TypedDict, total=False):
     node_id: str
     label: str
     name: str
+    score: float
+    rank: int
+    matched_keywords: List[str]
 
 
 class ScoredCandidate(TypedDict):
@@ -58,4 +61,5 @@ class BenchmarkRecommendationResponse(TypedDict, total=False):
     recommendation: Dict[str, Any]
     paths: List[Dict[str, Any]]
     warnings: List[str]
+    postprocess: Dict[str, Any]
 

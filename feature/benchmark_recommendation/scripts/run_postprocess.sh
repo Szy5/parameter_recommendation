@@ -9,8 +9,8 @@ set -euo pipefail
 # shellcheck source=config.sh
 source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/config.sh"
 
-INPUT_JSON="${INPUT_JSON:-${ARTIFACTS_DIR}/benchmark_path_results.json}"
-OUTPUT_JSON="${OUTPUT_JSON:-${ARTIFACTS_DIR}/benchmark_path_results_post.json}"
+INPUT_JSON="${INPUT_JSON:-${EVIDENCE_JSON}}"
+OUTPUT_JSON="${OUTPUT_JSON:-${EVIDENCE_JSON%.json}_post.json}"
 MAX_STYLE_HEADS="${MAX_STYLE_HEADS:-3}"
 MAX_TYPE_HEADS="${MAX_TYPE_HEADS:-4}"
 

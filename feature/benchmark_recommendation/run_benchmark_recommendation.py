@@ -11,6 +11,7 @@ from feature.parameter_recommendation.neo4j_recommend import Neo4jConfig
 from .config import (
     BenchmarkRecommendationConfig,
     LiveRecallConfig,
+    LLMPredictionConfig,
     PathSearchConfig,
     PredictionConfig,
     RecallConfig,
@@ -64,6 +65,8 @@ def _render_json(value: Any, indent: int = 0, parent_key: str = "") -> str:
     if isinstance(value, list):
         if not value:
             return "[]"
+        if parent_key in compact_list_keys and all(isinstance(item, str) for item in value):
+            return json.dumps(value, ensure_ascii=False)
         if parent_key in compact_list_keys and all(isinstance(item, dict) for item in value):
             lines = ["["]
             for idx, item in enumerate(value):
@@ -90,9 +93,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Offline Benchmark keyword -> modular parameter recommendation")
     parser.add_argument(
         "--stage",
-        choices=("recall", "path", "predict", "recommend"),
+        choices=("recall", "evidence", "path", "predict", "recommend"),
         default="recommend",
-        help="recall, path inspect, recall+predict, or recall+predict+recommend",
+        help="recall | evidence(path) | predict | recommend (full pipeline)",
+    )
+    parser.add_argument(
+        "--input-json",
+        type=Path,
+        help="Reuse output from a previous stage (evidence JSON for predict; predict JSON for recommend)",
     )
     parser.add_argument("--graph-jsonl", type=Path, required=True, help="kgdata_*.jsonl with associated edges")
     parser.add_argument(
@@ -128,9 +136,38 @@ def main() -> None:
     parser.add_argument("--max-candidates", type=int, default=50)
     parser.add_argument("--max-hops", type=int, default=5, help="Keep main paths with hop_count in 1..max-hops (path stage)")
     parser.add_argument(
+        "--prediction-mode",
+        choices=("llm", "vote"),
+        default="llm",
+        help="predict stage: llm=RAG+Reasoning, vote=path-head voting",
+    )
+    parser.add_argument("--llm-model", default=None, help="Override MODEL_NAME from .env for predict stage")
+    parser.add_argument("--llm-temperature", type=float, default=0.1)
+    parser.add_argument("--llm-timeout", type=int, default=180)
+    parser.add_argument("--max-paths-in-context", type=int, default=30)
+    parser.add_argument("--llm-workers", type=int, default=4, help="Concurrent LLM requests in predict stage")
+    parser.add_argument(
+        "--llm-audit-json",
+        type=Path,
+        default=None,
+        help="Write per-call LLM input/output audit log (default: artifacts/benchmark_llm_audit.json on predict)",
+    )
+    parser.add_argument(
+        "--no-llm-progress",
+        action="store_true",
+        help="Disable console progress lines for LLM predict",
+    )
+    parser.add_argument(
+        "--enable-path-postprocess",
+        action="store_true",
+        help="After path search, dedupe and keep top style/type heads",
+    )
+    parser.add_argument("--max-style-heads", type=int, default=3)
+    parser.add_argument("--max-type-heads", type=int, default=4)
+    parser.add_argument(
         "--no-neighbor",
         action="store_true",
-        help="Omit aesthetic_to_neighbor_evidence paths (path stage)",
+        help="Omit aesthetic_to_neighbor_evidence paths (evidence stage)",
     )
     parser.add_argument("--ambiguity-margin", type=float, default=0.02)
     parser.add_argument("--min-candidate-score", type=float, default=1e-9)
@@ -149,6 +186,11 @@ def main() -> None:
     args = parser.parse_args()
     if args.recall_source == "offline" and args.recall_top20_jsonl is None:
         parser.error("--recall-top20-jsonl is required when --recall-source offline")
+
+    normalized_stage = {"path": "evidence"}.get(args.stage, args.stage)
+    llm_audit_json = args.llm_audit_json
+    if llm_audit_json is None and normalized_stage in ("predict", "recommend") and args.prediction_mode == "llm":
+        llm_audit_json = args.output_json.parent / "benchmark_llm_audit.json"
 
     config = BenchmarkRecommendationConfig(
         recall=RecallConfig(
@@ -174,7 +216,21 @@ def main() -> None:
         path=PathSearchConfig(
             max_hops=args.max_hops,
             include_neighbor=not args.no_neighbor,
+            enable_postprocess=bool(args.enable_path_postprocess),
+            max_style_heads=args.max_style_heads,
+            max_type_heads=args.max_type_heads,
         ),
+        llm_prediction=LLMPredictionConfig(
+            model=args.llm_model,
+            temperature=args.llm_temperature,
+            timeout_seconds=args.llm_timeout,
+            max_paths_in_context=args.max_paths_in_context,
+            features_jsonl=str(args.features_jsonl),
+            workers=args.llm_workers,
+            show_progress=not args.no_llm_progress,
+            audit_json=str(llm_audit_json) if llm_audit_json else None,
+        ),
+        prediction_mode=args.prediction_mode,
     )
 
     neo4j_repository = None
@@ -191,7 +247,16 @@ def main() -> None:
                 pool_size=args.live_pool_size,
             )
         )
-    if args.stage == "path" or (args.stage in ("predict", "recommend") and args.recommend_source == "neo4j"):
+    normalized_stage = {"path": "evidence"}.get(args.stage, args.stage)
+    need_neo4j = normalized_stage in ("evidence", "predict", "recommend")
+    if args.input_json is not None:
+        if normalized_stage == "predict" and config.prediction_mode == "vote":
+            need_neo4j = True
+        elif normalized_stage == "recommend":
+            need_neo4j = args.recommend_source == "neo4j"
+        else:
+            need_neo4j = False
+    if need_neo4j:
         neo4j_repository = BenchmarkNeo4jRepository.connect(Neo4jConfig.from_env(args.env))
     try:
         outputs = run_benchmark_recommendation_offline(
@@ -203,6 +268,8 @@ def main() -> None:
             recall_source=args.recall_source,
             live_recall_engine=live_recall_engine,
             neo4j_repository=neo4j_repository,
+            input_json_path=args.input_json,
+            env_path=args.env,
         )
     finally:
         if neo4j_repository is not None:
@@ -222,9 +289,14 @@ def main() -> None:
                 "pool_size": args.live_pool_size if args.recall_source == "live" else None,
             },
             "prediction": {
+                "mode": config.prediction_mode,
                 "top_score_diff_ambiguity": config.prediction.top_score_diff_ambiguity,
                 "min_candidate_score": config.prediction.min_candidate_score,
                 "level_top_weight_diff_ambiguity": config.prediction.level_top_weight_diff_ambiguity,
+                "llm_model": config.llm_prediction.model,
+                "max_paths_in_context": config.llm_prediction.max_paths_in_context,
+                "workers": config.llm_prediction.workers,
+                "audit_json": config.llm_prediction.audit_json,
             },
             "recommendation": {
                 "max_styles": config.recommendation.max_styles,
@@ -239,6 +311,9 @@ def main() -> None:
             "path": {
                 "max_hops": config.path.max_hops,
                 "include_neighbor": config.path.include_neighbor,
+                "enable_postprocess": config.path.enable_postprocess,
+                "max_style_heads": config.path.max_style_heads,
+                "max_type_heads": config.path.max_type_heads,
             },
         },
         "cases": outputs,
