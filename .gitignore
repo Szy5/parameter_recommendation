@@ -1,4 +1,4 @@
-# Secrets — never commit credentials
+# Secrets
 .env
 feature/.env
 !.env.example
@@ -13,17 +13,11 @@ __pycache__/
 venv/
 .mypy_cache/
 
-# Generated artifacts (large JSONL/JSON outputs; regenerate locally)
-feature/artifacts/
-
-# Oversized raw data (>100 MB GitHub limit)
-data/kg_data0731.jsonl
+# Generated run outputs
+feature/benchmark_recommendation/artifacts/
 
 # IDE / OS
 .idea/
 .vscode/
 *.swp
 .DS_Store
-
-# Scratch
-feature/benchmark_recommendation/scripts/Untitled

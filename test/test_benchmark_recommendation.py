@@ -4,7 +4,9 @@ from feature.benchmark_upstream_offline.constants import DIMENSION_FIELDS
 
 from feature.benchmark_recommendation.config import PredictionConfig, RecallConfig, RecommendationConfig
 from feature.benchmark_recommendation.graph_loader import GraphData
-from feature.benchmark_recommendation.prediction_service import predict_style_and_type
+from feature.benchmark_recommendation.prediction_service import predict_from_main_paths, predict_style_and_type
+from feature.benchmark_recommendation.path_morphology import display_from_reverse_walk, format_path
+from feature.benchmark_recommendation.neo4j_repository import MULTI_STYLE_PATH_QUERY, BATCH_NEIGHBOR_EVIDENCE_QUERY
 from feature.benchmark_recommendation.recall_service import apply_recall_config
 from feature.benchmark_recommendation.recommend_types import parse_recommend_types
 from feature.benchmark_recommendation.live_recall_service import build_retrieved_pool_from_scores
@@ -96,6 +98,72 @@ class PredictionVotingTests(unittest.TestCase):
         self.assertAlmostEqual(1.01, style_cands[0]["score"], places=6)
         self.assertEqual(2, style_cands[0]["support"])
         self.assertEqual("运动", style_cands[1]["name"])
+
+
+class PathMorphologyTests(unittest.TestCase):
+    def test_display_flips_reverse_walk(self):
+        nodes, rels = display_from_reverse_walk(
+            "简约",
+            "StyleAssociatedWith",
+            ["直立高坐姿", "紧凑占地尺寸", "极简家庭车"],
+            ["Indicates(体现)", "ImplementedBy(由实现)"],
+        )
+        self.assertEqual(["简约", "极简家庭车", "紧凑占地尺寸", "直立高坐姿"], nodes)
+        self.assertEqual(
+            ["StyleAssociatedWith", "ImplementedBy(由实现)", "Indicates(体现)"],
+            rels,
+        )
+        text = format_path(nodes, rels)
+        self.assertTrue(text.startswith("简约 --StyleAssociatedWith-->"))
+        self.assertTrue(text.endswith("直立高坐姿"))
+        self.assertEqual(3, text.count("-->"))
+
+    def test_predict_from_paths_prefers_shorter_hops(self):
+        recalled = [
+            {"node_id": "a", "score": 0.8},
+            {"node_id": "b", "score": 0.8},
+        ]
+        rows = [
+            {"head_kind": "style", "head_name": "简约", "recalled_id": "a", "hops": 1},
+            {"head_kind": "style", "head_name": "运动", "recalled_id": "a", "hops": 5},
+            {"head_kind": "style", "head_name": "运动", "recalled_id": "b", "hops": 5},
+            {"head_kind": "type", "head_name": "两厢轿车", "recalled_id": "a", "hops": 2},
+        ]
+        styles, types, _need, _meta = predict_from_main_paths(
+            rows, recalled, PredictionConfig(top_score_diff_ambiguity=0.01)
+        )
+        self.assertEqual("简约", styles[0]["name"])
+        self.assertEqual("两厢轿车", types[0]["name"])
+        self.assertAlmostEqual(0.8, styles[0]["score"], places=6)
+
+    def test_cypher_keeps_associated_with_off_the_variable_walk(self):
+        self.assertIn("StyleAssociatedWith", MULTI_STYLE_PATH_QUERY)
+        self.assertIn("*1..4", MULTI_STYLE_PATH_QUERY)
+        walk_part = MULTI_STYLE_PATH_QUERY.split("MATCH (head:")[0]
+        self.assertNotIn("StyleAssociatedWith", walk_part)
+        self.assertNotIn("TypeAssociatedWith", BATCH_NEIGHBOR_EVIDENCE_QUERY)
+        self.assertIn("Indicates(体现)", BATCH_NEIGHBOR_EVIDENCE_QUERY)
+
+    def test_inspect_path_uses_bupt_arrows(self):
+        from feature.benchmark_recommendation.path_morphology import inspect_path
+        from feature.benchmark_recommendation.pipeline import _inspect_paths
+
+        self.assertEqual(
+            "简约 -> StyleAssociatedWith -> 极简家庭车 -> ImplementedBy -> 直立高坐姿",
+            inspect_path("简约 --StyleAssociatedWith--> 极简家庭车 --ImplementedBy(由实现)--> 直立高坐姿"),
+        )
+        rows = _inspect_paths(
+            [
+                {"path": "简约 --StyleAssociatedWith--> 紧凑城市姿态", "hops": 1},
+                {"path": "运动 --StyleAssociatedWith--> a --Indicates--> b --Guides--> c", "hops": 3},
+            ],
+            [{"recalled_name": "紧凑城市姿态", "rel": "Indicates(体现)", "neighbor_name": "短悬"}],
+            max_hops=1,
+            include_neighbor=True,
+        )
+        self.assertEqual(["aesthetic_to_main_combined", "aesthetic_to_neighbor_evidence"], [p["template"] for p in rows])
+        self.assertEqual(1, rows[0]["hop_count"])
+        self.assertTrue(rows[0]["path"].startswith("简约 -> StyleAssociatedWith ->"))
 
 
 class RecommendationAggregationTests(unittest.TestCase):

@@ -8,7 +8,14 @@ from typing import Any, Dict, List
 
 from feature.parameter_recommendation.neo4j_recommend import Neo4jConfig
 
-from .config import BenchmarkRecommendationConfig, LiveRecallConfig, PredictionConfig, RecallConfig, RecommendationConfig
+from .config import (
+    BenchmarkRecommendationConfig,
+    LiveRecallConfig,
+    PathSearchConfig,
+    PredictionConfig,
+    RecallConfig,
+    RecommendationConfig,
+)
 from .live_recall_service import LiveRecallEngine
 from .neo4j_repository import BenchmarkNeo4jRepository
 from .pipeline import run_benchmark_recommendation_offline
@@ -75,10 +82,7 @@ def _render_json(value: Any, indent: int = 0, parent_key: str = "") -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
-DEFAULT_FEATURES_JSONL = Path(
-    "feature/artifacts/benchmark_upstream_offline/validation/"
-    "v1.2-style-rubric-lean_gpt-5-mini/01_inputs/features_all.jsonl"
-)
+DEFAULT_FEATURES_JSONL = Path("data/features_all.jsonl")
 DEFAULT_MODEL_REVISION = "5617a9f61b028005a4858fdac845db406aefb181"
 
 
@@ -86,9 +90,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Offline Benchmark keyword -> modular parameter recommendation")
     parser.add_argument(
         "--stage",
-        choices=("recall", "predict", "recommend"),
+        choices=("recall", "path", "predict", "recommend"),
         default="recommend",
-        help="Run only recall, recall+predict, or recall+predict+recommend",
+        help="recall, path inspect, recall+predict, or recall+predict+recommend",
     )
     parser.add_argument("--graph-jsonl", type=Path, required=True, help="kgdata_*.jsonl with associated edges")
     parser.add_argument(
@@ -122,6 +126,12 @@ def main() -> None:
     parser.add_argument("--min-score", type=float, default=0.60)
     parser.add_argument("--top-k", type=int, default=20)
     parser.add_argument("--max-candidates", type=int, default=50)
+    parser.add_argument("--max-hops", type=int, default=5, help="Keep main paths with hop_count in 1..max-hops (path stage)")
+    parser.add_argument(
+        "--no-neighbor",
+        action="store_true",
+        help="Omit aesthetic_to_neighbor_evidence paths (path stage)",
+    )
     parser.add_argument("--ambiguity-margin", type=float, default=0.02)
     parser.add_argument("--min-candidate-score", type=float, default=1e-9)
     parser.add_argument("--level-ambiguity-margin", type=float, default=0.05)
@@ -161,6 +171,10 @@ def main() -> None:
             fallback_small_sample_threshold=args.fallback_small_sample_threshold,
             recommend_types=parse_recommend_types(args.recommend_types),
         ),
+        path=PathSearchConfig(
+            max_hops=args.max_hops,
+            include_neighbor=not args.no_neighbor,
+        ),
     )
 
     neo4j_repository = None
@@ -177,7 +191,7 @@ def main() -> None:
                 pool_size=args.live_pool_size,
             )
         )
-    if args.stage == "recommend" and args.recommend_source == "neo4j":
+    if args.stage == "path" or (args.stage in ("predict", "recommend") and args.recommend_source == "neo4j"):
         neo4j_repository = BenchmarkNeo4jRepository.connect(Neo4jConfig.from_env(args.env))
     try:
         outputs = run_benchmark_recommendation_offline(
@@ -221,6 +235,10 @@ def main() -> None:
                 "fallback_small_sample_threshold": config.recommendation.fallback_small_sample_threshold,
                 "recommend_types": list(config.recommendation.recommend_types),
                 "source": args.recommend_source if args.stage == "recommend" else "none",
+            },
+            "path": {
+                "max_hops": config.path.max_hops,
+                "include_neighbor": config.path.include_neighbor,
             },
         },
         "cases": outputs,

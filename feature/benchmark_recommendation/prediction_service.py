@@ -29,6 +29,67 @@ def _sorted_candidates(scored: Dict[str, Tuple[float, int]]) -> List[ScoredCandi
     ]
 
 
+def _keep_top_by_ambiguity(
+    cands: List[ScoredCandidate],
+    prediction_config: PredictionConfig,
+    ambiguity: Dict[str, Any],
+    key: str,
+) -> Tuple[List[ScoredCandidate], bool]:
+    if not cands:
+        return [], False
+    if len(cands) == 1:
+        return cands[:1], False
+    top1 = cands[0]
+    top2 = cands[1]
+    diff = float(top1["score"]) - float(top2["score"])
+    if diff <= prediction_config.top_score_diff_ambiguity:
+        ambiguity[key] = {"diff": diff, "top1": top1["score"], "top2": top2["score"]}
+        return cands[:2], True
+    return cands[:1], False
+
+
+def predict_from_main_paths(
+    path_rows: Sequence[Dict[str, Any]],
+    recalled_nodes: Sequence[Any],
+    prediction_config: PredictionConfig,
+) -> Tuple[List[ScoredCandidate], List[ScoredCandidate], bool, Dict[str, Any]]:
+    recall_scores = {str(row["node_id"]): float(row["score"]) for row in recalled_nodes}
+    per_head_recalled: Dict[Tuple[str, str], Dict[str, int]] = {}
+    for rec in path_rows:
+        kind = str(rec.get("head_kind") or "")
+        head = str(rec.get("head_name") or "")
+        recalled_id = str(rec.get("recalled_id") or "")
+        hops = int(rec.get("hops") or 0)
+        if kind not in ("style", "type") or not head or not recalled_id or hops < 1:
+            continue
+        bucket = per_head_recalled.setdefault((kind, head), {})
+        previous = bucket.get(recalled_id)
+        if previous is None or hops < previous:
+            bucket[recalled_id] = hops
+
+    def score_kind(kind: str) -> Dict[str, Tuple[float, int]]:
+        scored: Dict[str, Tuple[float, int]] = {}
+        for (row_kind, head), recalled_hops in per_head_recalled.items():
+            if row_kind != kind:
+                continue
+            total = 0.0
+            for recalled_id, hops in recalled_hops.items():
+                total += recall_scores.get(recalled_id, 0.0) / float(hops)
+            scored[head] = (total, len(recalled_hops))
+        return scored
+
+    style_candidates = [
+        c for c in _sorted_candidates(score_kind("style")) if c["score"] > prediction_config.min_candidate_score
+    ]
+    type_candidates = [
+        c for c in _sorted_candidates(score_kind("type")) if c["score"] > prediction_config.min_candidate_score
+    ]
+    ambiguity: Dict[str, Any] = {"style": None, "type": None}
+    style_top, style_confirm = _keep_top_by_ambiguity(style_candidates, prediction_config, ambiguity, "style")
+    type_top, type_confirm = _keep_top_by_ambiguity(type_candidates, prediction_config, ambiguity, "type")
+    return style_top, type_top, bool(style_confirm or type_confirm), {"ambiguity": ambiguity}
+
+
 def predict_style_and_type(
     graph: GraphData,
     recalled_nodes: List[Any],

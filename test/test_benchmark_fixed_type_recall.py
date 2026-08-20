@@ -15,7 +15,7 @@ from feature.benchmark_fixed_type_recall.run_recall import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-FEATURES = ROOT / "feature/artifacts/benchmark_upstream_offline/validation/v1.2-style-rubric-lean_gpt-5-mini/01_inputs/features_all.jsonl"
+FEATURES = ROOT / "data/features_all.jsonl"
 BENCHMARK = ROOT / "benchmark/benchmark_100_inputs.jsonl"
 
 

@@ -21,10 +21,7 @@ class RecallConfig:
 
 @dataclass(frozen=True)
 class LiveRecallConfig:
-    features_jsonl: str = (
-        "feature/artifacts/benchmark_upstream_offline/validation/"
-        "v1.2-style-rubric-lean_gpt-5-mini/01_inputs/features_all.jsonl"
-    )
+    features_jsonl: str = "data/features_all.jsonl"
     model: str = "BAAI/bge-m3"
     revision: str = "5617a9f61b028005a4858fdac845db406aefb181"
     batch_size: int = 32
@@ -42,6 +39,12 @@ class PredictionConfig:
     min_candidate_score: float = 1e-9
     # Level ambiguity uses weighted counts.
     level_top_weight_diff_ambiguity: float = 0.05
+
+
+@dataclass(frozen=True)
+class PathSearchConfig:
+    max_hops: int = 5
+    include_neighbor: bool = True
 
 
 @dataclass(frozen=True)
@@ -65,6 +68,7 @@ class BenchmarkRecommendationConfig:
     recall: RecallConfig = RecallConfig()
     prediction: PredictionConfig = PredictionConfig()
     recommendation: RecommendationConfig = RecommendationConfig()
+    path: PathSearchConfig = PathSearchConfig()
 
     # Where to print "level" when we can't infer confidently.
     # `None` means "do not invent a level".

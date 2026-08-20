@@ -10,17 +10,17 @@ REPO_ROOT="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 # ---------------------------------------------------------------------------
 # Input / output paths
 # ---------------------------------------------------------------------------
-GRAPH_JSONL="${GRAPH_JSONL:-${REPO_ROOT}/feature/artifacts/benchmark_upstream_offline/validation/v1.2-style-rubric-lean_gpt-5-mini/07_merged_graph/kgdata_0804_with_associated_edges_confidence_gt_0.8.jsonl}"
-RECALL_TOP20_JSONL="${RECALL_TOP20_JSONL:-${REPO_ROOT}/feature/artifacts/benchmark_fixed_type_recall/bge-m3_5617a9f/recall_top20.jsonl}"
+GRAPH_JSONL="${GRAPH_JSONL:-${REPO_ROOT}/data/kgdata_0804_assoc_bridges.jsonl}"
+RECALL_TOP20_JSONL="${RECALL_TOP20_JSONL:-${REPO_ROOT}/data/recall_top20.jsonl}"
 BENCHMARK_INPUTS_JSONL="${BENCHMARK_INPUTS_JSONL:-${REPO_ROOT}/benchmark/benchmark_100_inputs.jsonl}"
-FEATURES_JSONL="${FEATURES_JSONL:-${REPO_ROOT}/feature/artifacts/benchmark_upstream_offline/validation/v1.2-style-rubric-lean_gpt-5-mini/01_inputs/features_all.jsonl}"
+FEATURES_JSONL="${FEATURES_JSONL:-${REPO_ROOT}/data/features_all.jsonl}"
 ARTIFACTS_DIR="${ARTIFACTS_DIR:-${REPO_ROOT}/feature/benchmark_recommendation/artifacts}"
 NEO4J_ENV="${NEO4J_ENV:-${REPO_ROOT}/feature/.env}"
 
 # ---------------------------------------------------------------------------
 # Recall source: offline | live
 # ---------------------------------------------------------------------------
-RECALL_SOURCE="${RECALL_SOURCE:-live}"   # offline=read recall_top20.jsonl, live=BGE-M3 online
+RECALL_SOURCE="${RECALL_SOURCE:-offline}"   # offline=read recall_top20.jsonl, live=BGE-M3 online
 
 # Live recall only
 EMBED_MODEL="${EMBED_MODEL:-BAAI/bge-m3}"
@@ -34,9 +34,11 @@ LIVE_POOL_SIZE="${LIVE_POOL_SIZE:-50}"
 # Recall filtering
 # ---------------------------------------------------------------------------
 RECALL_MODE="${RECALL_MODE:-top_k_and_threshold}"   # top_k | threshold | top_k_and_threshold
-TOP_K="${TOP_K:-20}"
-MIN_SCORE="${MIN_SCORE:-0.62}"
+TOP_K="${TOP_K:-10}"
+MIN_SCORE="${MIN_SCORE:-0.65}"
 MAX_CANDIDATES="${MAX_CANDIDATES:-50}"
+MAX_HOPS="${MAX_HOPS:-5}"
+INCLUDE_NEIGHBOR="${INCLUDE_NEIGHBOR:-1}"   # 1=include neighbor 1-hop, 0=main paths only
 
 # ---------------------------------------------------------------------------
 # Prediction
@@ -69,7 +71,7 @@ benchmark_recommendation_run() {
   local output_json="$2"
 
   if [[ -z "${stage}" || -z "${output_json}" ]]; then
-    echo "usage: benchmark_recommendation_run <recall|predict|recommend> <output_json>" >&2
+    echo "usage: benchmark_recommendation_run <recall|path|predict|recommend> <output_json>" >&2
     return 1
   fi
 
@@ -86,6 +88,7 @@ benchmark_recommendation_run() {
     --min-score "${MIN_SCORE}"
     --top-k "${TOP_K}"
     --max-candidates "${MAX_CANDIDATES}"
+    --max-hops "${MAX_HOPS}"
     --ambiguity-margin "${AMBIGUITY_MARGIN}"
     --min-candidate-score "${MIN_CANDIDATE_SCORE}"
     --level-ambiguity-margin "${LEVEL_AMBIGUITY_MARGIN}"
@@ -113,18 +116,24 @@ benchmark_recommendation_run() {
     fi
   fi
 
-  if [[ "${stage}" == "recommend" ]]; then
-    cmd+=(--recommend-source "${RECOMMEND_SOURCE}")
-    if [[ "${RECOMMEND_SOURCE}" == "neo4j" ]]; then
+  if [[ "${stage}" == "path" || "${stage}" == "predict" || "${stage}" == "recommend" ]]; then
+    if [[ "${stage}" != "path" ]]; then
+      cmd+=(--recommend-source "${RECOMMEND_SOURCE}")
+    fi
+    if [[ "${stage}" == "path" || "${RECOMMEND_SOURCE}" == "neo4j" ]]; then
       cmd+=(--env "${NEO4J_ENV}")
     fi
+  fi
+
+  if [[ "${INCLUDE_NEIGHBOR}" != "1" ]]; then
+    cmd+=(--no-neighbor)
   fi
 
   if [[ "${FALLBACK_ON_SMALL_SAMPLE}" == "1" ]]; then
     cmd+=(--fallback-on-small-sample)
   fi
 
-  echo "==> stage=${stage} recall_source=${RECALL_SOURCE} recommend_source=${RECOMMEND_SOURCE:-n/a} recommend_types=${RECOMMEND_TYPES}"
+  echo "==> stage=${stage} recall_source=${RECALL_SOURCE} min_score=${MIN_SCORE} top_k=${TOP_K} max_hops=${MAX_HOPS} neighbor=${INCLUDE_NEIGHBOR}"
   echo "==> output=${output_json}"
   echo "==> cwd=${REPO_ROOT}"
   (

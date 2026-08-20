@@ -14,7 +14,7 @@ if __package__ in (None, ""):
     import sys
 
     sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-    from feature_v2.parameter_recommendation.common import (  # type: ignore
+    from feature.parameter_recommendation.common import (  # type: ignore
         AC_LABEL,
         BODY_LABEL,
         BODY_PARAMETER_UNITS,

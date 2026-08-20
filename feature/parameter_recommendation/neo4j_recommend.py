@@ -23,12 +23,12 @@ if __package__ in (None, ""):
     import sys
 
     sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-    from feature_v2.parameter_recommendation.common import (  # type: ignore
+    from feature.parameter_recommendation.common import (  # type: ignore
         BODY_PARAMETER_UNITS,
         load_env_file,
         parse_inner,
     )
-    from feature_v2.parameter_recommendation.recommend import summarize  # type: ignore
+    from feature.parameter_recommendation.recommend import summarize  # type: ignore
 else:
     from .common import BODY_PARAMETER_UNITS, load_env_file, parse_inner
     from .recommend import summarize
@@ -397,7 +397,7 @@ class RecommendationService:
 
 def _default_env_path() -> Path:
     root_env = Path(".env")
-    return root_env if root_env.exists() else Path("feature_v2/.env")
+    return root_env if root_env.exists() else Path("feature/.env")
 
 
 def main() -> None:

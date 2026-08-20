@@ -1,18 +1,17 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 from feature.benchmark_upstream_offline.io_utils import iter_jsonl
-from feature.parameter_recommendation.common import BODY_PARAMETER_UNITS
 
 from .config import BenchmarkRecommendationConfig
 from .graph_loader import GraphData, load_graph
 from .neo4j_repository import BenchmarkNeo4jRepository
 from .live_recall_service import LiveRecallEngine
-from .prediction_service import infer_level_from_type, predict_style_and_type
-from .recall_service import apply_recall_config, load_recall_topk, recall_score_by_id
+from .prediction_service import infer_level_from_type, predict_from_main_paths, predict_style_and_type
+from .path_morphology import format_path, inspect_path, short_rel
+from .recall_service import apply_recall_config, load_recall_topk
 from .recommendation_strategies import (
     style_guides_recommend,
     style_guides_recommend_neo4j,
@@ -36,6 +35,93 @@ def load_benchmark_inputs(benchmark_inputs_jsonl: Path) -> List[Dict[str, Any]]:
     return rows
 
 
+def _format_path(path_nodes: List[str], path_rels: List[str]) -> str:
+    return format_path(path_nodes, path_rels)
+
+
+def _paths_from_neo4j(
+    recalled_nodes: List[Any],
+    neo4j_repository: "BenchmarkNeo4jRepository",
+) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+    node_ids = [str(row.get("node_id") or "") for row in recalled_nodes if row.get("node_id")]
+    main_rows = neo4j_repository.batch_main_paths(node_ids)
+    neighbor_rows = neo4j_repository.batch_neighbor_evidence(node_ids)
+    return main_rows, neighbor_rows
+
+
+def _display_paths(
+    main_rows: List[Dict[str, Any]],
+    neighbor_rows: List[Dict[str, Any]],
+    keep_styles: set,
+    keep_types: set,
+) -> List[Dict[str, Any]]:
+    paths: List[Dict[str, Any]] = []
+    seen = set()
+    for rec in main_rows:
+        head = rec.get("head_name")
+        kind = rec.get("head_kind")
+        if kind == "style" and keep_styles and head not in keep_styles:
+            continue
+        if kind == "type" and keep_types and head not in keep_types:
+            continue
+        path_str = rec.get("path") or ""
+        if not path_str or path_str in seen:
+            continue
+        seen.add(path_str)
+        paths.append(
+            {
+                "path": path_str,
+                "template": "aesthetic_to_main_combined",
+                "hop_count": int(rec.get("hops") or 0),
+            }
+        )
+    for rec in neighbor_rows:
+        rel_short = short_rel(str(rec.get("rel") or ""))
+        path_str = "%s --%s--> %s" % (rec.get("recalled_name"), rel_short, rec.get("neighbor_name"))
+        if path_str in seen:
+            continue
+        seen.add(path_str)
+        paths.append({"path": path_str, "template": "aesthetic_to_neighbor_evidence", "hop_count": 1})
+    return paths
+
+
+def _inspect_paths(
+    main_rows: List[Dict[str, Any]],
+    neighbor_rows: List[Dict[str, Any]],
+    *,
+    max_hops: int,
+    include_neighbor: bool,
+) -> List[Dict[str, Any]]:
+    paths: List[Dict[str, Any]] = []
+    seen = set()
+    for rec in main_rows:
+        hops = int(rec.get("hops") or rec.get("hop_count") or 0)
+        if hops < 1 or hops > int(max_hops):
+            continue
+        path_str = inspect_path(str(rec.get("path") or ""))
+        if not path_str or path_str in seen:
+            continue
+        seen.add(path_str)
+        paths.append(
+            {
+                "path": path_str,
+                "template": "aesthetic_to_main_combined",
+                "hop_count": hops,
+            }
+        )
+    if include_neighbor and int(max_hops) >= 1:
+        for rec in neighbor_rows:
+            path_str = inspect_path(
+                "%s --%s--> %s"
+                % (rec.get("recalled_name"), short_rel(str(rec.get("rel") or "")), rec.get("neighbor_name"))
+            )
+            if not path_str or path_str in seen:
+                continue
+            seen.add(path_str)
+            paths.append({"path": path_str, "template": "aesthetic_to_neighbor_evidence", "hop_count": 1})
+    return paths
+
+
 def run_benchmark_recommendation_offline(
     *,
     graph_jsonl_path: Path,
@@ -53,8 +139,12 @@ def run_benchmark_recommendation_offline(
         raise ValueError("recall_top20_jsonl_path is required when recall_source=offline")
     if recall_source == "live" and live_recall_engine is None:
         raise ValueError("live_recall_engine is required when recall_source=live")
+    if stage == "path" and neo4j_repository is None:
+        raise ValueError("stage path requires a Neo4j repository")
 
-    graph: GraphData = load_graph(graph_jsonl_path)
+    graph: Optional[GraphData] = None
+    if stage != "path":
+        graph = load_graph(graph_jsonl_path)
     inputs = load_benchmark_inputs(benchmark_inputs_jsonl_path)
     if recall_source == "live":
         recall_by_case = live_recall_engine.recall_by_case(inputs, config.recall)
@@ -68,7 +158,6 @@ def run_benchmark_recommendation_offline(
         keywords = case["keywords"]
         retrieved = recall_by_case.get(case_id) or []
         recalled_nodes: List[RecalledNode] = apply_recall_config(retrieved, config.recall)
-        recall_scores = recall_score_by_id(recalled_nodes)
 
         if stage == "recall":
             outputs.append(
@@ -95,15 +184,58 @@ def run_benchmark_recommendation_offline(
             )
             continue
 
-        car_style_candidates, car_type_candidates, need_user_confirmation, _meta = predict_style_and_type(
-            graph=graph,
-            recalled_nodes=recalled_nodes,
-            prediction_config=config.prediction,
-        )
+        if stage == "path":
+            main_rows, neighbor_rows = _paths_from_neo4j(recalled_nodes, neo4j_repository)
+            outputs.append(
+                BenchmarkRecommendationResponse(
+                    id=case_id,
+                    input={"keywords": keywords},
+                    recalled_nodes=[
+                        {
+                            "node_id": row["node_id"],
+                            "label": row["label"],
+                            "name": row["name"],
+                            "score": round(float(row.get("score") or 0.0), 6),
+                        }
+                        for row in recalled_nodes
+                    ],
+                    paths=_inspect_paths(
+                        main_rows,
+                        neighbor_rows,
+                        max_hops=config.path.max_hops,
+                        include_neighbor=config.path.include_neighbor,
+                    ),
+                )
+            )
+            continue
+
+        main_rows: List[Dict[str, Any]] = []
+        neighbor_rows: List[Dict[str, Any]] = []
+        warnings: List[str] = []
+        if neo4j_repository is not None:
+            main_rows, neighbor_rows = _paths_from_neo4j(recalled_nodes, neo4j_repository)
+            car_style_candidates, car_type_candidates, need_user_confirmation, _meta = predict_from_main_paths(
+                path_rows=main_rows,
+                recalled_nodes=recalled_nodes,
+                prediction_config=config.prediction,
+            )
+        else:
+            car_style_candidates, car_type_candidates, need_user_confirmation, _meta = predict_style_and_type(
+                graph=graph,
+                recalled_nodes=recalled_nodes,
+                prediction_config=config.prediction,
+            )
+            warnings.append("path_morphology_requires_neo4j_fallback_one_hop_vote")
 
         # Convert list format for router.
         style_list = [{"name": c["name"], "score": c["score"], "support": c["support"]} for c in car_style_candidates]
         type_list = [{"name": c["name"], "score": c["score"], "support": c["support"]} for c in car_type_candidates]
+        paths = _display_paths(
+            main_rows,
+            neighbor_rows,
+            keep_styles={c["name"] for c in style_list},
+            keep_types={c["name"] for c in type_list},
+        )
 
         type_score_map = {c["name"]: float(c["score"]) for c in car_type_candidates}
         car_level = infer_level_from_type(
@@ -133,8 +265,8 @@ def run_benchmark_recommendation_offline(
                         "car_level": car_level,
                     },
                     need_user_confirmation=need_user_confirmation,
-                    paths=[],
-                    warnings=["stage_predict_only"] if need_user_confirmation else [],
+                    paths=paths,
+                    warnings=warnings + (["stage_predict_only"] if need_user_confirmation else []),
                     recommendation={
                         "style_parameter_guides": [],
                         "range_recommendation": {"style_type": [], "style_type_level": []},
@@ -144,8 +276,6 @@ def run_benchmark_recommendation_offline(
             continue
 
         recommendation: Dict[str, Any]
-        paths: List[Dict[str, Any]] = []
-        warnings: List[str] = []
         recommend_types = config.recommendation.recommend_types
 
         style_parameter_guides: List[Dict[str, Any]] = []
@@ -226,47 +356,6 @@ def run_benchmark_recommendation_offline(
                 "style_type_level": range_style_type_level,
             },
         }
-
-        if style_list:
-            top_style = style_list[0]["name"]
-            for source_id, rs in recall_scores.items():
-                for edge in graph.style_edges_by_source.get(source_id, []):
-                    if edge["target"] == top_style:
-                        head = graph.feature_node_by_id.get(source_id) or {
-                            "node_id": source_id,
-                            "label": "",
-                            "name": source_id,
-                        }
-                        paths.append(
-                            {
-                                "path": "%s -> StyleAssociatedWith -> %s" % (
-                                    head["name"] or source_id,
-                                    top_style,
-                                ),
-                                "reason": edge.get("reason"),
-                            }
-                        )
-                        break
-        if type_list:
-            top_type = type_list[0]["name"]
-            for source_id, rs in recall_scores.items():
-                for edge in graph.type_edges_by_source.get(source_id, []):
-                    if edge["target"] == top_type:
-                        head = graph.feature_node_by_id.get(source_id) or {
-                            "node_id": source_id,
-                            "label": "",
-                            "name": source_id,
-                        }
-                        paths.append(
-                            {
-                                "path": "%s -> TypeAssociatedWith -> %s" % (
-                                    head["name"] or source_id,
-                                    top_type,
-                                ),
-                                "reason": edge.get("reason"),
-                            }
-                        )
-                        break
 
         if need_user_confirmation:
             warnings.append("need_user_confirmation_due_to_ambiguity")

@@ -10,6 +10,16 @@ FEATURE_LABELS = (
     "AerodynamicFeature(空气动力学特征)",
 )
 
+# AssociatedWith may only attach to these feature labels (path hubs).
+BRIDGE_LABELS = (
+    "VehiclePosture(汽车姿态)",
+    "FamilyDNA(家族DNA)",
+    "AestheticConcept(美学概念)",
+)
+
+# Vector recall tails. Includes BRIDGE_LABELS so a recalled posture can be a 1-hop tail.
+RECALL_LABELS = FEATURE_LABELS
+
 STYLES = ("科技", "运动", "豪华", "硬派越野", "简约", "商务", "复古")
 
 CAR_TYPES = (
@@ -42,11 +52,3 @@ DIMENSION_FIELDS = (
     "长度(mm)", "宽度(mm)", "高度(mm)", "轴距(mm)",
     "离地间隙", "接近角(°)", "离去角(°)",
 )
-
-# USD per one million tokens, retrieved from official OpenAI model pages on 2026-08-17.
-# Cached input is deducted from ordinary input before pricing when usage exposes it.
-MODEL_PRICES_USD_PER_MILLION = {
-    "gpt-4o-mini": {"input": 0.15, "cached_input": 0.075, "output": 0.60},
-    "gpt-5-mini": {"input": 0.25, "cached_input": 0.025, "output": 2.00},
-}
-
