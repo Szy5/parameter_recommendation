@@ -1,5 +1,360 @@
 [
     {
+        "total_path_schemas": [
+            "AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数)",
+            "AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念)",
+            "AestheticConcept(美学概念) -> Guides -> DesignAttribute(设计属性)",
+            "AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数)",
+            "AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
+            "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性)",
+            "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
+            "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征)",
+            "DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念)",
+            "DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "FamilyDNA(家族DNA) -> Guides -> DesignAttribute(设计属性)",
+            "FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数)",
+            "UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念)",
+            "UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性) -> Guides -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignParameter(设计参数) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignParameter(设计参数) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性) -> Guides -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> AestheticConcept(美学概念) -> Prefers -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA) -> DefinesDNA -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignParameter(设计参数) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignParameter(设计参数) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignAttribute(设计属性) -> Guides -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> DefinesDNA -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
+            "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态)"
+        ],
+        "total_schemas_count": 350
+    },
+    {
         "id": "B001",
         "keywords": [
             "城市高坐姿",
@@ -7,7 +362,7 @@
             "像素灯语",
             "紧凑灵活"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -52,7 +407,7 @@
             "长机盖短尾",
             "赛道空气动力套件"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -91,7 +446,7 @@
             "舒展体量",
             "手工材质"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -138,7 +493,7 @@
             "方正高车身",
             "大接近角"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
@@ -176,7 +531,7 @@
             "干净圆润曲面",
             "城市代步"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -220,7 +575,7 @@
             "双侧滑门",
             "正式接待"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -256,7 +611,7 @@
             "双色车身",
             "机械仪表"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -307,7 +662,7 @@
             "封闭前脸",
             "可编程贯穿灯"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -356,7 +711,7 @@
             "舒展侧面比例",
             "竖向精密格栅"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性)",
@@ -403,7 +758,7 @@
             "紧凑车身",
             "大轮毂红色卡钳"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数)",
@@ -449,7 +804,7 @@
             "后排行政座椅",
             "接待场景"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -497,7 +852,7 @@
             "圆形前灯",
             "双色车身"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
@@ -548,7 +903,7 @@
             "连续光滑侧围",
             "几乎没有装饰线"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
@@ -572,7 +927,7 @@
             "大行李舱",
             "机构通勤接驳"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性)",
@@ -629,7 +984,7 @@
             "全地形轮胎",
             "粗壮外扩轮拱"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -672,7 +1027,7 @@
             "双边排气",
             "城市性能小车"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -718,7 +1073,7 @@
             "长轴距",
             "镜面深色漆"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -762,7 +1117,7 @@
             "城市末端配送",
             "耐用易维修"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数)",
@@ -800,7 +1155,7 @@
             "侧滑门",
             "表面干净克制"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -857,7 +1212,7 @@
             "交互式贯穿灯",
             "隐藏式外部件"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -909,7 +1264,7 @@
             "圆形仪表",
             "现代工艺重演经典比例"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Influences -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
             "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
@@ -926,7 +1281,7 @@
             "大轮毂",
             "灵活有冲劲"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数)",
@@ -970,7 +1325,7 @@
             "精细金属饰件",
             "细腻真皮"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -1013,7 +1368,7 @@
             "后排隐私",
             "正式稳重的前脸"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> Guides -> DesignAttribute(设计属性)",
             "AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
@@ -1064,7 +1419,7 @@
             "大接近角",
             "机械四驱"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
@@ -1112,7 +1467,7 @@
             "隐藏式门把手",
             "封闭光滑前脸"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -1136,7 +1491,7 @@
             "扩散器",
             "大尺寸进气口"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -1146,7 +1501,7 @@
             "竖向镀铬格栅",
             "沉稳厚重"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -1198,7 +1553,7 @@
             "外挂备胎",
             "高离地间隙"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -1208,7 +1563,7 @@
             "无多余装饰",
             "隐藏出风口"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念)",
             "AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -1261,7 +1616,7 @@
             "深色车漆",
             "接待用车"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
             "AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
@@ -1317,7 +1672,7 @@
             "高光镀铬",
             "机械仪表"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -1362,7 +1717,7 @@
             "直立尾门",
             "城市停车方便"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -1407,7 +1762,7 @@
             "平直高车顶",
             "大侧滑门"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征)",
@@ -1439,7 +1794,7 @@
             "高载重",
             "粗壮轮拱"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -1450,7 +1805,7 @@
             "长机盖短尾",
             "强调赛道性能"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -1503,7 +1858,7 @@
             "后备厢与乘员舱分离",
             "三段式侧面比例"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
@@ -1549,7 +1904,7 @@
             "后风挡连同尾门整体开启",
             "两厢式车尾"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
@@ -1573,7 +1928,7 @@
             "城市通勤",
             "没有外挂备胎"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -1584,7 +1939,7 @@
             "高坐姿",
             "大行李空间"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性)",
@@ -1636,7 +1991,7 @@
             "三厢车身",
             "司机驾驶"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数)",
             "VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念)",
@@ -1659,7 +2014,7 @@
             "可编程灯语",
             "无实体按键"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数)",
             "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态)"
@@ -1672,7 +2027,7 @@
             "静止时也像向前俯冲",
             "四轮靠近车身四角"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -1712,7 +2067,7 @@
             "镜面漆",
             "精密金属饰件"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念)",
@@ -1728,7 +2083,7 @@
             "绞盘",
             "涉水喉"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -1737,7 +2092,7 @@
             "侧面不画腰线",
             "只靠曲面光影分区"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)"
         ],
         "schemas_count": 1
@@ -1749,7 +2104,7 @@
             "方正车头",
             "横平竖直格栅"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念)",
             "VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
@@ -1782,7 +2137,7 @@
             "钢丝轮毂",
             "独立圆形后视镜"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -1809,7 +2164,7 @@
             "侧滑门",
             "移动客厅"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -1819,7 +2174,7 @@
             "短车身",
             "城市单人通勤"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念)",
             "UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
@@ -1847,7 +2202,7 @@
             "贯穿尾灯",
             "紧凑车身"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -1903,7 +2258,7 @@
             "大接近角",
             "粗犷轮胎"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -1948,7 +2303,7 @@
             "无边框车门",
             "鸭尾"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数)",
             "AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念)",
             "VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数)",
@@ -1976,7 +2331,7 @@
             "巨大乘员舱",
             "多人商务接送"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)"
         ],
         "schemas_count": 1
@@ -1988,7 +2343,7 @@
             "四门双排座",
             "城市生活方式"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -1997,7 +2352,7 @@
             "像素矩阵前灯",
             "动态迎宾图案"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
             "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
@@ -2013,7 +2368,7 @@
             "红色卡钳",
             "扩散器"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2023,7 +2378,7 @@
             "细腻真皮",
             "金属滚花旋钮"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2033,7 +2388,7 @@
             "车顶行李架",
             "外挂备胎"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2043,7 +2398,7 @@
             "单色车身",
             "无镀铬装饰"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2053,7 +2408,7 @@
             "高腰线",
             "大面积后排隐私玻璃"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Guides -> FamilyDNA(家族DNA)",
@@ -2079,7 +2434,7 @@
             "圆形仪表",
             "双辐方向盘"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
             "汽车车型 -> TypeAssociatedWith -> FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
@@ -2094,7 +2449,7 @@
             "短前后悬",
             "紧凑轮廓"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -2146,7 +2501,7 @@
             "平直车顶",
             "方正后备厢开口"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
@@ -2199,7 +2554,7 @@
             "长轴距",
             "低车高"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -2251,7 +2606,7 @@
             "三排座",
             "低地板"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
@@ -2272,7 +2627,7 @@
             "接近角大",
             "非承载式车身"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
@@ -2303,7 +2658,7 @@
             "窄车宽",
             "双座"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignParameter(设计参数) -> Guides -> AestheticConcept(美学概念)",
@@ -2354,7 +2709,7 @@
             "短尾",
             "城市灵活穿行"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
@@ -2384,7 +2739,7 @@
             "多排座椅",
             "行李空间优先"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> Guides -> DesignAttribute(设计属性)",
             "AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
             "AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
@@ -2435,7 +2790,7 @@
             "双门",
             "大功率视觉"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数)",
             "UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
@@ -2479,7 +2834,7 @@
             "发光格栅",
             "电子外后视镜"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2489,7 +2844,7 @@
             "竖向格栅",
             "长轴距"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "FamilyDNA(家族DNA) -> Guides -> DesignParameter(设计参数)",
@@ -2524,7 +2879,7 @@
             "防爆涂层",
             "钢制下护板"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2534,7 +2889,7 @@
             "水平窗线",
             "隐藏式出风口"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2543,7 +2898,7 @@
             "年轻人喜欢的车",
             "有个性"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念)",
             "UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
@@ -2570,7 +2925,7 @@
             "成熟稳重",
             "有档次"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念)",
             "VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
             "VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数)",
@@ -2595,7 +2950,7 @@
         "keywords": [
             "未来城市用车"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2604,7 +2959,7 @@
             "周末户外",
             "能装东西"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2613,7 +2968,7 @@
             "家庭第二辆车",
             "好停车"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -2627,7 +2982,7 @@
             "老板后排乘坐",
             "偶尔自己驾驶"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2635,7 +2990,7 @@
         "keywords": [
             "经典但不要像老爷车"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2643,7 +2998,7 @@
         "keywords": [
             "看起来很快但不要太夸张"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2651,7 +3006,7 @@
         "keywords": [
             "高级科技感"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
             "VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",
             "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
@@ -2665,7 +3020,7 @@
         "keywords": [
             "女性用户城市通勤"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念)",
             "UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
@@ -2684,7 +3039,7 @@
             "五十岁人群",
             "都市通勤"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "UserTrend(用户与趋势) -> Prefers -> AestheticConcept(美学概念)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Constrains -> AerodynamicFeature(空气动力学特征) -> Guides -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
@@ -2698,7 +3053,7 @@
             "有力量感",
             "车身高"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
@@ -2741,7 +3096,7 @@
             "圆润可爱",
             "空间还要大"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
@@ -2763,7 +3118,7 @@
             "低风阻",
             "大空间"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "UserTrend(用户与趋势) -> Prefers -> DesignAttribute(设计属性)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> AerodynamicFeature(空气动力学特征) -> Constrains -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "汽车车型 -> TypeAssociatedWith -> VehiclePosture(汽车姿态) -> Influences -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
@@ -2777,7 +3132,7 @@
             "品牌旗舰",
             "辨识度高"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
@@ -2805,7 +3160,7 @@
         "keywords": [
             "给我设计一辆车"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2813,7 +3168,7 @@
         "keywords": [
             "好看的车"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
             "汽车风格 -> StyleAssociatedWith -> VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)"
@@ -2825,7 +3180,7 @@
         "keywords": [
             "红色汽车"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2833,7 +3188,7 @@
         "keywords": [
             "适合我的车"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2842,7 +3197,7 @@
             "SUV",
             "同时要极低车顶和跑车坐姿"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性)",
             "AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
@@ -2900,7 +3255,7 @@
             "大型三排座舱",
             "旗舰级空间"
         ],
-        "path_schemas": [],
+        "hit_path_schemas": [],
         "schemas_count": 0
     },
     {
@@ -2909,7 +3264,7 @@
             "极简",
             "大量镀铬雕花和复杂装饰"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
             "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> Guides -> DesignParameter(设计参数) -> Influences -> DesignAttribute(设计属性)",
@@ -2924,7 +3279,7 @@
             "超低离地间隙",
             "追求最大通过性"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> Prefers -> UserTrend(用户与趋势)",
             "DesignAttribute(设计属性) -> ImplementedBy -> AestheticConcept(美学概念)",
             "DesignAttribute(设计属性) -> Indicates -> VehiclePosture(汽车姿态)",
@@ -2975,7 +3330,7 @@
             "双门跑车",
             "后排空间最重要"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "AestheticConcept(美学概念) -> Guides -> DesignAttribute(设计属性)",
             "汽车车型 -> TypeAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性) -> Guides -> AestheticConcept(美学概念)",
             "汽车风格 -> StyleAssociatedWith -> AestheticConcept(美学概念) -> ImplementedBy -> DesignAttribute(设计属性) -> Influences -> DesignAttribute(设计属性) -> Guides -> AestheticConcept(美学概念)"
@@ -2988,7 +3343,7 @@
             "复古未来感",
             "既要机械仪式感又要全数字座舱"
         ],
-        "path_schemas": [
+        "hit_path_schemas": [
             "DesignAttribute(设计属性) -> Influences -> DesignParameter(设计参数)",
             "DesignAttribute(设计属性) -> Prefers -> UserTrend(用户与趋势)",
             "VehiclePosture(汽车姿态) -> Indicates -> DesignAttribute(设计属性)",

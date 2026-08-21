@@ -59,6 +59,7 @@ def main():
         result = json.load(f)
     cases = result['cases']
     outputs = []
+    total_schema_set = set()
 
     #处理每一个case
     for case in cases:
@@ -74,14 +75,21 @@ def main():
                 else:
                     schema += ' -> ' + dict_by_name[value]
             schema_set.add(schema)
+            total_schema_set.add(schema)
         outputs.append(
             {
                 "id": case["id"],
                 "keywords": case["input"]["keywords"],
-                "path_schemas": sorted(schema_set),
+                "hit_path_schemas": sorted(schema_set),
                 "schemas_count": len(schema_set),
             }
         )
+    outputs.append(
+        {
+            "total_path_schemas": sorted(total_schema_set),
+            "total_schemas_count": len(total_schema_set),
+        }
+    )
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", encoding="utf-8") as f:
