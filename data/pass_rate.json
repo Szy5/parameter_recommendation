@@ -1,8 +1,32 @@
 [
   {
-    "TOP_N_SCHEMA": 1,
+    "TOP_N_SCHEMA": 25,
     "SCHEMAS": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- ImplementedBy <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- Guides <- AerodynamicFeature(空气动力学特征) <- Constrains <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- DefinesDNA <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "AestheticConcept(美学概念) <- Guides <- DesignAttribute(设计属性) <- Influences <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- Guides <- DesignAttribute(设计属性) <- Influences <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ]
   },
   {
@@ -50,12 +74,16 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 5,
+    "style_count": 2,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B002",
@@ -93,11 +121,17 @@
       "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
+    ],
+    "valid_count": 5,
+    "style_count": 3,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B003",
@@ -145,12 +179,19 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 8,
+    "style_count": 5,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B004",
@@ -189,12 +230,15 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 4,
+    "style_count": 2,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B005",
@@ -239,12 +283,18 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 7,
+    "style_count": 5,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B006",
@@ -281,12 +331,16 @@
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 5,
+    "style_count": 2,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B007",
@@ -338,12 +392,19 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 8,
+    "style_count": 4,
+    "type_count": 4,
+    "is_pass": true
   },
   {
     "id": "B008",
@@ -393,12 +454,19 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 8,
+    "style_count": 3,
+    "type_count": 5,
+    "is_pass": true
   },
   {
     "id": "B009",
@@ -446,12 +514,18 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 7,
+    "style_count": 3,
+    "type_count": 4,
+    "is_pass": true
   },
   {
     "id": "B010",
@@ -498,12 +572,16 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 5,
+    "style_count": 3,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B011",
@@ -552,12 +630,16 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 5,
+    "style_count": 3,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B012",
@@ -609,12 +691,17 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 6,
+    "style_count": 3,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B013",
@@ -639,12 +726,15 @@
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 4,
+    "style_count": 3,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B014",
@@ -702,12 +792,19 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- ImplementedBy <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 8,
+    "style_count": 4,
+    "type_count": 4,
+    "is_pass": true
   },
   {
     "id": "B015",
@@ -751,12 +848,20 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 9,
+    "style_count": 6,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B016",
@@ -803,12 +908,16 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 5,
+    "style_count": 2,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B017",
@@ -853,12 +962,17 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 6,
+    "style_count": 3,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B018",
@@ -896,12 +1010,17 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 6,
+    "style_count": 4,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B019",
@@ -960,12 +1079,17 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 6,
+    "style_count": 4,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B020",
@@ -1018,12 +1142,18 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 7,
+    "style_count": 3,
+    "type_count": 4,
+    "is_pass": true
   },
   {
     "id": "B021",
@@ -1040,11 +1170,14 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
+    ],
+    "valid_count": 2,
+    "style_count": 1,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B022",
@@ -1089,12 +1222,15 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 4,
+    "style_count": 2,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B023",
@@ -1138,12 +1274,18 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 7,
+    "style_count": 4,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B024",
@@ -1195,12 +1337,20 @@
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "AestheticConcept(美学概念) <- Guides <- DesignAttribute(设计属性) <- Influences <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 9,
+    "style_count": 6,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B025",
@@ -1250,12 +1400,17 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 6,
+    "style_count": 2,
+    "type_count": 4,
+    "is_pass": true
   },
   {
     "id": "B026",
@@ -1279,11 +1434,15 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
       "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格"
+    ],
+    "valid_count": 3,
+    "style_count": 2,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B027",
@@ -1350,12 +1509,17 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- DefinesDNA <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 6,
+    "style_count": 4,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B029",
@@ -1422,12 +1586,20 @@
       "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- ImplementedBy <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 9,
+    "style_count": 5,
+    "type_count": 4,
+    "is_pass": true
   },
   {
     "id": "B031",
@@ -1484,12 +1656,18 @@
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 7,
+    "style_count": 5,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B032",
@@ -1535,11 +1713,19 @@
       "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
+    ],
+    "valid_count": 7,
+    "style_count": 4,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B033",
@@ -1585,12 +1771,16 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 5,
+    "style_count": 2,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B034",
@@ -1623,12 +1813,14 @@
       "VehiclePosture(汽车姿态) <- Indicates <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
+    "valid_count": 3,
     "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B035",
@@ -1698,12 +1890,17 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 6,
+    "style_count": 4,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B037",
@@ -1750,12 +1947,18 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 7,
+    "style_count": 5,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B038",
@@ -1777,11 +1980,16 @@
       "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- DefinesDNA <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
+    ],
+    "valid_count": 4,
+    "style_count": 1,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B039",
@@ -1849,12 +2057,18 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 7,
+    "style_count": 4,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B041",
@@ -1879,12 +2093,14 @@
       "VehiclePosture(汽车姿态) <- Indicates <- DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 3,
+    "style_count": 2,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B042",
@@ -1944,12 +2160,15 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 4,
+    "style_count": 2,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B044",
@@ -1964,11 +2183,14 @@
       "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
       "AestheticConcept(美学概念) <- ImplementedBy <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- ImplementedBy <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
+    ],
+    "valid_count": 2,
+    "style_count": 1,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B045",
@@ -2032,12 +2254,14 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
+    "valid_count": 3,
     "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B048",
@@ -2065,12 +2289,19 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 8,
+    "style_count": 5,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B049",
@@ -2112,12 +2343,14 @@
       "VehiclePosture(汽车姿态) <- Indicates <- DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
+    "valid_count": 3,
     "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B051",
@@ -2174,12 +2407,19 @@
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 8,
+    "style_count": 4,
+    "type_count": 4,
+    "is_pass": true
   },
   {
     "id": "B052",
@@ -2226,12 +2466,17 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 6,
+    "style_count": 3,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B053",
@@ -2260,12 +2505,13 @@
       "AerodynamicFeature(空气动力学特征) <- Constrains <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
+    "valid_count": 2,
     "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B054",
@@ -2310,9 +2556,11 @@
       "DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
+    "valid_schemas": [
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+    ],
+    "valid_count": 1,
+    "style_count": 1,
     "type_count": 0,
     "is_pass": false
   },
@@ -2396,11 +2644,14 @@
       "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格"
+    ],
+    "valid_count": 2,
+    "style_count": 1,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B062",
@@ -2415,11 +2666,14 @@
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Constrains <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
+    ],
+    "valid_count": 2,
+    "style_count": 1,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B063",
@@ -2472,12 +2726,19 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 8,
+    "style_count": 5,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B064",
@@ -2531,12 +2792,20 @@
       "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 9,
+    "style_count": 6,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B065",
@@ -2589,12 +2858,19 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 8,
+    "style_count": 4,
+    "type_count": 4,
+    "is_pass": true
   },
   {
     "id": "B066",
@@ -2615,11 +2891,15 @@
       "DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
+    ],
+    "valid_count": 3,
+    "style_count": 2,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B067",
@@ -2651,12 +2931,17 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 6,
+    "style_count": 4,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B068",
@@ -2708,12 +2993,17 @@
       "VehiclePosture(汽车姿态) <- Indicates <- DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 6,
+    "style_count": 3,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B069",
@@ -2743,12 +3033,16 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 5,
+    "style_count": 2,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B070",
@@ -2800,12 +3094,19 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- Guides <- DesignAttribute(设计属性) <- Influences <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 8,
+    "style_count": 6,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B071",
@@ -2851,12 +3152,15 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 4,
+    "style_count": 2,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B072",
@@ -2905,11 +3209,15 @@
       "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Constrains <- AerodynamicFeature(空气动力学特征) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
+    ],
+    "valid_count": 3,
+    "style_count": 2,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B074",
@@ -2964,11 +3272,17 @@
       "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
       "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- DefinesDNA <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
+    ],
+    "valid_count": 5,
+    "style_count": 2,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B077",
@@ -2995,12 +3309,14 @@
       "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- ImplementedBy <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 3,
+    "style_count": 2,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B078",
@@ -3039,11 +3355,14 @@
       "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
       "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
+    ],
+    "valid_count": 2,
+    "style_count": 1,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B081",
@@ -3095,10 +3414,11 @@
       "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- DefinesDNA <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
+    "valid_count": 2,
+    "style_count": 2,
     "type_count": 0,
     "is_pass": false
   },
@@ -3118,11 +3438,16 @@
       "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
       "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- Guides <- AerodynamicFeature(空气动力学特征) <- Constrains <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
+    ],
+    "valid_count": 4,
+    "style_count": 2,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B086",
@@ -3136,11 +3461,14 @@
       "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
       "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- Guides <- AerodynamicFeature(空气动力学特征) <- Constrains <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- Guides <- AerodynamicFeature(空气动力学特征) <- Constrains <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
+    ],
+    "valid_count": 2,
+    "style_count": 1,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B087",
@@ -3184,12 +3512,17 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 6,
+    "style_count": 4,
+    "type_count": 2,
+    "is_pass": true
   },
   {
     "id": "B088",
@@ -3211,11 +3544,17 @@
       "AestheticConcept(美学概念) <- ImplementedBy <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
       "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Indicates <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- ImplementedBy <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
+    ],
+    "valid_count": 5,
+    "style_count": 2,
+    "type_count": 3,
+    "is_pass": true
   },
   {
     "id": "B089",
@@ -3229,11 +3568,14 @@
       "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
       "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- DefinesDNA <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- DefinesDNA <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型"
+    ],
+    "valid_count": 2,
+    "style_count": 1,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B090",
@@ -3262,11 +3604,16 @@
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
       "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
+    ],
+    "valid_count": 4,
+    "style_count": 3,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B091",
@@ -3290,11 +3637,14 @@
       "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
       "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
+    ],
+    "valid_count": 2,
+    "style_count": 1,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B093",
@@ -3376,12 +3726,21 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- DefinesDNA <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 10,
+    "style_count": 6,
+    "type_count": 4,
+    "is_pass": true
   },
   {
     "id": "B096",
@@ -3409,11 +3768,14 @@
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
       "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
+    ],
+    "valid_count": 2,
+    "style_count": 1,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B098",
@@ -3465,12 +3827,19 @@
       "VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 8,
+    "style_count": 4,
+    "type_count": 4,
+    "is_pass": true
   },
   {
     "id": "B099",
@@ -3484,11 +3853,14 @@
       "AestheticConcept(美学概念) <- Guides <- DesignAttribute(设计属性) <- Influences <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
       "AestheticConcept(美学概念) <- Guides <- DesignAttribute(设计属性) <- Influences <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_schemas": [],
-    "valid_count": 0,
-    "style_count": 0,
-    "type_count": 0,
-    "is_pass": false
+    "valid_schemas": [
+      "AestheticConcept(美学概念) <- Guides <- DesignAttribute(设计属性) <- Influences <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "AestheticConcept(美学概念) <- Guides <- DesignAttribute(设计属性) <- Influences <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型"
+    ],
+    "valid_count": 2,
+    "style_count": 1,
+    "type_count": 1,
+    "is_pass": true
   },
   {
     "id": "B100",
@@ -3507,15 +3879,17 @@
       "DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
     ],
     "valid_schemas": [
-      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格"
+      "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格"
     ],
-    "valid_count": 1,
-    "style_count": 1,
-    "type_count": 0,
-    "is_pass": false
+    "valid_count": 3,
+    "style_count": 2,
+    "type_count": 1,
+    "is_pass": true
   },
   {
-    "pass_count": 0,
-    "pass_rate": 0.0
+    "pass_count": 72,
+    "pass_rate": 0.72
   }
 ]
