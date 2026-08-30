@@ -1,8 +1,8 @@
 import json
 from collections import defaultdict
 #根据schema命中case进行排序
-json_file = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/path_schemas_reversed.json"
-output_file = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/sort_schemas_by_case.json"
+json_file = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/path_schemas_500_reversed.json"
+output_file = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/sort_schemas_by_case_500.json"
 def sort_schema(json_file ,output_file):
     with open(json_file , encoding='utf-8') as f:
         result = json.load(f)

@@ -1,0 +1,51 @@
+{
+  "started_at": "2026-08-30T11:51:11.517584+08:00",
+  "finished_at": "2026-08-30T11:58:24.903870+08:00",
+  "elapsed_seconds": 433.386,
+  "model": "BAAI/bge-m3",
+  "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "device": "cpu",
+  "device_name": "arm",
+  "batch_size": 16,
+  "max_seq_length": 512,
+  "top_k": 20,
+  "document_text_contract": "名称：<name>\\n描述：<description>; omit description line when empty; label excluded",
+  "query_text_contract": "keywords joined in original order with Chinese semicolon; no query instruction",
+  "features": "data/features_all.jsonl",
+  "features_sha256": "cd2f643374ccec31976d697b9736871ac52770c527cef949284c1bf204662375",
+  "benchmark": "benchmark/500_cases.jsonl",
+  "benchmark_sha256": "7eb22a4c3ba444565ce8f8d915cb0ad07fba631121f8a2694ac0ab88738466a3",
+  "versions": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "sentence_transformers": "5.1.2"
+  },
+  "outputs": {
+    "corpus.jsonl": {
+      "sha256": "f8c277c26b2cac27b76c42dd59f7f4d784c0361621e8bcb1ba37d1b98ab0f696",
+      "bytes": 4296770
+    },
+    "benchmark_queries.jsonl": {
+      "sha256": "6bbb97086015b5766d597f902117f7a9b09a9a2cd782757ee67bda095fde1a62",
+      "bytes": 101872
+    },
+    "node_embeddings.npy": {
+      "sha256": "cc45c87489d31ae5bb764ebd43e6314e5f1dd6a7da30970d411f8d953483328e",
+      "bytes": 39522432
+    },
+    "query_embeddings.npy": {
+      "sha256": "44853b4ac5e12bd9e339be6cce00c55892bda36b0dc9f8627f5ca93a630fee81",
+      "bytes": 2048128
+    },
+    "recall_top20.jsonl": {
+      "sha256": "e451aa1e57a8b20696b7c1aee6942c26415fd4efb79d906c3a72718340af3a5e",
+      "bytes": 3347620
+    },
+    "summary.json": {
+      "sha256": "b837e43690ec958d936bfc2d59202f473db33d9db8dcec50a03e7fb7194ee505",
+      "bytes": 8271
+    }
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "note": "Counts and cosine similarity are retrieval diagnostics, not node-level accuracy; no current-graph node gold set exists.",
+  "case_count": 500,
+  "corpus_size": 9649,
+  "top_k": 20,
+  "by_k": {
+    "1": {
+      "cases": 500,
+      "retrieval_slots": 500,
+      "unique_nodes": 232,
+      "corpus_coverage_rate": 0.024044,
+      "label_slot_counts": {
+        "AestheticConcept(美学概念)": 26,
+        "DesignAttribute(设计属性)": 173,
+        "DesignParameter(设计参数)": 34,
+        "FamilyDNA(家族DNA)": 70,
+        "UserTrend(用户与趋势)": 117,
+        "VehiclePosture(汽车姿态)": 80
+      },
+      "slots_with_exact_keyword_substring": 5,
+      "cases_with_exact_keyword_substring": 5
+    },
+    "5": {
+      "cases": 500,
+      "retrieval_slots": 2500,
+      "unique_nodes": 727,
+      "corpus_coverage_rate": 0.075345,
+      "label_slot_counts": {
+        "AerodynamicFeature(空气动力学特征)": 6,
+        "AestheticConcept(美学概念)": 175,
+        "DesignAttribute(设计属性)": 803,
+        "DesignParameter(设计参数)": 165,
+        "FamilyDNA(家族DNA)": 384,
+        "UserTrend(用户与趋势)": 450,
+        "VehiclePosture(汽车姿态)": 517
+      },
+      "slots_with_exact_keyword_substring": 24,
+      "cases_with_exact_keyword_substring": 17
+    },
+    "10": {
+      "cases": 500,
+      "retrieval_slots": 5000,
+      "unique_nodes": 1172,
+      "corpus_coverage_rate": 0.121463,
+      "label_slot_counts": {
+        "AerodynamicFeature(空气动力学特征)": 21,
+        "AestheticConcept(美学概念)": 377,
+        "DesignAttribute(设计属性)": 1530,
+        "DesignParameter(设计参数)": 312,
+        "FamilyDNA(家族DNA)": 835,
+        "UserTrend(用户与趋势)": 841,
+        "VehiclePosture(汽车姿态)": 1084
+      },
+      "slots_with_exact_keyword_substring": 35,
+      "cases_with_exact_keyword_substring": 24
+    },
+    "15": {
+      "cases": 500,
+      "retrieval_slots": 7500,
+      "unique_nodes": 1514,
+      "corpus_coverage_rate": 0.156907,
+      "label_slot_counts": {
+        "AerodynamicFeature(空气动力学特征)": 32,
+        "AestheticConcept(美学概念)": 589,
+        "DesignAttribute(设计属性)": 2270,
+        "DesignParameter(设计参数)": 452,
+        "FamilyDNA(家族DNA)": 1249,
+        "UserTrend(用户与趋势)": 1203,
+        "VehiclePosture(汽车姿态)": 1705
+      },
+      "slots_with_exact_keyword_substring": 45,
+      "cases_with_exact_keyword_substring": 30
+    },
+    "20": {
+      "cases": 500,
+      "retrieval_slots": 10000,
+      "unique_nodes": 1765,
+      "corpus_coverage_rate": 0.182921,
+      "label_slot_counts": {
+        "AerodynamicFeature(空气动力学特征)": 44,
+        "AestheticConcept(美学概念)": 802,
+        "DesignAttribute(设计属性)": 2992,
+        "DesignParameter(设计参数)": 596,
+        "FamilyDNA(家族DNA)": 1683,
+        "UserTrend(用户与趋势)": 1554,
+        "VehiclePosture(汽车姿态)": 2329
+      },
+      "slots_with_exact_keyword_substring": 50,
+      "cases_with_exact_keyword_substring": 32
+    }
+  },
+  "by_threshold": {
+    "0.3": {
+      "cases_with_at_least_one": 500,
+      "cases_with_full_top_k": 500,
+      "retrieval_slots": 10000,
+      "unique_nodes": 1765,
+      "mean_nodes_per_case": 20.0,
+      "median_nodes_per_case": 20.0,
+      "min_nodes_per_case": 20,
+      "max_nodes_per_case": 20
+    },
+    "0.4": {
+      "cases_with_at_least_one": 500,
+      "cases_with_full_top_k": 500,
+      "retrieval_slots": 10000,
+      "unique_nodes": 1765,
+      "mean_nodes_per_case": 20.0,
+      "median_nodes_per_case": 20.0,
+      "min_nodes_per_case": 20,
+      "max_nodes_per_case": 20
+    },
+    "0.5": {
+      "cases_with_at_least_one": 500,
+      "cases_with_full_top_k": 500,
+      "retrieval_slots": 10000,
+      "unique_nodes": 1765,
+      "mean_nodes_per_case": 20.0,
+      "median_nodes_per_case": 20.0,
+      "min_nodes_per_case": 20,
+      "max_nodes_per_case": 20
+    },
+    "0.6": {
+      "cases_with_at_least_one": 474,
+      "cases_with_full_top_k": 334,
+      "retrieval_slots": 7804,
+      "unique_nodes": 1411,
+      "mean_nodes_per_case": 15.608,
+      "median_nodes_per_case": 20.0,
+      "min_nodes_per_case": 0,
+      "max_nodes_per_case": 20
+    },
+    "0.7": {
+      "cases_with_at_least_one": 99,
+      "cases_with_full_top_k": 4,
+      "retrieval_slots": 342,
+      "unique_nodes": 173,
+      "mean_nodes_per_case": 0.684,
+      "median_nodes_per_case": 0.0,
+      "min_nodes_per_case": 0,
+      "max_nodes_per_case": 20
+    }
+  },
+  "score_by_rank": [
+    {
+      "rank": 1,
+      "min": 0.560406,
+      "p25": 0.641779,
+      "median": 0.668606,
+      "p75": 0.693948,
+      "max": 0.783149,
+      "mean": 0.667864
+    },
+    {
+      "rank": 2,
+      "min": 0.557704,
+      "p25": 0.630456,
+      "median": 0.656438,
+      "p75": 0.68303,
+      "max": 0.753457,
+      "mean": 0.655404
+    },
+    {
+      "rank": 3,
+      "min": 0.555229,
+      "p25": 0.623484,
+      "median": 0.649555,
+      "p75": 0.676276,
+      "max": 0.745473,
+      "mean": 0.648493
+    },
+    {
+      "rank": 4,
+      "min": 0.553645,
+      "p25": 0.617822,
+      "median": 0.644056,
+      "p75": 0.670861,
+      "max": 0.742257,
+      "mean": 0.643678
+    },
+    {
+      "rank": 5,
+      "min": 0.542746,
+      "p25": 0.614876,
+      "median": 0.639793,
+      "p75": 0.667416,
+      "max": 0.736145,
+      "mean": 0.639942
+    },
+    {
+      "rank": 6,
+      "min": 0.541305,
+      "p25": 0.610711,
+      "median": 0.635876,
+      "p75": 0.664664,
+      "max": 0.732356,
+      "mean": 0.636656
+    },
+    {
+      "rank": 7,
+      "min": 0.537069,
+      "p25": 0.609437,
+      "median": 0.63342,
+      "p75": 0.662226,
+      "max": 0.731759,
+      "mean": 0.634257
+    },
+    {
+      "rank": 8,
+      "min": 0.536106,
+      "p25": 0.607598,
+      "median": 0.631091,
+      "p75": 0.660656,
+      "max": 0.728701,
+      "mean": 0.631898
+    },
+    {
+      "rank": 9,
+      "min": 0.53587,
+      "p25": 0.60532,
+      "median": 0.629619,
+      "p75": 0.65879,
+      "max": 0.728514,
+      "mean": 0.630064
+    },
+    {
+      "rank": 10,
+      "min": 0.534124,
+      "p25": 0.604109,
+      "median": 0.62778,
+      "p75": 0.65734,
+      "max": 0.72156,
+      "mean": 0.628337
+    },
+    {
+      "rank": 11,
+      "min": 0.533267,
+      "p25": 0.602372,
+      "median": 0.62688,
+      "p75": 0.655769,
+      "max": 0.714922,
+      "mean": 0.626714
+    },
+    {
+      "rank": 12,
+      "min": 0.531876,
+      "p25": 0.600773,
+      "median": 0.625449,
+      "p75": 0.654017,
+      "max": 0.714258,
+      "mean": 0.625271
+    },
+    {
+      "rank": 13,
+      "min": 0.530188,
+      "p25": 0.59899,
+      "median": 0.624822,
+      "p75": 0.652012,
+      "max": 0.713562,
+      "mean": 0.623925
+    },
+    {
+      "rank": 14,
+      "min": 0.528679,
+      "p25": 0.597349,
+      "median": 0.622791,
+      "p75": 0.649987,
+      "max": 0.712211,
+      "mean": 0.622609
+    },
+    {
+      "rank": 15,
+      "min": 0.528453,
+      "p25": 0.596301,
+      "median": 0.621414,
+      "p75": 0.648427,
+      "max": 0.711922,
+      "mean": 0.621452
+    },
+    {
+      "rank": 16,
+      "min": 0.528412,
+      "p25": 0.595912,
+      "median": 0.621048,
+      "p75": 0.647405,
+      "max": 0.710849,
+      "mean": 0.620396
+    },
+    {
+      "rank": 17,
+      "min": 0.528115,
+      "p25": 0.595257,
+      "median": 0.61992,
+      "p75": 0.646243,
+      "max": 0.709276,
+      "mean": 0.619381
+    },
+    {
+      "rank": 18,
+      "min": 0.52717,
+      "p25": 0.594202,
+      "median": 0.618726,
+      "p75": 0.645003,
+      "max": 0.707761,
+      "mean": 0.618413
+    },
+    {
+      "rank": 19,
+      "min": 0.526401,
+      "p25": 0.593263,
+      "median": 0.618146,
+      "p75": 0.643932,
+      "max": 0.707643,
+      "mean": 0.617497
+    },
+    {
+      "rank": 20,
+      "min": 0.526358,
+      "p25": 0.592217,
+      "median": 0.617758,
+      "p75": 0.642853,
+      "max": 0.707598,
+      "mean": 0.616626
+    }
+  ],
+  "model": "BAAI/bge-m3",
+  "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "embedding_dimension": 1024,
+  "node_embedding_shape": [
+    9649,
+    1024
+  ],
+  "query_embedding_shape": [
+    500,
+    1024
+  ],
+  "embedding_dtype": "float32"
+}

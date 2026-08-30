@@ -23,6 +23,10 @@ else:
     from .common import iter_jsonl, load_env_file
 
 
+GRAPH_NODE_LABEL = "GraphNode"
+GRAPH_NODE_CONSTRAINT = "graph_node_graph_id"
+
+
 def now_iso() -> str:
     return datetime.now(timezone.utc).astimezone().isoformat()
 
@@ -100,7 +104,9 @@ def import_nodes(session: Any, path: Path, batch_size: int) -> Tuple[int, int]:
         query = (
             "UNWIND $rows AS row "
             "MERGE (n%s {_graph_id: row.id}) "
-            "SET n += row.properties" % label_clause
+            "SET n:%s "
+            "SET n += row.properties"
+            % (label_clause, quote_identifier(GRAPH_NODE_LABEL))
         )
         session.run(query, rows=rows).consume()
         transactions += 1
@@ -207,6 +213,14 @@ def main() -> None:
                 "MATCH (n) WITH count(n) AS nodes MATCH ()-[r]->() "
                 "RETURN nodes, count(r) AS relationships"
             ).single()
+            session.run(
+                "CREATE CONSTRAINT %s IF NOT EXISTS FOR (n:%s) "
+                "REQUIRE n._graph_id IS UNIQUE"
+                % (
+                    quote_identifier(GRAPH_NODE_CONSTRAINT),
+                    quote_identifier(GRAPH_NODE_LABEL),
+                )
+            ).consume()
             for label in labels:
                 query = (
                     "CREATE CONSTRAINT %s IF NOT EXISTS FOR (n:%s) "
@@ -247,7 +261,7 @@ def main() -> None:
             "finished_at": now_iso(),
             "elapsed_seconds": round(time.time() - started, 3),
             "batch_size": args.batch_size,
-            "constraints_created_or_verified": len(labels),
+            "constraints_created_or_verified": len(labels) + 1,
             "source_nodes_processed": node_count,
             "source_relationships_processed": relationship_count,
             "node_transactions": node_transactions,

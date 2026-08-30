@@ -2,9 +2,9 @@ import json
 
 TOP_N_SCHEMA = 25
 
-input_schemas = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/sort_schemas_by_case.json"
-input_path_schemas = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/path_schemas_reversed.json"
-output_json = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/pass_rate.json"
+input_schemas = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/sort_schemas_by_case_500.json"
+input_path_schemas = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/path_schemas_500_reversed.json"
+output_json = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/pass_rate_500.json"
 
 
 def get_top_n_schema():
