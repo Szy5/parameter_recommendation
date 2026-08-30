@@ -3,6 +3,7 @@
 import argparse
 import json
 from pathlib import Path
+from collections import Counter
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -60,6 +61,7 @@ def main():
     cases = result['cases']
     outputs = []
     total_schema_set = set()
+    total_schema_counts=Counter()
 
     #处理每一个case
     for case in cases:
@@ -76,6 +78,7 @@ def main():
                     schema += ' -> ' + dict_by_name[value]
             schema_set.add(schema)
             total_schema_set.add(schema)
+            total_schema_counts[schema] += 1
         outputs.append(
             {
                 "id": case["id"],
@@ -86,7 +89,10 @@ def main():
         )
     outputs.append(
         {
-            "total_path_schemas": sorted(total_schema_set),
+            "total_path_schemas": {
+            schema: total_schema_counts[schema]
+            for schema in sorted(total_schema_set)
+        },
             "total_schemas_count": len(total_schema_set),
         }
     )
