@@ -135,8 +135,8 @@ def prepare_queries(path: Path) -> List[Dict[str, Any]]:
             "keywords": [normalize_text(value) for value in keywords],
             "query_text": build_query_text(keywords),
         })
-    if len(rows) != 100:
-        raise ValueError("expected 100 Benchmark cases, found %d" % len(rows))
+    if not rows:
+        raise ValueError("Benchmark cases are empty")
     return rows
 
 

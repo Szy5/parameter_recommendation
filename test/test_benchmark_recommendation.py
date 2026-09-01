@@ -1,4 +1,6 @@
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
 from feature.benchmark_upstream_offline.constants import DIMENSION_FIELDS
 
@@ -7,8 +9,16 @@ from feature.benchmark_recommendation.graph_loader import GraphData
 from feature.benchmark_recommendation.prediction_service import predict_from_main_paths, predict_style_and_type
 from feature.benchmark_recommendation.path_narrative import build_case_rag_context, path_to_narrative
 from feature.benchmark_recommendation.path_morphology import display_from_reverse_walk, format_path, inspect_path
-from feature.benchmark_recommendation.pipeline import _inspect_paths
-from feature.benchmark_recommendation.neo4j_repository import MULTI_STYLE_PATH_QUERY, BATCH_NEIGHBOR_EVIDENCE_QUERY
+from feature.benchmark_recommendation.pipeline import _inspect_paths, _paths_from_neo4j
+from feature.benchmark_recommendation.neo4j_repository import (
+    BATCH_NEIGHBOR_EVIDENCE_QUERY,
+    DIRECT_STYLE_PATH_QUERY,
+    DIRECT_TYPE_PATH_QUERY,
+    MULTI_STYLE_PATH_QUERY,
+    MULTI_TYPE_PATH_QUERY,
+    BenchmarkNeo4jRepository,
+)
+from feature.parameter_recommendation.import_jsonl_to_neo4j import import_nodes
 from feature.benchmark_recommendation.recall_service import apply_recall_config
 from feature.benchmark_recommendation.recommend_types import parse_recommend_types
 from feature.benchmark_recommendation.live_recall_service import build_retrieved_pool_from_scores
@@ -146,6 +156,114 @@ class PathMorphologyTests(unittest.TestCase):
         self.assertNotIn("TypeAssociatedWith", BATCH_NEIGHBOR_EVIDENCE_QUERY)
         self.assertIn("Indicates(体现)", BATCH_NEIGHBOR_EVIDENCE_QUERY)
 
+    def test_path_queries_use_shared_graph_node_label(self):
+        for query in (
+            DIRECT_STYLE_PATH_QUERY,
+            DIRECT_TYPE_PATH_QUERY,
+            MULTI_STYLE_PATH_QUERY,
+            MULTI_TYPE_PATH_QUERY,
+            BATCH_NEIGHBOR_EVIDENCE_QUERY,
+        ):
+            self.assertIn("(recalled:GraphNode {_graph_id: nid})", query)
+        for query in (MULTI_STYLE_PATH_QUERY, MULTI_TYPE_PATH_QUERY):
+            self.assertIn(
+                "ORDER BY recalled._graph_id, head.name, hops, walk_nodes, walk_rels",
+                query,
+            )
+
+    def test_max_hops_is_pushed_into_cypher_and_empty_results_are_cached(self):
+        class FakeInner:
+            def __init__(self):
+                self.calls = []
+
+            def _read(self, query, **parameters):
+                self.calls.append((query, parameters))
+                return []
+
+        inner = FakeInner()
+        repo = BenchmarkNeo4jRepository(inner)
+
+        repo.batch_main_paths(["n1"], max_hops=3)
+        self.assertEqual(4, len(inner.calls))
+        self.assertTrue(all("*1..2" in query for query, _ in inner.calls[2:]))
+        self.assertTrue(all(params["node_ids"] == ["n1"] for _, params in inner.calls))
+
+        repo.batch_main_paths(["n1"], max_hops=3)
+        self.assertEqual(4, len(inner.calls))
+
+        repo.batch_main_paths(["n1", "n2"], max_hops=3)
+        self.assertEqual(8, len(inner.calls))
+        self.assertTrue(all(params["node_ids"] == ["n2"] for _, params in inner.calls[4:]))
+
+    def test_max_hops_one_skips_multi_path_queries(self):
+        class FakeInner:
+            def __init__(self):
+                self.calls = []
+
+            def _read(self, query, **parameters):
+                self.calls.append((query, parameters))
+                return []
+
+        inner = FakeInner()
+        repo = BenchmarkNeo4jRepository(inner)
+        repo.batch_main_paths(["n1"], max_hops=1)
+
+        self.assertEqual(2, len(inner.calls))
+        self.assertTrue(all("*1.." not in query for query, _ in inner.calls))
+
+    def test_no_neighbor_skips_neighbor_repository_call(self):
+        class FakeRepo:
+            def __init__(self):
+                self.main_calls = 0
+                self.neighbor_calls = 0
+
+            def batch_main_paths(self, node_ids, max_hops=5):
+                self.main_calls += 1
+                return []
+
+            def batch_neighbor_evidence(self, node_ids):
+                self.neighbor_calls += 1
+                return []
+
+        repo = FakeRepo()
+        main_rows, neighbor_rows = _paths_from_neo4j(
+            [{"node_id": "n1"}],
+            repo,
+            max_hops=3,
+            include_neighbor=False,
+        )
+        self.assertEqual([], main_rows)
+        self.assertEqual([], neighbor_rows)
+        self.assertEqual(1, repo.main_calls)
+        self.assertEqual(0, repo.neighbor_calls)
+
+    def test_neighbor_results_are_cached_by_recalled_id(self):
+        class FakeInner:
+            def __init__(self):
+                self.calls = []
+
+            def _read(self, query, **parameters):
+                self.calls.append((query, parameters))
+                return [
+                    {
+                        "recalled_id": node_id,
+                        "recalled_name": node_id.upper(),
+                        "rel": "Indicates(体现)",
+                        "neighbor_name": "neighbor-" + node_id,
+                    }
+                    for node_id in parameters["node_ids"]
+                ]
+
+        inner = FakeInner()
+        repo = BenchmarkNeo4jRepository(inner)
+        first = repo.batch_neighbor_evidence(["n1"])
+        second = repo.batch_neighbor_evidence(["n1", "n2"])
+
+        self.assertEqual(2, len(inner.calls))
+        self.assertEqual(["n1"], inner.calls[0][1]["node_ids"])
+        self.assertEqual(["n2"], inner.calls[1][1]["node_ids"])
+        self.assertEqual(["n1"], [row["recalled_id"] for row in first])
+        self.assertEqual(["n1", "n2"], [row["recalled_id"] for row in second])
     def test_inspect_path_uses_bupt_arrows(self):
         self.assertEqual(
             "简约 -> StyleAssociatedWith -> 极简家庭车 -> ImplementedBy -> 直立高坐姿",
@@ -163,6 +281,35 @@ class PathMorphologyTests(unittest.TestCase):
         self.assertEqual(["aesthetic_to_main_combined", "aesthetic_to_neighbor_evidence"], [p["template"] for p in rows])
         self.assertEqual(1, rows[0]["hop_count"])
         self.assertTrue(rows[0]["path"].startswith("简约 -> StyleAssociatedWith ->"))
+
+
+class Neo4jImportPerformanceTests(unittest.TestCase):
+    def test_imported_nodes_receive_shared_graph_node_label(self):
+        class FakeResult:
+            def consume(self):
+                return None
+
+        class FakeSession:
+            def __init__(self):
+                self.calls = []
+
+            def run(self, query, **parameters):
+                self.calls.append((query, parameters))
+                return FakeResult()
+
+        with TemporaryDirectory() as directory:
+            graph_path = Path(directory) / "graph.jsonl"
+            graph_path.write_text(
+                '{"type":"node","id":"n1","labels":["L"],"properties":{"name":"A"}}\n',
+                encoding="utf-8",
+            )
+            session = FakeSession()
+            node_count, transaction_count = import_nodes(session, graph_path, 100)
+
+        self.assertEqual(1, node_count)
+        self.assertEqual(1, transaction_count)
+        self.assertEqual(1, len(session.calls))
+        self.assertIn("SET n:`GraphNode`", session.calls[0][0])
 
 
 class PredictOutputShapeTests(unittest.TestCase):
@@ -341,4 +488,3 @@ class Neo4jRecommendationTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

@@ -129,10 +129,17 @@ def load_cases_from_input_json(input_json: Path) -> Tuple[List[Dict[str, Any]], 
 def _paths_from_neo4j(
     recalled_nodes: List[Any],
     neo4j_repository: BenchmarkNeo4jRepository,
+    *,
+    max_hops: int,
+    include_neighbor: bool,
 ) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
     node_ids = [str(row.get("node_id") or "") for row in recalled_nodes if row.get("node_id")]
-    main_rows = neo4j_repository.batch_main_paths(node_ids)
-    neighbor_rows = neo4j_repository.batch_neighbor_evidence(node_ids)
+    main_rows = neo4j_repository.batch_main_paths(node_ids, max_hops=max_hops)
+    neighbor_rows = (
+        neo4j_repository.batch_neighbor_evidence(node_ids)
+        if include_neighbor
+        else []
+    )
     return main_rows, neighbor_rows
 
 
@@ -563,9 +570,19 @@ def run_benchmark_recommendation_offline(
         if preloaded_cases is not None:
             paths = list(case.get("paths") or [])
             if neo4j_repository is not None:
-                main_rows, neighbor_rows = _paths_from_neo4j(recalled_nodes, neo4j_repository)
+                main_rows, neighbor_rows = _paths_from_neo4j(
+                    recalled_nodes,
+                    neo4j_repository,
+                    max_hops=config.path.max_hops,
+                    include_neighbor=config.path.include_neighbor,
+                )
         else:
-            main_rows, neighbor_rows = _paths_from_neo4j(recalled_nodes, neo4j_repository)
+            main_rows, neighbor_rows = _paths_from_neo4j(
+                recalled_nodes,
+                neo4j_repository,
+                max_hops=config.path.max_hops,
+                include_neighbor=config.path.include_neighbor,
+            )
             paths = _inspect_paths(
                 main_rows,
                 neighbor_rows,

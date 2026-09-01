@@ -78,7 +78,7 @@ LIMIT $limit
 # Recalled node is a bridge: last hop is AssociatedWith, original hops = 0.
 DIRECT_STYLE_PATH_QUERY = """
 UNWIND $node_ids AS nid
-MATCH (recalled {_graph_id: nid})
+MATCH (recalled:GraphNode {_graph_id: nid})
 MATCH (head:`汽车风格`)-[aw:StyleAssociatedWith]->(recalled)
 RETURN recalled._graph_id AS recalled_id,
        recalled.name AS recalled_name,
@@ -90,7 +90,7 @@ RETURN recalled._graph_id AS recalled_id,
 
 DIRECT_TYPE_PATH_QUERY = """
 UNWIND $node_ids AS nid
-MATCH (recalled {_graph_id: nid})
+MATCH (recalled:GraphNode {_graph_id: nid})
 MATCH (head:`汽车车型`)-[aw:TypeAssociatedWith]->(recalled)
 RETURN recalled._graph_id AS recalled_id,
        recalled.name AS recalled_name,
@@ -104,7 +104,7 @@ RETURN recalled._graph_id AS recalled_id,
 # Keep the shortest $per_pair walks per (recalled, head).
 MULTI_STYLE_PATH_QUERY = """
 UNWIND $node_ids AS nid
-MATCH (recalled {_graph_id: nid})
+MATCH (recalled:GraphNode {_graph_id: nid})
 MATCH p = (recalled)-[:%s*1..4]-(bridge)
 WHERE ALL(n IN nodes(p) WHERE NOT n:`汽车风格` AND NOT n:`汽车车型`
           AND NOT n:`汽车实例` AND NOT n:`汽车级别`)
@@ -114,7 +114,7 @@ WITH recalled, head, p, aw,
      length(p) + 1 AS hops,
      [n IN nodes(p) | n.name] AS walk_nodes,
      [r IN relationships(p) | type(r)] AS walk_rels
-ORDER BY hops
+ORDER BY recalled._graph_id, head.name, hops, walk_nodes, walk_rels
         WITH recalled, head, collect({
             hops: hops,
             walk_nodes: walk_nodes,
@@ -134,7 +134,7 @@ RETURN recalled._graph_id AS recalled_id,
 
 MULTI_TYPE_PATH_QUERY = """
 UNWIND $node_ids AS nid
-MATCH (recalled {_graph_id: nid})
+MATCH (recalled:GraphNode {_graph_id: nid})
 MATCH p = (recalled)-[:%s*1..4]-(bridge)
 WHERE ALL(n IN nodes(p) WHERE NOT n:`汽车风格` AND NOT n:`汽车车型`
           AND NOT n:`汽车实例` AND NOT n:`汽车级别`)
@@ -144,7 +144,7 @@ WITH recalled, head, p, aw,
      length(p) + 1 AS hops,
      [n IN nodes(p) | n.name] AS walk_nodes,
      [r IN relationships(p) | type(r)] AS walk_rels
-ORDER BY hops
+ORDER BY recalled._graph_id, head.name, hops, walk_nodes, walk_rels
         WITH recalled, head, collect({
             hops: hops,
             walk_nodes: walk_nodes,
@@ -164,16 +164,35 @@ RETURN recalled._graph_id AS recalled_id,
 
 BATCH_NEIGHBOR_EVIDENCE_QUERY = """
 UNWIND $node_ids AS nid
-MATCH (recalled {_graph_id: nid})-[rel:%s]-(neighbor)
+MATCH (recalled:GraphNode {_graph_id: nid})-[rel:%s]-(neighbor)
 WHERE NOT neighbor:`汽车风格` AND NOT neighbor:`汽车车型`
   AND NOT neighbor:`汽车实例` AND NOT neighbor:`汽车级别`
   AND neighbor <> recalled
 WITH recalled, collect({rel: type(rel), neighbor: neighbor.name})[0..($per_node - 1)] AS bag
 UNWIND bag AS item
-RETURN recalled.name AS recalled_name,
+RETURN recalled._graph_id AS recalled_id,
+       recalled.name AS recalled_name,
        item.rel AS rel,
        item.neighbor AS neighbor_name
 """ % ORIG_REL_CYPHER
+
+
+MAX_ORIGINAL_WALK_HOPS = 4
+
+
+def _ordered_unique(values: List[str]) -> List[str]:
+    return list(dict.fromkeys(str(value) for value in values if value))
+
+
+def _effective_max_hops(max_hops: int) -> int:
+    return min(max(int(max_hops), 0), MAX_ORIGINAL_WALK_HOPS + 1)
+
+
+def _multi_path_query(query: str, walk_hops: int) -> str:
+    depth = int(walk_hops)
+    if depth < 1 or depth > MAX_ORIGINAL_WALK_HOPS:
+        raise ValueError("walk_hops must be in 1..%d" % MAX_ORIGINAL_WALK_HOPS)
+    return query.replace("*1..4", "*1..%d" % depth, 1)
 
 
 def _to_display_row(
@@ -245,6 +264,8 @@ class BenchmarkNeo4jRepository:
         self._style_type_cache: Dict[Tuple[str, str, int], List[Dict[str, Any]]] = {}
         self._type_baseline_cache: Dict[Tuple[str, int], List[Dict[str, Any]]] = {}
         self._style_type_level_cache: Dict[Tuple[str, str, str, int], List[Dict[str, Any]]] = {}
+        self._main_path_cache: Dict[Tuple[str, int, int], List[Dict[str, Any]]] = {}
+        self._neighbor_path_cache: Dict[Tuple[str, int], List[Dict[str, Any]]] = {}
 
     @classmethod
     def connect(cls, config: Neo4jConfig) -> "BenchmarkNeo4jRepository":
@@ -282,43 +303,117 @@ class BenchmarkNeo4jRepository:
             )
         return self._type_baseline_cache[key]
 
-    def batch_main_paths(self, node_ids: List[str], per_pair: int = 2) -> List[Dict[str, Any]]:
+    def batch_main_paths(
+        self,
+        node_ids: List[str],
+        per_pair: int = 2,
+        max_hops: int = 5,
+    ) -> List[Dict[str, Any]]:
         """Reverse-walk original relations, then AssociatedWith, flip to client display order."""
-        if not node_ids:
+        ordered_ids = _ordered_unique(node_ids)
+        effective_max_hops = _effective_max_hops(max_hops)
+        pair_limit = max(int(per_pair), 1)
+        if not ordered_ids or effective_max_hops < 1:
             return []
+
+        missing_ids = [
+            node_id
+            for node_id in ordered_ids
+            if (node_id, effective_max_hops, pair_limit) not in self._main_path_cache
+        ]
+        if missing_ids:
+            fetched: Dict[str, List[Dict[str, Any]]] = {
+                node_id: [] for node_id in missing_ids
+            }
+            for query in (DIRECT_STYLE_PATH_QUERY, DIRECT_TYPE_PATH_QUERY):
+                for rec in self.inner._read(query, node_ids=missing_ids):
+                    recalled_id = str(rec.get("recalled_id") or "")
+                    if recalled_id not in fetched:
+                        continue
+                    fetched[recalled_id].append(
+                        _to_display_row(
+                            rec,
+                            associated_rel=(
+                                ASSOCIATED_STYLE
+                                if rec["head_kind"] == "style"
+                                else ASSOCIATED_TYPE
+                            ),
+                            walk_nodes=[rec["recalled_name"]],
+                            walk_rels=[],
+                        )
+                    )
+
+            walk_hops = effective_max_hops - 1
+            if walk_hops >= 1:
+                for base_query in (MULTI_STYLE_PATH_QUERY, MULTI_TYPE_PATH_QUERY):
+                    query = _multi_path_query(base_query, walk_hops)
+                    for rec in self.inner._read(
+                        query,
+                        node_ids=missing_ids,
+                        per_pair=pair_limit,
+                    ):
+                        recalled_id = str(rec.get("recalled_id") or "")
+                        if recalled_id not in fetched:
+                            continue
+                        fetched[recalled_id].append(
+                            _to_display_row(
+                                rec,
+                                associated_rel=(
+                                    ASSOCIATED_STYLE
+                                    if rec["head_kind"] == "style"
+                                    else ASSOCIATED_TYPE
+                                ),
+                                walk_nodes=list(rec.get("walk_nodes") or []),
+                                walk_rels=list(rec.get("walk_rels") or []),
+                            )
+                        )
+
+            for node_id, node_rows in fetched.items():
+                self._main_path_cache[
+                    (node_id, effective_max_hops, pair_limit)
+                ] = node_rows
+
         rows: List[Dict[str, Any]] = []
-        for query in (DIRECT_STYLE_PATH_QUERY, DIRECT_TYPE_PATH_QUERY):
-            for rec in self.inner._read(query, node_ids=node_ids):
-                rows.append(
-                    _to_display_row(
-                        rec,
-                        associated_rel=ASSOCIATED_STYLE if rec["head_kind"] == "style" else ASSOCIATED_TYPE,
-                        walk_nodes=[rec["recalled_name"]],
-                        walk_rels=[],
-                    )
-                )
-        for query in (MULTI_STYLE_PATH_QUERY, MULTI_TYPE_PATH_QUERY):
-            for rec in self.inner._read(query, node_ids=node_ids, per_pair=int(per_pair)):
-                rows.append(
-                    _to_display_row(
-                        rec,
-                        associated_rel=ASSOCIATED_STYLE if rec["head_kind"] == "style" else ASSOCIATED_TYPE,
-                        walk_nodes=list(rec.get("walk_nodes") or []),
-                        walk_rels=list(rec.get("walk_rels") or []),
-                    )
-                )
+        for node_id in ordered_ids:
+            rows.extend(
+                self._main_path_cache[
+                    (node_id, effective_max_hops, pair_limit)
+                ]
+            )
         return rows
 
     def batch_neighbor_evidence(
         self, node_ids: List[str], per_node: int = 2
     ) -> List[Dict[str, Any]]:
-        if not node_ids:
+        ordered_ids = _ordered_unique(node_ids)
+        node_limit = max(int(per_node), 1)
+        if not ordered_ids:
             return []
-        return self.inner._read(
-            BATCH_NEIGHBOR_EVIDENCE_QUERY,
-            node_ids=node_ids,
-            per_node=int(per_node),
-        )
+
+        missing_ids = [
+            node_id
+            for node_id in ordered_ids
+            if (node_id, node_limit) not in self._neighbor_path_cache
+        ]
+        if missing_ids:
+            fetched: Dict[str, List[Dict[str, Any]]] = {
+                node_id: [] for node_id in missing_ids
+            }
+            for rec in self.inner._read(
+                BATCH_NEIGHBOR_EVIDENCE_QUERY,
+                node_ids=missing_ids,
+                per_node=node_limit,
+            ):
+                recalled_id = str(rec.get("recalled_id") or "")
+                if recalled_id in fetched:
+                    fetched[recalled_id].append(rec)
+            for node_id, node_rows in fetched.items():
+                self._neighbor_path_cache[(node_id, node_limit)] = node_rows
+
+        rows: List[Dict[str, Any]] = []
+        for node_id in ordered_ids:
+            rows.extend(self._neighbor_path_cache[(node_id, node_limit)])
+        return rows
 
     def style_type_level_instances(
         self,

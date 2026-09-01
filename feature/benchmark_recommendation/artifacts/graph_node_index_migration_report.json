@@ -1,0 +1,16 @@
+{
+  "before": {
+    "nodes": 12130,
+    "missing_graph_ids": 0,
+    "graph_nodes": 0
+  },
+  "after": {
+    "nodes": 12130,
+    "graph_nodes": 12130
+  },
+  "duplicate_graph_ids": 0,
+  "constraint": "graph_node_graph_id",
+  "constraint_present": true,
+  "finished_at": "2026-08-30T15:33:54.316012+08:00",
+  "database": "46ebe636"
+}

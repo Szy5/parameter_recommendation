@@ -7,15 +7,15 @@ from collections import Counter
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_KGDATA = PROJECT_ROOT / "data" / "kgdata_0820.jsonl"
+DEFAULT_KGDATA = PROJECT_ROOT / "data" / "kgdata_0821.jsonl"
 DEFAULT_BENCHMARK_PREDICT = (
     PROJECT_ROOT
     / "feature"
     / "benchmark_recommendation"
     / "artifacts"
-    / "benchmark_predict.json"
+    / "benchmark_500_predict.json"
 )
-DEFAULT_OUTPUT_SCHEMAS = PROJECT_ROOT / "data" / "path_schemas.json"
+DEFAULT_OUTPUT_SCHEMAS = PROJECT_ROOT / "data" / "path_schemas_500.json"
 
 
 # 解析图谱文件
