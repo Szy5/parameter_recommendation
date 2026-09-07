@@ -1,10 +1,12 @@
 import json
+from pathlib import Path
 
 TOP_N_SCHEMA = 25
 
-input_schemas = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/sort_schemas_by_case_500.json"
-input_path_schemas = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/path_schemas_500_reversed.json"
-output_json = "/Users/jiangzifeng/PycharmProjects/parameter_recommendation/data/pass_rate_500.json"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+input_schemas = PROJECT_ROOT / "data" / "sort_schemas_by_case_500.json"
+input_path_schemas = PROJECT_ROOT / "data" / "path_schemas_500_reversed.json"
+output_json = PROJECT_ROOT / "data" / "pass_rate_500.json"
 
 
 def get_top_n_schema():
