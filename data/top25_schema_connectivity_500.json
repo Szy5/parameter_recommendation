@@ -1,0 +1,697 @@
+{
+  "meta": {
+    "generated_at": "2026-09-02T22:19:26.812369+08:00",
+    "corrected_at": "2026-09-03T21:19:20+08:00",
+    "correction_note": "Removed one confirmed name-to-label collision Schema, reselected the 25th unique Schema, and recalculated its connectivity against data/kgdata_0901.jsonl",
+    "schemas_json": "data/pass_rate_500.json",
+    "schema_count": 25,
+    "definition": "connected_start_nodes / total_start_nodes",
+    "start_node_rule": "the leftmost node label in each reversed Schema",
+    "connected_rule": "a start node counts once if at least one complete Schema path reaches the endpoint",
+    "direction_mode": "path_extraction",
+    "direction_note": "path_extraction matches original middle relationships without direction and keeps AssociatedWith incoming from the endpoint",
+    "dry_run": false,
+    "ok_count": 25,
+    "error_count": 0
+  },
+  "schemas_sorted_by_connectivity": [
+    {
+      "schema": "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "connectivity": 0.9148073022312373
+    },
+    {
+      "schema": "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "connectivity": 0.7492537313432835
+    },
+    {
+      "schema": "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "connectivity": 0.7163120567375887
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "connectivity": 0.44274809160305345
+    },
+    {
+      "schema": "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.4318407960199005
+    },
+    {
+      "schema": "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.29817444219066935
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "connectivity": 0.28912213740458015
+    },
+    {
+      "schema": "AestheticConcept(美学概念) <- Guides <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.2765957446808511
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- DefinesDNA <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "connectivity": 0.26908396946564883
+    },
+    {
+      "schema": "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "connectivity": 0.2587705181847441
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.2480916030534351
+    },
+    {
+      "schema": "DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "connectivity": 0.24653031409788168
+    },
+    {
+      "schema": "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "connectivity": 0.246218216929514
+    },
+    {
+      "schema": "FamilyDNA(家族DNA) <- DefinesDNA <- AestheticConcept(美学概念) <- ImplementedBy <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.2150101419878296
+    },
+    {
+      "schema": "DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "connectivity": 0.20791760540714516
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.20419847328244276
+    },
+    {
+      "schema": "AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.1762917933130699
+    },
+    {
+      "schema": "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.1731573865465079
+    },
+    {
+      "schema": "DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.1552227903579255
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.15076335877862596
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.1431297709923664
+    },
+    {
+      "schema": "DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.13075237399561723
+    },
+    {
+      "schema": "DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.12745413582233667
+    },
+    {
+      "schema": "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.0917283553266817
+    },
+    {
+      "schema": "DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "connectivity": 0.08619430241051863
+    }
+  ],
+  "results": [
+    {
+      "schema": "VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "start_label": "VehiclePosture(汽车姿态)",
+      "end_label": "汽车风格",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "incoming"
+      ],
+      "relationship_types": [
+        "StyleAssociatedWith"
+      ],
+      "total_start_nodes": 1005,
+      "connected_start_nodes": 753,
+      "connectivity": 0.7492537313432835,
+      "connectivity_percent": 74.92537313432835,
+      "status": "ok",
+      "cypher": "MATCH (start:`VehiclePosture(汽车姿态)`)\nWITH start, EXISTS {\n  MATCH (start:`VehiclePosture(汽车姿态)`)<-[:`StyleAssociatedWith`]-(n1:`汽车风格`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 1
+    },
+    {
+      "schema": "VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "VehiclePosture(汽车姿态)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "incoming"
+      ],
+      "relationship_types": [
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 1005,
+      "connected_start_nodes": 434,
+      "connectivity": 0.4318407960199005,
+      "connectivity_percent": 43.18407960199005,
+      "status": "ok",
+      "cypher": "MATCH (start:`VehiclePosture(汽车姿态)`)\nWITH start, EXISTS {\n  MATCH (start:`VehiclePosture(汽车姿态)`)<-[:`TypeAssociatedWith`]-(n1:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 2
+    },
+    {
+      "schema": "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "DesignAttribute(设计属性)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Indicates(体现)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 3107,
+      "connected_start_nodes": 538,
+      "connectivity": 0.1731573865465079,
+      "connectivity_percent": 17.31573865465079,
+      "status": "ok",
+      "cypher": "MATCH (start:`DesignAttribute(设计属性)`)\nWITH start, EXISTS {\n  MATCH (start:`DesignAttribute(设计属性)`)-[:`Indicates(体现)`]-(n1:`VehiclePosture(汽车姿态)`)<-[:`TypeAssociatedWith`]-(n2:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 3
+    },
+    {
+      "schema": "DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "start_label": "DesignAttribute(设计属性)",
+      "end_label": "汽车风格",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Indicates(体现)",
+        "StyleAssociatedWith"
+      ],
+      "total_start_nodes": 3107,
+      "connected_start_nodes": 765,
+      "connectivity": 0.246218216929514,
+      "connectivity_percent": 24.6218216929514,
+      "status": "ok",
+      "cypher": "MATCH (start:`DesignAttribute(设计属性)`)\nWITH start, EXISTS {\n  MATCH (start:`DesignAttribute(设计属性)`)-[:`Indicates(体现)`]-(n1:`VehiclePosture(汽车姿态)`)<-[:`StyleAssociatedWith`]-(n2:`汽车风格`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 4
+    },
+    {
+      "schema": "AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "AestheticConcept(美学概念)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "incoming"
+      ],
+      "relationship_types": [
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 987,
+      "connected_start_nodes": 174,
+      "connectivity": 0.1762917933130699,
+      "connectivity_percent": 17.62917933130699,
+      "status": "ok",
+      "cypher": "MATCH (start:`AestheticConcept(美学概念)`)\nWITH start, EXISTS {\n  MATCH (start:`AestheticConcept(美学概念)`)<-[:`TypeAssociatedWith`]-(n1:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 5
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "start_label": "UserTrend(用户与趋势)",
+      "end_label": "汽车风格",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Prefers(偏好)",
+        "StyleAssociatedWith"
+      ],
+      "total_start_nodes": 1048,
+      "connected_start_nodes": 464,
+      "connectivity": 0.44274809160305345,
+      "connectivity_percent": 44.274809160305345,
+      "status": "ok",
+      "cypher": "MATCH (start:`UserTrend(用户与趋势)`)\nWITH start, EXISTS {\n  MATCH (start:`UserTrend(用户与趋势)`)-[:`Prefers(偏好)`]-(n1:`AestheticConcept(美学概念)`)<-[:`StyleAssociatedWith`]-(n2:`汽车风格`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 6
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "UserTrend(用户与趋势)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Prefers(偏好)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 1048,
+      "connected_start_nodes": 158,
+      "connectivity": 0.15076335877862596,
+      "connectivity_percent": 15.076335877862595,
+      "status": "ok",
+      "cypher": "MATCH (start:`UserTrend(用户与趋势)`)\nWITH start, EXISTS {\n  MATCH (start:`UserTrend(用户与趋势)`)-[:`Prefers(偏好)`]-(n1:`AestheticConcept(美学概念)`)<-[:`TypeAssociatedWith`]-(n2:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 7
+    },
+    {
+      "schema": "FamilyDNA(家族DNA) <- Guides <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "FamilyDNA(家族DNA)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Guides(指导)",
+        "Influences(影响)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 493,
+      "connected_start_nodes": 147,
+      "connectivity": 0.29817444219066935,
+      "connectivity_percent": 29.817444219066935,
+      "status": "ok",
+      "cypher": "MATCH (start:`FamilyDNA(家族DNA)`)\nWITH start, EXISTS {\n  MATCH (start:`FamilyDNA(家族DNA)`)-[:`Guides(指导)`]-(n1:`DesignParameter(设计参数)`)-[:`Influences(影响)`]-(n2:`VehiclePosture(汽车姿态)`)<-[:`TypeAssociatedWith`]-(n3:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 8
+    },
+    {
+      "schema": "FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "start_label": "FamilyDNA(家族DNA)",
+      "end_label": "汽车风格",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "incoming"
+      ],
+      "relationship_types": [
+        "StyleAssociatedWith"
+      ],
+      "total_start_nodes": 493,
+      "connected_start_nodes": 451,
+      "connectivity": 0.9148073022312373,
+      "connectivity_percent": 91.48073022312373,
+      "status": "ok",
+      "cypher": "MATCH (start:`FamilyDNA(家族DNA)`)\nWITH start, EXISTS {\n  MATCH (start:`FamilyDNA(家族DNA)`)<-[:`StyleAssociatedWith`]-(n1:`汽车风格`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 9
+    },
+    {
+      "schema": "DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "DesignAttribute(设计属性)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Prefers(偏好)",
+        "Prefers(偏好)",
+        "Indicates(体现)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 3107,
+      "connected_start_nodes": 396,
+      "connectivity": 0.12745413582233667,
+      "connectivity_percent": 12.745413582233667,
+      "status": "ok",
+      "cypher": "MATCH (start:`DesignAttribute(设计属性)`)\nWITH start, EXISTS {\n  MATCH (start:`DesignAttribute(设计属性)`)-[:`Prefers(偏好)`]-(n1:`UserTrend(用户与趋势)`)-[:`Prefers(偏好)`]-(n2:`DesignAttribute(设计属性)`)-[:`Indicates(体现)`]-(n3:`VehiclePosture(汽车姿态)`)<-[:`TypeAssociatedWith`]-(n4:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 10
+    },
+    {
+      "schema": "DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "DesignParameter(设计参数)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Influences(影响)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 2738,
+      "connected_start_nodes": 425,
+      "connectivity": 0.1552227903579255,
+      "connectivity_percent": 15.522279035792549,
+      "status": "ok",
+      "cypher": "MATCH (start:`DesignParameter(设计参数)`)\nWITH start, EXISTS {\n  MATCH (start:`DesignParameter(设计参数)`)-[:`Influences(影响)`]-(n1:`VehiclePosture(汽车姿态)`)<-[:`TypeAssociatedWith`]-(n2:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 11
+    },
+    {
+      "schema": "DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "start_label": "DesignParameter(设计参数)",
+      "end_label": "汽车风格",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Influences(影响)",
+        "StyleAssociatedWith"
+      ],
+      "total_start_nodes": 2738,
+      "connected_start_nodes": 675,
+      "connectivity": 0.24653031409788168,
+      "connectivity_percent": 24.653031409788166,
+      "status": "ok",
+      "cypher": "MATCH (start:`DesignParameter(设计参数)`)\nWITH start, EXISTS {\n  MATCH (start:`DesignParameter(设计参数)`)-[:`Influences(影响)`]-(n1:`VehiclePosture(汽车姿态)`)<-[:`StyleAssociatedWith`]-(n2:`汽车风格`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 12
+    },
+    {
+      "schema": "FamilyDNA(家族DNA) <- DefinesDNA <- AestheticConcept(美学概念) <- ImplementedBy <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "FamilyDNA(家族DNA)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "DefinesDNA(定义DNA)",
+        "ImplementedBy(由实现)",
+        "Indicates(体现)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 493,
+      "connected_start_nodes": 106,
+      "connectivity": 0.2150101419878296,
+      "connectivity_percent": 21.50101419878296,
+      "status": "ok",
+      "cypher": "MATCH (start:`FamilyDNA(家族DNA)`)\nWITH start, EXISTS {\n  MATCH (start:`FamilyDNA(家族DNA)`)-[:`DefinesDNA(定义DNA)`]-(n1:`AestheticConcept(美学概念)`)-[:`ImplementedBy(由实现)`]-(n2:`DesignAttribute(设计属性)`)-[:`Indicates(体现)`]-(n3:`VehiclePosture(汽车姿态)`)<-[:`TypeAssociatedWith`]-(n4:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 13
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "UserTrend(用户与趋势)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Prefers(偏好)",
+        "Indicates(体现)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 1048,
+      "connected_start_nodes": 260,
+      "connectivity": 0.2480916030534351,
+      "connectivity_percent": 24.80916030534351,
+      "status": "ok",
+      "cypher": "MATCH (start:`UserTrend(用户与趋势)`)\nWITH start, EXISTS {\n  MATCH (start:`UserTrend(用户与趋势)`)-[:`Prefers(偏好)`]-(n1:`DesignAttribute(设计属性)`)-[:`Indicates(体现)`]-(n2:`VehiclePosture(汽车姿态)`)<-[:`TypeAssociatedWith`]-(n3:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 14
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- StyleAssociatedWith <- 汽车风格",
+      "start_label": "UserTrend(用户与趋势)",
+      "end_label": "汽车风格",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Prefers(偏好)",
+        "Indicates(体现)",
+        "StyleAssociatedWith"
+      ],
+      "total_start_nodes": 1048,
+      "connected_start_nodes": 303,
+      "connectivity": 0.28912213740458015,
+      "connectivity_percent": 28.912213740458014,
+      "status": "ok",
+      "cypher": "MATCH (start:`UserTrend(用户与趋势)`)\nWITH start, EXISTS {\n  MATCH (start:`UserTrend(用户与趋势)`)-[:`Prefers(偏好)`]-(n1:`DesignAttribute(设计属性)`)-[:`Indicates(体现)`]-(n2:`VehiclePosture(汽车姿态)`)<-[:`StyleAssociatedWith`]-(n3:`汽车风格`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 15
+    },
+    {
+      "schema": "DesignAttribute(设计属性) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "start_label": "DesignAttribute(设计属性)",
+      "end_label": "汽车风格",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Prefers(偏好)",
+        "Prefers(偏好)",
+        "StyleAssociatedWith"
+      ],
+      "total_start_nodes": 3107,
+      "connected_start_nodes": 646,
+      "connectivity": 0.20791760540714516,
+      "connectivity_percent": 20.791760540714517,
+      "status": "ok",
+      "cypher": "MATCH (start:`DesignAttribute(设计属性)`)\nWITH start, EXISTS {\n  MATCH (start:`DesignAttribute(设计属性)`)-[:`Prefers(偏好)`]-(n1:`UserTrend(用户与趋势)`)-[:`Prefers(偏好)`]-(n2:`AestheticConcept(美学概念)`)<-[:`StyleAssociatedWith`]-(n3:`汽车风格`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 16
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- DefinesDNA <- FamilyDNA(家族DNA) <- StyleAssociatedWith <- 汽车风格",
+      "start_label": "UserTrend(用户与趋势)",
+      "end_label": "汽车风格",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Prefers(偏好)",
+        "DefinesDNA(定义DNA)",
+        "StyleAssociatedWith"
+      ],
+      "total_start_nodes": 1048,
+      "connected_start_nodes": 282,
+      "connectivity": 0.26908396946564883,
+      "connectivity_percent": 26.908396946564885,
+      "status": "ok",
+      "cypher": "MATCH (start:`UserTrend(用户与趋势)`)\nWITH start, EXISTS {\n  MATCH (start:`UserTrend(用户与趋势)`)-[:`Prefers(偏好)`]-(n1:`AestheticConcept(美学概念)`)-[:`DefinesDNA(定义DNA)`]-(n2:`FamilyDNA(家族DNA)`)<-[:`StyleAssociatedWith`]-(n3:`汽车风格`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 17
+    },
+    {
+      "schema": "AestheticConcept(美学概念) <- Guides <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "AestheticConcept(美学概念)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Guides(指导)",
+        "Influences(影响)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 987,
+      "connected_start_nodes": 273,
+      "connectivity": 0.2765957446808511,
+      "connectivity_percent": 27.659574468085108,
+      "status": "ok",
+      "cypher": "MATCH (start:`AestheticConcept(美学概念)`)\nWITH start, EXISTS {\n  MATCH (start:`AestheticConcept(美学概念)`)-[:`Guides(指导)`]-(n1:`DesignParameter(设计参数)`)-[:`Influences(影响)`]-(n2:`VehiclePosture(汽车姿态)`)<-[:`TypeAssociatedWith`]-(n3:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 18
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- ImplementedBy <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "UserTrend(用户与趋势)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Prefers(偏好)",
+        "ImplementedBy(由实现)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 1048,
+      "connected_start_nodes": 150,
+      "connectivity": 0.1431297709923664,
+      "connectivity_percent": 14.31297709923664,
+      "status": "ok",
+      "cypher": "MATCH (start:`UserTrend(用户与趋势)`)\nWITH start, EXISTS {\n  MATCH (start:`UserTrend(用户与趋势)`)-[:`Prefers(偏好)`]-(n1:`DesignAttribute(设计属性)`)-[:`ImplementedBy(由实现)`]-(n2:`AestheticConcept(美学概念)`)<-[:`TypeAssociatedWith`]-(n3:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 19
+    },
+    {
+      "schema": "UserTrend(用户与趋势) <- Prefers <- DesignAttribute(设计属性) <- Indicates <- VehiclePosture(汽车姿态) <- Influences <- DesignParameter(设计参数) <- Influences <- VehiclePosture(汽车姿态) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "UserTrend(用户与趋势)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Prefers(偏好)",
+        "Indicates(体现)",
+        "Influences(影响)",
+        "Influences(影响)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 1048,
+      "connected_start_nodes": 214,
+      "connectivity": 0.20419847328244276,
+      "connectivity_percent": 20.419847328244277,
+      "status": "ok",
+      "cypher": "MATCH (start:`UserTrend(用户与趋势)`)\nWITH start, EXISTS {\n  MATCH (start:`UserTrend(用户与趋势)`)-[:`Prefers(偏好)`]-(n1:`DesignAttribute(设计属性)`)-[:`Indicates(体现)`]-(n2:`VehiclePosture(汽车姿态)`)-[:`Influences(影响)`]-(n3:`DesignParameter(设计参数)`)-[:`Influences(影响)`]-(n4:`VehiclePosture(汽车姿态)`)<-[:`TypeAssociatedWith`]-(n5:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 20
+    },
+    {
+      "schema": "DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "DesignParameter(设计参数)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Guides(指导)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 2738,
+      "connected_start_nodes": 236,
+      "connectivity": 0.08619430241051863,
+      "connectivity_percent": 8.619430241051864,
+      "status": "ok",
+      "cypher": "MATCH (start:`DesignParameter(设计参数)`)\nWITH start, EXISTS {\n  MATCH (start:`DesignParameter(设计参数)`)-[:`Guides(指导)`]-(n1:`AestheticConcept(美学概念)`)<-[:`TypeAssociatedWith`]-(n2:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 21
+    },
+    {
+      "schema": "DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- Prefers <- UserTrend(用户与趋势) <- Prefers <- AestheticConcept(美学概念) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "DesignParameter(设计参数)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Guides(指导)",
+        "Prefers(偏好)",
+        "Prefers(偏好)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 2738,
+      "connected_start_nodes": 358,
+      "connectivity": 0.13075237399561723,
+      "connectivity_percent": 13.075237399561724,
+      "status": "ok",
+      "cypher": "MATCH (start:`DesignParameter(设计参数)`)\nWITH start, EXISTS {\n  MATCH (start:`DesignParameter(设计参数)`)-[:`Guides(指导)`]-(n1:`AestheticConcept(美学概念)`)-[:`Prefers(偏好)`]-(n2:`UserTrend(用户与趋势)`)-[:`Prefers(偏好)`]-(n3:`AestheticConcept(美学概念)`)<-[:`TypeAssociatedWith`]-(n4:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 22
+    },
+    {
+      "schema": "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "start_label": "DesignAttribute(设计属性)",
+      "end_label": "汽车风格",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Influences(影响)",
+        "Guides(指导)",
+        "StyleAssociatedWith"
+      ],
+      "total_start_nodes": 3107,
+      "connected_start_nodes": 804,
+      "connectivity": 0.2587705181847441,
+      "connectivity_percent": 25.87705181847441,
+      "status": "ok",
+      "cypher": "MATCH (start:`DesignAttribute(设计属性)`)\nWITH start, EXISTS {\n  MATCH (start:`DesignAttribute(设计属性)`)-[:`Influences(影响)`]-(n1:`DesignParameter(设计参数)`)-[:`Guides(指导)`]-(n2:`AestheticConcept(美学概念)`)<-[:`StyleAssociatedWith`]-(n3:`汽车风格`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 23
+    },
+    {
+      "schema": "DesignAttribute(设计属性) <- Influences <- DesignParameter(设计参数) <- Guides <- FamilyDNA(家族DNA) <- TypeAssociatedWith <- 汽车车型",
+      "start_label": "DesignAttribute(设计属性)",
+      "end_label": "汽车车型",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "undirected",
+        "undirected",
+        "incoming"
+      ],
+      "relationship_types": [
+        "Influences(影响)",
+        "Guides(指导)",
+        "TypeAssociatedWith"
+      ],
+      "total_start_nodes": 3107,
+      "connected_start_nodes": 285,
+      "connectivity": 0.0917283553266817,
+      "connectivity_percent": 9.17283553266817,
+      "status": "ok",
+      "cypher": "MATCH (start:`DesignAttribute(设计属性)`)\nWITH start, EXISTS {\n  MATCH (start:`DesignAttribute(设计属性)`)-[:`Influences(影响)`]-(n1:`DesignParameter(设计参数)`)-[:`Guides(指导)`]-(n2:`FamilyDNA(家族DNA)`)<-[:`TypeAssociatedWith`]-(n3:`汽车车型`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 24
+    },
+    {
+      "schema": "AestheticConcept(美学概念) <- StyleAssociatedWith <- 汽车风格",
+      "start_label": "AestheticConcept(美学概念)",
+      "end_label": "汽车风格",
+      "direction": "incoming",
+      "direction_mode": "path_extraction",
+      "edge_directions": [
+        "incoming"
+      ],
+      "relationship_types": [
+        "StyleAssociatedWith"
+      ],
+      "total_start_nodes": 987,
+      "connected_start_nodes": 707,
+      "connectivity": 0.7163120567375887,
+      "connectivity_percent": 71.63120567375887,
+      "status": "ok",
+      "cypher": "MATCH (start:`AestheticConcept(美学概念)`)\nWITH start, EXISTS {\n  MATCH (start:`AestheticConcept(美学概念)`)<-[:`StyleAssociatedWith`]-(n1:`汽车风格`)\n} AS connected\nRETURN count(start) AS total_start_nodes,\n       sum(CASE WHEN connected THEN 1 ELSE 0 END) AS connected_start_nodes",
+      "rank": 25
+    }
+  ]
+}

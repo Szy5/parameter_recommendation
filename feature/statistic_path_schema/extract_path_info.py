@@ -37,6 +37,7 @@ def make_dict_by_name(json_list):
         labels = record.get("labels") or []
         if not name or not labels:
             continue
+        #todo :解决同名冲突
         dict_by_name[str(name)] = str(labels[0])
     return dict_by_name
 
