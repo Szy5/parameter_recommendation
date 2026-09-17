@@ -132,33 +132,45 @@ def import_nodes(session: Any, path: Path, batch_size: int) -> Tuple[int, int]:
 
 
 def import_relationships(session: Any, path: Path, batch_size: int) -> Tuple[int, int]:
-    group_type = Tuple[str, str, str]
-    grouped: DefaultDict[group_type, List[Dict[str, Any]]] = defaultdict(list)
+    """Import relationships by matching endpoints on GraphNode._graph_id only.
+
+    Do not MATCH on relationship-embedded endpoint labels: after style/type merges,
+    embedded labels can lag behind the real node labels and cause silent skips.
+    """
+    grouped: DefaultDict[str, List[Dict[str, Any]]] = defaultdict(list)
     total = 0
     transactions = 0
+    skipped_missing_endpoints = 0
 
-    def flush(key: group_type) -> None:
-        nonlocal transactions
-        rows = grouped[key]
+    def flush(rel_type: str) -> None:
+        nonlocal transactions, skipped_missing_endpoints
+        rows = grouped[rel_type]
         if not rows:
             return
-        rel_type, start_label, end_label = key
         query = (
             "UNWIND $rows AS row "
-            "MATCH (s:%s {_graph_id: row.start_id}) "
-            "MATCH (e:%s {_graph_id: row.end_id}) "
+            "OPTIONAL MATCH (s:%s {_graph_id: row.start_id}) "
+            "OPTIONAL MATCH (e:%s {_graph_id: row.end_id}) "
+            "WITH row, s, e "
+            "WHERE s IS NOT NULL AND e IS NOT NULL "
             "MERGE (s)-[r:%s {_graph_id: row.id}]->(e) "
-            "SET r += row.properties"
+            "SET r += row.properties "
+            "RETURN count(*) AS matched"
             % (
-                quote_identifier(start_label),
-                quote_identifier(end_label),
+                quote_identifier(GRAPH_NODE_LABEL),
+                quote_identifier(GRAPH_NODE_LABEL),
                 quote_identifier(rel_type),
             )
         )
         result = session.run(query, rows=rows)
+        matched = 0
+        for record in result:
+            matched = int(record["matched"] or 0)
         summary = result.consume()
         if summary.counters.relationships_created + summary.counters.properties_set < 0:
             raise RuntimeError("Unexpected Neo4j import summary")
+        if matched < len(rows):
+            skipped_missing_endpoints += len(rows) - matched
         transactions += 1
         rows.clear()
 
@@ -167,29 +179,32 @@ def import_relationships(session: Any, path: Path, batch_size: int) -> Tuple[int
             continue
         start = row.get("start") or {}
         end = row.get("end") or {}
-        start_labels = start.get("labels") or []
-        end_labels = end.get("labels") or []
-        if not start_labels or not end_labels:
-            raise ValueError("Relationship %s has an unlabeled endpoint" % row.get("id"))
-        key = (
-            str(row.get("label")),
-            str(start_labels[0]),
-            str(end_labels[0]),
-        )
+        start_id = start.get("id")
+        end_id = end.get("id")
+        if not start_id or not end_id:
+            raise ValueError("Relationship %s is missing endpoint ids" % row.get("id"))
+        rel_type = str(row.get("label") or "")
+        if not rel_type:
+            raise ValueError("Relationship %s is missing a type label" % row.get("id"))
         identifier = str(row["id"])
-        grouped[key].append(
+        grouped[rel_type].append(
             {
                 "id": identifier,
-                "start_id": str(start.get("id")),
-                "end_id": str(end.get("id")),
+                "start_id": str(start_id),
+                "end_id": str(end_id),
                 "properties": clean_properties(row.get("properties") or {}, identifier),
             }
         )
         total += 1
-        if len(grouped[key]) >= batch_size:
-            flush(key)
-    for key in list(grouped):
-        flush(key)
+        if len(grouped[rel_type]) >= batch_size:
+            flush(rel_type)
+    for rel_type in list(grouped):
+        flush(rel_type)
+    if skipped_missing_endpoints:
+        raise RuntimeError(
+            "Failed to match %d relationship endpoints by _graph_id"
+            % skipped_missing_endpoints
+        )
     return total, transactions
 
 
