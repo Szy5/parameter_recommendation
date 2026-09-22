@@ -1,0 +1,31 @@
+{
+  "source_records": 1921,
+  "accepted_source_records": 180,
+  "review_records": 1741,
+  "vehicle_nodes": 4,
+  "part_nodes": 120,
+  "contains_relationships": 120,
+  "dts_relationships": 176,
+  "collapsed_identical_dts_records": 24,
+  "schema_version": "pdf-exterior-v1",
+  "pdf_sha256": "ed246ab0d57745b3d185581cda1981bab186c2cb26b098d84dfde4c70337d606",
+  "workbook_sha256": "74fd5b89d8779c679136a40ab24dc76377223110325045f59bca68c3a26a364c",
+  "schema_pdf_edges": 152,
+  "schema_selectable_edges": 150,
+  "llm_eligible_records": 703,
+  "llm": {
+    "cached": 703,
+    "cached_reviews": 60,
+    "api_batches": 0,
+    "failed_records": 60,
+    "malformed_batches": 0
+  },
+  "internal_records_without_pdf_schema": 1204,
+  "uploaded": true,
+  "upload": {
+    "vehicle_nodes_processed": 4,
+    "part_nodes_processed": 120,
+    "contains_processed": 120,
+    "dts_processed": 176
+  }
+}

@@ -1,0 +1,1521 @@
+{
+  "schema_version": "pdf-exterior-v1",
+  "source_pdf_sha256": "ed246ab0d57745b3d185581cda1981bab186c2cb26b098d84dfde4c70337d606",
+  "scope": "外形图：不定义内饰关系；未定义的 XLSX 记录进入 review",
+  "node_types": [
+    "VehicleType",
+    "Part + XLSX 原文中的具体部件 label"
+  ],
+  "relationship_types": {
+    "CONTAINS": {
+      "from": "VehicleType",
+      "to": "Part",
+      "properties": []
+    },
+    "DTS_POSITION_RELATION": {
+      "from": "Part",
+      "to": "Part",
+      "properties": [
+        "relative_position",
+        "Gap",
+        "Flush",
+        "Ra",
+        "Rb",
+        "Alignment",
+        "Consistent",
+        "Radii",
+        "classification",
+        "area"
+      ]
+    }
+  },
+  "vehicle_types": [
+    "硬派越野车",
+    "城市SUV",
+    "豪华轿车",
+    "豪华SUV"
+  ],
+  "allowed_relative_positions": [
+    "前侧",
+    "后侧",
+    "上侧",
+    "下侧",
+    "左侧",
+    "右侧",
+    "内含",
+    "安装侧",
+    "前侧/上侧",
+    "后侧/下侧"
+  ],
+  "pdf_part_categories": [
+    {
+      "name": "B柱饰板",
+      "status": "approved"
+    },
+    {
+      "name": "C柱饰板",
+      "status": "approved"
+    },
+    {
+      "name": "侧围",
+      "status": "approved"
+    },
+    {
+      "name": "储物盒",
+      "status": "approved"
+    },
+    {
+      "name": "前保险杠",
+      "status": "approved"
+    },
+    {
+      "name": "前拖车钩盖",
+      "status": "approved"
+    },
+    {
+      "name": "前牌照安装板",
+      "status": "approved"
+    },
+    {
+      "name": "前角窗",
+      "status": "approved"
+    },
+    {
+      "name": "前车灯",
+      "status": "approved"
+    },
+    {
+      "name": "前车门",
+      "status": "approved"
+    },
+    {
+      "name": "前门玻璃",
+      "status": "approved"
+    },
+    {
+      "name": "前雾灯",
+      "status": "approved"
+    },
+    {
+      "name": "前风挡",
+      "status": "approved"
+    },
+    {
+      "name": "加油口门",
+      "status": "approved"
+    },
+    {
+      "name": "发动机盖",
+      "status": "approved"
+    },
+    {
+      "name": "后保险杠",
+      "status": "approved"
+    },
+    {
+      "name": "后拖车钩盖",
+      "status": "approved"
+    },
+    {
+      "name": "后牌照安装板",
+      "status": "approved"
+    },
+    {
+      "name": "后牌照灯",
+      "status": "approved"
+    },
+    {
+      "name": "后视镜",
+      "status": "approved"
+    },
+    {
+      "name": "后角窗",
+      "status": "approved"
+    },
+    {
+      "name": "后车灯",
+      "status": "approved"
+    },
+    {
+      "name": "后车门",
+      "status": "approved"
+    },
+    {
+      "name": "后门玻璃",
+      "status": "approved"
+    },
+    {
+      "name": "后雾灯",
+      "status": "approved"
+    },
+    {
+      "name": "后风挡",
+      "status": "approved"
+    },
+    {
+      "name": "回复反射器",
+      "status": "approved"
+    },
+    {
+      "name": "天窗",
+      "status": "approved"
+    },
+    {
+      "name": "尾门/后备箱盖",
+      "status": "approved"
+    },
+    {
+      "name": "尾门把手",
+      "status": "approved"
+    },
+    {
+      "name": "扰流板",
+      "status": "approved"
+    },
+    {
+      "name": "摄像头",
+      "status": "approved"
+    },
+    {
+      "name": "摄像头1",
+      "status": "approved"
+    },
+    {
+      "name": "摄像头2",
+      "status": "approved"
+    },
+    {
+      "name": "摄像头n",
+      "status": "template"
+    },
+    {
+      "name": "日间行车灯",
+      "status": "approved"
+    },
+    {
+      "name": "本体上壳",
+      "status": "approved"
+    },
+    {
+      "name": "本体下壳",
+      "status": "approved"
+    },
+    {
+      "name": "格栅1",
+      "status": "approved"
+    },
+    {
+      "name": "格栅2",
+      "status": "approved"
+    },
+    {
+      "name": "毫米波雷达",
+      "status": "approved"
+    },
+    {
+      "name": "翼子板",
+      "status": "approved"
+    },
+    {
+      "name": "装饰件",
+      "status": "approved"
+    },
+    {
+      "name": "装饰件1",
+      "status": "approved"
+    },
+    {
+      "name": "装饰件2",
+      "status": "approved"
+    },
+    {
+      "name": "装饰件n",
+      "status": "template"
+    },
+    {
+      "name": "超声波雷达",
+      "status": "approved"
+    },
+    {
+      "name": "车门把手",
+      "status": "approved"
+    },
+    {
+      "name": "转向灯",
+      "status": "approved"
+    },
+    {
+      "name": "轮眉饰板",
+      "status": "approved"
+    },
+    {
+      "name": "镜片",
+      "status": "approved"
+    },
+    {
+      "name": "镜臂上壳",
+      "status": "approved"
+    },
+    {
+      "name": "镜臂下壳",
+      "status": "approved"
+    },
+    {
+      "name": "顶盖",
+      "status": "approved"
+    },
+    {
+      "name": "饰条",
+      "status": "approved"
+    },
+    {
+      "name": "饰条1",
+      "status": "approved"
+    },
+    {
+      "name": "饰条2",
+      "status": "approved"
+    },
+    {
+      "name": "饰条n",
+      "status": "template"
+    },
+    {
+      "name": "饰板",
+      "status": "approved"
+    },
+    {
+      "name": "高位制动灯",
+      "status": "approved"
+    },
+    {
+      "name": "鲨鱼鳍天线",
+      "status": "approved"
+    }
+  ],
+  "edges": [
+    {
+      "id": "P001",
+      "source": "前保险杠",
+      "target": "饰条",
+      "relative_position": "上侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P002",
+      "source": "前保险杠",
+      "target": "前车灯",
+      "relative_position": "上侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P003",
+      "source": "前保险杠",
+      "target": "饰板",
+      "relative_position": "上侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P004",
+      "source": "前保险杠",
+      "target": "发动机盖",
+      "relative_position": "上侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P005",
+      "source": "前保险杠",
+      "target": "翼子板",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P006",
+      "source": "前保险杠",
+      "target": "饰板",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P007",
+      "source": "前保险杠",
+      "target": "翼子板",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P008",
+      "source": "前保险杠",
+      "target": "饰板",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P009",
+      "source": "前保险杠",
+      "target": "前车灯",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P010",
+      "source": "前保险杠",
+      "target": "前雾灯",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P011",
+      "source": "前保险杠",
+      "target": "日间行车灯",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P012",
+      "source": "前保险杠",
+      "target": "格栅1",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P013",
+      "source": "前保险杠",
+      "target": "格栅2",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P014",
+      "source": "前保险杠",
+      "target": "饰条1",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P015",
+      "source": "前保险杠",
+      "target": "饰条2",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P016",
+      "source": "前保险杠",
+      "target": "饰条n",
+      "relative_position": "内含",
+      "context": "",
+      "status": "template"
+    },
+    {
+      "id": "P017",
+      "source": "前保险杠",
+      "target": "装饰件1",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P018",
+      "source": "前保险杠",
+      "target": "装饰件2",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P019",
+      "source": "前保险杠",
+      "target": "装饰件n",
+      "relative_position": "内含",
+      "context": "",
+      "status": "template"
+    },
+    {
+      "id": "P020",
+      "source": "前保险杠",
+      "target": "超声波雷达",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P021",
+      "source": "前保险杠",
+      "target": "前牌照安装板",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P022",
+      "source": "前保险杠",
+      "target": "毫米波雷达",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P023",
+      "source": "前保险杠",
+      "target": "前拖车钩盖",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P024",
+      "source": "前保险杠",
+      "target": "摄像头",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P025",
+      "source": "发动机盖",
+      "target": "饰条",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P026",
+      "source": "发动机盖",
+      "target": "前车灯",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P027",
+      "source": "发动机盖",
+      "target": "饰板",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P028",
+      "source": "发动机盖",
+      "target": "前保险杠",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P029",
+      "source": "发动机盖",
+      "target": "翼子板",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P030",
+      "source": "发动机盖",
+      "target": "翼子板",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P031",
+      "source": "发动机盖",
+      "target": "装饰件",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P032",
+      "source": "前风挡",
+      "target": "顶盖",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P033",
+      "source": "前风挡",
+      "target": "饰板",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P034",
+      "source": "前风挡",
+      "target": "侧围",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P035",
+      "source": "前风挡",
+      "target": "饰条",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P036",
+      "source": "前风挡",
+      "target": "侧围",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P037",
+      "source": "前风挡",
+      "target": "饰条",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P038",
+      "source": "顶盖",
+      "target": "前风挡",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P039",
+      "source": "顶盖",
+      "target": "后风挡",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P040",
+      "source": "顶盖",
+      "target": "饰板",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P041",
+      "source": "顶盖",
+      "target": "扰流板",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P042",
+      "source": "顶盖",
+      "target": "侧围",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P043",
+      "source": "顶盖",
+      "target": "饰条",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P044",
+      "source": "顶盖",
+      "target": "侧围",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P045",
+      "source": "顶盖",
+      "target": "饰条",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P046",
+      "source": "顶盖",
+      "target": "天窗",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P047",
+      "source": "顶盖",
+      "target": "饰条",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P048",
+      "source": "顶盖",
+      "target": "饰板",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P049",
+      "source": "顶盖",
+      "target": "鲨鱼鳍天线",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P050",
+      "source": "顶盖",
+      "target": "扰流板",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P051",
+      "source": "后风挡",
+      "target": "前风挡",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "review_source"
+    },
+    {
+      "id": "P052",
+      "source": "后风挡",
+      "target": "饰板",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P053",
+      "source": "后风挡",
+      "target": "扰流板",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P054",
+      "source": "后风挡",
+      "target": "前风挡",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "review_source"
+    },
+    {
+      "id": "P055",
+      "source": "后风挡",
+      "target": "饰板",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P056",
+      "source": "后风挡",
+      "target": "侧围",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P057",
+      "source": "后风挡",
+      "target": "饰条",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P058",
+      "source": "后风挡",
+      "target": "侧围",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P059",
+      "source": "后风挡",
+      "target": "饰条",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P060",
+      "source": "尾门/后备箱盖",
+      "target": "饰板",
+      "relative_position": "前侧/上侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P061",
+      "source": "尾门/后备箱盖",
+      "target": "后风挡",
+      "relative_position": "前侧/上侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P062",
+      "source": "尾门/后备箱盖",
+      "target": "后保险杠",
+      "relative_position": "后侧/下侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P063",
+      "source": "尾门/后备箱盖",
+      "target": "侧围",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P064",
+      "source": "尾门/后备箱盖",
+      "target": "饰板",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P065",
+      "source": "尾门/后备箱盖",
+      "target": "侧围",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P066",
+      "source": "尾门/后备箱盖",
+      "target": "饰板",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P067",
+      "source": "尾门/后备箱盖",
+      "target": "饰条",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P068",
+      "source": "尾门/后备箱盖",
+      "target": "饰板",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P069",
+      "source": "尾门/后备箱盖",
+      "target": "后车灯",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P070",
+      "source": "尾门/后备箱盖",
+      "target": "尾门把手",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P071",
+      "source": "尾门/后备箱盖",
+      "target": "储物盒",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P072",
+      "source": "后保险杠",
+      "target": "尾门/后备箱盖",
+      "relative_position": "上侧",
+      "context": "PDF 原文：尾门/后背门",
+      "status": "approved"
+    },
+    {
+      "id": "P073",
+      "source": "后保险杠",
+      "target": "侧围",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P074",
+      "source": "后保险杠",
+      "target": "轮眉饰板",
+      "relative_position": "左侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P075",
+      "source": "后保险杠",
+      "target": "侧围",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P076",
+      "source": "后保险杠",
+      "target": "轮眉饰板",
+      "relative_position": "右侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P077",
+      "source": "后保险杠",
+      "target": "后车灯",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P078",
+      "source": "后保险杠",
+      "target": "后雾灯",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P079",
+      "source": "后保险杠",
+      "target": "回复反射器",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P080",
+      "source": "后保险杠",
+      "target": "饰条1",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P081",
+      "source": "后保险杠",
+      "target": "饰条2",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P082",
+      "source": "后保险杠",
+      "target": "饰条n",
+      "relative_position": "内含",
+      "context": "",
+      "status": "template"
+    },
+    {
+      "id": "P083",
+      "source": "后保险杠",
+      "target": "装饰件1",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P084",
+      "source": "后保险杠",
+      "target": "装饰件2",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P085",
+      "source": "后保险杠",
+      "target": "装饰件n",
+      "relative_position": "内含",
+      "context": "",
+      "status": "template"
+    },
+    {
+      "id": "P086",
+      "source": "后保险杠",
+      "target": "超声波雷达",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P087",
+      "source": "后保险杠",
+      "target": "后牌照安装板",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P088",
+      "source": "后保险杠",
+      "target": "后牌照灯",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P089",
+      "source": "后保险杠",
+      "target": "后拖车钩盖",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P090",
+      "source": "后保险杠",
+      "target": "摄像头",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P091",
+      "source": "翼子板",
+      "target": "前保险杠",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P092",
+      "source": "翼子板",
+      "target": "前车灯",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P093",
+      "source": "翼子板",
+      "target": "前车门",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P094",
+      "source": "翼子板",
+      "target": "饰板",
+      "relative_position": "下侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P095",
+      "source": "翼子板",
+      "target": "发动机盖",
+      "relative_position": "上侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P096",
+      "source": "翼子板",
+      "target": "轮眉饰板",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P097",
+      "source": "翼子板",
+      "target": "装饰件",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P098",
+      "source": "侧围",
+      "target": "前角窗",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P099",
+      "source": "侧围",
+      "target": "前风挡",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P100",
+      "source": "侧围",
+      "target": "发动机盖",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P101",
+      "source": "侧围",
+      "target": "翼子板",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P102",
+      "source": "侧围",
+      "target": "后风挡",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P103",
+      "source": "侧围",
+      "target": "尾门/后备箱盖",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P104",
+      "source": "侧围",
+      "target": "后保险杠",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P105",
+      "source": "侧围",
+      "target": "后车灯",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P106",
+      "source": "侧围",
+      "target": "饰板",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P107",
+      "source": "侧围",
+      "target": "顶盖",
+      "relative_position": "上侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P108",
+      "source": "侧围",
+      "target": "饰条",
+      "relative_position": "上侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P109",
+      "source": "侧围",
+      "target": "轮眉饰板",
+      "relative_position": "下侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P110",
+      "source": "侧围",
+      "target": "轮眉饰板",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P111",
+      "source": "侧围",
+      "target": "加油口门",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P112",
+      "source": "侧围",
+      "target": "前角窗",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P113",
+      "source": "侧围",
+      "target": "后角窗",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P114",
+      "source": "前车门",
+      "target": "翼子板",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P115",
+      "source": "前车门",
+      "target": "前角窗",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P116",
+      "source": "前车门",
+      "target": "后车门",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P117",
+      "source": "前车门",
+      "target": "侧围",
+      "relative_position": "上侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P118",
+      "source": "前车门",
+      "target": "侧围",
+      "relative_position": "下侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P119",
+      "source": "前车门",
+      "target": "饰板",
+      "relative_position": "下侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P120",
+      "source": "前车门",
+      "target": "前门玻璃",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P121",
+      "source": "前车门",
+      "target": "车门把手",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P122",
+      "source": "前车门",
+      "target": "前角窗",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P123",
+      "source": "前车门",
+      "target": "B柱饰板",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P124",
+      "source": "后车门",
+      "target": "前车门",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P125",
+      "source": "后车门",
+      "target": "B柱饰板",
+      "relative_position": "前侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P126",
+      "source": "后车门",
+      "target": "侧围",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P127",
+      "source": "后车门",
+      "target": "轮眉饰板",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P128",
+      "source": "后车门",
+      "target": "C柱饰板",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P129",
+      "source": "后车门",
+      "target": "后角窗",
+      "relative_position": "后侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P130",
+      "source": "后车门",
+      "target": "侧围",
+      "relative_position": "上侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P131",
+      "source": "后车门",
+      "target": "侧围",
+      "relative_position": "下侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P132",
+      "source": "后车门",
+      "target": "饰板",
+      "relative_position": "下侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P133",
+      "source": "后车门",
+      "target": "后门玻璃",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P134",
+      "source": "后车门",
+      "target": "轮眉饰板",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P135",
+      "source": "后车门",
+      "target": "车门把手",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P136",
+      "source": "后车门",
+      "target": "后角窗",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P137",
+      "source": "后视镜",
+      "target": "前车门",
+      "relative_position": "安装侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P138",
+      "source": "后视镜",
+      "target": "前角窗",
+      "relative_position": "安装侧",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P139",
+      "source": "后视镜",
+      "target": "本体上壳",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P140",
+      "source": "后视镜",
+      "target": "本体下壳",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P141",
+      "source": "后视镜",
+      "target": "镜臂上壳",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P142",
+      "source": "后视镜",
+      "target": "镜臂下壳",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P143",
+      "source": "后视镜",
+      "target": "转向灯",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P144",
+      "source": "后视镜",
+      "target": "镜片",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P145",
+      "source": "后视镜",
+      "target": "摄像头1",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P146",
+      "source": "后视镜",
+      "target": "摄像头2",
+      "relative_position": "内含",
+      "context": "",
+      "status": "approved"
+    },
+    {
+      "id": "P147",
+      "source": "后视镜",
+      "target": "摄像头n",
+      "relative_position": "内含",
+      "context": "",
+      "status": "template"
+    },
+    {
+      "id": "P148",
+      "source": "扰流板",
+      "target": "高位制动灯",
+      "relative_position": "内含",
+      "context": "顶盖",
+      "status": "approved"
+    },
+    {
+      "id": "P149",
+      "source": "扰流板",
+      "target": "摄像头",
+      "relative_position": "内含",
+      "context": "顶盖",
+      "status": "approved"
+    },
+    {
+      "id": "P150",
+      "source": "装饰件",
+      "target": "摄像头1",
+      "relative_position": "内含",
+      "context": "翼子板",
+      "status": "approved"
+    },
+    {
+      "id": "P151",
+      "source": "装饰件",
+      "target": "摄像头2",
+      "relative_position": "内含",
+      "context": "翼子板",
+      "status": "approved"
+    },
+    {
+      "id": "P152",
+      "source": "装饰件",
+      "target": "摄像头n",
+      "relative_position": "内含",
+      "context": "翼子板",
+      "status": "template"
+    }
+  ],
+  "notes": [
+    "×无DTS定义不是边",
+    "方位有向，不推断反向",
+    "PDF 名称是部件类别；最终节点 label 从 XLSX 的具体部件名称取",
+    "n 后缀为模板，仅在 XLSX 给出具体名称时可匹配，不能建字面 n 节点",
+    "后风挡→前风挡按 PDF 原文保留，需人工确认"
+  ]
+}

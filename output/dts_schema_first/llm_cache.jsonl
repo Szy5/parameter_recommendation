@@ -1,0 +1,703 @@
+{"key": "50e4369c5ff96571e558ca5a4631ff0a14f7cccbe42b4c1498111f22c70d48e1", "selection": {"edge_ids": ["P034", "P036"], "source_evidence": "前风挡玻璃", "target_evidence": "侧围", "part_a": "前风挡", "part_b": "侧围"}}
+{"key": "15bbe3b2ac9e510c44564791f7e915e6aaaddde7d194ff8eb230a9dddeeb87b2", "selection": {"edge_ids": ["P032"], "source_evidence": "前风挡玻璃", "target_evidence": "顶盖", "part_a": "前风挡", "part_b": "顶盖"}}
+{"key": "61aa1f0534fc349a3236028597ad9e1cf253d84e51a26da4100ffd37434c220d", "selection": {"edge_ids": ["P101"], "source_evidence": "侧围", "target_evidence": "翼子板", "part_a": "侧围", "part_b": "翼子板"}}
+{"key": "00f84704dd4382b43023e4783774ac2c55bb72cea5113187ec8872d40d5c1caf", "selection": {"edge_ids": ["P100"], "source_evidence": "侧围", "target_evidence": "机盖", "part_a": "侧围", "part_b": "发动机盖"}}
+{"key": "36c448509c0909d9496d1dcb7f7f2e43239d9c5dbae5153d6b924e010e2a0553", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "341800161272c5fd3b738bd04817fef8ef725bfa5de13d76fee6a7785f5b200c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a24edf2c98c3e2b1b393641c042924187b0ff19dcfb2857b047071d1e3bdea5f", "selection": {"edge_ids": ["P029", "P030"], "source_evidence": "机盖", "target_evidence": "翼子板", "part_a": "发动机盖", "part_b": "翼子板"}}
+{"key": "bc29758789196990709da87e5970831ced364fe6d59a51794e25d72732c850e4", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1b1b8bc6473801a65831d61db5e3c5c3f109f04f2e9ecc4e25929822c3376b78", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5748dcd158b95f591850be7c8322fded213796a6e13568b401af167c25b98d2f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "972404884974e19cd97cff9fcd27ab74de1655174a393a0125080b04f0c268c8", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5246e30532a2a0eeed01b66b2e646d656d9f17fe01edf651c82a98b98dee4ef2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5353c9730687f432c4b4ee012983390dc9265a55e6df53b08ecd62d9553b5bd7", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "270de420f8733de2fef48c027dd5cb303f045cadf5142806c6989bf7e3418507", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3b4e991044136054cd9cdfb0e3f7b35fa93b33b6d3ad5e11ca6a9ea8e7fd1888", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "4ecdeaaaa80567ca254f722077fa9ae91e86e1b1505b2a650adb2472a0c62d22", "selection": {"edge_ids": ["P026"], "source_evidence": "机盖", "target_evidence": "大灯", "part_a": "发动机盖", "part_b": "大灯"}}
+{"key": "ad55df4d85f9b220a2618270ddc33ce65d28f6c7e85a8707ce966ed973c39246", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6c4fd975410fd46edf2ca57ac27d034be5236c9cdd3d7ddc919383b52f7b2652", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "db45cd2c8936838f131dbfbed8f7f48162fbd561743bb397194839982f19fed1", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1733facb373e1966c124a4d10d266e1b6bf2ce82040c1f0923ef533c1b371cff", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "4355b2ede0cc5309920bd546db25856b070b73db7fdb5e052d60f7cc6f997395", "selection": {"edge_ids": ["P010"], "source_evidence": "前保本体", "target_evidence": "雾灯", "part_a": "前保本体", "part_b": "雾灯"}}
+{"key": "02a6313dd3bb379247f77b215ad916035a6bae4c28ee4a88a9eec519ef28d15c", "selection": {"edge_ids": ["P010"], "source_evidence": "前保本体", "target_evidence": "雾灯", "part_a": "前保本体", "part_b": "雾灯"}}
+{"key": "f40763bcf644b7152e64509eb294ebc893b75dc2b01c796245172a99345423b9", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3c91c2c8d8ad7b8fcd4ab9a743f52aa96c58d2119d95126fec7a17689b88791f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "934fd4fc15bfa6960c4e350556412070d52772c6b0c574232e38f57a8fee0070", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "67e8a4feb6ebb968706360741c56b449310c3fc57bfc87731d61ba279850f421", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e0d4d5918b9a605f48a66a2536ddddeae35376a5636d3877f0352bd289db1e99", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ecbaef6bbbc510be6c0f59ee70d8a92183cfbfb1e535e5288cf71c93f52b3ab5", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b4fced5484d5f448287e88263ffceb8d5866691824339b7438db9b8084ed35ab", "selection": {"edge_ids": ["P035", "P037"], "source_evidence": "前风挡玻璃", "target_evidence": "顶饰条", "part_a": "前风挡", "part_b": "顶饰条"}}
+{"key": "f3e25caea326d183485fd545415f51991f5cb103a1848a84bb68582f187f8fba", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "872f9a9660b6799b234c5530d5ad1fc73c9eacf64b8e16dfa6767ee571b63f8f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3d5cd980f5535bbfc663ef3fd31a45a981a8358a9b0d153fbdabc8390f921e93", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "039cf2085aec021f17f2ff4a1c54ccba93a666b958d33571af58c7127d2d4ce0", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "657c9e1bfb5f87fb6ee62b91ff9eb0532c598ca0516e26419c3019bd5bf270c2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "512ae4f82d3325247296ab14cf895c1883004e47da7c57fa9731d4ed1df88958", "selection": {"edge_ids": ["P114"], "source_evidence": "前门", "target_evidence": "翼子板", "part_a": "前车门", "part_b": "翼子板"}}
+{"key": "9be71fb7d6d32138507aa6fe5371d252e4502c0ac4cabb1aa2c7c323986e4a08", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "fdaf87b3d4fb8c74ead1bdfbcf18c3c421733e721bc1fd9a5d9353a380e9f240", "selection": {"edge_ids": ["P108"], "source_evidence": "侧围", "target_evidence": "侧围饰条", "part_a": "侧围", "part_b": "侧围饰条"}}
+{"key": "aa84ff09ac52c3fd7bda4fb7a731c6c07434029723478f41cb8bee4a0dd97879", "selection": {"edge_ids": ["P108"], "source_evidence": "侧围", "target_evidence": "侧围饰条", "part_a": "侧围", "part_b": "侧围饰条"}}
+{"key": "5afd78e19cb33403326cb74cbced47398e39b89e635b8bc42bbc2004edf06261", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "30f5d886e61920b2c9a7c33151be0f73632d87bdea73de9f5a9959f590f21fe6", "selection": {"edge_ids": ["P124"], "source_evidence": "后门", "target_evidence": "前门", "part_a": "后车门", "part_b": "前车门"}}
+{"key": "328bb8de43bf8f946fac2a2396cbdbb267294b02e66e2591ef1099296c85c398", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6ed3148e80ce2601e6aba6ae1e84e54bb2d1b4141a2c73934a7ebbf972632774", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "712e9c9273ebeafe82dbe84208eee29cfd756a6e8790123a6f7ab2ec5b671058", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "df0dcc8637b88e72cc8dfb1258968c4b2bb4386d0429ac04ae6420bbfae6f879", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c059a8792ffd8aa44581141a0ca62c77fe4596a892c8d202f7a0b2cc1f9a93cf", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8e2e236f751975c85a647b7246108d8da7b2c23702ec5dafc040be43f3ca3906", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1ab812395dc3533ecd36320970faabc0be43f5913ee756fa9a00da8735d5436a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "4fd4e9b9cc4c7e8a8684362084831fc5380acdbb3c34b8f5f6bacc3a369ae4ea", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "54d4b787e047e27f713157b20506c8af974081e4c2c2e6a6dbd00f7ca33619a6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f007492f7bc5f16f91c85b96a8c6a7e28a2733c94ca1c2468e4f3dc83d558ade", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5059ea4dd7d02cfc1e783011b789195dec960f45e9653076fb797c8f3748e785", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "65905fa4f4eff8a75d5416690dca02f15294f891abb5f0318f8c2db5cc2c458f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "720f613532985895457e3d94167678ad6271a392cfc0cb63bddaf13231d5bb42", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8b1883d848a1c2630d7420703d433901520d8254be1dc826e26b69d9a12bcb82", "selection": {"edge_ids": ["P121"], "source_evidence": "前门", "target_evidence": "手柄", "part_a": "前车门", "part_b": "手柄"}}
+{"key": "1d25df0348a0a2a39b21b82230f9ffeb5dcf3a08c3edda0443d3127b972271b4", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e9d35987e165d01a43e286c0342c5b48fe9c8515a0c61bfd6a1b4ecac2234e31", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "39a601228fa309a4a6ca91756888516f9ccf6ad7adf3438c2ac93326bf96fb7f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "bcae6768ec03cdc6df3d1af64f1b01f31ff2d4769d361e90c1749caa74bd3d33", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d7940b12b4a96fd0b2e327f8f75f9f35cb5a4c3f013fa4c4962b5bd4c299ea60", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b18e5fe67b64179a81fbf87644f420e80ca35f085caf365ee995e34490356bc5", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d1f888d140eb3a7d1389e4281f48cad650671425f3c8f0baf4d4ebf7f6adeeec", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "71b515ff98ad4bf727ecefeeea91be9e28113e71bd8aac8da1ae748b0a1dff60", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c8578b6b22c22139ad678360657a9a915a2b6cc31ac25258f9ffd922001632aa", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0726ac603c38e107e6816851696dd9a778a4bf0a094f145a7f4f7971fd97946f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d1ee5bbcd3757947bb1893208cbe35af55ff2f0d9975c5b02e90feb610988792", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f4d2b5b18be9e9ff5b822ba83cb467db2e39b8c1b01126363c01c61ed409e276", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "27987d99450f17ad738f29b42905766d227f37a0cbed61452468eb1594dcc57f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a9194ddee7bb9129313ea3c1430b009532a8e2a468ebbf5a4a65af50b5303a28", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a132c415501b75c65b8164ccd30eb8ac413c30c5882815544a2df23d7b25bae6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "7d8ea83a270975ad3b2f662dd765f1f00fc73b725550a9642d23ac39c60f939a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ef8b35ef5105a5beb51916d43bd52d6425a3389f5e8d1656c7a0e98aa9906d9d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2699ec2cc42e371d9d058903bc1c978be1609a6f47ba12d4b9ec8762111307a2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "db231d625754cfe79d5404776ef2dd2488d688b84079b28e5b4644764dbcea5e", "selection": {"edge_ids": ["P132"], "source_evidence": "后门", "target_evidence": "外下饰板总成", "part_a": "后车门", "part_b": "外下饰板总成"}}
+{"key": "c676fd3a6667fd8ffdcaa398078403c31043271c92ede76079c26bf191c2447b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "52937405878dc372e2d6f7071a7e11596c8e786ad51edb672a62ecd3adaf3b4f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2917f9f5d80a7420bf62efc999eacdfca4ad013503e0d3ebd817576463fc56e6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ed27b4a36d71a7920028a2a1093050281b5be4aff64384748c62ba576f79ce77", "selection": {"edge_ids": ["P132"], "source_evidence": "后门外下饰板", "target_evidence": "外装饰\n板总成", "part_a": "后门外下饰板", "part_b": "外装饰板总成"}}
+{"key": "bf2be8796af28e5dce1216fcb92df87b49b30ed64507552903008af39d5a3f74", "selection": {"edge_ids": ["P135"], "source_evidence": "后门", "target_evidence": "手柄", "part_a": "后车门", "part_b": "手柄"}}
+{"key": "14a721c2d34fb07a54f69e6dc45ff0e5703ec3b40cc93c7545a79c89697c248e", "selection": {"edge_ids": ["P111"], "source_evidence": "侧围", "target_evidence": "加油口盖", "part_a": "侧围", "part_b": "加油口盖"}}
+{"key": "3c5a21b3eece00f0cef5fe2a2f3cf0aa79a87b2d8f6e457d0af32706a76d9196", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f99159eab0a28465b33e7753c2d9f148042c2c82caac12a91dc88fb26d50e444", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "da299c1fb78c3c35fea5a5d429222b601394951b422e7a001af6611b2184c72c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "23729cdd53a69e9771d8e8fbb38203402be1cdf36826ddb36c158cf6fdd06844", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3a74513b17b7bd6ecb01869c284e9b359afa4d30d6e7b32a0422644f7e3b6c3e", "selection": {"edge_ids": ["P143"], "source_evidence": "后视镜", "target_evidence": "转向灯", "part_a": "后视镜", "part_b": "转向灯"}}
+{"key": "fd47be7678d343b2d395129117abde3095bdf82fbcce038b254f9631c05039c1", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f8b8677cd83c6f992b055af8bebf8cd8bc503ec228dcc0aea3955ee3a0e02bac", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8c4a1242c3e26d801f10199aff568aec544bcf68329d3ce9e7429cb7171b6cdf", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "68de64eb49a256770b4dee284f4110580dad0c2d18735f689eef1e2c7c5a8bea", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2b83869532b2a334198878dc5d2355ede1c352fcb3a3dc1d8f5886de1fac99dd", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f50b90f33e977fdfd6729d149c423dac9e7589e4a4e7cfae9b2d99b591603221", "selection": {"edge_ids": ["P053"], "source_evidence": "后风挡", "target_evidence": "扰流板", "part_a": "后风挡", "part_b": "扰流板"}}
+{"key": "738ec245f19a0dcc995706c8602e2650dc10f855d7c6e705e70bc5addf11db14", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "afb5aa49989e264ed4f4f8e35ecfa246b6a85a2795eb9063ae776210c5c4e782", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "df63072e77d83b70fb79473822af74443eb79750ee1a68cec22f001aad83f917", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b65affc00711e4a6d9dc28dad9ae1de3f6f3f4bf15212eb6adc828c679ec6d2d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "52e8ade8936e705b1d59e3f492f155d9d1a9d4e061123d9c8eb56687fd1635df", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5a1430d2385ec0fcbf94da188bb30f56e74edd1d8f1423e1aa1e517b3ddd199e", "selection": {"edge_ids": ["P106"], "source_evidence": "侧围", "target_evidence": "D柱外下饰板", "part_a": "侧围", "part_b": "D柱外下饰板"}}
+{"key": "630bcbdf074dc325fc11d289c35c0dfc8b78acb216c302ca9a37ebfec3b89bf2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "7125997d765aee19d33d79ca2b32bae4190f26028e022cf5122c7db058996173", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "24184d1a1b761e436fdc6dbddeca2f0016596b84faf9bd214e935d80a4d31a52", "selection": {"edge_ids": ["P070"], "source_evidence": "尾门", "target_evidence": "手柄", "part_a": "尾门/后备箱盖", "part_b": "手柄"}}
+{"key": "840e160b0c2c80c6234279a4ff66aa1a0f5d8047edcf95f4966f0c5b73a34a39", "selection": {"edge_ids": ["P105"], "source_evidence": "侧围", "target_evidence": "尾灯", "part_a": "侧围", "part_b": "后车灯"}}
+{"key": "21f80ee5dbfbeb1a87cf7090b83187bcdf9fe38c49f14484e935fb34dc853f0f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "14cb361e796ef70895ffecee3901f545213253432f2a7f19c5a72bd948151f8c", "selection": {"edge_ids": ["P104"], "source_evidence": "侧围", "target_evidence": "后保本体", "part_a": "侧围", "part_b": "后保本体"}}
+{"key": "af2478d3297030cb77d81dee5eea94e58bc144f5a859fab87200ba6560709bb5", "selection": {"edge_ids": ["P078"], "source_evidence": "后保", "target_evidence": "雾灯", "part_a": "后保", "part_b": "雾灯"}}
+{"key": "926c81950210724310bbe1247f1c18845ba33ada22749a28583fe9974ca4bc15", "selection": {"edge_ids": ["P078"], "source_evidence": "后保", "target_evidence": "雾灯", "part_a": "后保", "part_b": "雾灯"}}
+{"key": "44b81633b66b86a6b5171d3db0332e5c2a6d4d9b85fdffa2f4bf935bad4dfdc6", "selection": {"edge_ids": ["P062"], "source_evidence": "尾门", "target_evidence": "后保", "part_a": "尾门/后备箱盖", "part_b": "后保"}}
+{"key": "e14a3b8216bdea9c663e41d6138e42fee85d2a75fb302034ffe00fc8e59047cb", "selection": {"edge_ids": ["P082"], "source_evidence": "后保", "target_evidence": "下饰板", "part_a": "后保", "part_b": "下饰板"}}
+{"key": "dd7edb711a60fe955e124036e3fc162abf98162f2c62cdb8d9ad7d274cb23dd7", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "50566a694a62e61f756deb00e47f06e8fcf4682f5d3994595cf9511e267d8a0b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "06a88725eb4e282fa3bb29d9dbf01bed6ec8e2afb47fe31c774a95c66b4a49ab", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f11038f3e5bd75b1c030cd920579cfd57b641b72901449643ad5f1da9f119698", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "59609ad1a5a1dc434a5f91ec61174f632bc80f3e99c287f15ccc8255a004bedb", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "21e52538534a21e9df14e08c72011ce8885a091c180cb53432d20df17b2f8196", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "dcb6e4762fd77577257fe0c19eec055a427951f71dce0ae7bd13c136bc0ab3bf", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f7e61d1a9810b3286781fa5f4e0202b656b6fe05ec61749d4338d7f2ef5f4c18", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3450e8984ae7833ef7af6867e3b74c7151df7627eeda1d5fda6767abe9230bc6", "selection": {"edge_ids": ["P046"], "source_evidence": "顶盖", "target_evidence": "天窗前端", "part_a": "顶盖", "part_b": "天窗前端"}}
+{"key": "91bab4713b6a937f72255ba8bc1d5a0ec4f16c9869cda7ef5e0d4eea704351c6", "selection": {"edge_ids": ["P046"], "source_evidence": "顶盖", "target_evidence": "天窗前部(L&R)", "part_a": "顶盖", "part_b": "天窗前部"}}
+{"key": "6b0871b11bca0a110ac3c868f117e325582e7bc23a56b8b1cf361b26b515c477", "selection": {"edge_ids": ["P046"], "source_evidence": "顶盖", "target_evidence": "天窗后端", "part_a": "顶盖", "part_b": "天窗后端"}}
+{"key": "3d45f31e836ce4fb831b65f90c8d9d320cb4440a32d06b2d34b40e559c3c5372", "selection": {"edge_ids": ["P046"], "source_evidence": "顶盖", "target_evidence": "天窗后部(L&R)", "part_a": "顶盖", "part_b": "天窗后部"}}
+{"key": "87cd86208a901ca91d1b0a824631f7086c356abf64cdbd74b15fca78c6aad73b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ba0a9ef1de878d1eb06f82ac2ef951c8cdedf7e971a3593ede8e56c2a2b46b41", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5f9d1fea8fc5f8b310a84c761590cadbbf41dbb30b25fa63ac6c170be2206e42", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "7e78a98d991a9b3948b561ad1b2153513840a5c7eab2737b466e271548a522dd", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "226fd52bf85feb71c768e97a4ab37b0c4988cb6a8bcaeafb8771271b225128f3", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5c5fe70b57f9902c54241c8bfb889882164dc34729e25e9591c1636e3102213c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "104801c097e654577ff0493bb8316fcd412b48945d61c1003d676c124b6e5f97", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "53f0b4a7fcc695d143f5d15fd64e35da8e29b5593e7d0a8d6c36955865db036a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6dfc07fbcec4b5101f72f5dc692b2ffa5aa84605e3e3c0d4f461a7978673031f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5e12643d11f0fbf446113404ad64263ac7e06278c6a1b396d1b9e2c2680f89c8", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1ee15470ca3f0b8d23bc696dab36983a1a7a5f92ef9ccf37533c6d9db5f4601a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "bf654a533a15360e07a1cccf819c5565889a86583bbdf410b2e3c2b20824620e", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e809a32aafe5ae7ce9949cfcfe1a61d81f82f34cdceecb6874ee1083891d5d94", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "dd788562c3f58b531b0e84f4f3b9ffd8bf23b1018922d4eb074af7c55f2e2010", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "4c63cda1dfee309c8526fe4a80f12bfb0ba571e01848d5b18e13970500a90719", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "949051738cad2a525547cf1f2ec06c41d58462a2b00ee9bac8100457b0427323", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "981f76ee4d9932ffbf9507c44566f2c2a86b1721596110fdfc54aaf9286a3ed6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "91a21699ccdda0d47105933feb90e52b5849def162c5a5eef3b6ed7eb311b7cb", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "4b68fc7d00dd9c62da7ae0730fe75716e6c94289e66e7734af1f8cf4761f322f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b84c2e8c08c19004da348fd28d452ecea0764c18b82644fffdebafc8b32a8f4f", "selection": {"edge_ids": ["P064", "P066"], "source_evidence": "尾门", "target_evidence": "D柱下饰板", "part_a": "尾门/后备箱盖", "part_b": "D柱下饰板"}}
+{"key": "d8ec075f6b6afa697eba8952a7e51df143acf2d722e9fd8373045d5f7ead34e4", "selection": {"edge_ids": ["P106"], "source_evidence": "侧围", "target_evidence": "D柱下饰板", "part_a": "侧围", "part_b": "D柱下饰板"}}
+{"key": "355e1353392bb14196398693fa766579c0654130a88e862c9c865500102607a7", "selection": {"edge_ids": ["P034", "P036"], "source_evidence": "前风挡玻璃", "target_evidence": "侧围", "part_a": "前风挡", "part_b": "侧围"}}
+{"key": "275eb0537993ee3c5c5860ff5c38964d4e313f710709ba9f7d956fd65d8bf6c2", "selection": {"edge_ids": ["P034", "P036"], "source_evidence": "前风挡玻璃", "target_evidence": "侧围", "part_a": "前风挡", "part_b": "侧围"}}
+{"key": "c50a1acc95a34b003e3ec96f21c2ef4cf399cdafd718a232c9e4b58a2dcafac6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2824eaa1432a1071c2eabfaee420fe7f26697d79ab940daa671341bfcca189d4", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e5b2ec254be5aac5bffc28fc0c939ff68993517c595c89d194db6daff1e326f2", "selection": {"edge_ids": ["P106"], "source_evidence": "侧围", "target_evidence": "D柱下饰板", "part_a": "侧围", "part_b": "D柱下饰板"}}
+{"key": "506cc5e33579a188c24a884b514f5cf87075890806405ff24c8116f44d87a696", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "fe66cdb1592cff5d49f58f21ea4719ca60eb13c6df59752a26bc18755f52f7be", "selection": {"edge_ids": ["P064", "P066"], "source_evidence": "尾门", "target_evidence": "D柱下饰板", "part_a": "尾门/后备箱盖", "part_b": "D柱下饰板"}}
+{"key": "dff19fdcebea5e7c81fd66b1ef280d0a353557b4400624408dff97fe04a78819", "selection": {"edge_ids": ["P099"], "source_evidence": "侧围", "target_evidence": "前风挡玻璃（L&R）", "part_a": "侧围", "part_b": "前风挡"}}
+{"key": "7cd95c2d90bf97c2d7a1d8a7b7f7adffe4f56ead675fa893c55bab8c7438ccc1", "selection": {"edge_ids": ["P028"], "source_evidence": "机盖", "target_evidence": "前保", "part_a": "发动机盖", "part_b": "前保险杠"}}
+{"key": "d469b76cb5ba567ac8d3bb3503bfc41c056dc95038aaf28192cc2d4b49d65d62", "selection": {"edge_ids": ["P038"], "source_evidence": "顶盖玻璃", "target_evidence": "前风挡玻璃", "part_a": "顶盖玻璃", "part_b": "前风挡"}}
+{"key": "36c78922c4420b3503d1057a8e61a2b27a5fc1197573fe5d62c0274b5ec89324", "selection": {"edge_ids": ["P095"], "source_evidence": "翼子板", "target_evidence": "机盖", "part_a": "翼子板", "part_b": "发动机盖"}}
+{"key": "d07ce89670e70792e415081b0fd1eec5fc679a4eabee28188c8e8819575350c0", "selection": {"edge_ids": ["P095"], "source_evidence": "翼子板", "target_evidence": "机盖", "part_a": "翼子板", "part_b": "发动机盖"}}
+{"key": "35bbeb613791b3a6501ae4b602a7d0996d8811844cec0a1886f2fe8c3da454f1", "selection": {"edge_ids": ["P091"], "source_evidence": "翼子板", "target_evidence": "前保", "part_a": "翼子板", "part_b": "前保险杠"}}
+{"key": "8f3552f2c1cd2fd9e97fe9c7cf338d30e6982e73589a8eb64a0c4da5ef3b5e8c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ed9b5b93543964b7a49039e4ddd2b437ea10e51cf12ad90f3adf7bd3e7617d54", "error": "LLM omitted source_id"}
+{"key": "b4e7b423eaef5bdcba995a74e879b0df23335efa0b27d11d078c8cea7d90d0d8", "error": "LLM omitted source_id"}
+{"key": "6e8ebf43ff912f0dc0ca348bc987509aaac0444d942b414e6c1c60e3e45be770", "error": "LLM omitted source_id"}
+{"key": "35616ff3506d30e6a6338ae6b09071a91d34f5a44fc74ab7f5905de2bb41b62e", "error": "LLM omitted source_id"}
+{"key": "d1a22b9b1baa4fd67a347ae13def4159b70af138d255f0e6564b6ccbb3682feb", "error": "LLM omitted source_id"}
+{"key": "d9c07431894d14ae39567e9e3e011761dd9b9618b4be3b230cfcef40b46c64e1", "error": "LLM omitted source_id"}
+{"key": "67239ffdb899e46768cd858e042480cf28c4b993f10c6f687ab99fe5ceaffbaa", "error": "LLM omitted source_id"}
+{"key": "fd339d7729be7b35c3ece5df9d3bf5e631665fbf4b12270ec04c9c513cfad008", "error": "LLM omitted source_id"}
+{"key": "1f2f23331c1685d44303afa8ed69790200ebc44b0b8eded7a234ceb1b10cb5db", "error": "LLM omitted source_id"}
+{"key": "3c274342878c5cb9d784413f189e7dbb3468ad35a2bff6b7dde43a7e144155a0", "error": "LLM omitted source_id"}
+{"key": "92db3f8fcb8a4d724d31ffe3d53383506093a76fb21a5da9a71bcfdcb69ea591", "error": "LLM omitted source_id"}
+{"key": "0a2e41987b8d6d34601c364899bb0714430037d235b6f571674d00343bb4b490", "error": "LLM omitted source_id"}
+{"key": "efe65b722e17d67f05c94e54048fa00513f4111cf8e5b97b7145e416c59aab30", "selection": {"edge_ids": ["P011"], "source_evidence": "前保本体", "target_evidence": "日行灯\n（L&R）", "part_a": "前保本体", "part_b": "日行灯"}}
+{"key": "7225eecb65adc93338e6c0591afbb8cce13ba1cc79bf723161579a2f6d3d2b57", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5bad5f429d7cc17416ea7454d2137ba92bbb2aeca44909bf5267a760407187f9", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a8ea05c5de84336f92ff79795ca292bced97e8e0aaf82e7879dafc62f6bde119", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "7388230f138827b6ed63998638d0c76a892c6749876faee8e247439dff1ed0c2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "fdafeaac7de2ec3e01bd34b4550ad70072e4f9f6cbb3b261fe22c403ad59128d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e59b359f712c740470e2a9110c3fa7b0bfd68ef34527623308b48b815541097c", "selection": {"edge_ids": ["P023"], "source_evidence": "前保险杠", "target_evidence": "拖车钩盖板", "part_a": "前保险杠", "part_b": "拖车钩盖板"}}
+{"key": "96359f099c3cbf08df8f848d4ab48d85f23ccfef4bff6a6fb199cd3916afe70f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ebda908558789642788690eb47a4b95a75209dd1d2e3039edecc6f8b0596cc56", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c7ed47928bebd1edb9ad37a48d09d5d4e5368867a23bba623a4e86bdb14796d6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "48af8f0f179d943df5586db0a9b6a3f43ab9b71fb4643c802b7cc11d165a5ed5", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f913843e933abad66acf7bcf72295128128b7290ea6a30d82ef271958a542f90", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2797da346628e61ac0ba823ee8c095d19c8096abe70c79389985f8913a8ad84a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "785b91ed737c354c4a68bdca24474a42ccbd888092d5ef678b026f80559866c7", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "599d3cd8ade4b680d3c93bfd36c6e48ebe88c8e9dfc8184bc1241667cdff7517", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c2f248634ce6817a9e6bc6abd1842ce404051ce0d9a45a078e6242b79088a383", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a194270fa2cfe376fd54e25df4027e35b7d7df98c3af9ea6452d44305deb6874", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5882991557344a42e78abce650d74578c694b6b7ba5b916dc3f68dbc0fa214fe", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e7f1ac5493482e042a3c59ecebe63a1e13f2a9bbe2da5885f24118a926e0d607", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1829b514d65f1ad3ecc83f9fb9fe78d4fd65eeefed35f66bfd7b6e001d8058e5", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "7bbecb2319a8ee30d6db3f9ae52411332d3f302a38817d5b04f9ceaa2055ab88", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "77c007103992b59709c88ff635d5bb7a198c3c9e163379015f224aaab715c4e9", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "549db6ff908ee4193f863b8932aab1c0f3febc51db8d36275e3080007f96dce4", "selection": {"edge_ids": ["P114"], "source_evidence": "前门", "target_evidence": "翼子板", "part_a": "前车门", "part_b": "翼子板"}}
+{"key": "a89660234167ef6829a4ebbad5bf3c349001c979b6e0883f84f9569eed62c7d9", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c2fbebc1df09510ebd1e5ab6514a7a39f89bf7f32f10f2271078fe4798e0367b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "9a124380767cecd7c01a2bc49a5291e48a8971b3e7363ab3b7ebf717dd97f7c7", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "522514f78bf1a3487632645623e7c29a9af63fb47acf94b1950c01a93de0bf96", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c6024aede297074e915a49a247314aa1226a6a263a618eb51b4c865279e2dbb8", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8c4207412a47ba2c2d77405284e7a8afb54dcaaf0ee259753d13f023b85e2eb6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b206e6fbf4e978979d6b08dfd50769ac3a5c96a32b1d50c56df93b8e125f9aa5", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f3f99ead895d912d7c5b71e3f67c1d779f61f71cf597ccb45250ad94b82ef026", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5424e9c0c0452e0c98a285c7e7398feed2359a206413767bfcf9cbadab5040e6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "fd53617925d7a2ced458419df13543f8ca63ed7306a883378499be4319abd9cd", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f1eb868b1a852c79be8f0436e689e9b0c78b3cd4eb01babb374e2b6ed1d31396", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5d2820ac0d45aa4b2676a675875cf189c0cae4c8ad54e93b9b262ac1bb4f779d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f9531450adf1101a41110e849b61904bd5533cd80b2f493e89213758690ef360", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e102f7b64655ac4dd5ef9eddee8480244cb9b7e3bdd50fd98d82ab6fc917ca95", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "7a6669d69d63ecd991e4c42fe1ad55f35791c2901b8363bf69b797c22ae7c732", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ad701200150123401f8713292500a913198f8d83ddd783176cd5a2a7606b4b51", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5bddd84f971ff95ff14337ad300b2c7233467bce1e1a912b1c7757f8cf10f086", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "692d460ac10294718b0b3b0dc589559b713cc70465e20d231d13dbc32e88e01a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "dfaa09187464b8f2b03c662a72633f084ab8ddb2216c6d039e63c75a9ad506dc", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "29a64775331c15f5829b664c99a41b255e1aaa5ebaa6b910eb5c5f49dd55b201", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c5c92a72e2f4e8e05d4b624ef7d71c248339377e013eb8fb6ac133318784b808", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d19fd1ac2c7e1c74dae2c1e542bac7f48d506ee388528bce31dd37861d2bbb87", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "eb77ec7818077d83eb131dd8c33d0bfc7a3118da41a832dd56afd2911d068503", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1c3db930102ba2d432f7f5f158ed7ee65bd85ea9e1804ff8aa54e4f46c591716", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c93e153533e9c9e3af06dd731747a0c09f7188b0388cef081c5a3c6571ecf7a7", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "313657c614ee3558e7669b906e2b5abedd4b6e8e20e6c458dbf830e70f81e05d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a4d3ff03d5c01a526af9ec40105024fa3bfac4c554b592cd39e0f6ff788fe63d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b1702e02a57f8d15808d530b64117c2feb241eb783b6a4fd59bbf6bdea16e213", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "42adab001a9a5cde59ec46f57d867b091863fcfdd31f5f83e31eadd7ef2fbec6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "118c5d99151dcd7ca4fb3b380ed6c936a0860adfb5f2cfe785cef49ac4e1b76b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e8d02d8bd0ad7f0d3cc587c47138440322df63addfce9907c9740d49bc9f24f7", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b9d37ba871956e145e87b2bae08971906feb201f960e699706d2ad8b435aa828", "selection": {"edge_ids": ["P121"], "source_evidence": "前门外板", "target_evidence": "前门把手", "part_a": "前门外板", "part_b": "前门把手"}}
+{"key": "aa895698feda46170af5f641548ae31549d404aa543244b0cd6510090acec33b", "selection": {"edge_ids": ["P121"], "source_evidence": "前门外板", "target_evidence": "前门把手", "part_a": "前门外板", "part_b": "前门把手"}}
+{"key": "8e9a148dd5f689a50c086fe4e1edf9ecc6746e48f3e53e908e41ccdcfaa7fdef", "selection": {"edge_ids": ["P121"], "source_evidence": "前门外板", "target_evidence": "前门把手", "part_a": "前门外板", "part_b": "前门把手"}}
+{"key": "a3d52f023e5c4a5fd8d8f20d805cf128d572c2238834b2fce1aa1de0f27be0cc", "selection": {"edge_ids": ["P121"], "source_evidence": "前门外板", "target_evidence": "前门把手", "part_a": "前门外板", "part_b": "前门把手"}}
+{"key": "110dac30dc3082bc82e4bc045c4caef0342905bcf58408e8bd8f9f4e11259591", "selection": {"edge_ids": ["P135"], "source_evidence": "后门外板", "target_evidence": "后门把手", "part_a": "后门外板", "part_b": "后门把手"}}
+{"key": "289e4304f0cfb35d8d12c625fc632128aee229df48697528cd76ef08c14fb2ac", "selection": {"edge_ids": ["P135"], "source_evidence": "后门外板", "target_evidence": "后门把手", "part_a": "后门外板", "part_b": "后门把手"}}
+{"key": "63ee8994b1f186159c596bfec96e3c8beab4399a1b29e2a6bd7a58137e7ca417", "selection": {"edge_ids": ["P070"], "source_evidence": "后门外板", "target_evidence": "后门把手", "part_a": "后门外板", "part_b": "后门把手"}}
+{"key": "8ecbf7645d16b4814bc653f5e90e0861d307f40f2aca9d3c5907fcb47d3a1cf7", "selection": {"edge_ids": ["P070"], "source_evidence": "后门外板", "target_evidence": "后门把手", "part_a": "后门外板", "part_b": "后门把手"}}
+{"key": "017050ece2c1e7b92a16616b781b6120bc0fed31d6b7f228ed4a0c0c612f5756", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "9cd6704a9654eed8c3e56d4dec982da2a3fd859cd2071723401c1d5ebfc274a2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a60d7a15cd9a03c571a095926b00e72cd91e5d69675b2935dc3e4418e0e3cc0c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "4ad595bbf18eeb4aa8b7c6cfda84cdab74b57b82b5867daf287e3ce55b8c6764", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e572ed04df557428388187ef0142ea9ef80551dd26e29ec8b7b6fcf5bdff0707", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f4c804662f5c6576862475d07d3038f55d788e43d07c11eae51bd12e638bb162", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "83142bcdfc8643ca05b17d3324afbe6a825d7500dac6bacf729020fa56d81467", "selection": {"edge_ids": ["P143"], "source_evidence": "后视镜框", "target_evidence": "转向灯", "part_a": "后视镜框", "part_b": "转向灯"}}
+{"key": "725862f7d2c647711874a4f344a19accd89000dd4d07e3d76ec391a20b79cf73", "selection": {"edge_ids": ["P143"], "source_evidence": "后视镜本体", "target_evidence": "转向灯", "part_a": "后视镜本体", "part_b": "转向灯"}}
+{"key": "8e39715767615993e539856125bbeab1440782cf25bb0ae9cb0556ca7920e592", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "4de8c5f80a3e66f14f0b6662e987406f2c60a8c7886113dd00283bc83a36555a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b1dac0ad3773f11983d593fbc77e855af943e5d3871e7acabbf9a87753dca1d2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "37fc0440d95ae7ef58e93911ea13ced9f9e6f6ebbf5355d99e5efae1db3b83f6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5511594f473c8ffe9657a790e57e54a95827215a4277a57da1d5767e4a0e0fa2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0f1839e313e1085ff99bc9e650b6778aed8d481d6b05caf147f91db698ee0802", "selection": {"edge_ids": ["P105"], "source_evidence": "侧围", "target_evidence": "尾灯A", "part_a": "侧围", "part_b": "尾灯A"}}
+{"key": "1f97a6cc0a7044678afe49f1f39650079d0ed7818834589e3659f45b78a7cfcd", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d4b5162c40ff1992f9494b5341786ae0267c558ad3c111cbb7d053e291ddba9a", "selection": {"edge_ids": ["P077"], "source_evidence": "后保", "target_evidence": "尾灯A", "part_a": "后保", "part_b": "尾灯A"}}
+{"key": "200226f70489b72f959e7e145f97be0fcda1bb50d0f505d9193b8a33642f1031", "selection": {"edge_ids": ["P104"], "source_evidence": "侧围", "target_evidence": "后保", "part_a": "侧围", "part_b": "后保"}}
+{"key": "b6e5472ed00d8541a70aff9132e0dd5be799ad910f157d2dcfb9d60fa834478a", "selection": {"edge_ids": ["P074", "P076"], "source_evidence": "后保本体", "target_evidence": "轮眉", "part_a": "后保本体", "part_b": "轮眉"}}
+{"key": "fe9e7809fd7f11248a42e030598091e05bceb49c562dd011fc491b9b271d1030", "selection": {"edge_ids": ["P074", "P076"], "source_evidence": "后保下本体", "target_evidence": "轮眉", "part_a": "后保下本体", "part_b": "轮眉"}}
+{"key": "61b52bdacd0afbb59403321288bff1f71b2a938dc7e779ce5514661a0083a182", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b71dd530328c9916e63b529c6cccbb54119f5dbeac5810817ad6c64ef154e7ec", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "57aaa2e0113e5a3e40281b974751d1971fb14802b9752ebd5d4d5a1fcc5cc5c3", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ead1895006c26f815ac13f642acf17dfdd95dbe0ffcd386c675f22e1ff92f668", "selection": {"edge_ids": ["P072"], "source_evidence": "后保", "target_evidence": "行李箱", "part_a": "后保", "part_b": "行李箱"}}
+{"key": "1a218304c44427f20441748f4a829b4130f6446f223f31a42fe238192d62707c", "selection": {"edge_ids": ["P069"], "source_evidence": "行李箱外板", "target_evidence": "尾灯B", "part_a": "行李箱外板", "part_b": "尾灯B"}}
+{"key": "76fa0f14e1bffde6a9c4f053d45215c02b63d4498eafbbd924ec535b1cd0e58e", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0022e88ca27bb32bf3676ad190df1c89089af969d048d869cd4f03f2b0a2c0fd", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "064a275e649d2cf69ed6b1cb0e987f5a8147390ec1408e4f9fd67e0cdc07dc24", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e72aa5fd603695fa0f2a9b093109cd908355b122d6d9617169f1fd85797fb347", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "9819721a82978691b9d5b74e3e88e702a92397515bef27d1673dc62f3cbe37fe", "selection": {"edge_ids": ["P103"], "source_evidence": "侧围", "target_evidence": "行李箱", "part_a": "侧围", "part_b": "行李箱"}}
+{"key": "4e94f4066ed5043349aaed8862a131d33a76d048a2de9a7ddad7c0f4234c3bc7", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "9402e932d3cd9b0bde7f027a744c4a635ae935d24a5f0abfb05139fe3b6fac84", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "57fac89e9eeb3632515b37fb7dade62460df1c3eff69febc0b09999ff73b9faf", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "585ea417e9eb7a96dba54a60823972514b6b80ac9d012ecd3fe648682abddaeb", "selection": {"edge_ids": ["P069"], "source_evidence": "行李箱", "target_evidence": "尾灯B", "part_a": "行李箱", "part_b": "尾灯B"}}
+{"key": "870845c8b3dc83d21d0590010bfd40e8ca2cb0ae8c0936345cdabeb6d54e7a51", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "409962f544235658fb8d635a24d684efcdd1e2a8013fb0e79a5fc6170690dc18", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1e56ed2efa994466cfac5fc16ed225504fe9acc57840f6d840546706be4eb02c", "selection": {"edge_ids": ["P061"], "source_evidence": "行李箱饰板", "target_evidence": "后风挡玻璃", "part_a": "行李箱饰板", "part_b": "后风挡"}}
+{"key": "bc4adca6709c0364c999473ebb4ab78fe2830b0e4e18472176e70b6c5004a51d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "624b1217f116cb86bfa62dd192d3b5fb14b84edf0164531dce89227dafe34c39", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "36cf5f171810dfdb43c7dfe8d11dfa780421f9f27567ef8f1f2dddf4129d3078", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "922d540fe847a5b31998ac8c939ebd388fcf333282e951e69c51f0574e3b0800", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a93d5e3e49dac21cae5dfcc07b1057e5ef3cb774c8deb8a1e3a183ad84fd18b8", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d994f5cfe56b1b8388e6b6046c5ae99a9ffb2bcf475a80518e6fced37568be61", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "787a6ae27e119bddaf3febeec6d0fbc473921d1e382de66e2e721141a7d4eab6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3a525aa48ee1b684c31857eea6876fa8f8cd7688e3d492d4c20780ec6d8e0324", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d1ed90f9bfd3db3b0ca1508d9df6be2fc868f95c78984237a44d4dde42c0d097", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1adbc598af0b991260e12dc5f74f2ebaa09384513dff8e28085193a8b3287591", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6b19dd00eeec0dce0bb21bbccbc9c6af82b95f2b4c7bd4c8f9922ac8cec0cf6b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c856989b59f7b458fda1adb30e8b18976a4e6f4f26a73306479d4fb237b534cd", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "25300b3625bb860fca2cbae82d523644fd2a97f4a279d654ed7c1adf9d9a527b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3de7ffe66898b2179a9eee374ee557feb60e0c86cfb068e6d6f5db6aef1a8d0f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6fb5f9f7712106b9f0d0d7db702e93ce943bcd63e38d6a8abaa532a1ed4cbc92", "selection": {"edge_ids": ["P039"], "source_evidence": "顶盖玻璃", "target_evidence": "后风挡玻璃", "part_a": "顶盖玻璃", "part_b": "后风挡"}}
+{"key": "3410a5e2bb8e85927064331d6ccaf0f4a800dd85395dbb98efc0d6ba119c61bd", "selection": {"edge_ids": ["P107"], "source_evidence": "侧围", "target_evidence": "顶盖玻璃", "part_a": "侧围", "part_b": "顶盖玻璃"}}
+{"key": "c1ac3f189939eaff536f26a792cda9f653ad747247cc1ad715cd3a3f94d101b4", "selection": {"edge_ids": ["P102"], "source_evidence": "侧围", "target_evidence": "后风挡玻璃", "part_a": "侧围", "part_b": "后风挡"}}
+{"key": "e082a3cb5b2b13a90f73d609ec05e3bdc200987f04bf3cfbd62e2eda1a1489ff", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3add338ca40ab2abec263dc054b868ccec0ac60a30a0a4b0e12b30c3da71fd31", "selection": {"edge_ids": ["P005", "P007"], "source_evidence": "前保", "target_evidence": "翼子板（L&R）", "part_a": "前保险杠", "part_b": "翼子板"}}
+{"key": "6b642e95c71fcb51217ef547499b00010053fbe37ff0940ce641747b0681cf00", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ca52349c6b777aad753f1bc834da44f2d45977756e98c2db3cb112e561d38327", "selection": {"edge_ids": ["P030", "P029"], "source_evidence": "机盖", "target_evidence": "翼子板（L&R）", "part_a": "发动机盖", "part_b": "翼子板"}}
+{"key": "018567eab957609d77e6082ca64dd1fbea5d0ebc2b1f39721dabbe2bc3aa4432", "selection": {"edge_ids": ["P005", "P007"], "source_evidence": "前保", "target_evidence": "翼子板（L&R）", "part_a": "前保险杠", "part_b": "翼子板"}}
+{"key": "2586de974bd1c02ed99a77d35f6326d26768c945801d37822082d81038603b61", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b5d4701fe39dde891e316fc3715799cbc02fa1a0e8640bdb770cbbcd7c0de98f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0aa5c340ce199ff57242f1b2b76d9652cc73e17e6d74ada074e9cd893b88c22c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "693d2ad5bd60c8880ae6589fd7fccbdc331e9aaa23b2c6955be8ce88974c7281", "selection": {"edge_ids": ["P114"], "source_evidence": "前门", "target_evidence": "翼子板", "part_a": "前车门", "part_b": "翼子板"}}
+{"key": "2c6aa90ff26191b5fa8ebffec83f895454e7bfaf7c357b94dec914e33a3f83c2", "selection": {"edge_ids": ["P124"], "source_evidence": "后门", "target_evidence": "前门", "part_a": "后车门", "part_b": "前车门"}}
+{"key": "62509a771586b94c2cf59574c8b2b1fac934ad756e1b5a836077ebe864e42290", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0fe4d1a6866449024af02402b8ca9334ac57d342b0faf8c92b71ea651af08f5c", "selection": {"edge_ids": ["P104"], "source_evidence": "侧围", "target_evidence": "后保", "part_a": "侧围", "part_b": "后保"}}
+{"key": "a5e702049605ca4b8ff297607ef05285d6d89b83799b4d25041f7da016d55d63", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6e6bfedb5f5627be87efdbd2cd4c04d0e92471035aa91b191ccb0e78b941d594", "selection": {"edge_ids": ["P103"], "source_evidence": "侧围", "target_evidence": "行李箱", "part_a": "侧围", "part_b": "行李箱"}}
+{"key": "a841f9af03f31903604ea5a50b8a26531a2eb5c19a170937e566ba573bfc69ab", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f21e72806fa0d312ec8f87f44e380e4a3888f7f949c068a2c95bd4b254f796df", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0105b0ee3eb2a23c1177aaceb93e0ad5e1fb20662bc8211c4c435c42c99dd4d1", "selection": {"edge_ids": ["P099"], "source_evidence": "侧围", "target_evidence": "前风挡", "part_a": "侧围", "part_b": "前风挡"}}
+{"key": "90c93c2392c06aab4f31031ddd0f0126460fbb0c3f1454b7e12d9797c060485b", "selection": {"edge_ids": ["P095"], "source_evidence": "翼子板", "target_evidence": "机盖", "part_a": "翼子板", "part_b": "发动机盖"}}
+{"key": "462a445d760bf980a671bf1248ad57bd7fbb101dbec78ce7cd14f2f26eaf3aa1", "selection": {"edge_ids": ["P026"], "source_evidence": "机盖", "target_evidence": "前大灯", "part_a": "发动机盖", "part_b": "前车灯"}}
+{"key": "f828046b31df4876c19e2611a2d1d841041bf4e73d2bdc5c28346dd51c748333", "error": "PDF has multiple positions for this pair; workbook does not disambiguate"}
+{"key": "91065cd77a7d5c025c592f1711298f237b8b1b47bcb7dabe8b7ff4beb4442112", "selection": {"edge_ids": ["P092"], "source_evidence": "翼子板", "target_evidence": "前大灯", "part_a": "翼子板", "part_b": "前车灯"}}
+{"key": "9274685b5ab3e5bedce6a7cab3bf77aa61b87b82cc105b70dcb22a282b175123", "error": "PDF has multiple positions for this pair; workbook does not disambiguate"}
+{"key": "af25043ccf843b4e5bff0c020432bfafce29e46a157955d01163eff85d38d848", "error": "PDF has multiple positions for this pair; workbook does not disambiguate"}
+{"key": "6b5f7b026aec0c282dce17a9ba03412de971ef5e1d626edaffaf059c6d9e74f9", "selection": {"edge_ids": ["P011"], "source_evidence": "前保下护板", "target_evidence": "日行灯", "part_a": "前保下护板", "part_b": "日行灯"}}
+{"key": "4028f8df69b2ca820c26cc0c2d2d023f1c09491fc3983c7696db7fc125faf489", "error": "PDF has multiple positions for this pair; workbook does not disambiguate"}
+{"key": "482b0ea4b2a1cddff6205fd72558a38d837547d3110f0461c3cd3868fb3ebc66", "selection": {"edge_ids": ["P011"], "source_evidence": "前保", "target_evidence": "日行灯", "part_a": "前保险杠", "part_b": "日行灯"}}
+{"key": "62d9ef95ddf6c02b2a19209f492c6a38847fcfa07beb70d0e4275e21f44f6f95", "selection": {"edge_ids": ["P106"], "source_evidence": "侧围外板", "target_evidence": "行李箱饰板", "part_a": "侧围外板", "part_b": "行李箱饰板"}}
+{"key": "94ab8153d00d4fa17a26e7eec21ee30e14c2051d756d7e3d250e767b53d82a42", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2ef4ae7683dea3f8f49645035eddccfc687d9d4e838c690ad8f3891b5bcce5e0", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "70431437c820d88f685ffc20e6ca4a159ba3fda2a7843d266d1cbb6e98b9004f", "selection": {"edge_ids": ["P103"], "source_evidence": "侧围", "target_evidence": "行李箱（L&R）", "part_a": "侧围", "part_b": "行李箱"}}
+{"key": "97976f7d8c7f7720fe3628d1380069e67a15dd113bbefae6c1f3b26851855691", "selection": {"edge_ids": ["P105"], "source_evidence": "侧围", "target_evidence": "尾灯A（L&R）", "part_a": "侧围", "part_b": "尾灯A"}}
+{"key": "1f7a40012421e75293a545600ab1da625364e9d9f017da4224e7c831c9b6827a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "40a67cfad868e3fa83e3ed186a5fddaf543020554358f51ea8dca47c5d3aaa4e", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6e83767d190043ef8942e3c5a73a41cbd1604415c877a00c32ad040e2c72d751", "error": "Invalid concrete part evidence"}
+{"key": "76e1964405fb4b041d8ecac68d424b3ff5c8c1f898dc644fbc34f0ba5abe4ce0", "error": "LLM target evidence not found in workbook text"}
+{"key": "96f851576fecc9f4537043142be4b23aacc4fb5d934e88af67e483d4eca238ec", "error": "LLM target evidence not found in workbook text"}
+{"key": "12405d944aae1fe232afc733c336191731b7d80e6c974fcc885711dc639e8206", "error": "LLM target evidence not found in workbook text"}
+{"key": "162c3c15a52df3489fd6a9b525d989ed180567cafeee2e08c00a3a47abaf3ee8", "error": "LLM target evidence not found in workbook text"}
+{"key": "f543410744a3b4a5e0ea1b29dcafda431696e92dd807c74415d8678a64d1e624", "error": "LLM target evidence not found in workbook text"}
+{"key": "3fd549aff0e20aa1bf4aac932188dfc30a1f79304e38122f94bfcc8673f0c9d7", "error": "LLM omitted source_id"}
+{"key": "3a6f076bc081ac951078c185a7f43e2c8f0e01de78e299a9d1d24c3c4eb00bfd", "error": "LLM omitted source_id"}
+{"key": "cf2953ec880fade16dd4cc30a48662885f7c226a44fb19ca67f0aabcc4426771", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a0b063a3387f48ed159e725ade4ae445775b2105dc90e38102c6f3df794bf32d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e45891b1d6c0401523e8a084e9a178282cbbfd14cf6f8b1b4bc379ba426c34a3", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b8ac20f185b840800ca66abd9a5f2eec09bed2fb1494b251b2b6c71198667df8", "selection": {"edge_ids": ["P028"], "source_evidence": "机盖", "target_evidence": "前保险杠", "part_a": "发动机盖", "part_b": "前保险杠"}}
+{"key": "af6143edffaa3782587ab2cf69ba68747e775652a209537a3d015cf1ad0e25e2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8469f1c4405bb7f68bd173d66261368f12437bd154b32f4ac7f882484869d558", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e765b8d3c363350882a7ac1e9b78276880a77742dbe9a0e7d6ef3f42d7364f45", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0b14ef2e0bec3e23a7ce22d243afc969732f7a6dcaaea4c7ecfae26ab42a56e6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3da55cc606ed09bb77ba72eaa7ff7e689869dc78f9a2bcd342e9b5c840f2db43", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d1adcf1dd5c49395322abe1a0ce4e3ef8dcb51bdaf85e16f8f2e9f2ff7549209", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "388b5d73388690981df3ad24f7b0589bdf6608a47fd167a0ec08cedf01f7d7fb", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "9eb9a22fd9a5aa0fefbdd8a3d15a5ff87b34ef6cfb0b30b013eb8cb114e4c096", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5de75eeef9f1ed829c9511414dec7c602c5e1c44e43b7a6cd869652a26984ec4", "selection": {"edge_ids": ["P029", "P030"], "source_evidence": "机盖", "target_evidence": "翼子板", "part_a": "发动机盖", "part_b": "翼子板"}}
+{"key": "e7092e304df4a02c82aaa8b09d82db100c251c014c18a7aab10c6be63fc8d223", "selection": {"edge_ids": ["P091"], "source_evidence": "翼子板", "target_evidence": "前保险杠", "part_a": "翼子板", "part_b": "前保险杠"}}
+{"key": "03a70fbf06ac880078c7e8474ceacb0ad98e244dfb5f6713cf3ef5f57c55a988", "error": "LLM target evidence not found in workbook text"}
+{"key": "a1a5f2f5bdbf41779d040b8126470f6d836591ff622051f10afc82909eeba859", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "befe2e16ea7f32b38b028ce9ec60fe6140c13887814b5326b09ee101e0f18827", "selection": {"edge_ids": ["P099"], "source_evidence": "侧围", "target_evidence": "前风挡玻璃", "part_a": "侧围", "part_b": "前风挡"}}
+{"key": "596b245e7212b2858baad25f759886bb3bcfe778b6bad732d8dc0fe0b7b45ab1", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "da219e6482dfe891e847940dfb752f924fd54878a6b599df8750cd9e786e8687", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e8b1aedc9b408ebcca689d92d2eb6cb3a2bac5ffcba7d64542619ff6e1d1e47b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "4d9415f21137a9d8f28b3f8d85b03f84b346f32764c5b09f0c2a525a65371d96", "selection": {"edge_ids": ["P101"], "source_evidence": "侧围", "target_evidence": "翼子板", "part_a": "侧围", "part_b": "翼子板"}}
+{"key": "21be5ea8c29990eaa95c86609974a3e352eb8467748e226c7d541a22f35e31ef", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "10b03d43961c6e531819c4c965b4b2a399a3e5113295bc31729b796f1d50784d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ccebc723213048b4ef6548ea64fad7cc27a76278d5200041feedc91ab8e6c553", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2ac97f62da1bfe75bf01fa44ae96689e74b0326dbb1b9f6327ff252c857795e1", "selection": {"edge_ids": ["P101"], "source_evidence": "侧围", "target_evidence": "翼子板", "part_a": "侧围", "part_b": "翼子板"}}
+{"key": "37fa1da0f9ef18a6c9a2d181eb507d8e2cfa00ee54f7d05c4eb055ec99d723fe", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "478ba2f7ef84b828ca60ccb46cfb680b9f8770f035a101301b07c0054e215f76", "selection": {"edge_ids": ["P024"], "source_evidence": "前保险杠", "target_evidence": "摄像头", "part_a": "前保险杠", "part_b": "摄像头"}}
+{"key": "48acdd34eb606302d364902b403d8466101dca88fdb16a007fe845506167df22", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "081b61da822d1e9796907a5f2309b7416505e40f41d08dceb9e5586bdbaebf51", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b88039bffa24993e5de7ff275905ec9432be9e7e56641e62b98f36ce53ba1bb7", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6abd6d4d15247d7f6c0f71581e2cca37e4468e85367c7018cc9a89f0c6f634ee", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "caf4594b43169c4e074e959ec73c032d422d96adce7b1c7d171e7054e1a3441f", "selection": {"edge_ids": ["P094"], "source_evidence": "翼子板", "target_evidence": "翼子板下饰板", "part_a": "翼子板", "part_b": "翼子板下饰板"}}
+{"key": "32cad31b3fbe0cca5fd71377a82e0778eee41162d6649acdd55edc182db42c82", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b5df4213ca222959f9c8073b6971c0d5bb11794124ee2fc680b973632e5f1933", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e07e952b257eeca638e2de3ba47156d8da892ca1d7cf7f9741a7fd433f9de998", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8408242ad6afdd06d2761f80fec2e6752ed65bed6dbf7d3f5c0911630263aebc", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "417f8fd9c5790f4e623ec81d378e538ced6140ad582109a041936193b9f59d96", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "7ad46de55b6b42bb5959f419ce2fd8e1a08e2d197cd9421bc18dffa876f028f1", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "cc0189f7a31ba068cbbe8fdebf51962f3bbea643309e726043f0ae2595c8db12", "error": "LLM target evidence not found in workbook text"}
+{"key": "38a38b5427134ddeb99c728277395eacff86c6665a7b8f0e81019c972257a69b", "error": "LLM target evidence not found in workbook text"}
+{"key": "3a6fb43a1973d9f51fdd42f7e0612c1552b931002c5bc00ed8b3d02adc24bfb5", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8e657c0b42141f684d549ec4a3d89aca2518415c209b8b0331e1bb2e5ad06e80", "selection": {"edge_ids": ["P022"], "source_evidence": "前保险杠", "target_evidence": "前保雷达", "part_a": "前保险杠", "part_b": "前保雷达"}}
+{"key": "df4fe496d06396f2e662b2f008bba88239330ec177234cbe96c8c2ec22d277a8", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "84c742a257a16d2de658bbe4fc59dd16c145b4a88556309c60b8580505eb90f3", "selection": {"edge_ids": ["P114"], "source_evidence": "前门", "target_evidence": "翼子板", "part_a": "前车门", "part_b": "翼子板"}}
+{"key": "f37560510089a17c5ad8711356a49392825f570f5f98949b12ff5f82b3ae17f4", "selection": {"edge_ids": ["P124"], "source_evidence": "后门", "target_evidence": "前门", "part_a": "后车门", "part_b": "前车门"}}
+{"key": "cc6b09a9830e6a660445f553d9c19c1266ab22ae89290b7b16b5ea6818b4d306", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2efb07fe2098c3d08448cf347e5ac8e748a34161c15501d977b2c0437d245e5f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b7cc5e3d8b654b9508b00a830ffd42259e2f65f71efdc3a565866539eae57546", "selection": {"edge_ids": ["P119"], "source_evidence": "前门", "target_evidence": "门槛（L&R)", "part_a": "前车门", "part_b": "门槛"}}
+{"key": "7abb3a2cc1f3a19a3b2e8f531e4d9d46abffda6a7a3a5590b1e29809c3579f1d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "7994267d5d1530e6fd1b298bf348826b7e368f28d921f570c80e42453b414227", "selection": {"edge_ids": ["P121"], "source_evidence": "前门", "target_evidence": "前门把手", "part_a": "前车门", "part_b": "前门把手"}}
+{"key": "3f4cc549e60f7fa403d43b4137b02e1354844eee6965dcec78626a0d72039220", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "eb4259376079eeb3b3426b06295b0fab5c2c2348ccc70fa8b43f914f910bb6fa", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "59575d051296fb5a9729f50db9c3fb19bbb95057cc475bb00e3994a5eb820a8f", "selection": {"edge_ids": ["P135"], "source_evidence": "后门", "target_evidence": "后门把手", "part_a": "后车门", "part_b": "后门把手"}}
+{"key": "03ef27f188b50fe0ef70c4f5026651d41e3f20f90c293bd08dcc32afccba0f4d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2625755ca0b193a2d98df290fd8448fe36304a067d4956e11f7d9621ee3000ae", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d00e3ed95af25a145a7823958f9f60d13a9024ed22c50e52a30b49239604b781", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0ebf024badcbf3af4159655911588b592df9bc4a10b1b0a56074d9199fdc313c", "selection": {"edge_ids": ["P113"], "source_evidence": "侧围", "target_evidence": "后三角窗", "part_a": "侧围", "part_b": "后三角窗"}}
+{"key": "2f42939a61ee55913a8efd084a50a5067b3a99917398e8893cf18c1b1aab54be", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "09272e77d4d3a73e3c3acaefc84992e049259d62a3844779bbf299d434f86795", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c082f14f32cc334420511e6c9884531daed382bb18d7ef4adde37670e471fbb1", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6bc7c2e65558ab4ebcce0cbc2784f590c2519786554f403293c131841d2286d3", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "35a328dcfc63dbd9ac94b1a00d14ff1fa4816399884353d27ac68a689e5f334e", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2cd326981331df6bd0e96c2f07817dfb004707e67d1333305a5480e9c7ee3f93", "error": "LLM target evidence not found in workbook text"}
+{"key": "e2870218d302c10d77dde2460dfcaf4ba8dc093c443f05146f5803a48c8477a8", "error": "LLM target evidence not found in workbook text"}
+{"key": "68dacccd99027ab49dbe72eae17c0ab830cc4b3cb8b0fe2758481bc1d4ed48ec", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "563f514376abd7bc5ab1238ca266249da936267eb26b8a1e06b06803b4e68649", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b7f90c6033eb875603f41c75322746f87b3f3a6cc607636ff16f6b44e353bf02", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2377056cf0299bb2e6dd4726d3e3cdc108c4eecad0e9c0722541577a5204a904", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "bd45265146a89fbdb2bc6430348a1dcbc3baf6919773251a5828359144e6257e", "error": "LLM edge_ids must contain 0..2 distinct IDs"}
+{"key": "1611fde8832b1dbc5b7facdb9b39a91878afd5f3c8f6981e1ca8eb9de5f42c6e", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "544acf3075abe133522b357c044e59565336c78e39ea8adac4a2288ff06d47d8", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b43ddff95599db2a6bb64fba45da189f18c2497d81ed602250be4775d2fd63cd", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "9796af990ce174b4ab7b93a30f9a05889c7dc358e08b85bef86584a3930757c6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5934af3677d7afde51d091101f3829dc8325101f69aec69a991db0be9a90434a", "selection": {"edge_ids": ["P147"], "source_evidence": "后视镜边框", "target_evidence": "后视镜摄\n像头（ L&R）", "part_a": "后视镜边框", "part_b": "后视镜摄像头"}}
+{"key": "6770dccbe37f721c135beb95f9453a05ce431022ee14fde341f9a4fa6149e8e3", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "83c933039aa0032af0e939a01379dc8fa925cc5d583165598e17c714faae499b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "beede3ecf016e3b0363e4dabba1efd0c96846a9eabdd3c639125ca64133e9103", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b36c8b96498d4617a008aa385c06416cc247fc06dedc377f5eaad10370bd2920", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "973fd48f3274482016885c11d692dbe408ac80cf229898de8b7df074aee7ef3d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0025d33fcd0b2b4179833cb9b811c21775593147dea427bb861ce1a9c7c8679c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ef0407e225619f110e3b1e0a2a4477ed82c52741f730e8e57d8379d3a0cd67ab", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "fb1f7f8a283822b1971c3c6853991029b0f322a803f3cd0799898ede90bb341a", "selection": {"edge_ids": ["P147"], "source_evidence": "后视镜底座下段", "target_evidence": "后视\n镜摄像头（L&R）", "part_a": "后视镜底座下段", "part_b": "后视镜摄像头"}}
+{"key": "923944c11b7e874308018c3011562fb1877392120a54f0fedf041c43d5881f01", "selection": {"edge_ids": ["P143"], "source_evidence": "后视镜装饰板", "target_evidence": "转向灯\n（L&R）", "part_a": "后视镜装饰板", "part_b": "转向灯"}}
+{"key": "ba4659d01a4b8c4e1a8d1b0fa960f60f16d19508c8e2c0ab3da8178440fb88e1", "selection": {"edge_ids": ["P143"], "source_evidence": "后视镜本体", "target_evidence": "转向灯\n（L&R）", "part_a": "后视镜本体", "part_b": "转向灯"}}
+{"key": "640cb91032d59c5d8002535b0981af22cdfbb724f915d5b273aa45eebf3ffab3", "selection": {"edge_ids": ["P144"], "source_evidence": "后视镜边框", "target_evidence": "镜片", "part_a": "后视镜边框", "part_b": "镜片"}}
+{"key": "f97357ae36d3dcc33d8180ad0ca004db071a0405a5158d810f336d65528d008e", "selection": {"edge_ids": ["P143"], "source_evidence": "后视镜边框", "target_evidence": "转向灯", "part_a": "后视镜边框", "part_b": "转向灯"}}
+{"key": "d3c6775c832eb2a619cffe35fce3ac159c323a6cecc76b0c2f42e8f0b8adf09c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5632521e3afdd9713f6f8dd5021f4ad83054bfb531b39f8831f1943d12c21ae3", "selection": {"edge_ids": ["P137"], "source_evidence": "后视镜底座上段", "target_evidence": "前门", "part_a": "后视镜底座上段", "part_b": "前车门"}}
+{"key": "884ebd0b45e1f4c5c6e7c7737a41a3d25e4cc5469985879408c1c0af15b6ad29", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a06f33189f6dc9d9ecabea4d93784bf773fd2043c3074d2ce40531be45ff0b43", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "aded12ba106fb5bc0994c300e8c4eccc205f60bd85ca395cff3d1a9e9ad4294e", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "be02137af23e7ca7ac1803e76889858ae94b883a0c43aed12a70389ea5be5975", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e79523b1c82b2e8f0b5446d60844e768faaaedc0f85b51b069b8d76de72bc0bc", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d2d1a07c78ae6b75c73be937bbee507bd4b5fa7e640bff1513c08cf05942bf8a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "cb3903ef7c330d9a268456072a38cbd2eaca9f8c618a0de2cdc85455f4bfb6ae", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f02c2c12989d3411e22f90eba24a24d29d948eb51856d180368279a03af4a058", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b3247ae3761d36656f1f8774be663ee6bace92c05676733a10019bb4baab8199", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a6a6d4515bf192f81414873d9b6de8270586806a477a79c27e07c8f8e62a9ef2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "00e4b07aa36162a2fce39f9449f7c67b3514f05e10778c2b9731ada319434445", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6ffbd7086149d0be01da41a36da51ada6dfc9116841b7094f0e44c27d7ab0085", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "73c8c550924f5bde7812de8469912ae4f584aa4f2b9cc0b463a67c0c59ae2a1e", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8b0c66539c81837d4a0b55f5b32278295f497dbc9f67e8c92adaa5dccfc586b5", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a8ae0d9fa8cd52aea92d5e8f531aedf1539679ec38fe2a58aebf2ae8cb8d7261", "error": "LLM target evidence not found in workbook text"}
+{"key": "f4c939a60a61dc86fcc71b54e90f90d7d091435027f90830cb9c99eab78cc4ec", "selection": {"edge_ids": ["P104"], "source_evidence": "侧围", "target_evidence": "后保险杠（L&R）", "part_a": "侧围", "part_b": "后保险杠"}}
+{"key": "0a31c8d2aed31aac4777d2c52c8b983ffb7dd23a580c2da5e3398d1488fa57d5", "selection": {"edge_ids": ["P102"], "source_evidence": "侧围", "target_evidence": "后风挡玻璃（L&R）", "part_a": "侧围", "part_b": "后风挡"}}
+{"key": "58c607a8fb2b73feb0889b462dc8dc4ff11822dc8d3178ed22bcd8d4ac14f77b", "selection": {"edge_ids": ["P103"], "source_evidence": "侧围", "target_evidence": "行李箱盖（L&R）", "part_a": "侧围", "part_b": "行李箱盖"}}
+{"key": "6d79857b18e38609d8c2dead2a33138a5b70f483177313f004677569288e2ae4", "error": "Invalid concrete part evidence"}
+{"key": "382a891ada03ef8d2ab070bd435b319fcec914c0e1bb8119491646e66a88e59e", "error": "LLM target evidence not found in workbook text"}
+{"key": "d93b4e75b5b73c627947b1d609f54e5ee456718899e83cb197ccf8bf114fed56", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "eef448907c6abdec463c8f43511a194f8965c3a2d05e4793a0ee108d58da5a2d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "81c885ac86a10ac08ec943b7c742115496c813c5846941df294fc4ceed6fc874", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "9936d847a210d93854c2125e9876e4dc93efa4adca92569d072c7cb54a7afd2c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a197d133fab305a65a18b3696fd8a65d5f857a0a12a643f6827de242f212c9f3", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c21ba1c499ad15d899d3cfc2891e863924f33d244c35a9f8085cd6ca379748f8", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0fe1cd2ebce7419ef0178b0c25c48c53845ae0df60b739024bfe3116cd15e9ca", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "02a96c1031796fa6ce4177da86007b5841c9105f13af0af10f8762e61c1dfc9a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d5b18c90cc200cb1333cd4abce96d82c7e2df21053002d4d786e266abc634f21", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a2b6e86a3cc29f8e7d2b546917dd2f612c4c1913cb31cd94ed037551e9bfe362", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3d71a378999a5c4404e1111960fdcef5fa3ccdc7261d357c96ff10101ae0f1d2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "9acd911bcecd544f949b33227cf5306ec9b638245eb7efd33e9751e77e77dbfa", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "533f54e5587c3f68a8f6e638d3c25b06e11a90c6c959d5a84cc4327de11b1a03", "selection": {"edge_ids": ["P086"], "source_evidence": "后保险杠", "target_evidence": "后保雷达", "part_a": "后保险杠", "part_b": "后保雷达"}}
+{"key": "1649df8def08298df550d4b5c8b2c120127737224a78922a691cc8a3df5f0a23", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "405bfdc830efac6451428b791ff5ab792499783a8deb0423fec171efd10f05a2", "error": "LLM edge_ids must contain 0..2 distinct IDs"}
+{"key": "32bd9f69efd7ddbe81631771016acf7d6997f3bec947b3415a68fa7887332c77", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "16e201ed762b0756a3d761acfc24650eb0e6a24523ccca6de8cac9ed7538c751", "error": "Invalid concrete part evidence"}
+{"key": "4996ea8f6327ebeb851663d7ee36dbb78a6635dc96450426183a7f2269554b3b", "error": "Invalid concrete part evidence"}
+{"key": "f41dbebf544738b5d27000eaaab6a6d8159fafcef95cf4183bc90eb4ecadcad3", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "cef53d63474b47f1cb62e7dd901e3f493df43f15935704b10fa6a120f0c4a5ee", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1a226321723967c9e83e8b7e14ffd04f074f744597c08c613ccd0de7da35e0a5", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "9f78336d1b6b39cb29ddaeb06d72bdd48805dc16c4fc29b20d2e5a30a0571199", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8981c537c3b1efe9f14e1ea065932d73a3a22d11bbc71bbd9f897bc6a4e8569d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1b7bf6a45e08aaf78101ad6c87d7bbde86319f3ffd61d43a1b15d4e7bf4b92cb", "error": "LLM omitted source_id"}
+{"key": "6bf788b863e5111efe2aa2b7a0e261b39608a330502b0339964f51bced7cc1b9", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "de85d15863bf990abcf302a7e49d5d6738a47cf51c5f7f0a2a2bb2f80a6a634e", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e283ad1f25b0d2433f90d1e96a67e53ec8487a831f1731817ec08e653419a564", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "eaf067c4cd8def655ac2c12029e571a4a8e2b906de55ab149e9bfe4c8cd97f28", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b6e15b6ba5397915b61617a08d5b414c22741c52a4e08398b8cc310543230c22", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "336eaab2771727013d4afc07937534e0e2d2fedcc79fc5de79d56479dc79be2e", "selection": {"edge_ids": ["P107"], "source_evidence": "侧围", "target_evidence": "顶盖玻璃", "part_a": "侧围", "part_b": "顶盖玻璃"}}
+{"key": "3170413311e76e52c966dc4a353758f761733860dff71866447b1f8fab1ef6a5", "selection": {"edge_ids": ["P107"], "source_evidence": "侧围", "target_evidence": "顶盖玻璃后段", "part_a": "侧围", "part_b": "顶盖玻璃后段"}}
+{"key": "b6a29b86b7dbd08fb902fdedf911db35092451926bef1ef26d7ca04888912c17", "selection": {"edge_ids": ["P029", "P030"], "source_evidence": "机盖", "target_evidence": "翼子板", "part_a": "发动机盖", "part_b": "翼子板"}}
+{"key": "7a0913d4de1a302ec0e5540af257d2e243ee032e569bd824d9a7ff04455e2140", "selection": {"edge_ids": ["P028"], "source_evidence": "机盖", "target_evidence": "前保险杠", "part_a": "发动机盖", "part_b": "前保险杠"}}
+{"key": "4d1fad316478ac2d2e10fa6a3a1d0e4e21c1b30d0cbc567ebb4e185de8c8965b", "selection": {"edge_ids": ["P091"], "source_evidence": "翼子板", "target_evidence": "前保险杠", "part_a": "翼子板", "part_b": "前保险杠"}}
+{"key": "0a6b28e07108da66f7d32f140677b029c55a79d8e487347ebf8afb2d620a31da", "selection": {"edge_ids": ["P091"], "source_evidence": "翼子板", "target_evidence": "前保险杠", "part_a": "翼子板", "part_b": "前保险杠"}}
+{"key": "f0f3517383fef7e6264b7436153d515f0ccfe23817a8ef655bc5343926544e53", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1ecc8a1b41c594665365a42f6c60b188afe6885a2ec0e8dfdb8a38668680588a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "faa4e511e3c3ec084854018ec07c1cf1e704a573c07eaef376e63032f944b859", "selection": {"edge_ids": ["P029", "P030"], "source_evidence": "机盖", "target_evidence": "翼子板", "part_a": "发动机盖", "part_b": "翼子板"}}
+{"key": "b48ca71f3a50549a4fc859d805114d6b9aa250efc85ec7f77568a0b3e61b36da", "selection": {"edge_ids": ["P091"], "source_evidence": "翼子板", "target_evidence": "前保险杠", "part_a": "翼子板", "part_b": "前保险杠"}}
+{"key": "0b78d5e241481aec82642e9709a85b22d43b28868a04ffe59679d89678c923cf", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8108e9660e2e7a9c59a382c12b4bfa0ef3015f78ca5de1116e386263f2d7925c", "selection": {"edge_ids": ["P114"], "source_evidence": "前门", "target_evidence": "翼子板", "part_a": "前车门", "part_b": "翼子板"}}
+{"key": "d0b76232d7b202a3459edd66b5d8806ec8d2e8327bb05676cc0788710e2db490", "selection": {"edge_ids": ["P114"], "source_evidence": "前门", "target_evidence": "翼子板", "part_a": "前车门", "part_b": "翼子板"}}
+{"key": "16d763dcba27e03fda8025e017d2eabff29fcae17ef9c8ae7703f79c4bf8f4ac", "selection": {"edge_ids": ["P124"], "source_evidence": "后门", "target_evidence": "前门", "part_a": "后车门", "part_b": "前车门"}}
+{"key": "a23658c70194da14031c2d4a3b07206e82ba4ee35eecbdbf6ccb3e0d80f5cca3", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "21d813804f1ac33fbf19ce162feb850929e5824153f19da6b4a49d06bcaf1535", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a324695eb468cc4dee6abd1a485acd15f46dbc02c44c9832200fd3dcfe7e647a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "bd8784ab44baf29784bdb7dc437712c3b662cd944db2a9391298f12ad43808cd", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b0905c5137fb0e41e9824f23dc62ef7092a80bfd5f5406bc61951532944f6c21", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6ed7058c2ce1c0ab6e2c6c29202095a0b5ba357569629dc628eac55735fcdfd0", "selection": {"edge_ids": ["P039"], "source_evidence": "顶盖玻璃后段", "target_evidence": "后风挡玻璃", "part_a": "顶盖玻璃后段", "part_b": "后风挡"}}
+{"key": "86ec2d04963b4657c6799f56201f3c033fd1a7fe5c93d38e8c84ddc6babcca12", "error": "PDF has multiple positions for this pair; workbook does not disambiguate"}
+{"key": "cae8d6a6a1d03891412db69cbd9825d33b3520dfbdd441ac982240736bd79c71", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1e037179cdb740cf6822fd60761b68e99b412be18afb966e167c2d3b6c6e95e3", "selection": {"edge_ids": ["P104"], "source_evidence": "侧围", "target_evidence": "后保险杠", "part_a": "侧围", "part_b": "后保险杠"}}
+{"key": "60d33772c2f03fa3b2207afaf8cee021779b484dd72797a7eb7f649bc85d5b9b", "selection": {"edge_ids": ["P103"], "source_evidence": "侧围", "target_evidence": "行李箱盖板", "part_a": "侧围", "part_b": "行李箱盖板"}}
+{"key": "13fc2861d46a6b8dab08b6754e36e5550901bc6c7e8826f0796020e57c025cea", "selection": {"edge_ids": ["P072"], "source_evidence": "后保险杠", "target_evidence": "行李箱", "part_a": "后保险杠", "part_b": "行李箱"}}
+{"key": "58951fad9b3fff9fd8b9371746a25a22ce903633c8e73449b607e0af0130291b", "selection": {"edge_ids": ["P104"], "source_evidence": "侧围", "target_evidence": "后保险杠", "part_a": "侧围", "part_b": "后保险杠"}}
+{"key": "b413412cdfc1b1ca8f7629297d5ce326c0f3f7ec3d7c4e014506ec7e43483b27", "selection": {"edge_ids": ["P107"], "source_evidence": "侧围", "target_evidence": "顶盖玻璃", "part_a": "侧围", "part_b": "顶盖玻璃"}}
+{"key": "068d7fbf71022fc157e5cc6d32cce4459386a78f52580059de61870a857dcd96", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "516457d932d27b758c9005e2e68040622707141ebe63f90a28b3800cc0e05824", "selection": {"edge_ids": ["P099"], "source_evidence": "侧围", "target_evidence": "前风挡玻璃", "part_a": "侧围", "part_b": "前风挡"}}
+{"key": "686b5e635247637ffa059b7e6f9c373747f6e5597c257dbf0b73f76d83f947f5", "selection": {"edge_ids": ["P029", "P030"], "source_evidence": "机盖", "target_evidence": "翼子板", "part_a": "发动机盖", "part_b": "翼子板"}}
+{"key": "536a4bb8054bffa91bac8ce16a1fd49c286cba5b8c83242cfc3ef71b53c66f36", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "45533389734502b25ee8a92a91f357e0f15609096b803de74b2890f5bc7a6090", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "35ba3dd5128af67e4c59ad6521705625379fadb0a07796679ebb82999d2c81cc", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "60acb0b72cb008615cda13072d776f36e1cdac9490334d3b8b838633cfcd68db", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "56c8f6d8b1b5c034a7ada282e05b897efe956a4621f2bd27852b32a777c17cf6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "44311f84c1e9951daf3a6873a11418aaccf449f1b4ef2e243919541a7553e99a", "selection": {"edge_ids": ["P107"], "source_evidence": "侧围", "target_evidence": "顶盖玻璃后段", "part_a": "侧围", "part_b": "顶盖玻璃后段"}}
+{"key": "603e24418651c2542c6c9e5458a1325b53162846b10c48208e8fa2aaf24aa5bc", "selection": {"edge_ids": ["P102"], "source_evidence": "侧围", "target_evidence": "后风挡玻璃", "part_a": "侧围", "part_b": "后风挡"}}
+{"key": "89892d2b2e0519eb1e05d853246211e9891d5caa9e9ddf828c7c3f39923d093c", "selection": {"edge_ids": ["P106"], "source_evidence": "侧围", "target_evidence": "行李箱饰板", "part_a": "侧围", "part_b": "行李箱饰板"}}
+{"key": "ba4a7f0aef8a6131fff87608cdb2faf1fd693639a596985c8380be46e4337148", "selection": {"edge_ids": ["P103"], "source_evidence": "侧围", "target_evidence": "行李箱盖", "part_a": "侧围", "part_b": "行李箱盖"}}
+{"key": "31415253e15fa573b07e016dee2f4cce01bdfd2bd72faff38829abed218632e2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "fb3ce024ff5b3ffddd2a1ca5a407f461a09daa4db1829bf980620874a8bdb819", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "42ba49103521786074013f3a9acffb4ba51f1a47dbd65af4fed79a7d4cfb177f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d814f7789db17dbeb4840fcb6fa0075b148cc221fbf2aa395fcee024310a65e9", "selection": {"edge_ids": ["P072"], "source_evidence": "后保险杠", "target_evidence": "行李箱", "part_a": "后保险杠", "part_b": "行李箱"}}
+{"key": "0cf91ceef3c84f98bec3305a42b4bf742dbd0cc1d93daa43d52d0343cfef2e77", "selection": {"edge_ids": ["P029", "P030"], "source_evidence": "发动机盖", "target_evidence": "翼子板", "part_a": "发动机盖", "part_b": "翼子板"}}
+{"key": "31707d9653989573d8e1dc09fb711d272ec1d60580489ee0b37a4f9bfc09dc56", "selection": {"edge_ids": ["P028"], "source_evidence": "发动机盖", "target_evidence": "前保险杠", "part_a": "发动机盖", "part_b": "前保险杠"}}
+{"key": "a0ba079dbe4aaeebded75b9456011df59a7e61fd09371e74d2477fdb06168453", "selection": {"edge_ids": ["P029", "P030"], "source_evidence": "发动机盖", "target_evidence": "翼子板", "part_a": "发动机盖", "part_b": "翼子板"}}
+{"key": "92441e4253ed45ebb2c99a6d740c90545ac035374b54fe3cca320413c233c8ee", "selection": {"edge_ids": ["P095"], "source_evidence": "翼子板", "target_evidence": "发动机盖", "part_a": "翼子板", "part_b": "发动机盖"}}
+{"key": "eeb10259890ca99ce2ba4994bf4b79330c67729e574e31e4467e2e9b80ce94fb", "selection": {"edge_ids": ["P091"], "source_evidence": "翼子板", "target_evidence": "前保险杠上蒙皮", "part_a": "翼子板", "part_b": "前保险杠上蒙皮"}}
+{"key": "60cdc9d08a57c8690e0f7b825909537fbb180456116245a0459e7444a584a003", "selection": {"edge_ids": ["P091"], "source_evidence": "翼子板", "target_evidence": "前保险杠上蒙皮", "part_a": "翼子板", "part_b": "前保险杠上蒙皮"}}
+{"key": "95af2088628dffaabb2d9b5825bf6982b27bdc43db4dbcf3cc0a810276c41709", "selection": {"edge_ids": ["P094"], "source_evidence": "翼子板", "target_evidence": "门槛饰板", "part_a": "翼子板", "part_b": "门槛饰板"}}
+{"key": "4a539fb8d9e6849e18b6aecd4ba050e5e92a61ee5e4d3ed8275b4eaacb4670a8", "selection": {"edge_ids": ["P093"], "source_evidence": "翼子板", "target_evidence": "前门", "part_a": "翼子板", "part_b": "前车门"}}
+{"key": "7eac4a0421e2abcc728ade66738fe1c44c61c96b930fd1cd33964e0c96e71fc6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f0334dd930a1b5b715dbba9fc89f2a2933dca222d5e249a273ec57023ac79d55", "selection": {"edge_ids": ["P095"], "source_evidence": "翼子板", "target_evidence": "发动机盖", "part_a": "翼子板", "part_b": "发动机盖"}}
+{"key": "106d5046db8c02532f3c14ba3f1936cce1e4e7b43a3dbbb95c0626f4d612506d", "selection": {"edge_ids": ["P114"], "source_evidence": "前门", "target_evidence": "翼子板", "part_a": "前车门", "part_b": "翼子板"}}
+{"key": "c0f6255ef22c59559ca411ad8bd7c4af66877b0f70ea6c3935a0ec2a9c04a4d3", "selection": {"edge_ids": ["P114"], "source_evidence": "前门", "target_evidence": "翼子板", "part_a": "前车门", "part_b": "翼子板"}}
+{"key": "6540285854518db65bf7f688bf092448a8bf286500709fcf53bf3e5d97e3077d", "selection": {"edge_ids": ["P116"], "source_evidence": "前门", "target_evidence": "后门", "part_a": "前车门", "part_b": "后车门"}}
+{"key": "4289764312b1a3a89a044a082fcbe883852e689243ea23684870fb1f1dd2a957", "selection": {"edge_ids": ["P116"], "source_evidence": "前门", "target_evidence": "后门", "part_a": "前车门", "part_b": "后车门"}}
+{"key": "6e5c8f342409a66110a519b9b0a5837bb135759c1c045583e1d2238f0a7ed933", "selection": {"edge_ids": ["P124"], "source_evidence": "后门", "target_evidence": "前门", "part_a": "后车门", "part_b": "前车门"}}
+{"key": "78e71a349ca530354c9bf54b13755ef48ed50c16f4e4050ca85d137b27b8d353", "selection": {"edge_ids": ["P124"], "source_evidence": "后门", "target_evidence": "前门", "part_a": "后车门", "part_b": "前车门"}}
+{"key": "620ee8d9f5a861d1133ca18f571374bd377ecd3b7750808f63b74a38f3b45481", "error": "PDF has multiple positions for this pair; workbook does not disambiguate"}
+{"key": "147a6a28c316fbf6b8a97bf8523773e913fbf062258521a5be0c285ac9c97923", "error": "PDF has multiple positions for this pair; workbook does not disambiguate"}
+{"key": "050aab0cd223f55a39a8783602b8a55e2663d2c07bc68fe23f383ac5a27569ac", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c93f543f30415960b8f1143bcbdc721e71221fc36d2e5c52c367a7b8a173116c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "fac7653c513a0868725f6c2f50af09515e9d9f224eb2c5a37b7b5b3614292a09", "selection": {"edge_ids": ["P104"], "source_evidence": "侧围", "target_evidence": "后保", "part_a": "侧围", "part_b": "后保"}}
+{"key": "607c1b2214d953568deca6d1bf20182532ce980e741fb97314a99c80434806fc", "selection": {"edge_ids": ["P105"], "source_evidence": "侧围", "target_evidence": "后组合灯", "part_a": "侧围", "part_b": "后车灯"}}
+{"key": "ee27baebb991e8c7d38915e7789a971d4196431f30f9279023e2c224b462abde", "selection": {"edge_ids": ["P105"], "source_evidence": "侧围", "target_evidence": "后组合灯", "part_a": "侧围", "part_b": "后车灯"}}
+{"key": "49cf8699ef9b8f245d559a1727df2b5c0d8ada331e60819db832b5260e2f994a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "36399b029bf9e1cf83bcdcbfcfe3dcfe7407fd4c1c1615cd40e8b5aa03d6ed67", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "291c7023c6192e9e1d542c09b83e6c358b46a67c8ddd11687dcc39275e2fd665", "error": "LLM target evidence not found in workbook text"}
+{"key": "2f1231a496d85121a72ab1c30045be1a8d98c58e852f100f646349b4ec785bac", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "05d0979c1a83363ea3395b7c1ef2fc934ecb1cfc68b854223e983ff82120859c", "selection": {"edge_ids": ["P029", "P030"], "source_evidence": "发动机盖", "target_evidence": "翼子板(L&R)", "part_a": "发动机盖", "part_b": "翼子板"}}
+{"key": "dfbd5e0900d9a231d0c311caf9d08de8e1cb1c3772e9e4c71950a57ef157f6ae", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e1a4f0903c7a18d05e8cf5984ebcc78ec95bfa1178aed9774c38e5e73eb17261", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d0baca713f8d81f0d6e8b0391c9e2b428c26ef0074eefe430e8dfe19a18e9037", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "975152f2b8b0c06e27c4045ad0004fb8786dc661efdc392d44d357c31ede59b3", "selection": {"edge_ids": ["P092"], "source_evidence": "翼子板", "target_evidence": "前组合灯(L&R)", "part_a": "翼子板", "part_b": "前车灯"}}
+{"key": "c602caaaa86575ff24f9487ccb65aa6008c038986265bee35f0b01ce916cd03c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "9ee713367e047c701dbf1f5f57959ba7ea298382caa6033827fb2f3ed02aeb45", "error": "LLM target evidence not found in workbook text"}
+{"key": "3e1f5a77bd166b58337fcb0e4467e8f8cc0ddd39f98c72021c5afc3d2b5a9fb2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "48f1b67400233506a3e48b106718591d66efa321bb2e9846fe6fd11e3f6bfa87", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b843fc34e8752fd511cf298be4db729164890c9247a7c7d1aba2cb0713740f53", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "692058714990af0e409b34d598ac6482c3a5f44f66ad3d4dd1a5a85415234042", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "da77af45cd6cbca195468d48c0826fa52406b6f711ba2b52b3f1b280d1963634", "error": "LLM target evidence not found in workbook text"}
+{"key": "3916a8c6f0dcfce9edc55d0b98515f2a86cbf9660fbc40593a2d31df1b847051", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "82bc54015a17dd2868c3296fef67afcecbd6fe7e834659ec2ce29c0787e6cecd", "error": "LLM target evidence not found in workbook text"}
+{"key": "a8cc4091f3c6714bfd1387da2d72113dac7265d0e2f67993b1dd9adb533f313b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "481497f5a820055b723de349168ceb4c40be4ece79a2e38822ca2dd590a9c47d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "228126c7f8158b3bc1c08a259c8aa737eafaa6332e1a042618a0176809c847c3", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b4572b54c0791306849bf7fd67f2e2f7bc854f7e761bc8d6e652d018b24f4e8d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5de1a52892e2aacbb818db7a1dd36f068889d9b461afb2860340849d8a66fffb", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e2c3baad49d4de18e7c33c88d4a35d6b364caefa97766e74589e30c1f4b7b000", "error": "LLM target evidence not found in workbook text"}
+{"key": "d77e397ad63ec106bea4e7068d241a52112b00fb818d965c43787cd37bb4f569", "error": "LLM omitted source_id"}
+{"key": "4420f813a8bb71e122664ceab930abe940c8e1ca5bf1675ac9552a8c6b573a87", "selection": {"edge_ids": ["P024"], "source_evidence": "前保险杠上格栅", "target_evidence": "前视\n摄像头", "part_a": "前保险杠上格栅", "part_b": "前视摄像头"}}
+{"key": "eecf811a0823c45566cd0e8dfb48a79c4245698d198556f4fd992ce80da4ec7f", "selection": {"edge_ids": ["P091"], "source_evidence": "翼子板", "target_evidence": "前保险杠饰盖", "part_a": "翼子板", "part_b": "前保险杠饰盖"}}
+{"key": "8f2e60c1876b9c3de3f992234b3ff5e0ed2b3131cc33400421775d8911b887e3", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "692709ddba0022de680a0bc9695f65d1f175a45340b24d02fbcf14f8b96c3e30", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a2470f6028d42279ddb50cb2e261717d81df624ce692b5364009ce5cb5e4c0cb", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "74446687b0d918345278df536dd39a97a444bfcc270c12f8950f1027b6131277", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "63a192286b6b4d50f505fcf9096879d79140c02641b4761bfcbcc9f4b5121367", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5192449da76b43efcbe80c9c58b3d4f01b778593de4266f630b721b64aa50f58", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f30669c4daf74320921156c438408a13c19b3e3e375f18d57123aa971d9818c4", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e0daf966461a0a6c9fd4602e167256132650e29423d2489492bba639629b130d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "10aaa6a2514585ee2a1a1205b22474dbb15a027f5d3182544af04089f76cbc21", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2294cbabd511acc75f29b13e06f1ec03042bf1d5562d1b2ee59def1655f1dd6b", "selection": {"edge_ids": ["P114"], "source_evidence": "前门", "target_evidence": "翼子板", "part_a": "前车门", "part_b": "翼子板"}}
+{"key": "df0a2dcf4b7faeffb902cb1d8b8e7a2fa45e069af645f86c676a18fecc790829", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2f4f344d21e825cb6a0870f61062a17c3abbe4fc9a2682fa5d8797906c7eec5b", "selection": {"edge_ids": ["P124"], "source_evidence": "后门", "target_evidence": "前门", "part_a": "后车门", "part_b": "前车门"}}
+{"key": "c3fa7d6801039a3cbf27f8f3aaf0f3bbea501d0890f3a9215870794f43763943", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "67fc2d1b0187617f42b73e99b8820b251b2ec6d8f5a1caedc63c9d03130251a2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "de01b167abdad6b352979cf47ad2a894bf75838e9ffe3d3253e3a7d888eff1e7", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0b370f53734736a35b1880c519ccc4bf130da9051676838568387db87d8f129b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "9bcf32fac3c049d3d5a93bc349eb977acc0f4a95a83036be64de4d027c9eb47c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0583f5bb074e1b59a4e45c797c6656136e2f65a376fae9cbd46c76f7b9bbc3e4", "selection": {"edge_ids": ["P096"], "source_evidence": "翼子板", "target_evidence": "前轮眉饰板", "part_a": "翼子板", "part_b": "前轮眉饰板"}}
+{"key": "60b0c7320a0f0088244cacbea4d9302318c050ad9b07c9c3bdf8fd1350e69b4e", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "4c685b34c8b4624ecdfa5cb9e45d5c9062b2e05fe8be86ab21a972858065ff85", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e3976fc0482413d60b3c341641655a0e0bb7d85ba29060c4b73e01517d83f255", "selection": {"edge_ids": ["P108"], "source_evidence": "侧围", "target_evidence": "前门窗框亮条", "part_a": "侧围", "part_b": "前门窗框亮条"}}
+{"key": "c0afe5d5ccf8d4690e3305003b9aac84bf0954a41b2afc43eff5f87a8b03ee47", "selection": {"edge_ids": ["P108"], "source_evidence": "侧围", "target_evidence": "后门窗框亮条", "part_a": "侧围", "part_b": "后门窗框亮条"}}
+{"key": "b26296c6ecc068621a10d8b925005a02bedae4ceeee939c77522a81f7389aa19", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5a8b3460949c63d606099d372486efc0eea9db12c588deeafd24a2c99782ccba", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "943bb8c608845edc39daa28fc92cd7450b7f12796d066403a86b1351a44bc4af", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5fb1924a8eb5eed5260698ec48b7a755dfcc6cd5864736d864e8ba607698e905", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3545e09f131977741a8c394e159b30ab9383ad8bca2fe83d3a414b01e3d0d7b3", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "57657ec1b9c23443616b98a4dab598918a16fb3e6ef004a7f7a162c73043ebae", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8d5d6e7208b8998ed87821a3b198af7512fd8cfd4956a9a93c025c33638e0cf5", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "4870c8438e20ed2b8d98d9ffa1c29640f73011aa27e673155308800dfee3ab99", "selection": {"edge_ids": ["P119"], "source_evidence": "前门", "target_evidence": "前门下饰板(L&R)", "part_a": "前车门", "part_b": "前门下饰板"}}
+{"key": "206f42f383c80ce832547b809bc3cf3711e7fcce89c7e45d2763267d547afec0", "selection": {"edge_ids": ["P132"], "source_evidence": "后门", "target_evidence": "后门下饰板(L&R)", "part_a": "后车门", "part_b": "后门下饰板"}}
+{"key": "7fcdd441c377588d2bdfc1f8867153294c36044508cdbc4f77a0fbce6f0816ae", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "10c36d2cb424c356cc7a2e6df67219bbe49e9c418fb1dd793b1851c9864ba4ba", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "636049f64ba4bacff536d997d1dac3551add9c7fdb746e761e8368c3dc8e78c2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "84a4e95294f5541babf4dcce56346ddeccb0258ccc9f8aa5a57cd9d6d372b67e", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5877a652fec08c31a7b2c5817c0d80de6793d25d63b0165f63f8d7c6bcacd044", "selection": {"edge_ids": ["P111"], "source_evidence": "侧围", "target_evidence": "加油口盖", "part_a": "侧围", "part_b": "加油口盖"}}
+{"key": "d89825e1c8d290c5093331910ef457b8f565c5f9f7437e90bd3ef53b6ff86f46", "selection": {"edge_ids": ["P111"], "source_evidence": "侧围", "target_evidence": "加油口盖", "part_a": "侧围", "part_b": "加油口盖"}}
+{"key": "e935458d67ab1d2509c066e68766c0a9ede724002880235d57a962d7726f760d", "selection": {"edge_ids": ["P111"], "source_evidence": "侧围", "target_evidence": "加油口盖", "part_a": "侧围", "part_b": "加油口盖"}}
+{"key": "0827de0bfbab9e40432f799403551d7cbf5308217299e8586bd64982c74f2494", "selection": {"edge_ids": ["P111"], "source_evidence": "侧围", "target_evidence": "加油口盖", "part_a": "侧围", "part_b": "加油口盖"}}
+{"key": "068ee99186e4793177b7fd20cadb57ef07d90c2cc5b14d0c46dc803828d30971", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e286a52ba14d33dd9766a2dd745813a6ce6fa1582c932006c6a8ed7b1e945da4", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6810df3c70b7cd19db79b6957e00ee73be16fcef843d50528782d126f6e152a5", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "455deccbe16a8a9e7f857bbde898d41ac739a094a48755bcf193e753b1aef731", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d1f51aff76d9ce1ddf0b7524ee987e6fa9a19913150f02af912aece68fa180b4", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1a94b3a6cb753b3fc9c390190c1e969e8d8e0b399579e4c73932d0677ebebc58", "selection": {"edge_ids": ["P096"], "source_evidence": "翼子板", "target_evidence": "翼子板饰板", "part_a": "翼子板", "part_b": "翼子板饰板"}}
+{"key": "b5288d70c33fcfc9a2e34fad60ae17f2be4c9e4586c9cf4ab6c5bde63168e597", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ac821545355d10c2cb6646232b3de5ca6df038a11878b721e4b1f0a9fd5b5a51", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c279256584b1b7ab41a5bbdfca2c2712d231771f95027c981bb8c285aa31aaaf", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "d9f49b84e6527b372427b61875c59f0469a89d9155e5a30ccbc30e0a39e9bc90", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "955b0b26d08ea30f60cb4e2d8af3ef8de229c510b2fba7da80c8bb7358aec0de", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "49584a61927ba77d30f3882e18a6543928dc52d4164fc3c0a2b3a54dd83b2d50", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c05d419783563d39d308ae5fd9082c421315c212a589b7c9d5932296137e3223", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "7ee56d8417818e88c9f589d08a8135269ade1731e5b2ed327c72f8f83b501cb4", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "624a90c042935f58daf3b8b814af4f910fddd3085e7bb5a0678f8ac481314716", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8c9e9285b4b929cf7d13b81cacd7b462911f66804c0d60482b0d6c77861ea777", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "7c044a1aa5cdacf24fd8a4b00a53c3abeae93832ccbf61c6f4b5af8a18c7fe5d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "dcdb29828164c59a4fbd78f4a31a79ed615b1603ebdd24596366dff42d88582a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b44dfb5f996d8c9d6e9ace058b620390fd6393cf1589994646c5e73111f47a25", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f498a73221f90d0b636bae272e3e6676da303d32de54ec3be8043a6720d64c27", "error": "LLM omitted source_id"}
+{"key": "2a6d1c9a0910ed1e84d77e3a8f1b6561aca917effc3ad4bd4ebbaee28d517355", "error": "LLM omitted source_id"}
+{"key": "435e26e2566587735c4c2a136433ce85946672b94e0a15da47292bd2aa64af1d", "error": "LLM omitted source_id"}
+{"key": "4c15885a0619f0c3a0ae5ea70e55324d52086bf252d9645f794730b714378a22", "error": "LLM omitted source_id"}
+{"key": "32bb78a753a461c51d997bffdac5b0b7fc6f678164f7826cd821866fe3785482", "error": "LLM omitted source_id"}
+{"key": "455a221e4ccdc18332ad240d9d1d84e889e0f076652b137b687cfc06fe7c90f7", "error": "LLM omitted source_id"}
+{"key": "d2feaf38cc36d3e79c0fd7e79d0218e6831d86675478e18aae83c828d564a7fa", "error": "LLM omitted source_id"}
+{"key": "76e3b323dcf8e377c3a7db14a585107200a84f898c13aba1b01c3b5074a0e9e5", "error": "LLM omitted source_id"}
+{"key": "afaf12a721136aa80321807b648100cbfaa5d9295638dae9eacab3404139fc84", "error": "LLM omitted source_id"}
+{"key": "313e9402ca6cb5c2d4e4136c2591dc2c7b3da26fb2f48b358812955768a5d452", "error": "LLM omitted source_id"}
+{"key": "625b22ef6f03df405de975aded8ef7892397364c4b64fc9536948d43218bd919", "error": "LLM omitted source_id"}
+{"key": "a269e9a41fcf5ee9bfecb42d0582f5ad263af526b07e6b6a3fa91f7fdbfecd33", "error": "LLM omitted source_id"}
+{"key": "75ec6280d43219996797a74e9cb36e99cec12b35cc0dfc00c0b78f7bef30e78e", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "4a06727a5b54c181302c1b10348ed1f8654863e9b7e85b3c015b542271774849", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f6608663be4daba59292362e432794c4271b26f9b82acc82c5e736be8803b8c0", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8a923958bd0f33a2bd558e47f707393c0c174064c6f7605f058f54cc7cb26cf4", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b5e5a2c901d1fbd3d4494ea78e8f984d0427e9b693a3c6f933762b49db39325c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "aa5ae1212e6b1ff8b00c55ca96f899606cecafa16fcbcc1316f50a9902d0d600", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "12d6e6a976d49e3ed069946189bed32bea6800e5bfaf1aef8fec6feb9fc707ef", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a943bef9412863a44480460434521b5e07b723c66086e4fc0825f025b725ec38", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0902f6f43bc56654e7c08a81fad7435cc0dffc1f225c54beec215e896446157f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ea02793311f08e09cef9c8467b0ffe46772ba43fc746c3d8d880ed759da3c3d6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "effbb9473b2676a906e4ab71088555d8b0bc0cf9b8c08b2bb36c8f4a4bc682e9", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2a116fc2954f4fb8e2f8af725b37b749ed6df4782886aff4f1514a444f7e1ec2", "error": "PDF has multiple positions for this pair; workbook does not disambiguate"}
+{"key": "0d69e17333ec2b0943421c0f2b65d6e23cb0905a4afe3b182e254acc7ebc16c2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c461fbbed6b5dbdc52079d5dfdaf67bb8b202832592d97ebfcf810c546585291", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "92b376fa7857e6a6fe582fdd715515559e6a9a356557d964b969b76b1ac805a2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "820bbc73210a099b323a87f0ce213fdf26cf2b81756d39b0f9d6e3eab7e1421f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "250a9f87f676c5dc6c2b12c14c5527a52b9c17d7f673d82c554cd0ba4a824c00", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "dfafd190d868401a54504c00d14ae58a93b5bac75640f939f9a0add0019c5bcc", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "cb2d82dca26051243bfa990ccdb3efc8175b9d204befe1438b8826bf392d6701", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "eea17cb59a1ca312bac944363329fb697da8f42710291b9b16cab0cf27794ece", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "54247f06710334fafe4d75f7a87d3ce28c33c6bf16f16c210816d4523ed5f154", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1b1f36953c0869fc90fbb3527ccc62c4c65e811adbb126cb9f50b19b7d4a46b8", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6cd676ab3821d7806a1880d16a50ea6f7919459b082df80f453f314488672616", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "97832c9f775b33aac4bd34abf5f7ddb10fb951cadbeb3cde24905e7f153afe24", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1def339174adfffee3a15e4ed41db99e45c83095a3363c1f75f940c966188db6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c175c1e50f100dbcd3a50ee2591a3a3030543f47fd28ef96cce215bbff9511bd", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3784333d7d0aa2285226f07053bfc4504781b3e2fe00c3ba53ad3ec28e1d0923", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2cee170ea2ce1ce5f509df0af0e0dc1877a2d23161b68757c7537d2405aff9f0", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "7b1b624a746a86e522be51dd5d0f4868eccc8d231cd1e4315ad2d0e4713434e7", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2926b7f04b303999b9d877596339a865e4b50447fe411df5386444022e7923e2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "31d6055814b5497935d11588d1981fd922ee0ac80218c40fcc1368f68b40dd11", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f6becb3289d0107966a99cf929a082b1e53bea20f21ec2cfed08b44d46d90267", "error": "Nested PDF edge requires explicit parent-context evidence"}
+{"key": "eb315353cbdb5e2b9ae2c82e05e1e75a1d851f3150656df86007fe8bffdcc5f1", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5d9b6c739a4df698097d2c1815037f51fffd94004dd63ecc79866d734411e85d", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "965245e941f942d25ed2e0c8391ca017c2dd9980dc4cfa45ab4120882211488a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "3f6a54eca306021f42d7dbec293a1040bcaa77f43d568a5b5e705a7fe3d44745", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "fa87c2ea7c2cdff179104027a0bad81b3616b78146aacc31b8e605fe476e1ce9", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "2f1c9c42ddfb38e59fad103e876d503e7b417c3106e0ce2ad9811f2936276d27", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e140a3def3fb238140138ec704efbae65d6295384f3e9dca8b6802a114e12b93", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "4d2192fba5061a160a91f789c027a32b99c7331c90ca5dbb9efc58c068881ee5", "selection": {"edge_ids": ["P089"], "source_evidence": "后保险杠上本体", "target_evidence": "拖车\n钩盖板（All around）", "part_a": "后保险杠上本体", "part_b": "拖车钩盖板（Allaround"}}
+{"key": "63ba5078910cbb6bcaf9c949fc2f34bd71538ff3b19edaac8bc73201a952b1bc", "selection": {"edge_ids": ["P088"], "source_evidence": "后保险杠上本体", "target_evidence": "后牌\n照灯饰板本体", "part_a": "后保险杠上本体", "part_b": "后牌照灯饰板本体"}}
+{"key": "f0c9694b7fe0bbbdd9f1d0683881b80914566d4e0232c3ee3cb18a852737bf43", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "1256d70fb9b13d88b7afb8318d3f132ae747e5e4e98650a6fb116a411e1fc237", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "6b8879506819a666a778302b2b26a18ed8c7fc8bbce1cbb11a3b2803f870d2d7", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e57722f65e62a0df024e2c9d835678d33d502caa5f6a27349110acb5129b530c", "selection": {"edge_ids": ["P088"], "source_evidence": "后保险杠上本体", "target_evidence": "后牌\n照灯饰板本体", "part_a": "后保险杠上本体", "part_b": "后牌照灯饰板本体"}}
+{"key": "6e6b2bddebd681b25d1cbefcdff848b7d0a478af98bf9e191a0fb9b8a81836a2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8c4f25e3b06d142ba0cd697361aa06d0dc30babf5ecdeddd22f6395ddf2d045d", "selection": {"edge_ids": ["P088"], "source_evidence": "后保险杠上本体", "target_evidence": "牌照\n灯(L&R) （All around）", "part_a": "后保险杠上本体", "part_b": "牌照灯(L&R)（Allaround"}}
+{"key": "fc5c8d1136fc28e3222421619122c34c36cfc1f4f401988885674f89a5213122", "selection": {"edge_ids": ["P088"], "source_evidence": "后保险杠上本体", "target_evidence": "牌照\n灯(L&R) （All around）", "part_a": "后保险杠上本体", "part_b": "牌照灯(L&R)（Allaround"}}
+{"key": "56b650c083ea56ea78e55b604faca5f33f1eb810c94ae514882bd82397d0abef", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "dbc9693bb2c158f435f38f6e840c145922ea819c22656c1d071bb416e0f53048", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ca09b1d384d1eb1321e148a7de061bce2dd8723ed0cc0ebc8ac3d18e37025e5b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "81abf2ad7ffee564b1d0c4ea1378a2a33ae7db27a33c10b5ad5e296f89778e2f", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e57dedb5a35377a08bf82e46750c17b15aa655babd8db750ed43c59019e76058", "selection": {"edge_ids": ["P086"], "source_evidence": "后保险杠上本体", "target_evidence": "雷达", "part_a": "后保险杠上本体", "part_b": "雷达"}}
+{"key": "85b5aa3604c3e254188867d69c647db9b43a47b346ad3b0f1cf8af9e143fad1a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5a8969e5c450b55ab00dc42f4fa8d5ebbde2b2a1ad3816f8ee4a90b5862db547", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "e94d9d954a6f85cae6d8ccede088845c628a8bd9ee82956f68f9230839c845f4", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "be87cfca12d2084cc09ab37c2186fec9b3832634bd19365920965dbef8b5d692", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "f318bbad8298afd034b70f1734be59bbc830c55f8cba938fea03cdb8beb8b2e3", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "43ffedff053867f58b1a02ecf6a1e77b9aa4fd2160400511ccac3e61532211e6", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "247fbefda399a46a76187708507b0d7f327dc39043924cdcfd49c8f113956aa8", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a2493354e90c1d66785aff8f972d49e34000b1632678f684b9e0845728616f49", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "fc2d50843dba5da6c97babfad49b69ffeee2b67e2881c7fe1216e87a25290b01", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c0515d8f55fbb43904717eaf9a20bb247bc2170cf4ec75c04644e405740b67f5", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "869b8214368d593856e1f9ccdf5a88ae36f692e6c731161c2ae91da9325eafc2", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "faec24c70187202e91272f54f64e179704047c58a8842f7763eafb13d82e819a", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "27a83061427edae8edf57950eb9c1d1bf35422dc05d1c1e1b54c419ef61ed9fe", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a2cefbd2f26ea9264ac75e0f12965c949bd2bdf3424430d6d61e74692449dd35", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "5deb6d7049942cc54a34dee03001af25dbe98779e3ee7511e122a815a4e8c0dc", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "061ceac56e14b10e4ad6ba05c07ca2a4cbceb89241e56077a05194d66422c561", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "8311b91a7c55696d66324b925fcb91b52b186e5ebbd672afd4f9502a7472c705", "selection": {"edge_ids": ["P029", "P030"], "source_evidence": "发动机盖", "target_evidence": "翼子板", "part_a": "发动机盖", "part_b": "翼子板"}}
+{"key": "577bc5e84e2431286cbef2d53835043d0f4488e65f842eec261f91e6a7547778", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "29665efea7690b1381c35cba1c55a16f5d24ee9cce4963fba7e1b6119a049472", "selection": {"edge_ids": ["P095"], "source_evidence": "翼子板", "target_evidence": "发动机盖", "part_a": "翼子板", "part_b": "发动机盖"}}
+{"key": "2e8c57a7e00a23bd2354685cd1a2e4e442ab3b2ad1a37de45900cc7fac162e16", "selection": {"edge_ids": ["P091"], "source_evidence": "翼子板", "target_evidence": "前保险杠上本体", "part_a": "翼子板", "part_b": "前保险杠上本体"}}
+{"key": "5a1d3c4290125f58962e299d8cc8f3e36f3f5ed75198b344e42b9c26b5e7a96d", "selection": {"edge_ids": ["P095"], "source_evidence": "翼子板", "target_evidence": "发动机盖", "part_a": "翼子板", "part_b": "发动机盖"}}
+{"key": "c8f09c5cb41adefd7a353910fbe2fe9c6ba76e5f36c0d6d4fb3328f0571e5edc", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "ec86d5136e3e64e2f669ae68b45b622c410d1405dcef987bce45b0e92920ec3c", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "b37bbfd135b082e4cbca80b183a0da70b3d0c4dde62421f65f0a79da87293238", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "be099f54bea4d6de406e95c11be77c22552ead0518e17f75fc71515743c0595b", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "c9fc0ebfe93daeead06f07c6176f94cf3c24b85cbe336758eb7a77afd07fe875", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "0688d5584c4580f82e793be59de91e299460249290c34934dd4aae40f1098c86", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "79c6314402a73822b8f3656ae2c613e829e0adcde9cc112c40b81112276084be", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}
+{"key": "a18cb88a43ec726ed65ab7cbc88bb031aa4b9be196c680e5cf9b1fcd7b1398ea", "selection": {"edge_ids": [], "source_evidence": "", "target_evidence": "", "part_a": "", "part_b": ""}}

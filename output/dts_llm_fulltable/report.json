@@ -1,0 +1,24 @@
+{
+  "source_records": 1921,
+  "llm_items": 1920,
+  "accepted_records": 248,
+  "review_records": 1673,
+  "vehicle_nodes": 4,
+  "part_nodes": 176,
+  "dts_relationships": 241,
+  "llm": {
+    "cached": 1910,
+    "api_batches": 1,
+    "validation_errors": 1
+  },
+  "pdf_sha256": "ed246ab0d57745b3d185581cda1981bab186c2cb26b098d84dfde4c70337d606",
+  "workbook_sha256": "74fd5b89d8779c679136a40ab24dc76377223110325045f59bca68c3a26a364c",
+  "uploaded": true,
+  "upload": {
+    "vehicle_nodes_processed": 4,
+    "part_nodes_processed": 176,
+    "contains_processed": 176,
+    "dts_processed": 241,
+    "old_nodes_replaced": 0
+  }
+}
