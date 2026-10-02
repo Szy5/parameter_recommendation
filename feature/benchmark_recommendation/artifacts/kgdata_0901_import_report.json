@@ -1,0 +1,131 @@
+{
+  "graph": "data/kgdata_0901.jsonl",
+  "database": "46ebe636",
+  "started_at": "2026-09-08T21:21:53.483425+08:00",
+  "finished_at": "2026-09-08T21:22:26.618845+08:00",
+  "elapsed_seconds": 33.135,
+  "batch_size": 500,
+  "constraints_created_or_verified": 14,
+  "source_nodes_processed": 10562,
+  "source_relationships_processed": 22134,
+  "node_transactions": 30,
+  "relationship_transactions": 48,
+  "database_before": {
+    "nodes": 10562,
+    "relationships": 22134
+  },
+  "database_after": {
+    "nodes": 10562,
+    "relationships": 22134
+  },
+  "nodes_missing_graph_id": 0,
+  "expresses_style_validation": {
+    "relationships": 1865,
+    "forbidden_property_relationships": 0
+  },
+  "relationship_type_counts": [
+    {
+      "type": "Constrains(约束)",
+      "count": 446
+    },
+    {
+      "type": "DefinesDNA(定义DNA)",
+      "count": 488
+    },
+    {
+      "type": "EXPRESSES_STYLE",
+      "count": 1865
+    },
+    {
+      "type": "Guides(指导)",
+      "count": 2540
+    },
+    {
+      "type": "ImplementedBy(由实现)",
+      "count": 1900
+    },
+    {
+      "type": "Indicates(体现)",
+      "count": 1186
+    },
+    {
+      "type": "Influences(影响)",
+      "count": 3876
+    },
+    {
+      "type": "Prefers(偏好)",
+      "count": 2433
+    },
+    {
+      "type": "StyleAssociatedWith",
+      "count": 2345
+    },
+    {
+      "type": "TypeAssociatedWith",
+      "count": 1571
+    },
+    {
+      "type": "包含",
+      "count": 3484
+    }
+  ],
+  "label_counts": [
+    {
+      "label": "AerodynamicFeature(空气动力学特征)",
+      "count": 271
+    },
+    {
+      "label": "AestheticConcept(美学概念)",
+      "count": 987
+    },
+    {
+      "label": "DesignAttribute(设计属性)",
+      "count": 3107
+    },
+    {
+      "label": "DesignParameter(设计参数)",
+      "count": 2738
+    },
+    {
+      "label": "FamilyDNA(家族DNA)",
+      "count": 493
+    },
+    {
+      "label": "GraphNode",
+      "count": 10562
+    },
+    {
+      "label": "UserTrend(用户与趋势)",
+      "count": 1048
+    },
+    {
+      "label": "VehiclePosture(汽车姿态)",
+      "count": 1005
+    },
+    {
+      "label": "汽车",
+      "count": 1
+    },
+    {
+      "label": "汽车产品定义",
+      "count": 79
+    },
+    {
+      "label": "汽车实例",
+      "count": 800
+    },
+    {
+      "label": "汽车级别",
+      "count": 5
+    },
+    {
+      "label": "汽车车型",
+      "count": 21
+    },
+    {
+      "label": "汽车风格",
+      "count": 7
+    }
+  ],
+  "idempotent_merge": true
+}
