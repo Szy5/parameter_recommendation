@@ -163,7 +163,7 @@ def load_llm_config(env_path: Path, model_override: Optional[str] = None) -> Tup
     return api_key, base_url, model
 
 
-def chat_completion(
+def chat_completion( #调用大模型函数
     api_key: str,
     base_url: str,
     model: str,

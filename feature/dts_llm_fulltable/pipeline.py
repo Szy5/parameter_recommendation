@@ -98,6 +98,7 @@ def extract_all(
 ) -> tuple[dict[str, dict], dict[str, str], dict]:
     if not 1 <= batch_size <= 40:
         raise ValueError("batch_size 必须在 1 到 40 之间")
+    #
     if completion is None:
         api_key, base_url, model = load_llm_config(env_path, model_override)
 
@@ -105,7 +106,7 @@ def extract_all(
             return chat_completion(api_key, base_url, model, system, user, temperature=0, timeout=180)[0]
     else:
         model = model_override or "test-model"
-
+    #所有允许的边
     edges = approved_edges(schema)
     options = [
         {"edge_id": edge["id"], "part_a_category": edge["source"],
@@ -113,6 +114,7 @@ def extract_all(
          "context": edge.get("context", "")}
         for edge in schema["edges"] if edge["id"] in edges
     ]
+    #缓存系统
     cache = {}
     if cache_path.exists():
         with cache_path.open(encoding="utf-8") as stream:
@@ -121,6 +123,7 @@ def extract_all(
                     entry = json.loads(line)
                     cache[entry["key"]] = entry["item"]
     results, errors, pending = {}, {}, []
+
     for record in records:
         cached = cache.get(cache_key(record, schema, model))
         if cached is None:
@@ -130,6 +133,8 @@ def extract_all(
             results[record.source_id] = validate_item(cached, record, edges)
         except ValueError:
             pending.append(record)
+
+    #records分片传给llm
     batches = math.ceil(len(pending) / batch_size)
     print(f"[DTS] 全表 {len(records)} 条，缓存 {len(results)} 条，待请求 {len(pending)} 条，共 {batches} 批。",
           file=sys.stderr, flush=True)
@@ -143,8 +148,10 @@ def extract_all(
                              "records": [record_input(record) for record in batch]},
                             ensure_ascii=False, separators=(",", ":"))
         # A transport/API failure stops the run; already completed batches stay cached.
-        response = completion(SYSTEM_PROMPT, prompt)
+        response = completion(SYSTEM_PROMPT, prompt) #抽取结果
         api_batches += 1
+
+        #文本转化为json格式
         payload = extract_json_object(response)
         items = payload.get("items")
         if not isinstance(items, list):
@@ -180,6 +187,7 @@ def extract_all(
 
 
 def build_graph(records: Sequence[SourceRecord], items: dict[str, dict], errors: dict[str, str]) -> tuple[list[dict], list[dict], dict]:
+    #四个大节点
     nodes = {
         vehicle_id(sheet): {"type": "node", "id": vehicle_id(sheet), "labels": ["VehicleType"],
                             "properties": {"id": vehicle_id(sheet), "name": name}}
@@ -188,8 +196,10 @@ def build_graph(records: Sequence[SourceRecord], items: dict[str, dict], errors:
     relations = {}
     review = []
     accepted = 0
+
     for record in records:
         item = items.get(record.source_id)
+        #抽出来的结果找不到匹配的schema
         if not item or not item["relations"]:
             review.append({**record_input(record),
                            "reason": errors.get(record.source_id) or (item or {}).get("reason") or "未匹配 PDF schema"})

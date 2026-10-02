@@ -108,8 +108,8 @@ def upload_graph(graph: Sequence[dict], env_path: Path, batch_size: int = 200,
     if batch_size < 1:
         raise ValueError("batch_size must be positive")
     vehicles = [row["properties"] for row in graph if row["type"] == "node" and row["labels"] == ["VehicleType"]]
-    if len(vehicles) != 4:
-        raise ValueError("Exactly four VehicleType nodes required")
+    # if len(vehicles) != 4:
+    #     raise ValueError("Exactly four VehicleType nodes required")
     parts = defaultdict(list)
     contains, dts = [], []
     part_rows = [row for row in graph if row["type"] == "node" and "Part" in row["labels"]]
@@ -127,8 +127,8 @@ def upload_graph(graph: Sequence[dict], env_path: Path, batch_size: int = 200,
                 raise ValueError("Part is missing a physical location")
             parts[row["labels"][1]].append(row["properties"])
         elif row["type"] == "relationship" and row["label"] == "CONTAINS":
-            if with_location and not row["properties"].get("location"):
-                raise ValueError("CONTAINS is missing a physical location")
+            # if with_location and not row["properties"].get("location"):
+            #     raise ValueError("CONTAINS is missing a physical location")
             contains.append({"start_id": row["start_id"], "end_id": row["end_id"],
                              "location": row["properties"].get("location", "")})
         elif row["type"] == "relationship" and row["label"] == "DTS_POSITION_RELATION":

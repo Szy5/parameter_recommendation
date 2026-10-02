@@ -26,12 +26,18 @@ def main() -> None:
     args = parser.parse_args()
     if not args.pdf.is_file() or not args.xlsx.is_file():
         parser.error("--pdf 和 --xlsx 必须指向现有文件")
+    #从pdf中解析出支持的schema
     schema = build_schema(args.pdf)
+    #从xlsx中解析出DTS条目
     records = read_workbook(args.xlsx)
+    #schema写入磁盘
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / "schema.json").write_text(json.dumps(schema, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    #开始抽取三元组，返回抽取结果，错误信息，llm状态
     items, errors, llm_stats = extract_all(records, schema, args.env, args.out / "llm_cache.jsonl",
                                            batch_size=args.batch_size, model_override=args.model)
+    #图谱构建
     graph, review, stats = build_graph(records, items, errors)
     write_jsonl(args.out / "extractions.jsonl", [
         {**{"source": {"vehicle": r.vehicle, "code": r.code, "name": r.name}},

@@ -16,16 +16,18 @@ def cell_text(value: object) -> str:
 
 @dataclass
 class SourceRecord:
-    source_id: str
-    sheet: str
-    vehicle: str
+    source_id: str #唯一标识
+    sheet: str #表格编号
+    vehicle: str #车的类型
     row: int
-    code: str
-    name: str
-    classification: str
-    area: str
+    code: str #DTS编号
+    name: str #两个部件(到时候需要)
+    classification: str #内外分区
+    area: str #具体位置
+    #classification + area 作为属性存入节点
     section: str
     radii_base_part: str = ""
+    #指标
     metrics: dict[str, list[str]] = field(default_factory=dict)
 
     def metric_values(self) -> dict[str, str]:
