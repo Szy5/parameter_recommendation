@@ -1,0 +1,26 @@
+{"id": "DTS:vehicle:硬派越野车", "labels": ["VehicleType"], "properties": {"id": "DTS:vehicle:硬派越野车", "name": "硬派越野车"}, "type": "node"}
+{"id": "DTS:vehicle:城市SUV", "labels": ["VehicleType"], "properties": {"id": "DTS:vehicle:城市SUV", "name": "城市SUV"}, "type": "node"}
+{"id": "DTS:vehicle:豪华轿车", "labels": ["VehicleType"], "properties": {"id": "DTS:vehicle:豪华轿车", "name": "豪华轿车"}, "type": "node"}
+{"id": "DTS:vehicle:豪华SUV", "labels": ["VehicleType"], "properties": {"id": "DTS:vehicle:豪华SUV", "name": "豪华SUV"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-前风挡玻璃", "labels": ["Part", "前风挡"], "properties": {"id": "硬派越野车-外部-前部区域-前风挡玻璃", "location": "外部-前部区域", "name": "前风挡玻璃"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-侧围(L&R)", "labels": ["Part", "侧围"], "properties": {"id": "硬派越野车-外部-前部区域-侧围(L&R)", "location": "外部-前部区域", "name": "侧围(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-顶盖", "labels": ["Part", "顶盖"], "properties": {"id": "硬派越野车-外部-前部区域-顶盖", "location": "外部-前部区域", "name": "顶盖"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "硬派越野车-外部-前部区域-侧围", "location": "外部-前部区域", "name": "侧围"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-翼子板(L&R)", "labels": ["Part", "翼子板"], "properties": {"id": "硬派越野车-外部-前部区域-翼子板(L&R)", "location": "外部-前部区域", "name": "翼子板(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-机盖 (L&R)", "labels": ["Part", "发动机盖"], "properties": {"id": "硬派越野车-外部-前部区域-机盖 (L&R)", "location": "外部-前部区域", "name": "机盖 (L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-机盖", "labels": ["Part", "发动机盖"], "properties": {"id": "硬派越野车-外部-前部区域-机盖", "location": "外部-前部区域", "name": "机盖"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-大灯(L&R)", "labels": ["Part", "前车灯"], "properties": {"id": "硬派越野车-外部-前部区域-大灯(L&R)", "location": "外部-前部区域", "name": "大灯(L&R)"}, "type": "node"}
+{"end_id": "硬派越野车-外部-前部区域-前风挡玻璃", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-侧围(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-侧围(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["3.6（3.5）(C/C) ±1.5//1.0"], "Ra": ["R1"], "Rb": ["R3"], "code": "A-001", "relative_position": "右侧"}, "start_id": "硬派越野车-外部-前部区域-前风挡玻璃", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-顶盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-顶盖", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["1.5±1.0//1.0"], "Gap": ["3.1（3.0）±1.0//1.0"], "Ra": ["R1"], "Rb": ["R3"], "code": "A-002", "relative_position": "后侧"}, "start_id": "硬派越野车-外部-前部区域-前风挡玻璃", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-翼子板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-翼子板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["3.0（2.8）±1.0//1.0"], "Ra": ["R2.5"], "Rb": ["N/A"], "code": "A-003", "relative_position": "前侧"}, "start_id": "硬派越野车-外部-前部区域-侧围", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-机盖 (L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-机盖 (L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.75±1.0//1.0"], "Gap": ["3.8（3.5 ）±1.0//1.0"], "Ra": ["R2"], "Rb": ["R0.95"], "code": "A-004", "relative_position": "前侧"}, "start_id": "硬派越野车-外部-前部区域-侧围", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-机盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-翼子板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep. ±1.5"], "Gap": ["Style dep. ±1.5"], "Ra": ["R0.95"], "Rb": ["R*4"], "code": "A-007", "relative_position": "左侧"}, "start_id": "硬派越野车-外部-前部区域-机盖", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-大灯(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-大灯(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["10.2（10.0）±1.0//1.0"], "Ra": ["R0.95"], "Rb": ["N/A"], "code": "A-016", "relative_position": "前侧"}, "start_id": "硬派越野车-外部-前部区域-机盖", "type": "relationship"}

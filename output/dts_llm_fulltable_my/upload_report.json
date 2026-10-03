@@ -1,11 +1,11 @@
 {
-  "graph": "output/dts_llm_fulltable_my/graph.jsonl",
-  "validated_at": "2026-09-25T20:15:31.153786+08:00",
+  "graph": "output/dts_llm_fulltable_my/graph_without_review.jsonl",
+  "validated_at": "2026-10-02T18:03:59.614388+08:00",
   "validation": {
-    "source_rows": 636,
-    "nodes": 233,
-    "relationships": 403,
-    "node_label_sets": 42,
+    "source_rows": 683,
+    "nodes": 249,
+    "relationships": 434,
+    "node_label_sets": 43,
     "relationship_types": [
       "CONTAINS",
       "DTS_POSITION_RELATION"
@@ -15,12 +15,12 @@
   "uploaded": true,
   "note": "源 JSONL 未修改；嵌套属性仅在发送 Neo4j 时序列化为 JSON 字符串。",
   "upload": {
-    "nodes_processed": 233,
-    "relationships_processed": 403,
-    "node_transactions": 42,
+    "nodes_processed": 249,
+    "relationships_processed": 434,
+    "node_transactions": 43,
     "relationship_transactions": 2,
     "idempotent_exact_reimport": true
   },
-  "finished_at": "2026-09-25T20:15:47.740927+08:00",
-  "elapsed_seconds": 16.591
+  "finished_at": "2026-10-02T18:04:14.342210+08:00",
+  "elapsed_seconds": 14.733
 }

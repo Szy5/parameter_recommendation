@@ -1,0 +1,106 @@
+{
+  "node": [
+    {
+      "VehicleType": {
+        "name": "汽车类型",
+        "des": "车型节点。四张工作表分别形成一个 VehicleType 节点，并作为四个互不相连子图的根节点。",
+        "属性": {
+          "id": {
+            "type": "string",
+            "des": "车型节点的唯一技术标识，由工作表编号确定。"
+          },
+          "name": {
+            "type": "enum",
+            "des": "车型名称"
+          }
+        }
+      }
+    },
+    {
+      "Part": {
+        "name": "汽车部件",
+        "des": "构成汽车整车、并承担特定功能或结构的各个零件与总成。",
+        "属性": {
+          "id": {
+            "type": "string",
+            "des": "部件节点的唯一技术标识，由车型、具体部件名称和物理位置共同生成。"
+          },
+          "name": {
+            "type": "string",
+            "des": "具体部件名称。"
+          },
+          "location": {
+            "type": "string",
+            "des": "具体部件的稳定物理安装位置，用于区分同一车型中名称相同但位置不同的部件实例。"
+          }
+        }
+      }
+    }
+  ],
+  "rel": [
+    {
+      "CONTAINS": {
+        "name": "车型包含部件",
+        "des": "表示一个车型包含一个具体部件实例。",
+        "head": "VehicleType",
+        "tail": "Part",
+        "属性": {
+          "location": {
+            "type": "string",
+            "des": "被包含部件的稳定物理安装位置，与 tail Part 节点的 location 保持一致。"
+          }
+        }
+      }
+    },
+    {
+      "DTS_POSITION_RELATION": {
+        "name": "DTS部件位置关系",
+        "des": "描述各汽车部件在整车坐标系中相对位置与装配关系的定义。",
+        "head": "Part",
+        "tail": "Part",
+        "属性": {
+          "relative_position": {
+            "type": "enum",
+            "des": "描述一个部件相对于另一个部件或参考基准所处位置的关系。"
+          },
+          "Gap": {
+            "type": "string",
+            "des": "两相邻部件之间的间隙距离"
+          },
+          "Flush": {
+            "type": "string",
+            "des": "两相邻部件表面的平齐程度"
+          },
+          "Ra": {
+            "type": "string",
+            "des": "第一个部件一侧的圆角要求"
+          },
+          "Rb": {
+            "type": "string",
+            "des": "第二个部件一侧的圆角要求"
+          },
+          "Alignment": {
+            "type": "string",
+            "des": "部件之间在位置或方向上的对齐程度"
+          },
+          "Consistent": {
+            "type": "string",
+            "des": "部件之间在间隙、平齐或造型上的均匀一致程度"
+          },
+          "Radii": {
+            "type": "string",
+            "des": "部件边缘或转角的圆角半径"
+          },
+          "classification": {
+            "type": "string",
+            "des": "XLSX 中记录的内外分类，保留原值。"
+          },
+          "area": {
+            "type": "string",
+            "des": "XLSX 中该 DTS 要求所属的区域，保留原值；章节标题不作为区域。area 不等同于 Part.location。"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -22,7 +22,7 @@ DTS_XLSX='/Users/jiangzifeng/PycharmProjects/parameter_recommendation/【2026051
 .venv/bin/python -m feature.dts_llm_fulltable_my \
   --pdf "$DTS_PDF" \
   --xlsx "$DTS_XLSX" \
-  --out ./output/dts_llm_fulltable_my_test \
+  --out ./output/dts_llm_fulltable_my \
   --env ./feature/.env
 ```
 

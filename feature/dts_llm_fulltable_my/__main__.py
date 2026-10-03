@@ -38,7 +38,7 @@ def main() -> None:
     (args.out / "schema.json").write_text(json.dumps(schema, ensure_ascii=False, indent=2), encoding="utf-8")
 
     #进一步解析出关系三元组
-    items  = extract_records(records)[:20]
+    items  = extract_records(records)
 
     #开始抽取三元组，返回抽取结果，错误信息，llm状态
     label_by_source_id = my_extract_all(items, schema, args.env, args.out / "llm_cache.jsonl",

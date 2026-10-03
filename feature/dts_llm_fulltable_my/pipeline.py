@@ -323,16 +323,79 @@ def build_graph(items, label_by_source_id , allow_edges) -> tuple[list[dict], li
         if not record:
             review.append({**item,"reason": "此条记录大模型未处理或者处理失败"})
             continue
-        #最新要求，
+        #最新要求，一下两种情况也需要纳入图谱，显示异常信息即可
 
-        #第二种情况，两者类型未完全识别
+        #第二种情况，两者类型未完全识别，未识别出类型的节点label为“未识别”
         if record.get("source_part_type") == "" or record.get("target_part_type") == "":
             review.append({**item, "reason": record.get("reason") or "存在类型无法确定的情况"})
+
+            first, second = item['source_part_name'], item['target_part_name']
+            # 分别建立两个节点以及和汽车节点的关系
+            identifier_source = item['vehicle'] + '-' + item['location'] + '-' + first  # 唯一标识符
+            if identifier_source not in nodes:
+                nodes[identifier_source] = {"type": "node", "id": identifier_source,
+                                            "labels": ["Part", record.get("source_part_type") or "unknown"],
+                                            "properties": {"id": identifier_source, "name": first,
+                                                           "location": item["location"]}}
+                contains = {"type": "relationship", "label": "CONTAINS",
+                            "start_id": vehicle_id(item['vehicle']), "end_id": identifier_source, "properties": {}}
+                relations[json.dumps(["CONTAINS", contains["start_id"], identifier_source])] = contains
+
+            identifier_target = item['vehicle'] + '-' + item['location'] + '-' + second  # 唯一标识符
+            if identifier_target not in nodes:
+                nodes[identifier_target] = {"type": "node", "id": identifier_target,
+                                            "labels": ["Part", record.get("target_part_type") or "unknown"],
+                                            "properties": {"id": identifier_target, "name": second,
+                                                           "location": item["location"]}}
+                contains = {"type": "relationship", "label": "CONTAINS",
+                            "start_id": vehicle_id(item['vehicle']), "end_id": identifier_target, "properties": {}}
+                relations[json.dumps(["CONTAINS", contains["start_id"], identifier_target])] = contains
+
+            # 建立两个部件节点之间的关系，相对位置无法确认
+            properties = {"relative_position": "unknown",
+                          **item["metric"], "source_id": item.get("source_id") , "notice" : "存在类型无法确定的情况,无法从pdf中获取相对位置"}
+            relation = {"type": "relationship", "label": "DTS_POSITION_RELATION",
+                        "start_id": identifier_source, "end_id": identifier_target,
+                        "properties": properties}
+            key = json.dumps([relation["label"], relation["start_id"], relation["end_id"], properties],
+                             ensure_ascii=False, sort_keys=True)
+            relations[key] = relation
             continue
 
         #第三种情况，关系无法确定
         if allow_relationships.get(record.get("source_part_type")+"->"+record.get("target_part_type")) is None:
-            review.append({**item, "reason": "部件对位置关系无法确定或者类型识别有误"})
+            review.append({**item, "reason": "部件对 "+record.get("source_part_type") +" 和 "+ record.get("target_part_type") +" 位置关系无法确定或者类型识别有误"})
+            first, second = item['source_part_name'], item['target_part_name']
+            # 分别建立两个节点以及和汽车节点的关系
+            identifier_source = item['vehicle'] + '-' + item['location'] + '-' + first  # 唯一标识符
+            if identifier_source not in nodes:
+                nodes[identifier_source] = {"type": "node", "id": identifier_source,
+                                            "labels": ["Part", record.get("source_part_type") or "unknown"],
+                                            "properties": {"id": identifier_source, "name": first,
+                                                           "location": item["location"]}}
+                contains = {"type": "relationship", "label": "CONTAINS",
+                            "start_id": vehicle_id(item['vehicle']), "end_id": identifier_source, "properties": {}}
+                relations[json.dumps(["CONTAINS", contains["start_id"], identifier_source])] = contains
+
+            identifier_target = item['vehicle'] + '-' + item['location'] + '-' + second  # 唯一标识符
+            if identifier_target not in nodes:
+                nodes[identifier_target] = {"type": "node", "id": identifier_target,
+                                            "labels": ["Part", record.get("target_part_type") or "unknown"],
+                                            "properties": {"id": identifier_target, "name": second,
+                                                           "location": item["location"]}}
+                contains = {"type": "relationship", "label": "CONTAINS",
+                            "start_id": vehicle_id(item['vehicle']), "end_id": identifier_target, "properties": {}}
+                relations[json.dumps(["CONTAINS", contains["start_id"], identifier_target])] = contains
+
+            # 建立两个部件节点之间的关系，相对位置无法确认
+            properties = {"relative_position": "unknown",
+                          **item["metric"], "source_id": item.get("source_id") , "notice" : "pdf中无法确定部件对类型位置关系或者类型识别有误"}
+            relation = {"type": "relationship", "label": "DTS_POSITION_RELATION",
+                        "start_id": identifier_source, "end_id": identifier_target,
+                        "properties": properties}
+            key = json.dumps([relation["label"], relation["start_id"], relation["end_id"], properties],
+                             ensure_ascii=False, sort_keys=True)
+            relations[key] = relation
             continue
 
         #通过则解析成图数据
@@ -360,7 +423,7 @@ def build_graph(items, label_by_source_id , allow_edges) -> tuple[list[dict], li
             relations[json.dumps(["CONTAINS", contains["start_id"], identifier_target])] = contains
 
         #建立两个部件节点之间的关系
-        properties = {"relative_position": allow_relationships.get(record.get("source_part_type")+"->"+record.get("target_part_type")).get("relative_position" , ""), **item["metric"] , "code" : item.get("code")}
+        properties = {"relative_position": allow_relationships.get(record.get("source_part_type")+"->"+record.get("target_part_type")).get("relative_position" , ""), **item["metric"] , "source_id" : item.get("source_id")}
         relation = {"type": "relationship", "label": "DTS_POSITION_RELATION",
                     "start_id": identifier_source, "end_id": identifier_target,
                     "properties": properties}

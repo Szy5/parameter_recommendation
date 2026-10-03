@@ -1,0 +1,683 @@
+{"id": "DTS:vehicle:硬派越野车", "labels": ["VehicleType"], "properties": {"id": "DTS:vehicle:硬派越野车", "name": "硬派越野车"}, "type": "node"}
+{"id": "DTS:vehicle:城市SUV", "labels": ["VehicleType"], "properties": {"id": "DTS:vehicle:城市SUV", "name": "城市SUV"}, "type": "node"}
+{"id": "DTS:vehicle:豪华轿车", "labels": ["VehicleType"], "properties": {"id": "DTS:vehicle:豪华轿车", "name": "豪华轿车"}, "type": "node"}
+{"id": "DTS:vehicle:豪华SUV", "labels": ["VehicleType"], "properties": {"id": "DTS:vehicle:豪华SUV", "name": "豪华SUV"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-前风挡玻璃", "labels": ["Part", "前风挡"], "properties": {"id": "硬派越野车-外部-前部区域-前风挡玻璃", "location": "外部-前部区域", "name": "前风挡玻璃"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-侧围(L&R)", "labels": ["Part", "侧围"], "properties": {"id": "硬派越野车-外部-前部区域-侧围(L&R)", "location": "外部-前部区域", "name": "侧围(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-顶盖", "labels": ["Part", "顶盖"], "properties": {"id": "硬派越野车-外部-前部区域-顶盖", "location": "外部-前部区域", "name": "顶盖"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "硬派越野车-外部-前部区域-侧围", "location": "外部-前部区域", "name": "侧围"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-翼子板(L&R)", "labels": ["Part", "翼子板"], "properties": {"id": "硬派越野车-外部-前部区域-翼子板(L&R)", "location": "外部-前部区域", "name": "翼子板(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-机盖 (L&R)", "labels": ["Part", "发动机盖"], "properties": {"id": "硬派越野车-外部-前部区域-机盖 (L&R)", "location": "外部-前部区域", "name": "机盖 (L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-翼子板", "labels": ["Part", "翼子板"], "properties": {"id": "硬派越野车-外部-前部区域-翼子板", "location": "外部-前部区域", "name": "翼子板"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-散热器罩左饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "硬派越野车-外部-前部区域-散热器罩左饰板(L&R)", "location": "外部-前部区域", "name": "散热器罩左饰板(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-机盖", "labels": ["Part", "发动机盖"], "properties": {"id": "硬派越野车-外部-前部区域-机盖", "location": "外部-前部区域", "name": "机盖"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-前轮罩外接板(L&R)", "labels": ["Part", "轮眉饰板"], "properties": {"id": "硬派越野车-外部-前部区域-前轮罩外接板(L&R)", "location": "外部-前部区域", "name": "前轮罩外接板(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-大灯(L&R)", "labels": ["Part", "前车灯"], "properties": {"id": "硬派越野车-外部-前部区域-大灯(L&R)", "location": "外部-前部区域", "name": "大灯(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-前保本体", "labels": ["Part", "前保险杠"], "properties": {"id": "硬派越野车-外部-前部区域-前保本体", "location": "外部-前部区域", "name": "前保本体"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-雾灯(L&R)(a↔b↔c)", "labels": ["Part", "前雾灯"], "properties": {"id": "硬派越野车-外部-前部区域-雾灯(L&R)(a↔b↔c)", "location": "外部-前部区域", "name": "雾灯(L&R)(a↔b↔c)"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-雾灯(L&R)(a↔c)", "labels": ["Part", "前雾灯"], "properties": {"id": "硬派越野车-外部-前部区域-雾灯(L&R)(a↔c)", "location": "外部-前部区域", "name": "雾灯(L&R)(a↔c)"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-下装饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "硬派越野车-外部-前部区域-下装饰板(L&R)", "location": "外部-前部区域", "name": "下装饰板(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-前部区域-顶饰条(L&R)", "labels": ["Part", "饰条"], "properties": {"id": "硬派越野车-外部-前部区域-顶饰条(L&R)", "location": "外部-前部区域", "name": "顶饰条(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-前门", "labels": ["Part", "前车门"], "properties": {"id": "硬派越野车-外部-侧部区域-前门", "location": "外部-侧部区域", "name": "前门"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-翼子板(L&R)", "labels": ["Part", "翼子板"], "properties": {"id": "硬派越野车-外部-侧部区域-翼子板(L&R)", "location": "外部-侧部区域", "name": "翼子板(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "硬派越野车-外部-侧部区域-侧围", "location": "外部-侧部区域", "name": "侧围"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-前门水切(L&R)", "labels": ["Part", "饰条"], "properties": {"id": "硬派越野车-外部-侧部区域-前门水切(L&R)", "location": "外部-侧部区域", "name": "前门水切(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-侧围饰条(L&R)", "labels": ["Part", "饰条"], "properties": {"id": "硬派越野车-外部-侧部区域-侧围饰条(L&R)", "location": "外部-侧部区域", "name": "侧围饰条(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-侧围饰条(L&R)(c↔d)", "labels": ["Part", "饰条"], "properties": {"id": "硬派越野车-外部-侧部区域-侧围饰条(L&R)(c↔d)", "location": "外部-侧部区域", "name": "侧围饰条(L&R)(c↔d)"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-后门", "labels": ["Part", "后车门"], "properties": {"id": "硬派越野车-外部-侧部区域-后门", "location": "外部-侧部区域", "name": "后门"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-前门(L&R)", "labels": ["Part", "前车门"], "properties": {"id": "硬派越野车-外部-侧部区域-前门(L&R)", "location": "外部-侧部区域", "name": "前门(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-手柄(L&R)", "labels": ["Part", "车门把手"], "properties": {"id": "硬派越野车-外部-侧部区域-手柄(L&R)", "location": "外部-侧部区域", "name": "手柄(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-外下饰板总成(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "硬派越野车-外部-侧部区域-外下饰板总成(L&R)", "location": "外部-侧部区域", "name": "外下饰板总成(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-加油口盖", "labels": ["Part", "加油口门"], "properties": {"id": "硬派越野车-外部-侧部区域-加油口盖", "location": "外部-侧部区域", "name": "加油口盖"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-后视镜", "labels": ["Part", "后视镜"], "properties": {"id": "硬派越野车-外部-侧部区域-后视镜", "location": "外部-侧部区域", "name": "后视镜"}, "type": "node"}
+{"id": "硬派越野车-外部-侧部区域-转向灯(L&R)", "labels": ["Part", "转向灯"], "properties": {"id": "硬派越野车-外部-侧部区域-转向灯(L&R)", "location": "外部-侧部区域", "name": "转向灯(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-顶盖", "labels": ["Part", "顶盖"], "properties": {"id": "硬派越野车-外部-后部区域-顶盖", "location": "外部-后部区域", "name": "顶盖"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-扰流板", "labels": ["Part", "扰流板"], "properties": {"id": "硬派越野车-外部-后部区域-扰流板", "location": "外部-后部区域", "name": "扰流板"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-后风挡", "labels": ["Part", "后风挡"], "properties": {"id": "硬派越野车-外部-后部区域-后风挡", "location": "外部-后部区域", "name": "后风挡"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-D柱外饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "硬派越野车-外部-后部区域-D柱外饰板(L&R)", "location": "外部-后部区域", "name": "D柱外饰板(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-高位刹车灯(L&R)", "labels": ["Part", "高位制动灯"], "properties": {"id": "硬派越野车-外部-后部区域-高位刹车灯(L&R)", "location": "外部-后部区域", "name": "高位刹车灯(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-尾门", "labels": ["Part", "尾门/后备箱盖"], "properties": {"id": "硬派越野车-外部-后部区域-尾门", "location": "外部-后部区域", "name": "尾门"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-手柄", "labels": ["Part", "尾门把手"], "properties": {"id": "硬派越野车-外部-后部区域-手柄", "location": "外部-后部区域", "name": "手柄"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "硬派越野车-外部-后部区域-侧围", "location": "外部-后部区域", "name": "侧围"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-尾灯(L&R)", "labels": ["Part", "后车灯"], "properties": {"id": "硬派越野车-外部-后部区域-尾灯(L&R)", "location": "外部-后部区域", "name": "尾灯(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-后保本体(L&R)", "labels": ["Part", "后保险杠"], "properties": {"id": "硬派越野车-外部-后部区域-后保本体(L&R)", "location": "外部-后部区域", "name": "后保本体(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-后保", "labels": ["Part", "后保险杠"], "properties": {"id": "硬派越野车-外部-后部区域-后保", "location": "外部-后部区域", "name": "后保"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-雾灯 (L&R) (c↔a)", "labels": ["Part", "后雾灯"], "properties": {"id": "硬派越野车-外部-后部区域-雾灯 (L&R) (c↔a)", "location": "外部-后部区域", "name": "雾灯 (L&R) (c↔a)"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-雾灯 (L&R)(a↔b↔c)", "labels": ["Part", "后雾灯"], "properties": {"id": "硬派越野车-外部-后部区域-雾灯 (L&R)(a↔b↔c)", "location": "外部-后部区域", "name": "雾灯 (L&R)(a↔b↔c)"}, "type": "node"}
+{"id": "硬派越野车-外部-后部区域-后保(L&R)", "labels": ["Part", "后保险杠"], "properties": {"id": "硬派越野车-外部-后部区域-后保(L&R)", "location": "外部-后部区域", "name": "后保(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-顶部区域-顶盖", "labels": ["Part", "顶盖"], "properties": {"id": "硬派越野车-外部-顶部区域-顶盖", "location": "外部-顶部区域", "name": "顶盖"}, "type": "node"}
+{"id": "硬派越野车-外部-顶部区域-天窗前端", "labels": ["Part", "天窗"], "properties": {"id": "硬派越野车-外部-顶部区域-天窗前端", "location": "外部-顶部区域", "name": "天窗前端"}, "type": "node"}
+{"id": "硬派越野车-外部-顶部区域-天窗前部(L&R)", "labels": ["Part", "天窗"], "properties": {"id": "硬派越野车-外部-顶部区域-天窗前部(L&R)", "location": "外部-顶部区域", "name": "天窗前部(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-顶部区域-天窗后端", "labels": ["Part", "天窗"], "properties": {"id": "硬派越野车-外部-顶部区域-天窗后端", "location": "外部-顶部区域", "name": "天窗后端"}, "type": "node"}
+{"id": "硬派越野车-外部-顶部区域-天窗后部(L&R)", "labels": ["Part", "天窗"], "properties": {"id": "硬派越野车-外部-顶部区域-天窗后部(L&R)", "location": "外部-顶部区域", "name": "天窗后部(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-顶部区域-饰条(L&R)", "labels": ["Part", "饰条"], "properties": {"id": "硬派越野车-外部-顶部区域-饰条(L&R)", "location": "外部-顶部区域", "name": "饰条(L&R)"}, "type": "node"}
+{"id": "硬派越野车-外部-顶部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "硬派越野车-外部-顶部区域-侧围", "location": "外部-顶部区域", "name": "侧围"}, "type": "node"}
+{"id": "硬派越野车-内部-侧围门洞区域-左后侧围内饰板", "labels": ["Part", "侧围"], "properties": {"id": "硬派越野车-内部-侧围门洞区域-左后侧围内饰板", "location": "内部-侧围门洞区域", "name": "左后侧围内饰板"}, "type": "node"}
+{"id": "硬派越野车-内部-侧围门洞区域-盖板", "labels": ["Part", "饰板"], "properties": {"id": "硬派越野车-内部-侧围门洞区域-盖板", "location": "内部-侧围门洞区域", "name": "盖板"}, "type": "node"}
+{"id": "硬派越野车-内部-侧围门洞区域-后侧围内饰板", "labels": ["Part", "侧围"], "properties": {"id": "硬派越野车-内部-侧围门洞区域-后侧围内饰板", "location": "内部-侧围门洞区域", "name": "后侧围内饰板"}, "type": "node"}
+{"id": "硬派越野车-内部-侧围门洞区域-盖板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "硬派越野车-内部-侧围门洞区域-盖板(L&R)", "location": "内部-侧围门洞区域", "name": "盖板(L&R)"}, "type": "node"}
+{"id": "硬派越野车-内部-侧围门洞区域-后门槛护板 (L&R)", "labels": ["Part", "饰板"], "properties": {"id": "硬派越野车-内部-侧围门洞区域-后门槛护板 (L&R)", "location": "内部-侧围门洞区域", "name": "后门槛护板 (L&R)"}, "type": "node"}
+{"id": "硬派越野车-内部-侧围门洞区域-右后侧围内饰板", "labels": ["Part", "侧围"], "properties": {"id": "硬派越野车-内部-侧围门洞区域-右后侧围内饰板", "location": "内部-侧围门洞区域", "name": "右后侧围内饰板"}, "type": "node"}
+{"id": "硬派越野车-内部-侧围门洞区域-后门槛 (L&R)", "labels": ["Part", "饰板"], "properties": {"id": "硬派越野车-内部-侧围门洞区域-后门槛 (L&R)", "location": "内部-侧围门洞区域", "name": "后门槛 (L&R)"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "城市SUV-外部-前部区域-侧围", "location": "外部-前部区域", "name": "侧围"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-前风挡玻璃（L&R）", "labels": ["Part", "前风挡"], "properties": {"id": "城市SUV-外部-前部区域-前风挡玻璃（L&R）", "location": "外部-前部区域", "name": "前风挡玻璃（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-机盖", "labels": ["Part", "发动机盖"], "properties": {"id": "城市SUV-外部-前部区域-机盖", "location": "外部-前部区域", "name": "机盖"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-前保", "labels": ["Part", "前保险杠"], "properties": {"id": "城市SUV-外部-前部区域-前保", "location": "外部-前部区域", "name": "前保"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-翼子板（L&R）", "labels": ["Part", "翼子板"], "properties": {"id": "城市SUV-外部-前部区域-翼子板（L&R）", "location": "外部-前部区域", "name": "翼子板（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-翼子板", "labels": ["Part", "翼子板"], "properties": {"id": "城市SUV-外部-前部区域-翼子板", "location": "外部-前部区域", "name": "翼子板"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-机盖（L&R）a↔b", "labels": ["Part", "发动机盖"], "properties": {"id": "城市SUV-外部-前部区域-机盖（L&R）a↔b", "location": "外部-前部区域", "name": "机盖（L&R）a↔b"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-机盖（L&R)c↔d", "labels": ["Part", "发动机盖"], "properties": {"id": "城市SUV-外部-前部区域-机盖（L&R)c↔d", "location": "外部-前部区域", "name": "机盖（L&R)c↔d"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-机盖（L&R）b↔c", "labels": ["Part", "发动机盖"], "properties": {"id": "城市SUV-外部-前部区域-机盖（L&R）b↔c", "location": "外部-前部区域", "name": "机盖（L&R）b↔c"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-前保（L&R）", "labels": ["Part", "前保险杠"], "properties": {"id": "城市SUV-外部-前部区域-前保（L&R）", "location": "外部-前部区域", "name": "前保（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-前大灯（L&R）d↔e", "labels": ["Part", "前车灯"], "properties": {"id": "城市SUV-外部-前部区域-前大灯（L&R）d↔e", "location": "外部-前部区域", "name": "前大灯（L&R）d↔e"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-前大灯（L&R）", "labels": ["Part", "前车灯"], "properties": {"id": "城市SUV-外部-前部区域-前大灯（L&R）", "location": "外部-前部区域", "name": "前大灯（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-前保本体", "labels": ["Part", "前保险杠"], "properties": {"id": "城市SUV-外部-前部区域-前保本体", "location": "外部-前部区域", "name": "前保本体"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-日行灯（L&R）", "labels": ["Part", "日间行车灯"], "properties": {"id": "城市SUV-外部-前部区域-日行灯（L&R）", "location": "外部-前部区域", "name": "日行灯（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-前保险杠", "labels": ["Part", "前保险杠"], "properties": {"id": "城市SUV-外部-前部区域-前保险杠", "location": "外部-前部区域", "name": "前保险杠"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-拖车钩盖板", "labels": ["Part", "前拖车钩盖"], "properties": {"id": "城市SUV-外部-前部区域-拖车钩盖板", "location": "外部-前部区域", "name": "拖车钩盖板"}, "type": "node"}
+{"id": "城市SUV-外部-前部区域-前轮眉罩板（L&R）", "labels": ["Part", "轮眉饰板"], "properties": {"id": "城市SUV-外部-前部区域-前轮眉罩板（L&R）", "location": "外部-前部区域", "name": "前轮眉罩板（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-前门", "labels": ["Part", "前车门"], "properties": {"id": "城市SUV-外部-侧部区域-前门", "location": "外部-侧部区域", "name": "前门"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-翼子板（L&R）", "labels": ["Part", "翼子板"], "properties": {"id": "城市SUV-外部-侧部区域-翼子板（L&R）", "location": "外部-侧部区域", "name": "翼子板（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "城市SUV-外部-侧部区域-侧围", "location": "外部-侧部区域", "name": "侧围"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-侧围亮条（L&R）q↔r", "labels": ["Part", "饰条"], "properties": {"id": "城市SUV-外部-侧部区域-侧围亮条（L&R）q↔r", "location": "外部-侧部区域", "name": "侧围亮条（L&R）q↔r"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-侧围亮条（L&R）p↔q", "labels": ["Part", "饰条"], "properties": {"id": "城市SUV-外部-侧部区域-侧围亮条（L&R）p↔q", "location": "外部-侧部区域", "name": "侧围亮条（L&R）p↔q"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-后门", "labels": ["Part", "后车门"], "properties": {"id": "城市SUV-外部-侧部区域-后门", "location": "外部-侧部区域", "name": "后门"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-前门（L&R）", "labels": ["Part", "前车门"], "properties": {"id": "城市SUV-外部-侧部区域-前门（L&R）", "location": "外部-侧部区域", "name": "前门（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-后门外板", "labels": ["Part", "后车门"], "properties": {"id": "城市SUV-外部-侧部区域-后门外板", "location": "外部-侧部区域", "name": "后门外板"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-后门轮眉（L&R）", "labels": ["Part", "轮眉饰板"], "properties": {"id": "城市SUV-外部-侧部区域-后门轮眉（L&R）", "location": "外部-侧部区域", "name": "后门轮眉（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-后三角窗（L&R）", "labels": ["Part", "后角窗"], "properties": {"id": "城市SUV-外部-侧部区域-后三角窗（L&R）", "location": "外部-侧部区域", "name": "后三角窗（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-后侧围轮眉 （L&R）", "labels": ["Part", "轮眉饰板"], "properties": {"id": "城市SUV-外部-侧部区域-后侧围轮眉 （L&R）", "location": "外部-侧部区域", "name": "后侧围轮眉 （L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-前门外板", "labels": ["Part", "前车门"], "properties": {"id": "城市SUV-外部-侧部区域-前门外板", "location": "外部-侧部区域", "name": "前门外板"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-前门把手 s↔v（L&R）", "labels": ["Part", "车门把手"], "properties": {"id": "城市SUV-外部-侧部区域-前门把手 s↔v（L&R）", "location": "外部-侧部区域", "name": "前门把手 s↔v（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-前门把手 v↔u（L&R）", "labels": ["Part", "车门把手"], "properties": {"id": "城市SUV-外部-侧部区域-前门把手 v↔u（L&R）", "location": "外部-侧部区域", "name": "前门把手 v↔u（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-前门把手 s↔t（L&R）", "labels": ["Part", "车门把手"], "properties": {"id": "城市SUV-外部-侧部区域-前门把手 s↔t（L&R）", "location": "外部-侧部区域", "name": "前门把手 s↔t（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-前门把手 t↔u（L&R）", "labels": ["Part", "车门把手"], "properties": {"id": "城市SUV-外部-侧部区域-前门把手 t↔u（L&R）", "location": "外部-侧部区域", "name": "前门把手 t↔u（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-后门把手 z↔x（L&R）", "labels": ["Part", "车门把手"], "properties": {"id": "城市SUV-外部-侧部区域-后门把手 z↔x（L&R）", "location": "外部-侧部区域", "name": "后门把手 z↔x（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-后门把手 x↔y（L&R）", "labels": ["Part", "车门把手"], "properties": {"id": "城市SUV-外部-侧部区域-后门把手 x↔y（L&R）", "location": "外部-侧部区域", "name": "后门把手 x↔y（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-后门把手 z↔w（L&R）", "labels": ["Part", "车门把手"], "properties": {"id": "城市SUV-外部-侧部区域-后门把手 z↔w（L&R）", "location": "外部-侧部区域", "name": "后门把手 z↔w（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-后视镜框", "labels": ["Part", "后视镜"], "properties": {"id": "城市SUV-外部-侧部区域-后视镜框", "location": "外部-侧部区域", "name": "后视镜框"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-转向灯（L&R）", "labels": ["Part", "转向灯"], "properties": {"id": "城市SUV-外部-侧部区域-转向灯（L&R）", "location": "外部-侧部区域", "name": "转向灯（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-后视镜本体", "labels": ["Part", "后视镜"], "properties": {"id": "城市SUV-外部-侧部区域-后视镜本体", "location": "外部-侧部区域", "name": "后视镜本体"}, "type": "node"}
+{"id": "城市SUV-外部-侧部区域-后视镜片（L&R）", "labels": ["Part", "镜片"], "properties": {"id": "城市SUV-外部-侧部区域-后视镜片（L&R）", "location": "外部-侧部区域", "name": "后视镜片（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "城市SUV-外部-后部区域-侧围", "location": "外部-后部区域", "name": "侧围"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-尾灯A（L&R）", "labels": ["Part", "后车灯"], "properties": {"id": "城市SUV-外部-后部区域-尾灯A（L&R）", "location": "外部-后部区域", "name": "尾灯A（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-后保", "labels": ["Part", "后保险杠"], "properties": {"id": "城市SUV-外部-后部区域-后保", "location": "外部-后部区域", "name": "后保"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-后保（L&R）", "labels": ["Part", "后保险杠"], "properties": {"id": "城市SUV-外部-后部区域-后保（L&R）", "location": "外部-后部区域", "name": "后保（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-后保本体", "labels": ["Part", "后保险杠"], "properties": {"id": "城市SUV-外部-后部区域-后保本体", "location": "外部-后部区域", "name": "后保本体"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-轮眉（L&R）", "labels": ["Part", "轮眉饰板"], "properties": {"id": "城市SUV-外部-后部区域-轮眉（L&R）", "location": "外部-后部区域", "name": "轮眉（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-后保下本体", "labels": ["Part", "后保险杠"], "properties": {"id": "城市SUV-外部-后部区域-后保下本体", "location": "外部-后部区域", "name": "后保下本体"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-行李箱（L&R）", "labels": ["Part", "尾门/后备箱盖"], "properties": {"id": "城市SUV-外部-后部区域-行李箱（L&R）", "location": "外部-后部区域", "name": "行李箱（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-行李箱外板", "labels": ["Part", "尾门/后备箱盖"], "properties": {"id": "城市SUV-外部-后部区域-行李箱外板", "location": "外部-后部区域", "name": "行李箱外板"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-尾灯B", "labels": ["Part", "后车灯"], "properties": {"id": "城市SUV-外部-后部区域-尾灯B", "location": "外部-后部区域", "name": "尾灯B"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-行李箱", "labels": ["Part", "尾门/后备箱盖"], "properties": {"id": "城市SUV-外部-后部区域-行李箱", "location": "外部-后部区域", "name": "行李箱"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-侧围外板", "labels": ["Part", "侧围"], "properties": {"id": "城市SUV-外部-后部区域-侧围外板", "location": "外部-后部区域", "name": "侧围外板"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-行李箱饰板（L&R）", "labels": ["Part", "饰板"], "properties": {"id": "城市SUV-外部-后部区域-行李箱饰板（L&R）", "location": "外部-后部区域", "name": "行李箱饰板（L&R）"}, "type": "node"}
+{"id": "城市SUV-外部-后部区域-侧窗亮条", "labels": ["Part", "饰条"], "properties": {"id": "城市SUV-外部-后部区域-侧窗亮条", "location": "外部-后部区域", "name": "侧窗亮条"}, "type": "node"}
+{"id": "城市SUV-外部-顶部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "城市SUV-外部-顶部区域-侧围", "location": "外部-顶部区域", "name": "侧围"}, "type": "node"}
+{"id": "城市SUV-外部-顶部区域-后风挡玻璃", "labels": ["Part", "后风挡"], "properties": {"id": "城市SUV-外部-顶部区域-后风挡玻璃", "location": "外部-顶部区域", "name": "后风挡玻璃"}, "type": "node"}
+{"id": "城市SUV-内部-行李箱区域-行李箱盖内板", "labels": ["Part", "尾门/后备箱盖"], "properties": {"id": "城市SUV-内部-行李箱区域-行李箱盖内板", "location": "内部-行李箱区域", "name": "行李箱盖内板"}, "type": "node"}
+{"id": "城市SUV-内部-行李箱区域-行李箱盖饰板（All around）", "labels": ["Part", "饰板"], "properties": {"id": "城市SUV-内部-行李箱区域-行李箱盖饰板（All around）", "location": "内部-行李箱区域", "name": "行李箱盖饰板（All around）"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-机盖", "labels": ["Part", "发动机盖"], "properties": {"id": "豪华轿车-外部-前部区域-机盖", "location": "外部-前部区域", "name": "机盖"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-前保险杠", "labels": ["Part", "前保险杠"], "properties": {"id": "豪华轿车-外部-前部区域-前保险杠", "location": "外部-前部区域", "name": "前保险杠"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-翼子板(L&R)", "labels": ["Part", "翼子板"], "properties": {"id": "豪华轿车-外部-前部区域-翼子板(L&R)", "location": "外部-前部区域", "name": "翼子板(L&R)"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-翼子板", "labels": ["Part", "翼子板"], "properties": {"id": "豪华轿车-外部-前部区域-翼子板", "location": "外部-前部区域", "name": "翼子板"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-前保险杠(L&R)", "labels": ["Part", "前保险杠"], "properties": {"id": "豪华轿车-外部-前部区域-前保险杠(L&R)", "location": "外部-前部区域", "name": "前保险杠(L&R)"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "豪华轿车-外部-前部区域-侧围", "location": "外部-前部区域", "name": "侧围"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-前风挡玻璃(L&R)", "labels": ["Part", "前风挡"], "properties": {"id": "豪华轿车-外部-前部区域-前风挡玻璃(L&R)", "location": "外部-前部区域", "name": "前风挡玻璃(L&R)"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-下格栅", "labels": ["Part", "格栅1"], "properties": {"id": "豪华轿车-外部-前部区域-下格栅", "location": "外部-前部区域", "name": "下格栅"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-拖车钩盖板", "labels": ["Part", "前拖车钩盖"], "properties": {"id": "豪华轿车-外部-前部区域-拖车钩盖板", "location": "外部-前部区域", "name": "拖车钩盖板"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-翼子板(L&R)(u↔v)", "labels": ["Part", "翼子板"], "properties": {"id": "豪华轿车-外部-前部区域-翼子板(L&R)(u↔v)", "location": "外部-前部区域", "name": "翼子板(L&R)(u↔v)"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-翼子板(L&R)(v↔w)", "labels": ["Part", "翼子板"], "properties": {"id": "豪华轿车-外部-前部区域-翼子板(L&R)(v↔w)", "location": "外部-前部区域", "name": "翼子板(L&R)(v↔w)"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-摄像头", "labels": ["Part", "摄像头"], "properties": {"id": "豪华轿车-外部-前部区域-摄像头", "location": "外部-前部区域", "name": "摄像头"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-翼子板饰板(L&R)(h↔j)", "labels": ["Part", "装饰件"], "properties": {"id": "豪华轿车-外部-前部区域-翼子板饰板(L&R)(h↔j)", "location": "外部-前部区域", "name": "翼子板饰板(L&R)(h↔j)"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-翼子板下饰板(L&R)(h↔i↔g)", "labels": ["Part", "装饰件"], "properties": {"id": "豪华轿车-外部-前部区域-翼子板下饰板(L&R)(h↔i↔g)", "location": "外部-前部区域", "name": "翼子板下饰板(L&R)(h↔i↔g)"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-下本体中间亮条(L&R) (al↔am)", "labels": ["Part", "饰条"], "properties": {"id": "豪华轿车-外部-前部区域-下本体中间亮条(L&R) (al↔am)", "location": "外部-前部区域", "name": "下本体中间亮条(L&R) (al↔am)"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-下本体中间亮条(L&R) (am↔an)", "labels": ["Part", "饰条"], "properties": {"id": "豪华轿车-外部-前部区域-下本体中间亮条(L&R) (am↔an)", "location": "外部-前部区域", "name": "下本体中间亮条(L&R) (am↔an)"}, "type": "node"}
+{"id": "豪华轿车-外部-前部区域-前保雷达(L&R)", "labels": ["Part", "毫米波雷达"], "properties": {"id": "豪华轿车-外部-前部区域-前保雷达(L&R)", "location": "外部-前部区域", "name": "前保雷达(L&R)"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "豪华轿车-外部-侧部区域-侧围", "location": "外部-侧部区域", "name": "侧围"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-侧围亮条(L&R)", "labels": ["Part", "饰条"], "properties": {"id": "豪华轿车-外部-侧部区域-侧围亮条(L&R)", "location": "外部-侧部区域", "name": "侧围亮条(L&R)"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-前门", "labels": ["Part", "前车门"], "properties": {"id": "豪华轿车-外部-侧部区域-前门", "location": "外部-侧部区域", "name": "前门"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-翼子板(L&R)", "labels": ["Part", "翼子板"], "properties": {"id": "豪华轿车-外部-侧部区域-翼子板(L&R)", "location": "外部-侧部区域", "name": "翼子板(L&R)"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-后门", "labels": ["Part", "后车门"], "properties": {"id": "豪华轿车-外部-侧部区域-后门", "location": "外部-侧部区域", "name": "后门"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-前门(L&R)", "labels": ["Part", "前车门"], "properties": {"id": "豪华轿车-外部-侧部区域-前门(L&R)", "location": "外部-侧部区域", "name": "前门(L&R)"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-翼子板", "labels": ["Part", "翼子板"], "properties": {"id": "豪华轿车-外部-侧部区域-翼子板", "location": "外部-侧部区域", "name": "翼子板"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-门槛饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华轿车-外部-侧部区域-门槛饰板(L&R)", "location": "外部-侧部区域", "name": "门槛饰板(L&R)"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-前门把手（All around)(L&R)", "labels": ["Part", "车门把手"], "properties": {"id": "豪华轿车-外部-侧部区域-前门把手（All around)(L&R)", "location": "外部-侧部区域", "name": "前门把手（All around)(L&R)"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-后门把手（L&R)", "labels": ["Part", "车门把手"], "properties": {"id": "豪华轿车-外部-侧部区域-后门把手（L&R)", "location": "外部-侧部区域", "name": "后门把手（L&R)"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-后三角窗（L&R)", "labels": ["Part", "后角窗"], "properties": {"id": "豪华轿车-外部-侧部区域-后三角窗（L&R)", "location": "外部-侧部区域", "name": "后三角窗（L&R)"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-后视镜底座上段", "labels": ["Part", "后视镜"], "properties": {"id": "豪华轿车-外部-侧部区域-后视镜底座上段", "location": "外部-侧部区域", "name": "后视镜底座上段"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-转向灯（ L&R)", "labels": ["Part", "转向灯"], "properties": {"id": "豪华轿车-外部-侧部区域-转向灯（ L&R)", "location": "外部-侧部区域", "name": "转向灯（ L&R)"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-后视镜底座下段", "labels": ["Part", "后视镜"], "properties": {"id": "豪华轿车-外部-侧部区域-后视镜底座下段", "location": "外部-侧部区域", "name": "后视镜底座下段"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-后视镜边框（L&R）", "labels": ["Part", "本体上壳"], "properties": {"id": "豪华轿车-外部-侧部区域-后视镜边框（L&R）", "location": "外部-侧部区域", "name": "后视镜边框（L&R）"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-后视镜本体", "labels": ["Part", "后视镜"], "properties": {"id": "豪华轿车-外部-侧部区域-后视镜本体", "location": "外部-侧部区域", "name": "后视镜本体"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-转向灯（L&R）", "labels": ["Part", "转向灯"], "properties": {"id": "豪华轿车-外部-侧部区域-转向灯（L&R）", "location": "外部-侧部区域", "name": "转向灯（L&R）"}, "type": "node"}
+{"id": "豪华轿车-外部-侧部区域-门槛(L&R）", "labels": ["Part", "饰板"], "properties": {"id": "豪华轿车-外部-侧部区域-门槛(L&R）", "location": "外部-侧部区域", "name": "门槛(L&R）"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "豪华轿车-外部-后部区域-侧围", "location": "外部-后部区域", "name": "侧围"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-后保险杠（L&R）", "labels": ["Part", "后保险杠"], "properties": {"id": "豪华轿车-外部-后部区域-后保险杠（L&R）", "location": "外部-后部区域", "name": "后保险杠（L&R）"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-后风挡玻璃（L&R）", "labels": ["Part", "后风挡"], "properties": {"id": "豪华轿车-外部-后部区域-后风挡玻璃（L&R）", "location": "外部-后部区域", "name": "后风挡玻璃（L&R）"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-行李箱盖（L&R）", "labels": ["Part", "尾门/后备箱盖"], "properties": {"id": "豪华轿车-外部-后部区域-行李箱盖（L&R）", "location": "外部-后部区域", "name": "行李箱盖（L&R）"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-后保险杠", "labels": ["Part", "后保险杠"], "properties": {"id": "豪华轿车-外部-后部区域-后保险杠", "location": "外部-后部区域", "name": "后保险杠"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-行李箱（L&R）(a↔b）", "labels": ["Part", "尾门/后备箱盖"], "properties": {"id": "豪华轿车-外部-后部区域-行李箱（L&R）(a↔b）", "location": "外部-后部区域", "name": "行李箱（L&R）(a↔b）"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-行李箱（L&R ）(b↔c）", "labels": ["Part", "尾门/后备箱盖"], "properties": {"id": "豪华轿车-外部-后部区域-行李箱（L&R ）(b↔c）", "location": "外部-后部区域", "name": "行李箱（L&R ）(b↔c）"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-行李箱（L&R）", "labels": ["Part", "尾门/后备箱盖"], "properties": {"id": "豪华轿车-外部-后部区域-行李箱（L&R）", "location": "外部-后部区域", "name": "行李箱（L&R）"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-行李箱盖板", "labels": ["Part", "尾门/后备箱盖"], "properties": {"id": "豪华轿车-外部-后部区域-行李箱盖板", "location": "外部-后部区域", "name": "行李箱盖板"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-贯穿灯", "labels": ["Part", "后车灯"], "properties": {"id": "豪华轿车-外部-后部区域-贯穿灯", "location": "外部-后部区域", "name": "贯穿灯"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-行李箱", "labels": ["Part", "尾门/后备箱盖"], "properties": {"id": "豪华轿车-外部-后部区域-行李箱", "location": "外部-后部区域", "name": "行李箱"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-行李箱饰板", "labels": ["Part", "饰板"], "properties": {"id": "豪华轿车-外部-后部区域-行李箱饰板", "location": "外部-后部区域", "name": "行李箱饰板"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-侧窗亮条（L&R）", "labels": ["Part", "饰条"], "properties": {"id": "豪华轿车-外部-后部区域-侧窗亮条（L&R）", "location": "外部-后部区域", "name": "侧窗亮条（L&R）"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-行李箱饰板（L&R）", "labels": ["Part", "饰板"], "properties": {"id": "豪华轿车-外部-后部区域-行李箱饰板（L&R）", "location": "外部-后部区域", "name": "行李箱饰板（L&R）"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-后保雷达", "labels": ["Part", "超声波雷达"], "properties": {"id": "豪华轿车-外部-后部区域-后保雷达", "location": "外部-后部区域", "name": "后保雷达"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-回复反射器（L&R ）(ag↔ah）", "labels": ["Part", "回复反射器"], "properties": {"id": "豪华轿车-外部-后部区域-回复反射器（L&R ）(ag↔ah）", "location": "外部-后部区域", "name": "回复反射器（L&R ）(ag↔ah）"}, "type": "node"}
+{"id": "豪华轿车-外部-后部区域-回复反射器（L&R ）(ah↔ai↔ag）", "labels": ["Part", "回复反射器"], "properties": {"id": "豪华轿车-外部-后部区域-回复反射器（L&R ）(ah↔ai↔ag）", "location": "外部-后部区域", "name": "回复反射器（L&R ）(ah↔ai↔ag）"}, "type": "node"}
+{"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围上饰板", "labels": ["Part", "侧围"], "properties": {"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围上饰板", "location": "内部-A柱、B柱、 C柱饰板区域", "name": "后侧围上饰板"}, "type": "node"}
+{"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后三角窗玻璃(L&R)", "labels": ["Part", "后角窗"], "properties": {"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后三角窗玻璃(L&R)", "location": "内部-A柱、B柱、 C柱饰板区域", "name": "后三角窗玻璃(L&R)"}, "type": "node"}
+{"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围装饰板", "labels": ["Part", "侧围"], "properties": {"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围装饰板", "location": "内部-A柱、B柱、 C柱饰板区域", "name": "后侧围装饰板"}, "type": "node"}
+{"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-D柱上饰板（L&R）", "labels": ["Part", "饰板"], "properties": {"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-D柱上饰板（L&R）", "location": "内部-A柱、B柱、 C柱饰板区域", "name": "D柱上饰板（L&R）"}, "type": "node"}
+{"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围下饰板", "labels": ["Part", "侧围"], "properties": {"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围下饰板", "location": "内部-A柱、B柱、 C柱饰板区域", "name": "后侧围下饰板"}, "type": "node"}
+{"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围装饰条(L&R)", "labels": ["Part", "饰条"], "properties": {"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围装饰条(L&R)", "location": "内部-A柱、B柱、 C柱饰板区域", "name": "后侧围装饰条(L&R)"}, "type": "node"}
+{"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围中饰板", "labels": ["Part", "侧围"], "properties": {"id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围中饰板", "location": "内部-A柱、B柱、 C柱饰板区域", "name": "后侧围中饰板"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-前风挡玻璃", "labels": ["Part", "前风挡"], "properties": {"id": "豪华SUV-外部-前部区域-前风挡玻璃", "location": "外部-前部区域", "name": "前风挡玻璃"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-A柱外饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-外部-前部区域-A柱外饰板(L&R)", "location": "外部-前部区域", "name": "A柱外饰板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-发动机盖", "labels": ["Part", "发动机盖"], "properties": {"id": "豪华SUV-外部-前部区域-发动机盖", "location": "外部-前部区域", "name": "发动机盖"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-前机舱装饰条", "labels": ["Part", "饰条"], "properties": {"id": "豪华SUV-外部-前部区域-前机舱装饰条", "location": "外部-前部区域", "name": "前机舱装饰条"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-翼子板(L&R)", "labels": ["Part", "翼子板"], "properties": {"id": "豪华SUV-外部-前部区域-翼子板(L&R)", "location": "外部-前部区域", "name": "翼子板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-翼子板", "labels": ["Part", "翼子板"], "properties": {"id": "豪华SUV-外部-前部区域-翼子板", "location": "外部-前部区域", "name": "翼子板"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-前组合灯(L&R)", "labels": ["Part", "前车灯"], "properties": {"id": "豪华SUV-外部-前部区域-前组合灯(L&R)", "location": "外部-前部区域", "name": "前组合灯(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-顶盖", "labels": ["Part", "顶盖"], "properties": {"id": "豪华SUV-外部-前部区域-顶盖", "location": "外部-前部区域", "name": "顶盖"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-顶雷达饰板", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-外部-前部区域-顶雷达饰板", "location": "外部-前部区域", "name": "顶雷达饰板"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-前保险杠上本体", "labels": ["Part", "前保险杠"], "properties": {"id": "豪华SUV-外部-前部区域-前保险杠上本体", "location": "外部-前部区域", "name": "前保险杠上本体"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "豪华SUV-外部-前部区域-侧围", "location": "外部-前部区域", "name": "侧围"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-顶雷达饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-外部-前部区域-顶雷达饰板(L&R)", "location": "外部-前部区域", "name": "顶雷达饰板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-前保上本体", "labels": ["Part", "前保险杠"], "properties": {"id": "豪华SUV-外部-前部区域-前保上本体", "location": "外部-前部区域", "name": "前保上本体"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-前保险杠上格栅", "labels": ["Part", "格栅1"], "properties": {"id": "豪华SUV-外部-前部区域-前保险杠上格栅", "location": "外部-前部区域", "name": "前保险杠上格栅"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-前保险杠下本体(L&R)", "labels": ["Part", "前保险杠"], "properties": {"id": "豪华SUV-外部-前部区域-前保险杠下本体(L&R)", "location": "外部-前部区域", "name": "前保险杠下本体(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-拖车钩盖板（All around）", "labels": ["Part", "前拖车钩盖"], "properties": {"id": "豪华SUV-外部-前部区域-拖车钩盖板（All around）", "location": "外部-前部区域", "name": "拖车钩盖板（All around）"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-前保险杠饰盖(L&R)", "labels": ["Part", "装饰件"], "properties": {"id": "豪华SUV-外部-前部区域-前保险杠饰盖(L&R)", "location": "外部-前部区域", "name": "前保险杠饰盖(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-前保险杠下本体", "labels": ["Part", "前保险杠"], "properties": {"id": "豪华SUV-外部-前部区域-前保险杠下本体", "location": "外部-前部区域", "name": "前保险杠下本体"}, "type": "node"}
+{"id": "豪华SUV-外部-前部区域-前保险杠下格栅（All around）", "labels": ["Part", "格栅2"], "properties": {"id": "豪华SUV-外部-前部区域-前保险杠下格栅（All around）", "location": "外部-前部区域", "name": "前保险杠下格栅（All around）"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-前门", "labels": ["Part", "前车门"], "properties": {"id": "豪华SUV-外部-侧部区域-前门", "location": "外部-侧部区域", "name": "前门"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-翼子板(L&R)", "labels": ["Part", "翼子板"], "properties": {"id": "豪华SUV-外部-侧部区域-翼子板(L&R)", "location": "外部-侧部区域", "name": "翼子板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-后门", "labels": ["Part", "后车门"], "properties": {"id": "豪华SUV-外部-侧部区域-后门", "location": "外部-侧部区域", "name": "后门"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-前门(L&R)", "labels": ["Part", "前车门"], "properties": {"id": "豪华SUV-外部-侧部区域-前门(L&R)", "location": "外部-侧部区域", "name": "前门(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-翼子板", "labels": ["Part", "翼子板"], "properties": {"id": "豪华SUV-外部-侧部区域-翼子板", "location": "外部-侧部区域", "name": "翼子板"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-前轮眉饰板(L&R)", "labels": ["Part", "轮眉饰板"], "properties": {"id": "豪华SUV-外部-侧部区域-前轮眉饰板(L&R)", "location": "外部-侧部区域", "name": "前轮眉饰板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-侧围", "labels": ["Part", "侧围"], "properties": {"id": "豪华SUV-外部-侧部区域-侧围", "location": "外部-侧部区域", "name": "侧围"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-前门窗框亮条(L&R)", "labels": ["Part", "饰条"], "properties": {"id": "豪华SUV-外部-侧部区域-前门窗框亮条(L&R)", "location": "外部-侧部区域", "name": "前门窗框亮条(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-后门窗框亮条(L&R)", "labels": ["Part", "饰条"], "properties": {"id": "豪华SUV-外部-侧部区域-后门窗框亮条(L&R)", "location": "外部-侧部区域", "name": "后门窗框亮条(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-后轮眉饰板(L&R)", "labels": ["Part", "轮眉饰板"], "properties": {"id": "豪华SUV-外部-侧部区域-后轮眉饰板(L&R)", "location": "外部-侧部区域", "name": "后轮眉饰板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-角窗亮条(L&R)", "labels": ["Part", "饰条"], "properties": {"id": "豪华SUV-外部-侧部区域-角窗亮条(L&R)", "location": "外部-侧部区域", "name": "角窗亮条(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-前门下饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-外部-侧部区域-前门下饰板(L&R)", "location": "外部-侧部区域", "name": "前门下饰板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-后门下饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-外部-侧部区域-后门下饰板(L&R)", "location": "外部-侧部区域", "name": "后门下饰板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-加油口盖（e↔f）", "labels": ["Part", "加油口门"], "properties": {"id": "豪华SUV-外部-侧部区域-加油口盖（e↔f）", "location": "外部-侧部区域", "name": "加油口盖（e↔f）"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-加油口盖（f↔g）", "labels": ["Part", "加油口门"], "properties": {"id": "豪华SUV-外部-侧部区域-加油口盖（f↔g）", "location": "外部-侧部区域", "name": "加油口盖（f↔g）"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-加油口盖（h↔e）", "labels": ["Part", "加油口门"], "properties": {"id": "豪华SUV-外部-侧部区域-加油口盖（h↔e）", "location": "外部-侧部区域", "name": "加油口盖（h↔e）"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-加油口盖（g↔h）", "labels": ["Part", "加油口门"], "properties": {"id": "豪华SUV-外部-侧部区域-加油口盖（g↔h）", "location": "外部-侧部区域", "name": "加油口盖（g↔h）"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-翼子板饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-外部-侧部区域-翼子板饰板(L&R)", "location": "外部-侧部区域", "name": "翼子板饰板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-角窗饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-外部-侧部区域-角窗饰板(L&R)", "location": "外部-侧部区域", "name": "角窗饰板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-后门轮眉饰板(L&R)", "labels": ["Part", "轮眉饰板"], "properties": {"id": "豪华SUV-外部-侧部区域-后门轮眉饰板(L&R)", "location": "外部-侧部区域", "name": "后门轮眉饰板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-外后视镜底座", "labels": ["Part", "后视镜"], "properties": {"id": "豪华SUV-外部-侧部区域-外后视镜底座", "location": "外部-侧部区域", "name": "外后视镜底座"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-外后视镜下本体L&R)", "labels": ["Part", "本体下壳"], "properties": {"id": "豪华SUV-外部-侧部区域-外后视镜下本体L&R)", "location": "外部-侧部区域", "name": "外后视镜下本体L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-侧部区域-边梁饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-外部-侧部区域-边梁饰板(L&R)", "location": "外部-侧部区域", "name": "边梁饰板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-后部区域-顶盖", "labels": ["Part", "顶盖"], "properties": {"id": "豪华SUV-外部-后部区域-顶盖", "location": "外部-后部区域", "name": "顶盖"}, "type": "node"}
+{"id": "豪华SUV-外部-后部区域-扰流板(L&R)", "labels": ["Part", "扰流板"], "properties": {"id": "豪华SUV-外部-后部区域-扰流板(L&R)", "location": "外部-后部区域", "name": "扰流板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-后部区域-后风挡玻璃", "labels": ["Part", "后风挡"], "properties": {"id": "豪华SUV-外部-后部区域-后风挡玻璃", "location": "外部-后部区域", "name": "后风挡玻璃"}, "type": "node"}
+{"id": "豪华SUV-外部-后部区域-尾门上饰板", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-外部-后部区域-尾门上饰板", "location": "外部-后部区域", "name": "尾门上饰板"}, "type": "node"}
+{"id": "豪华SUV-外部-后部区域-扰流板", "labels": ["Part", "扰流板"], "properties": {"id": "豪华SUV-外部-后部区域-扰流板", "location": "外部-后部区域", "name": "扰流板"}, "type": "node"}
+{"id": "豪华SUV-外部-后部区域-高位刹车灯(L&R)", "labels": ["Part", "高位制动灯"], "properties": {"id": "豪华SUV-外部-后部区域-高位刹车灯(L&R)", "location": "外部-后部区域", "name": "高位刹车灯(L&R)"}, "type": "node"}
+{"id": "豪华SUV-外部-后部区域-后保险杠上本体", "labels": ["Part", "后保险杠"], "properties": {"id": "豪华SUV-外部-后部区域-后保险杠上本体", "location": "外部-后部区域", "name": "后保险杠上本体"}, "type": "node"}
+{"id": "豪华SUV-外部-后部区域-拖车钩盖板（All around）", "labels": ["Part", "后拖车钩盖"], "properties": {"id": "豪华SUV-外部-后部区域-拖车钩盖板（All around）", "location": "外部-后部区域", "name": "拖车钩盖板（All around）"}, "type": "node"}
+{"id": "豪华SUV-外部-后部区域-后牌照灯饰板本体", "labels": ["Part", "后牌照安装板"], "properties": {"id": "豪华SUV-外部-后部区域-后牌照灯饰板本体", "location": "外部-后部区域", "name": "后牌照灯饰板本体"}, "type": "node"}
+{"id": "豪华SUV-外部-后部区域-牌照灯(L&R) （All around）", "labels": ["Part", "后牌照灯"], "properties": {"id": "豪华SUV-外部-后部区域-牌照灯(L&R) （All around）", "location": "外部-后部区域", "name": "牌照灯(L&R) （All around）"}, "type": "node"}
+{"id": "豪华SUV-外部-顶部区域-顶盖", "labels": ["Part", "顶盖"], "properties": {"id": "豪华SUV-外部-顶部区域-顶盖", "location": "外部-顶部区域", "name": "顶盖"}, "type": "node"}
+{"id": "豪华SUV-外部-顶部区域-全景天窗前部", "labels": ["Part", "天窗"], "properties": {"id": "豪华SUV-外部-顶部区域-全景天窗前部", "location": "外部-顶部区域", "name": "全景天窗前部"}, "type": "node"}
+{"id": "豪华SUV-外部-顶部区域-全景天窗前部（L&R）", "labels": ["Part", "天窗"], "properties": {"id": "豪华SUV-外部-顶部区域-全景天窗前部（L&R）", "location": "外部-顶部区域", "name": "全景天窗前部（L&R）"}, "type": "node"}
+{"id": "豪华SUV-外部-顶部区域-全景天窗后部", "labels": ["Part", "天窗"], "properties": {"id": "豪华SUV-外部-顶部区域-全景天窗后部", "location": "外部-顶部区域", "name": "全景天窗后部"}, "type": "node"}
+{"id": "豪华SUV-外部-顶部区域-侧围后部外饰板", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-外部-顶部区域-侧围后部外饰板", "location": "外部-顶部区域", "name": "侧围后部外饰板"}, "type": "node"}
+{"id": "豪华SUV-内部-尾门饰板区域-后背门内板", "labels": ["Part", "尾门/后备箱盖"], "properties": {"id": "豪华SUV-内部-尾门饰板区域-后背门内板", "location": "内部-尾门饰板区域", "name": "后背门内板"}, "type": "node"}
+{"id": "豪华SUV-内部-尾门饰板区域-后背门饰板总成(All around)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-内部-尾门饰板区域-后背门饰板总成(All around)", "location": "内部-尾门饰板区域", "name": "后背门饰板总成(All around)"}, "type": "node"}
+{"id": "豪华SUV-内部-尾门饰板区域-后侧围饰板", "labels": ["Part", "侧围"], "properties": {"id": "豪华SUV-内部-尾门饰板区域-后侧围饰板", "location": "内部-尾门饰板区域", "name": "后侧围饰板"}, "type": "node"}
+{"id": "豪华SUV-内部-尾门饰板区域-行李箱饰板（L&R）", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-内部-尾门饰板区域-行李箱饰板（L&R）", "location": "内部-尾门饰板区域", "name": "行李箱饰板（L&R）"}, "type": "node"}
+{"id": "豪华SUV-内部-立柱区域-后侧围饰板", "labels": ["Part", "侧围"], "properties": {"id": "豪华SUV-内部-立柱区域-后侧围饰板", "location": "内部-立柱区域", "name": "后侧围饰板"}, "type": "node"}
+{"id": "豪华SUV-内部-立柱区域-木饰板 (L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-内部-立柱区域-木饰板 (L&R)", "location": "内部-立柱区域", "name": "木饰板 (L&R)"}, "type": "node"}
+{"id": "豪华SUV-内部-立柱区域-饰条(All around)(L&R)", "labels": ["Part", "饰条"], "properties": {"id": "豪华SUV-内部-立柱区域-饰条(All around)(L&R)", "location": "内部-立柱区域", "name": "饰条(All around)(L&R)"}, "type": "node"}
+{"id": "豪华SUV-内部-立柱区域-右后侧围后饰板", "labels": ["Part", "侧围"], "properties": {"id": "豪华SUV-内部-立柱区域-右后侧围后饰板", "location": "内部-立柱区域", "name": "右后侧围后饰板"}, "type": "node"}
+{"id": "豪华SUV-内部-立柱区域-盖板(All around)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-内部-立柱区域-盖板(All around)", "location": "内部-立柱区域", "name": "盖板(All around)"}, "type": "node"}
+{"id": "豪华SUV-内部-立柱区域-后侧围后饰板", "labels": ["Part", "侧围"], "properties": {"id": "豪华SUV-内部-立柱区域-后侧围后饰板", "location": "内部-立柱区域", "name": "后侧围后饰板"}, "type": "node"}
+{"id": "豪华SUV-内部-立柱区域-挂钩饰板(All around) (L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-内部-立柱区域-挂钩饰板(All around) (L&R)", "location": "内部-立柱区域", "name": "挂钩饰板(All around) (L&R)"}, "type": "node"}
+{"id": "豪华SUV-内部-立柱区域-扶手上饰板(All around)(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-内部-立柱区域-扶手上饰板(All around)(L&R)", "location": "内部-立柱区域", "name": "扶手上饰板(All around)(L&R)"}, "type": "node"}
+{"id": "豪华SUV-内部-立柱区域-上饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-内部-立柱区域-上饰板(L&R)", "location": "内部-立柱区域", "name": "上饰板(L&R)"}, "type": "node"}
+{"id": "豪华SUV-内部-立柱区域-下饰板(L&R)", "labels": ["Part", "饰板"], "properties": {"id": "豪华SUV-内部-立柱区域-下饰板(L&R)", "location": "内部-立柱区域", "name": "下饰板(L&R)"}, "type": "node"}
+{"end_id": "硬派越野车-外部-前部区域-前风挡玻璃", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-侧围(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-侧围(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["3.6（3.5）(C/C) ±1.5//1.0"], "Ra": ["R1"], "Rb": ["R3"], "code": "A-001", "relative_position": "右侧"}, "start_id": "硬派越野车-外部-前部区域-前风挡玻璃", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-顶盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-顶盖", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["1.5±1.0//1.0"], "Gap": ["3.1（3.0）±1.0//1.0"], "Ra": ["R1"], "Rb": ["R3"], "code": "A-002", "relative_position": "后侧"}, "start_id": "硬派越野车-外部-前部区域-前风挡玻璃", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-翼子板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-翼子板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["3.0（2.8）±1.0//1.0"], "Ra": ["R2.5"], "Rb": ["N/A"], "code": "A-003", "relative_position": "前侧"}, "start_id": "硬派越野车-外部-前部区域-侧围", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-机盖 (L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-机盖 (L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.75±1.0//1.0"], "Gap": ["3.8（3.5 ）±1.0//1.0"], "Ra": ["R2"], "Rb": ["R0.95"], "code": "A-004", "relative_position": "前侧"}, "start_id": "硬派越野车-外部-前部区域-侧围", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-翼子板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-散热器罩左饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-散热器罩左饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0±0.5（e↔f）\n-0.5±0.5（f↔g）"], "Gap": ["0.4（0.2）+0.5/0"], "Ra": ["R2"], "Rb": ["R2"], "code": "A-005", "relative_position": "下侧"}, "start_id": "硬派越野车-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-机盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-散热器罩左饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep. ±1.5"], "Gap": ["8 ±1.5"], "Ra": ["R0.95"], "Rb": ["R4"], "code": "A-006", "relative_position": "前侧"}, "start_id": "硬派越野车-外部-前部区域-机盖", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-翼子板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep. ±1.5"], "Gap": ["Style dep. ±1.5"], "Ra": ["R0.95"], "Rb": ["R*4"], "code": "A-007", "relative_position": "左侧"}, "start_id": "硬派越野车-外部-前部区域-机盖", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-前轮罩外接板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-前轮罩外接板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0 +0.5/0"], "Ra": ["R6"], "Rb": ["N/A"], "code": "A-010", "relative_position": "内含"}, "start_id": "硬派越野车-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-大灯(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-大灯(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["10.2（10.0）±1.0//1.0"], "Ra": ["R0.95"], "Rb": ["N/A"], "code": "A-016", "relative_position": "前侧"}, "start_id": "硬派越野车-外部-前部区域-机盖", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-前保本体", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-雾灯(L&R)(a↔b↔c)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-雾灯(L&R)(a↔b↔c)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["1.5±0.7//0.7"], "Ra": ["N/A"], "Rb": ["R2.5"], "code": "A-021", "relative_position": "内含"}, "start_id": "硬派越野车-外部-前部区域-前保本体", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-雾灯(L&R)(a↔c)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-雾灯(L&R)(a↔c)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["1.0±0.7"], "Gap": ["1.5±0.7//0.7"], "Ra": ["R1.5"], "Rb": ["R2.5"], "code": "A-022", "relative_position": "内含"}, "start_id": "硬派越野车-外部-前部区域-前保本体", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-下装饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-下装饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0.5±0.5//0.5"], "Ra": ["R2"], "Rb": ["R2"], "code": "A-024", "relative_position": "右侧"}, "start_id": "硬派越野车-外部-前部区域-前保本体", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-顶饰条(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-前部区域-顶饰条(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["3.5±1.0"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "A-029", "relative_position": "右侧"}, "start_id": "硬派越野车-外部-前部区域-前风挡玻璃", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-前门", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-翼子板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-翼子板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0 +1.0/0"], "Gap": ["4.4（4.0）±0.7//0.7"], "Ra": ["R1.05"], "Rb": ["R1.5"], "code": "B-001", "relative_position": "前侧"}, "start_id": "硬派越野车-外部-侧部区域-前门", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-前门水切(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-前门水切(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["4.1（4.0）±1.2"], "Ra": ["R3.5"], "Rb": ["R2"], "code": "B-002", "relative_position": "上侧"}, "start_id": "硬派越野车-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-侧围饰条(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-侧围饰条(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1.2±0.7"], "Gap": ["2.5（2.4）±0.7//0.7"], "Ra": ["R3.5"], "Rb": ["R0.6"], "code": "B-003", "relative_position": "上侧"}, "start_id": "硬派越野车-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-侧围饰条(L&R)(c↔d)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-侧围饰条(L&R)(c↔d)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["2.5（2.4）±0.7//0.7"], "Ra": ["R3.5"], "Rb": ["R0.6"], "code": "B-004", "relative_position": "上侧"}, "start_id": "硬派越野车-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-后门", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-前门(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-前门(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0 +1.0/0"], "Gap": ["4.4（4.0）±0.7//0.7"], "Ra": ["R2"], "Rb": ["R1.05"], "code": "B-006", "relative_position": "前侧"}, "start_id": "硬派越野车-外部-侧部区域-后门", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-手柄(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-手柄(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0（不允许有间隙）"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "B-020", "relative_position": "内含"}, "start_id": "硬派越野车-外部-侧部区域-前门", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-外下饰板总成(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-外下饰板总成(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.6±0.6"], "Gap": ["0 +0.5/0"], "Ra": ["R6"], "Rb": ["R1.5"], "code": "B-040", "relative_position": "下侧"}, "start_id": "硬派越野车-外部-侧部区域-后门", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-手柄(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0（不允许有间隙）"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "B-045", "relative_position": "内含"}, "start_id": "硬派越野车-外部-侧部区域-后门", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-加油口盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-加油口盖", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5 ±1.0//0.7"], "Gap": ["2.6（2.5）±0.7//0.7"], "Ra": ["R2.5"], "Rb": ["R1.5"], "code": "B-046", "relative_position": "内含"}, "start_id": "硬派越野车-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-后视镜", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-转向灯(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-侧部区域-转向灯(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0 +0.5/0"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "B-052", "relative_position": "内含"}, "start_id": "硬派越野车-外部-侧部区域-后视镜", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-顶盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-扰流板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-扰流板", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1.5±1.0//1.0"], "Gap": ["1.5±1.0//1.0"], "Ra": ["R1"], "Rb": ["R1.5"], "code": "C-003", "relative_position": "内含"}, "start_id": "硬派越野车-外部-后部区域-顶盖", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-后风挡", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-扰流板", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["5±1.0//1.0"], "Ra": ["R2.5"], "Rb": ["R3"], "code": "C-006", "relative_position": "前侧"}, "start_id": "硬派越野车-外部-后部区域-后风挡", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-D柱外饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-D柱外饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["5.0±1.2//1.2"], "Gap": ["5.0±1.0//1.0"], "Ra": ["R2.5"], "Rb": ["R3"], "code": "C-009", "relative_position": "后侧"}, "start_id": "硬派越野车-外部-后部区域-后风挡", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-高位刹车灯(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-高位刹车灯(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["1.0±0.7//0.7"], "Ra": ["R1"], "Rb": ["R*1.5"], "code": "C-010", "relative_position": "内含"}, "start_id": "硬派越野车-外部-后部区域-扰流板", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-尾门", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-手柄", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-手柄", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0（不允许有间隙）"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "C-015", "relative_position": "内含"}, "start_id": "硬派越野车-外部-后部区域-尾门", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-尾灯(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-尾灯(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["1.6（1.5）±1.0//1.0"], "Ra": ["R4"], "Rb": ["R1"], "code": "C-016", "relative_position": "后侧"}, "start_id": "硬派越野车-外部-后部区域-侧围", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-后保本体(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-后保本体(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["1.0±1.0//1.0"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "C-019", "relative_position": "后侧"}, "start_id": "硬派越野车-外部-后部区域-侧围", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-后保", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-雾灯 (L&R) (c↔a)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-雾灯 (L&R) (c↔a)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["1.5±0.5//0.5"], "Ra": ["R1.5"], "Rb": ["R2.5"], "code": "C-020", "relative_position": "内含"}, "start_id": "硬派越野车-外部-后部区域-后保", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-雾灯 (L&R)(a↔b↔c)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-雾灯 (L&R)(a↔b↔c)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["1.0±0.5//0.5"], "Gap": ["1.5±0.5//0.5"], "Ra": ["R1.5"], "Rb": ["R2.5"], "code": "C-021", "relative_position": "内含"}, "start_id": "硬派越野车-外部-后部区域-后保", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-后保(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-后部区域-后保(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["13.2（13）±1.5//1.5"], "Ra": ["R1.05"], "Rb": ["N/A"], "code": "C-022", "relative_position": "后侧/下侧"}, "start_id": "硬派越野车-外部-后部区域-尾门", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-顶盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-天窗前端", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-天窗前端", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±1.0"], "Gap": ["0（不允许有间隙）"], "Ra": ["R2"], "Rb": ["R1.5"], "code": "D-001", "relative_position": "内含"}, "start_id": "硬派越野车-外部-顶部区域-顶盖", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-天窗前部(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-天窗前部(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.±1.0"], "Gap": ["0（不允许有间隙）"], "Ra": ["R2"], "Rb": ["R1.5"], "code": "D-002", "relative_position": "内含"}, "start_id": "硬派越野车-外部-顶部区域-顶盖", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-天窗后端", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-天窗后端", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["1±1.0"], "Gap": ["0（不允许有间隙）"], "Ra": ["R2"], "Rb": ["R1.5"], "code": "D-003", "relative_position": "内含"}, "start_id": "硬派越野车-外部-顶部区域-顶盖", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-天窗后部(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-天窗后部(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep. ±1.0"], "Gap": ["0（不允许有间隙）"], "Ra": ["R2"], "Rb": ["R1.5"], "code": "D-004", "relative_position": "内含"}, "start_id": "硬派越野车-外部-顶部区域-顶盖", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-饰条(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-饰条(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0（不允许有间隙）"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "D-006", "relative_position": "内含"}, "start_id": "硬派越野车-外部-顶部区域-顶盖", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-外部-顶部区域-饰条(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0（不允许有间隙）"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "D-007", "relative_position": "上侧"}, "start_id": "硬派越野车-外部-顶部区域-侧围", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-左后侧围内饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-盖板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-盖板", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5±0.5"], "Gap": ["0.3±0.3"], "Ra": ["R1.5"], "Rb": ["R1.0"], "code": "F-020", "relative_position": "后侧"}, "start_id": "硬派越野车-内部-侧围门洞区域-左后侧围内饰板", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-后侧围内饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-盖板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-盖板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5±0.3"], "Gap": ["0.3±0.3"], "Ra": ["R1.5"], "Rb": ["R1.0"], "code": "F-022", "relative_position": "后侧"}, "start_id": "硬派越野车-内部-侧围门洞区域-后侧围内饰板", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-后门槛护板 (L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-后门槛护板 (L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0（不允许有间隙）"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "F-023", "relative_position": "后侧"}, "start_id": "硬派越野车-内部-侧围门洞区域-后侧围内饰板", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-盖板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5±0.3"], "Gap": ["0.3±0.3"], "Ra": ["R1.5"], "Rb": ["R1.0"], "code": "F-024", "relative_position": "后侧"}, "start_id": "硬派越野车-内部-侧围门洞区域-后侧围内饰板", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-右后侧围内饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-盖板", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5（全周 ）±0.3"], "Gap": ["0.5（全周 ）±0.3"], "Ra": ["R1.5"], "Rb": ["R1.0"], "code": "F-026", "relative_position": "后侧"}, "start_id": "硬派越野车-内部-侧围门洞区域-右后侧围内饰板", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-后门槛 (L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:硬派越野车", "type": "relationship"}
+{"end_id": "硬派越野车-内部-侧围门洞区域-后门槛 (L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0（不允许有间隙）"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "F-028", "relative_position": "后侧"}, "start_id": "硬派越野车-内部-侧围门洞区域-后侧围内饰板", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前风挡玻璃（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前风挡玻璃（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style Dep.Dep.（侧围高）\n±1.5"], "Gap": ["3±1.5//1.5"], "Ra": ["R2.5"], "Rb": ["R1"], "code": "A-001", "relative_position": "前侧"}, "start_id": "城市SUV-外部-前部区域-侧围", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-机盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前保", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前保", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0.5±1//1"], "Gap": ["3.3±1//1"], "Ra": ["R0.975"], "Rb": ["R*1.5"], "code": "A-002", "relative_position": "前侧"}, "start_id": "城市SUV-外部-前部区域-机盖", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-翼子板（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-翼子板（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["Style dep.(最小间隙 2.5)\n±0.7"], "Ra": ["R*5"], "Rb": ["R1.2"], "code": "A-004", "relative_position": "前侧"}, "start_id": "城市SUV-外部-前部区域-侧围", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-翼子板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-机盖（L&R）a↔b", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-机盖（L&R）a↔b", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0±0.7//0.7"], "Gap": ["3±0.7//0.7"], "Ra": ["R1.2"], "Rb": ["R0.975"], "code": "A-005", "relative_position": "上侧"}, "start_id": "城市SUV-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-机盖（L&R)c↔d", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-机盖（L&R)c↔d", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5±0.7//0.7"], "Gap": ["3±0.7//0.7"], "Ra": ["R1.2"], "Rb": ["R0.975"], "code": "A-006", "relative_position": "上侧"}, "start_id": "城市SUV-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-机盖（L&R）b↔c", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-机盖（L&R）b↔c", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style Dep.（翼子板高）\n±0.7//0.7"], "Gap": ["3±0.7//0.7"], "Ra": ["R1.2"], "Rb": ["R0.975"], "code": "A-007", "relative_position": "上侧"}, "start_id": "城市SUV-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前保（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前保（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0 0/-0.5"], "Gap": ["0 +0.5/0"], "Ra": ["R1.2"], "Rb": ["R1.2"], "code": "A-008", "relative_position": "前侧"}, "start_id": "城市SUV-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前大灯（L&R）d↔e", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前大灯（L&R）d↔e", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±0.8//0.8"], "Gap": ["1.5±0.8//0.8"], "Ra": ["R1.2"], "Rb": ["R*1"], "code": "A-009", "relative_position": "内含"}, "start_id": "城市SUV-外部-前部区域-前保", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前大灯（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前大灯（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5(d↔r ) \nStyle dep.(前大灯高) \n(r↔s) ±1//1"], "Gap": ["3.3 ±1//1"], "Ra": ["R0.975"], "Rb": ["R*1"], "code": "A-011", "relative_position": "前侧"}, "start_id": "城市SUV-外部-前部区域-机盖", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前大灯（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(前大灯高)\n±0.8//0.8"], "Gap": ["1.5±0.8//0.8"], "Ra": ["R*1.2"], "Rb": ["R*1"], "code": "A-013", "relative_position": "内含"}, "start_id": "城市SUV-外部-前部区域-前保", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前保本体", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-日行灯（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-日行灯（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5 ±0.5//0.5"], "Gap": ["1±0.5//0.5"], "Ra": ["R1.2"], "Rb": ["R*1"], "code": "A-020", "relative_position": "内含"}, "start_id": "城市SUV-外部-前部区域-前保本体", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前保险杠", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-拖车钩盖板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-拖车钩盖板", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.3±0.3"], "Gap": ["0.5±0.3"], "Ra": ["R*0.5"], "Rb": ["R*0.5"], "code": "A-026", "relative_position": "内含"}, "start_id": "城市SUV-外部-前部区域-前保险杠", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前轮眉罩板（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-前部区域-前轮眉罩板（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(翼子板高)\n±0.5"], "Gap": ["0.3±0.3"], "Ra": ["R*3"], "Rb": ["N/A"], "code": "A-034", "relative_position": "内含"}, "start_id": "城市SUV-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-前门", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-翼子板（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-翼子板（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0(ah↔ai)\nStyle dep.(翼子板高)\n（ai↔aj）+1/0"], "Gap": ["3.5±0.5//0.5"], "Ra": ["R1"], "Rb": ["R1.2"], "code": "B-001", "relative_position": "前侧"}, "start_id": "城市SUV-外部-侧部区域-前门", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-侧围亮条（L&R）q↔r", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-侧围亮条（L&R）q↔r", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1.5±0.5"], "Gap": ["0（不允许有间隙）"], "Ra": ["R3"], "Rb": ["R0.3"], "code": "B-003", "relative_position": "上侧"}, "start_id": "城市SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-侧围亮条（L&R）p↔q", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-侧围亮条（L&R）p↔q", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep. （侧围高） \n±0.5"], "Gap": ["0（不允许有间隙）"], "Ra": ["R3"], "Rb": ["R0.3"], "code": "B-004", "relative_position": "上侧"}, "start_id": "城市SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后门", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-前门（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-前门（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0 +1/0"], "Gap": ["3.5±0.5"], "Ra": ["R1.2"], "Rb": ["R1"], "code": "B-014", "relative_position": "前侧"}, "start_id": "城市SUV-外部-侧部区域-后门", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后门外板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后门轮眉（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后门轮眉（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(后门外板高)±0.5"], "Gap": ["0.3±0.3"], "Ra": ["R*3"], "Rb": ["N/A"], "code": "B-028", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-后门外板", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后三角窗（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后三角窗（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(侧围高)±0.5"], "Gap": ["1±0.5"], "Ra": ["/"], "Rb": ["R0.5"], "code": "B-031", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后侧围轮眉 （L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后侧围轮眉 （L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(侧围高)±0.5"], "Gap": ["0.3±0.3"], "Ra": ["R*3"], "Rb": ["N/A"], "code": "B-032", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-前门外板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-前门把手 s↔v（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-前门把手 s↔v（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["从上到下-0.3到0过渡±0.5"], "Gap": ["2.2±0.5//0.5"], "Ra": ["R*1.2"], "Rb": ["R*1.2"], "code": "B-033", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-前门外板", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-前门把手 v↔u（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-前门把手 v↔u（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0±0.5//0.5"], "Gap": ["2.2±0.5//0.5"], "Ra": ["R*1.2"], "Rb": ["R*1.2"], "code": "B-034", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-前门外板", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-前门把手 s↔t（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-前门把手 s↔t（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.3±0.5//0.5"], "Gap": ["2.2±0.5//0.5"], "Ra": ["R*1.2"], "Rb": ["R*1.2"], "code": "B-035", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-前门外板", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-前门把手 t↔u（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-前门把手 t↔u（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["从上到下-0.3到0过渡±0.5"], "Gap": ["2.2±0.5//0.5"], "Ra": ["R*1.2"], "Rb": ["R*1.2"], "code": "B-036", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-前门外板", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后门把手 z↔x（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后门把手 z↔x（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["从上到下-0.3到0过渡±0.5"], "Gap": ["2.2±0.5//0.5"], "Ra": ["R*1.2"], "Rb": ["R*1.2"], "code": "B-037", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-后门外板", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后门把手 x↔y（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后门把手 x↔y（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0±0.5//0.5"], "Gap": ["2.2±0.5//0.5"], "Ra": ["R*1.2"], "Rb": ["R*1.2"], "code": "B-038", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-后门外板", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后门把手 z↔w（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后门把手 z↔w（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.3±0.5//0.5"], "Gap": ["2.2±0.5//0.5"], "Ra": ["R*1.2"], "Rb": ["R*1.2"], "code": "B-039", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-后门外板", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后门把手 x↔y（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["从上到下-0.3到0过渡±0.5"], "Gap": ["2.2±0.5//0.5"], "Ra": ["R*1.2"], "Rb": ["R*1.2"], "code": "B-040", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-后门外板", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后视镜框", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-转向灯（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-转向灯（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0.5±0.2"], "Gap": ["0.3+0.2/-0.3"], "Ra": ["R0.5"], "Rb": ["R0.5"], "code": "B-047", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-后视镜框", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后视镜本体", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-转向灯（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["StyleDep.(转向灯高)±0.3"], "Gap": ["0.3 +0.2/-0.3"], "Ra": ["R0.5"], "Rb": ["R0.5"], "code": "B-048", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-后视镜本体", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后视镜片（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-侧部区域-后视镜片（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["3±1//1"], "Ra": ["/"], "Rb": ["/"], "code": "B-053", "relative_position": "内含"}, "start_id": "城市SUV-外部-侧部区域-后视镜框", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-尾灯A（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-尾灯A（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(侧围高)±1"], "Gap": ["1.2±0.8//1"], "Ra": ["R1.2"], "Rb": ["R*1.2"], "code": "C-001", "relative_position": "后侧"}, "start_id": "城市SUV-外部-后部区域-侧围", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-后保", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-尾灯A（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(尾灯A高)±1"], "Gap": ["1.2±0.8//1"], "Ra": ["R1.2"], "Rb": ["R*1.2"], "code": "C-003", "relative_position": "内含"}, "start_id": "城市SUV-外部-后部区域-后保", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-后保（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-后保（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0(aj↔ak)\nStyle dep.(侧围 高)(ak↔al) 0/-0.5"], "Gap": ["0 +0.5/0"], "Ra": ["R1.2"], "Rb": ["R1.2"], "code": "C-004", "relative_position": "后侧"}, "start_id": "城市SUV-外部-后部区域-侧围", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-后保本体", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-轮眉（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-轮眉（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style Dep.(后保本体高)±0.5"], "Gap": ["0.3±0.3"], "Ra": ["R*3"], "Rb": ["N/A"], "code": "C-005", "relative_position": "右侧"}, "start_id": "城市SUV-外部-后部区域-后保本体", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-后保下本体", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-轮眉（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style Dep.(轮眉高) ±0.5"], "Gap": ["0.5±0.5"], "Ra": ["R1.5"], "Rb": ["R1.5"], "code": "C-006", "relative_position": "右侧"}, "start_id": "城市SUV-外部-后部区域-后保下本体", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-行李箱（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-行李箱（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±1//1"], "Gap": ["3.5±1//1"], "Ra": ["R1.2"], "Rb": ["R1"], "code": "C-010", "relative_position": "上侧"}, "start_id": "城市SUV-外部-后部区域-后保", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-行李箱外板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-尾灯B", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-尾灯B", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(尾灯B高) ±0.8"], "Gap": ["1.2±0.8//1"], "Ra": ["R3（aa↔ab ae↔af）\nR3至R4渐变（ab↔ac\nad↔ae）\nR4（ac↔ad）"], "Rb": ["R*1.2"], "code": "C-011", "relative_position": "内含"}, "start_id": "城市SUV-外部-后部区域-行李箱外板", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-行李箱（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±0.7//0.7"], "Gap": ["3.5±0.7//0.7"], "Ra": ["R1.2"], "Rb": ["R1"], "code": "C-016", "relative_position": "后侧"}, "start_id": "城市SUV-外部-后部区域-侧围", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-行李箱", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-尾灯B", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±1"], "Gap": ["1.2±0.8//1"], "Ra": ["R1.2"], "Rb": ["R1.2"], "code": "C-020", "relative_position": "内含"}, "start_id": "城市SUV-外部-后部区域-行李箱", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-侧围外板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-行李箱饰板（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-行李箱饰板（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-3±1//1"], "Gap": ["3.5±1//1"], "Ra": ["R2.5"], "Rb": ["R1.5"], "code": "C-021", "relative_position": "后侧"}, "start_id": "城市SUV-外部-后部区域-侧围外板", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-侧窗亮条", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-后部区域-侧窗亮条", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep. （侧围高）±0.5"], "Gap": ["0（不允许有间隙）"], "Ra": ["R3"], "Rb": ["R0.3"], "code": "C-035", "relative_position": "上侧"}, "start_id": "城市SUV-外部-后部区域-侧围", "type": "relationship"}
+{"end_id": "城市SUV-外部-顶部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-顶部区域-后风挡玻璃", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-外部-顶部区域-后风挡玻璃", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-4.5±1.5//1.5"], "Gap": ["3±1.5//1.5"], "Ra": ["R2.5"], "Rb": ["R1"], "code": "D-003", "relative_position": "后侧"}, "start_id": "城市SUV-外部-顶部区域-侧围", "type": "relationship"}
+{"end_id": "城市SUV-内部-行李箱区域-行李箱盖内板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-内部-行李箱区域-行李箱盖饰板（All around）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:城市SUV", "type": "relationship"}
+{"end_id": "城市SUV-内部-行李箱区域-行李箱盖饰板（All around）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0 +0.5/0"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "G-013", "relative_position": "内含"}, "start_id": "城市SUV-内部-行李箱区域-行李箱盖内板", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-机盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-前保险杠", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-前保险杠", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0.5±1//1"], "Gap": ["3±1//1"], "Ra": ["R1.5"], "Rb": ["R1.2"], "code": "A-002", "relative_position": "前侧"}, "start_id": "豪华轿车-外部-前部区域-机盖", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-翼子板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-翼子板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0.5±0.7//0.7"], "Gap": ["3±0.7//0.7"], "Ra": ["R1.5"], "Rb": ["R1.2"], "code": "A-011", "relative_position": "左侧"}, "start_id": "豪华轿车-外部-前部区域-机盖", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-翼子板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-前保险杠(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-前保险杠(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5±0.5"], "Gap": ["0±0.5/0"], "Ra": ["R1.2"], "Rb": ["R1.2"], "code": "A-012", "relative_position": "前侧"}, "start_id": "豪华轿车-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-前风挡玻璃(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-前风挡玻璃(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style Dep.(侧围高)±1.5"], "Gap": ["3±1.5//1.5"], "Ra": ["R2.5"], "Rb": ["R1"], "code": "A-015", "relative_position": "前侧"}, "start_id": "豪华轿车-外部-前部区域-侧围", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-下格栅", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-下格栅", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style Dep.(前保险杠高)±0.5"], "Gap": ["0.5±0.5"], "Ra": ["N/A"], "Rb": ["R0.5"], "code": "A-016", "relative_position": "内含"}, "start_id": "豪华轿车-外部-前部区域-前保险杠", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-拖车钩盖板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-拖车钩盖板", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.3±0.3"], "Gap": ["0.5±0.3"], "Ra": ["R0.5"], "Rb": ["R0.5"], "code": "A-017", "relative_position": "内含"}, "start_id": "豪华轿车-外部-前部区域-前保险杠", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-翼子板(L&R)(u↔v)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-翼子板(L&R)(u↔v)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style Dep.(侧围高)±0.7"], "Gap": ["2.5±0.7"], "Ra": ["N/A"], "Rb": ["R1.2"], "code": "A-019", "relative_position": "前侧"}, "start_id": "豪华轿车-外部-前部区域-侧围", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-翼子板(L&R)(v↔w)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-翼子板(L&R)(v↔w)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style Dep.±0.7"], "Gap": ["Style Dep."], "Ra": ["N/A"], "Rb": ["R1.2"], "code": "A-023", "relative_position": "前侧"}, "start_id": "豪华轿车-外部-前部区域-侧围", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-摄像头", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-摄像头", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(前保险杠高)±0.3"], "Gap": ["0.3±0.2/-0.3"], "Ra": ["R0.5"], "Rb": ["N/A"], "code": "A-025", "relative_position": "内含"}, "start_id": "豪华轿车-外部-前部区域-前保险杠", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-翼子板饰板(L&R)(h↔j)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-翼子板饰板(L&R)(h↔j)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(翼子板饰板高)±0.5"], "Gap": ["0.5±0.5"], "Ra": ["1.2"], "Rb": ["N/A"], "code": "A-029", "relative_position": "内含"}, "start_id": "豪华轿车-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-翼子板下饰板(L&R)(h↔i↔g)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-翼子板下饰板(L&R)(h↔i↔g)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5±0.5"], "Gap": ["0.5±0.5"], "Ra": ["R1.2"], "Rb": ["R1.2"], "code": "A-030", "relative_position": "内含"}, "start_id": "豪华轿车-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-下本体中间亮条(L&R) (al↔am)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-下本体中间亮条(L&R) (al↔am)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5±0.5"], "Gap": ["0.5±0.5"], "Ra": ["R*1.2"], "Rb": ["R*0.5"], "code": "A-037", "relative_position": "上侧"}, "start_id": "豪华轿车-外部-前部区域-前保险杠", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-下本体中间亮条(L&R) (am↔an)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-下本体中间亮条(L&R) (am↔an)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(前保险杠高)±0.5"], "Gap": ["0.5±0.5"], "Ra": ["R*1.2"], "Rb": ["R*0.5"], "code": "A-038", "relative_position": "上侧"}, "start_id": "豪华轿车-外部-前部区域-前保险杠", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-前保雷达(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-前部区域-前保雷达(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(前保雷达\n低)±0.2"], "Gap": ["0.1+0.2/-0.1"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "A-040", "relative_position": "内含"}, "start_id": "豪华轿车-外部-前部区域-前保险杠", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-侧围亮条(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-侧围亮条(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±0.5"], "Gap": ["0（不允许有间隙）"], "Ra": ["R3"], "Rb": ["R0.3"], "code": "B-001", "relative_position": "上侧"}, "start_id": "豪华轿车-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-前门", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-翼子板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-翼子板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0+1/0"], "Gap": ["3.5±0.5//0.5"], "Ra": ["R2.25"], "Rb": ["R1.2"], "code": "B-002", "relative_position": "前侧"}, "start_id": "豪华轿车-外部-侧部区域-前门", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-后门", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-前门(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-前门(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0+1/0"], "Gap": ["3.5±0.5//0.5"], "Ra": ["R1.8"], "Rb": ["R1.6"], "code": "B-003", "relative_position": "前侧"}, "start_id": "豪华轿车-外部-侧部区域-后门", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-翼子板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-门槛饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-门槛饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(门槛高) ±1"], "Gap": ["5±1"], "Ra": ["R1.2"], "Rb": ["R2.5"], "code": "B-004", "relative_position": "下侧"}, "start_id": "豪华轿车-外部-侧部区域-翼子板", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-前门把手（All around)(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-前门把手（All around)(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.3±0.5"], "Gap": ["2.3±0.5//0.6"], "Ra": ["R1.5"], "Rb": ["R1.2"], "code": "B-008", "relative_position": "内含"}, "start_id": "豪华轿车-外部-侧部区域-前门", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-后门把手（L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-后门把手（L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.3±0.5"], "Gap": ["2.3±0.5//0.6"], "Ra": ["R1.5"], "Rb": ["R1.2"], "code": "B-011", "relative_position": "内含"}, "start_id": "豪华轿车-外部-侧部区域-后门", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-后三角窗（L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-后三角窗（L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0（不允许有间隙)"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "B-015", "relative_position": "内含"}, "start_id": "豪华轿车-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-后视镜底座上段", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-转向灯（ L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-转向灯（ L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0 0/0.3"], "Gap": ["0.3+0.2/-0.3"], "Ra": ["R0.3"], "Rb": ["R*0.3"], "code": "B-021", "relative_position": "内含"}, "start_id": "豪华轿车-外部-侧部区域-后视镜底座上段", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-后视镜底座下段", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-转向灯（ L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0 0/0.3"], "Gap": ["0.3+0.2/-0.3"], "Ra": ["R0.3"], "Rb": ["R*0.3"], "code": "B-022", "relative_position": "内含"}, "start_id": "豪华轿车-外部-侧部区域-后视镜底座下段", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-后视镜边框（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-后视镜边框（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.（后视镜底座\n下段高）± 0.2"], "Gap": ["0+0.3/0"], "Ra": ["R*0.3"], "Rb": ["N/A"], "code": "B-030", "relative_position": "内含"}, "start_id": "豪华轿车-外部-侧部区域-后视镜底座下段", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-后视镜边框（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.（后视镜底座\n上段高）± 0.2"], "Gap": ["0+0.3/0"], "Ra": ["R*0.3"], "Rb": ["N/A"], "code": "B-031", "relative_position": "内含"}, "start_id": "豪华轿车-外部-侧部区域-后视镜底座上段", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-后视镜本体", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-转向灯（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-转向灯（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(转向灯高)±0.3"], "Gap": ["0.3 +0.2/0.3"], "Ra": ["R0.5"], "Rb": ["R*0.5"], "code": "B-042", "relative_position": "内含"}, "start_id": "豪华轿车-外部-侧部区域-后视镜本体", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-后视镜边框（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5±0.3"], "Gap": ["0+0.3/0"], "Ra": ["R*0.5"], "Rb": ["N/A"], "code": "B-047", "relative_position": "内含"}, "start_id": "豪华轿车-外部-侧部区域-后视镜本体", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-门槛(L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-侧部区域-门槛(L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0 +0.7/0"], "Ra": ["R4"], "Rb": ["N/A"], "code": "B-053", "relative_position": "后侧"}, "start_id": "豪华轿车-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-后保险杠（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-后保险杠（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5±0.5"], "Gap": ["0 +0.5/0"], "Ra": ["R1.2"], "Rb": ["R1.2"], "code": "C-002", "relative_position": "后侧"}, "start_id": "豪华轿车-外部-后部区域-侧围", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-后风挡玻璃（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-后风挡玻璃（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(侧围高）±1.5//1.5"], "Gap": ["3±1.5//1.5"], "Ra": ["R2.5"], "Rb": ["R1.6"], "code": "C-003", "relative_position": "后侧"}, "start_id": "豪华轿车-外部-后部区域-侧围", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱盖（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱盖（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±1//1"], "Gap": ["3.5±1//1"], "Ra": ["R1.2"], "Rb": ["R1.5"], "code": "C-004", "relative_position": "后侧"}, "start_id": "豪华轿车-外部-后部区域-侧围", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-后保险杠", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱（L&R）(a↔b）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱（L&R）(a↔b）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±1//1"], "Gap": ["3.5±1//1"], "Ra": ["R1.2"], "Rb": ["R1.6"], "code": "C-005", "relative_position": "上侧"}, "start_id": "豪华轿车-外部-后部区域-后保险杠", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱（L&R ）(b↔c）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱（L&R ）(b↔c）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(后保高）± 1"], "Gap": ["Style dep.±1"], "Ra": ["R*1.2"], "Rb": ["R1.6"], "code": "C-006", "relative_position": "上侧"}, "start_id": "豪华轿车-外部-后部区域-后保险杠", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-6±1.5//1.5"], "Gap": ["5±1.5//1.5"], "Ra": ["R*1.2"], "Rb": ["R1.6"], "code": "C-007", "relative_position": "上侧"}, "start_id": "豪华轿车-外部-后部区域-后保险杠", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱盖板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-贯穿灯", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-贯穿灯", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±1//1"], "Gap": ["1.2±1//1"], "Ra": ["R1.2"], "Rb": ["R1.5"], "code": "C-010", "relative_position": "内含"}, "start_id": "豪华轿车-外部-后部区域-行李箱盖板", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-贯穿灯", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["2±1//1"], "Gap": ["1.5±1//1"], "Ra": ["R2"], "Rb": ["R1.5"], "code": "C-011", "relative_position": "内含"}, "start_id": "豪华轿车-外部-后部区域-行李箱", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱饰板", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±0.5//0.5"], "Gap": ["1±0.5//0.5"], "Ra": ["R1.5"], "Rb": ["R1.5"], "code": "C-014", "relative_position": "内含"}, "start_id": "豪华轿车-外部-后部区域-行李箱盖板", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-侧窗亮条（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-侧窗亮条（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±0.5"], "Gap": ["0±0.5"], "Ra": ["R3"], "Rb": ["R0.3"], "code": "C-015", "relative_position": "上侧"}, "start_id": "豪华轿车-外部-后部区域-侧围", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱饰板（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-行李箱饰板（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±1//1"], "Gap": ["3.5±1//1"], "Ra": ["R1.2"], "Rb": ["R1.5"], "code": "C-017", "relative_position": "后侧"}, "start_id": "豪华轿车-外部-后部区域-侧围", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-后保雷达", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-后保雷达", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.（后保险杠高)±0.2"], "Gap": ["0.1 +0.2/-0.1"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "C-019", "relative_position": "内含"}, "start_id": "豪华轿车-外部-后部区域-后保险杠", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-回复反射器（L&R ）(ag↔ah）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-回复反射器（L&R ）(ag↔ah）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-2±0.5"], "Gap": ["1±0.5"], "Ra": ["R1.2"], "Rb": ["R*1"], "code": "C-023", "relative_position": "内含"}, "start_id": "豪华轿车-外部-后部区域-后保险杠", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-回复反射器（L&R ）(ah↔ai↔ag）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-外部-后部区域-回复反射器（L&R ）(ah↔ai↔ag）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1±0.5"], "Gap": ["1±0.5"], "Ra": ["R1.2"], "Rb": ["R1"], "code": "C-024", "relative_position": "内含"}, "start_id": "豪华轿车-外部-后部区域-后保险杠", "type": "relationship"}
+{"end_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围上饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后三角窗玻璃(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后三角窗玻璃(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["2.5±1.5//1.5"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "H-011", "relative_position": "内含"}, "start_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围上饰板", "type": "relationship"}
+{"end_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围装饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后三角窗玻璃(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["2.5±1.5//1.5"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "H-012", "relative_position": "内含"}, "start_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围装饰板", "type": "relationship"}
+{"end_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-D柱上饰板（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-D柱上饰板（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0±0.5"], "Gap": ["0.5±0.5"], "Ra": ["R1"], "Rb": ["R1"], "code": "H-040", "relative_position": "后侧"}, "start_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围上饰板", "type": "relationship"}
+{"end_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围下饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围装饰条(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围装饰条(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style Dep.（后侧围装饰条高） ±0.5"], "Gap": ["0（不允许有间隙）"], "Ra": ["Style Dep."], "Rb": ["Style Dep."], "code": "H-025", "relative_position": "上侧"}, "start_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围下饰板", "type": "relationship"}
+{"end_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围中饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华轿车", "type": "relationship"}
+{"end_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围装饰条(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style Dep.（后侧围装饰条高） ±0.5"], "Gap": ["0（不允许有间隙）"], "Ra": ["Style Dep."], "Rb": ["Style Dep."], "code": "H-034", "relative_position": "上侧"}, "start_id": "豪华轿车-内部-A柱、B柱、 C柱饰板区域-后侧围中饰板", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前风挡玻璃", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-A柱外饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-A柱外饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["2.5"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "A-001", "relative_position": "后侧"}, "start_id": "豪华SUV-外部-前部区域-前风挡玻璃", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-发动机盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前机舱装饰条", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前机舱装饰条", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5"], "Gap": ["3.5"], "Ra": ["R1.35"], "Rb": ["R1.2"], "code": "A-002", "relative_position": "前侧"}, "start_id": "豪华SUV-外部-前部区域-发动机盖", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-翼子板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-翼子板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style Dep.（发动机盖高）"], "Gap": ["3.5"], "Ra": ["R1.35"], "Rb": ["R3"], "code": "A-004", "relative_position": "左侧"}, "start_id": "豪华SUV-外部-前部区域-发动机盖", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-翼子板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前组合灯(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前组合灯(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1"], "Gap": ["1.2"], "Ra": ["R*1.2"], "Rb": ["R*1.2"], "code": "A-008", "relative_position": "前侧"}, "start_id": "豪华SUV-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-顶盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-顶雷达饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-顶雷达饰板", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0"], "Gap": ["3"], "Ra": ["R2.5"], "Rb": ["R1.2"], "code": "A-009", "relative_position": "内含"}, "start_id": "豪华SUV-外部-前部区域-顶盖", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前保险杠上本体", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前机舱装饰条", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep. (a↔b) (c↔d)\n(前机舱装饰条高)\n1(b↔c)"], "Gap": ["1.5"], "Ra": ["R2.5"], "Rb": ["R1.2"], "code": "A-010", "relative_position": "上侧"}, "start_id": "豪华SUV-外部-前部区域-前保险杠上本体", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-顶雷达饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-顶雷达饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(侧围高)"], "Gap": ["3"], "Ra": ["R3.5"], "Rb": ["R1.2"], "code": "A-011", "relative_position": "后侧"}, "start_id": "豪华SUV-外部-前部区域-侧围", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前保上本体", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前保险杠上格栅", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前保险杠上格栅", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5"], "Gap": ["0.5"], "Ra": ["R1.2"], "Rb": ["R1.2"], "code": "A-015", "relative_position": "内含"}, "start_id": "豪华SUV-外部-前部区域-前保上本体", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前保险杠下本体(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前保险杠下本体(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(翼子板高)"], "Gap": ["1.2"], "Ra": ["R1.2"], "Rb": ["R1.2"], "code": "A-017", "relative_position": "前侧"}, "start_id": "豪华SUV-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-拖车钩盖板（All around）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-拖车钩盖板（All around）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.3"], "Gap": ["0.5"], "Ra": ["R*0.5"], "Rb": ["R*0.5"], "code": "A-023", "relative_position": "内含"}, "start_id": "豪华SUV-外部-前部区域-前保险杠上本体", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前保险杠饰盖(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前保险杠饰盖(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5"], "Gap": ["0"], "Ra": ["R1.2"], "Rb": ["R1.2"], "code": "A-026", "relative_position": "内含"}, "start_id": "豪华SUV-外部-前部区域-翼子板", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前保险杠下本体", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前保险杠下格栅（All around）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-前部区域-前保险杠下格栅（All around）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0.5"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "A-030", "relative_position": "内含"}, "start_id": "豪华SUV-外部-前部区域-前保险杠下本体", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-前门", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-翼子板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-翼子板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0"], "Gap": ["3.7"], "Ra": ["R1.5"], "Rb": ["R1.2"], "code": "B-002", "relative_position": "前侧"}, "start_id": "豪华SUV-外部-侧部区域-前门", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-后门", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-前门(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-前门(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0"], "Gap": ["3.7"], "Ra": ["R2.5"], "Rb": ["R1.5"], "code": "B-004", "relative_position": "前侧"}, "start_id": "豪华SUV-外部-侧部区域-后门", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-翼子板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-前轮眉饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-前轮眉饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(翼子板高)"], "Gap": ["0.1"], "Ra": ["R*5"], "Rb": ["N/A"], "code": "B-010", "relative_position": "内含"}, "start_id": "豪华SUV-外部-侧部区域-翼子板", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-侧围", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-前门窗框亮条(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-前门窗框亮条(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-2.5"], "Gap": ["4.5"], "Ra": ["R4.5"], "Rb": ["R0.3"], "code": "B-013", "relative_position": "上侧"}, "start_id": "豪华SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-后门窗框亮条(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-后门窗框亮条(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-2.5"], "Gap": ["4.5"], "Ra": ["R4.5"], "Rb": ["R0.3"], "code": "B-014", "relative_position": "上侧"}, "start_id": "豪华SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-后轮眉饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-后轮眉饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(侧围高)"], "Gap": ["0.1"], "Ra": ["R*5"], "Rb": ["N/A"], "code": "B-016", "relative_position": "内含"}, "start_id": "豪华SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-角窗亮条(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-角窗亮条(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-2.5"], "Gap": ["4.5"], "Ra": ["R4.5"], "Rb": ["R0.3"], "code": "B-020", "relative_position": "上侧"}, "start_id": "豪华SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-前门下饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-前门下饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(前门高)"], "Gap": ["0.1"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "B-023", "relative_position": "下侧"}, "start_id": "豪华SUV-外部-侧部区域-前门", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-后门下饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-后门下饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(前门高)"], "Gap": ["0.1"], "Ra": ["NA"], "Rb": ["NA"], "code": "B-024", "relative_position": "下侧"}, "start_id": "豪华SUV-外部-侧部区域-后门", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-加油口盖（e↔f）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-加油口盖（e↔f）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.3"], "Gap": ["2.4"], "Ra": ["R*1.2"], "Rb": ["R1.2"], "code": "B-029", "relative_position": "内含"}, "start_id": "豪华SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-加油口盖（f↔g）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-加油口盖（f↔g）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.3"], "Gap": ["2.4"], "Ra": ["R*1.2"], "Rb": ["R1.2"], "code": "B-030", "relative_position": "内含"}, "start_id": "豪华SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-加油口盖（h↔e）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-加油口盖（h↔e）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.3"], "Gap": ["2.4"], "Ra": ["R*1.2"], "Rb": ["R1.2"], "code": "B-031", "relative_position": "内含"}, "start_id": "豪华SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-加油口盖（g↔h）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-加油口盖（g↔h）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.3"], "Gap": ["2.4"], "Ra": ["R*1.2"], "Rb": ["R1.2"], "code": "B-032", "relative_position": "内含"}, "start_id": "豪华SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-翼子板饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-翼子板饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5"], "Gap": ["0.5"], "Ra": ["R1.2"], "Rb": ["N/A"], "code": "B-038", "relative_position": "下侧"}, "start_id": "豪华SUV-外部-侧部区域-翼子板", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-角窗饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-角窗饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1.5"], "Gap": ["2"], "Ra": ["R*5"], "Rb": ["R1.2"], "code": "B-056", "relative_position": "后侧"}, "start_id": "豪华SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-后门轮眉饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-后门轮眉饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(后门高)"], "Gap": ["0.1"], "Ra": ["R*5"], "Rb": ["N/A"], "code": "B-063", "relative_position": "内含"}, "start_id": "豪华SUV-外部-侧部区域-后门", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-外后视镜底座", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-外后视镜下本体L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-外后视镜下本体L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0"], "Gap": ["1"], "Ra": ["R0.5"], "Rb": ["R0.5"], "code": "B-070", "relative_position": "内含"}, "start_id": "豪华SUV-外部-侧部区域-外后视镜底座", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-边梁饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-侧部区域-边梁饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "B-079", "relative_position": "后侧"}, "start_id": "豪华SUV-外部-侧部区域-侧围", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-顶盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-扰流板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-扰流板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1"], "Gap": ["5"], "Ra": ["R2.5"], "Rb": ["R1.2"], "code": "C-001", "relative_position": "内含"}, "start_id": "豪华SUV-外部-后部区域-顶盖", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-后风挡玻璃", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-尾门上饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-尾门上饰板", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["1.5"], "Gap": ["2.5"], "Ra": ["R2"], "Rb": ["R1.5"], "code": "C-005", "relative_position": "后侧"}, "start_id": "豪华SUV-外部-后部区域-后风挡玻璃", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-扰流板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-高位刹车灯(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-高位刹车灯(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1"], "Gap": ["1.2"], "Ra": ["R1"], "Rb": ["R*0.5"], "code": "C-021", "relative_position": "内含"}, "start_id": "豪华SUV-外部-后部区域-扰流板", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-后保险杠上本体", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-拖车钩盖板（All around）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-拖车钩盖板（All around）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.3"], "Gap": ["0.5"], "Ra": ["R0.5"], "Rb": ["R0.5"], "code": "C-029", "relative_position": "内含"}, "start_id": "豪华SUV-外部-后部区域-后保险杠上本体", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-后牌照灯饰板本体", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-后牌照灯饰板本体", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5"], "Gap": ["0.3"], "Ra": ["R1.2"], "Rb": ["R1"], "code": "C-030", "relative_position": "内含"}, "start_id": "豪华SUV-外部-后部区域-后保险杠上本体", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-后牌照灯饰板本体", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5"], "Gap": ["0.3"], "Ra": ["R1.2"], "Rb": ["R1"], "code": "C-034", "relative_position": "内含"}, "start_id": "豪华SUV-外部-后部区域-后保险杠上本体", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-牌照灯(L&R) （All around）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-牌照灯(L&R) （All around）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5"], "Gap": ["0.8"], "Ra": ["R*0.5"], "Rb": ["R0.5"], "code": "C-036", "relative_position": "内含"}, "start_id": "豪华SUV-外部-后部区域-后保险杠上本体", "type": "relationship"}
+{"end_id": "豪华SUV-外部-后部区域-牌照灯(L&R) （All around）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5"], "Gap": ["0.8"], "Ra": ["R*0.5"], "Rb": ["R0.5"], "code": "C-037", "relative_position": "内含"}, "start_id": "豪华SUV-外部-后部区域-后保险杠上本体", "type": "relationship"}
+{"end_id": "豪华SUV-外部-顶部区域-顶盖", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-顶部区域-全景天窗前部", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-顶部区域-全景天窗前部", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1"], "Gap": ["0"], "Ra": ["R2"], "Rb": ["R1.5"], "code": "D-005", "relative_position": "内含"}, "start_id": "豪华SUV-外部-顶部区域-顶盖", "type": "relationship"}
+{"end_id": "豪华SUV-外部-顶部区域-全景天窗前部（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-顶部区域-全景天窗前部（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(顶盖高)"], "Gap": ["0"], "Ra": ["R2"], "Rb": ["R1.5"], "code": "D-006", "relative_position": "内含"}, "start_id": "豪华SUV-外部-顶部区域-顶盖", "type": "relationship"}
+{"end_id": "豪华SUV-外部-顶部区域-全景天窗后部", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-顶部区域-全景天窗后部", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["1"], "Gap": ["0"], "Ra": ["R2"], "Rb": ["R1.5"], "code": "D-007", "relative_position": "内含"}, "start_id": "豪华SUV-外部-顶部区域-顶盖", "type": "relationship"}
+{"end_id": "豪华SUV-外部-顶部区域-全景天窗后部", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(顶盖高)"], "Gap": ["0"], "Ra": ["R2"], "Rb": ["R1.5"], "code": "D-008", "relative_position": "内含"}, "start_id": "豪华SUV-外部-顶部区域-顶盖", "type": "relationship"}
+{"end_id": "豪华SUV-外部-顶部区域-侧围后部外饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-外部-顶部区域-侧围后部外饰板", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style dep.(侧围后部外饰板高)"], "Gap": ["0"], "Ra": ["R3"], "Rb": ["R2.5"], "code": "D-011", "relative_position": "内含"}, "start_id": "豪华SUV-外部-顶部区域-顶盖", "type": "relationship"}
+{"end_id": "豪华SUV-内部-尾门饰板区域-后背门内板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-尾门饰板区域-后背门饰板总成(All around)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-尾门饰板区域-后背门饰板总成(All around)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0+0.5/0"], "Ra": ["N/A"], "Rb": ["N/A"], "code": "G-002", "relative_position": "内含"}, "start_id": "豪华SUV-内部-尾门饰板区域-后背门内板", "type": "relationship"}
+{"end_id": "豪华SUV-内部-尾门饰板区域-后侧围饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-尾门饰板区域-行李箱饰板（L&R）", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-尾门饰板区域-行李箱饰板（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["1±1"], "Ra": ["N/A"], "Rb": ["R5"], "code": "G-013", "relative_position": "后侧"}, "start_id": "豪华SUV-内部-尾门饰板区域-后侧围饰板", "type": "relationship"}
+{"end_id": "豪华SUV-内部-尾门饰板区域-行李箱饰板（L&R）", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["1±1(a↔b)"], "Ra": ["N/A"], "Rb": ["R5"], "code": "G-018", "relative_position": "后侧"}, "start_id": "豪华SUV-内部-尾门饰板区域-后侧围饰板", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-后侧围饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-木饰板 (L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-木饰板 (L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0（不允许有间隙）"], "Ra": ["R3"], "Rb": ["N/A"], "code": "H-008", "relative_position": "后侧"}, "start_id": "豪华SUV-内部-立柱区域-后侧围饰板", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-饰条(All around)(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-饰条(All around)(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-1.5±0.5"], "Gap": ["0（不允许有间隙）"], "Ra": ["R3"], "Rb": ["R*1"], "code": "H-054", "relative_position": "上侧"}, "start_id": "豪华SUV-内部-立柱区域-后侧围饰板", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-右后侧围后饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-盖板(All around)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-盖板(All around)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["-0.5±0.5"], "Gap": ["0.5±0.5//0.5"], "Ra": ["R*0.5"], "Rb": ["R*0.5"], "code": "H-065", "relative_position": "后侧"}, "start_id": "豪华SUV-内部-立柱区域-右后侧围后饰板", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-后侧围后饰板", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-挂钩饰板(All around) (L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-挂钩饰板(All around) (L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["Style Dep. （饰板高）±0.3"], "Gap": ["0.3±0.3"], "Ra": ["R1.5"], "Rb": ["R1"], "code": "H-067", "relative_position": "后侧"}, "start_id": "豪华SUV-内部-立柱区域-后侧围后饰板", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-扶手上饰板(All around)(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-扶手上饰板(All around)(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["0±0.5"], "Gap": ["0（不允许有间隙）"], "Ra": ["R3"], "Rb": ["R3"], "code": "H-082", "relative_position": "后侧"}, "start_id": "豪华SUV-内部-立柱区域-后侧围饰板", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-上饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-上饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0（不允许有间隙）"], "Ra": ["Style Dep."], "Rb": ["Style Dep."], "code": "H-089", "relative_position": "后侧"}, "start_id": "豪华SUV-内部-立柱区域-后侧围饰板", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-下饰板(L&R)", "label": "CONTAINS", "properties": {}, "start_id": "DTS:vehicle:豪华SUV", "type": "relationship"}
+{"end_id": "豪华SUV-内部-立柱区域-下饰板(L&R)", "label": "DTS_POSITION_RELATION", "properties": {"Flush": ["N/A"], "Gap": ["0（不允许有间隙）"], "Ra": ["Style Dep."], "Rb": ["Style Dep."], "code": "H-090", "relative_position": "后侧"}, "start_id": "豪华SUV-内部-立柱区域-后侧围饰板", "type": "relationship"}

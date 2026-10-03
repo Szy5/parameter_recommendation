@@ -1,0 +1,20 @@
+{"reason": "source_part_name 为“前风挡玻璃”，对应已批准类别“前风挡”；target_part_name 为“侧围(L&R)”，对应已批准类别“侧围”。", "source_id": "4:3", "source_part_type": "前风挡", "target_part_type": "侧围"}
+{"reason": "source_part_name 为“前风挡玻璃”，对应已批准类别“前风挡”；target_part_name 为“顶盖”，直接匹配已批准类别“顶盖”。", "source_id": "4:7", "source_part_type": "前风挡", "target_part_type": "顶盖"}
+{"reason": "source_part_name 为“侧围”，target_part_name 为“翼子板(L&R)”，均与已批准类别直接匹配。", "source_id": "4:11", "source_part_type": "侧围", "target_part_type": "翼子板"}
+{"reason": "source_part_name 为“侧围”，对应已批准类别“侧围”；target_part_name 为“机盖 (L&R)”，解释为发动机罩/机盖，对应已批准类别“发动机盖”。", "source_id": "4:15", "source_part_type": "侧围", "target_part_type": "发动机盖"}
+{"reason": "source_part_name 为“翼子板”，对应已批准类别“翼子板”；target_part_name “散热器罩左饰板(L&R)”含义为散热器罩/格栅的饰板，映射为已批准类别“格栅1”。", "source_id": "4:19", "source_part_type": "翼子板", "target_part_type": "格栅1"}
+{"reason": "source_part_name “机盖”解释为发动机盖，对应已批准类别“发动机盖”；target_part_name 同为散热器罩左饰板，映射为“格栅1”。", "source_id": "4:23", "source_part_type": "发动机盖", "target_part_type": "格栅1"}
+{"reason": "source_part_name “机盖”解释为发动机盖，对应已批准类别“发动机盖”；target_part_name “翼子板(L&R)”对应已批准类别“翼子板”。", "source_id": "4:27", "source_part_type": "发动机盖", "target_part_type": "翼子板"}
+{"reason": "source_part_name 为“翼子板”，对应已批准类别“翼子板”；target_part_name “进气格栅(L&R)”即格栅，映射为已批准类别“格栅1”。", "source_id": "4:31", "source_part_type": "翼子板", "target_part_type": "格栅1"}
+{"reason": "source_part_name “前轮罩外接板”在批准类别列表中无直接匹配；target_part_name “示廓灯(L&R)”（marker/clearance lamp）亦不在批准类别列表中，因而无法确定对应类别。", "source_id": "4:35", "source_part_type": "", "target_part_type": ""}
+{"reason": "source_part_name 为“翼子板”，对应已批准类别“翼子板”；target_part_name “前轮罩外接板(L&R)”在批准类别列表中无直接匹配，故无法确定。", "source_id": "4:39", "source_part_type": "翼子板", "target_part_type": ""}
+{"reason": "source_part_name “散热器罩饰板”解释为格栅/散热器罩的饰板，映射为已批准类别“格栅1”；target_part_name “前轮罩外接板 (L&R)”不在批准类别列表中，故无法确定。", "source_id": "4:43", "source_part_type": "格栅1", "target_part_type": ""}
+{"reason": "source_part_name “散热器罩饰板”映射为“格栅1”；target_part_name “中饰板(L&R)”可归为一般饰板，映射为已批准类别“饰板”。", "source_id": "4:47", "source_part_type": "格栅1", "target_part_type": "饰板"}
+{"reason": "source_part_name “中饰板”解释为饰板，映射为已批准类别“饰板”；target_part_name “前保(L&R)”为前保险杠，映射为已批准类别“前保险杠”。", "source_id": "4:51", "source_part_type": "饰板", "target_part_type": "前保险杠"}
+{"reason": "source_part_name “轮罩外接板”在批准类别列表中无直接匹配，故无法确定；target_part_name “前保(L&R)”对应已批准类别“前保险杠”。", "source_id": "4:55", "source_part_type": "", "target_part_type": "前保险杠"}
+{"reason": "source_part_name “散热器罩饰板”映射为格栅相关饰板，使用已批准类别“格栅1”；target_part_name “大灯(L&R)”为车辆前大灯，映射为已批准类别“前车灯”。", "source_id": "4:59", "source_part_type": "格栅1", "target_part_type": "前车灯"}
+{"reason": "source_part_name “机盖”解释为发动机盖，对应已批准类别“发动机盖”；target_part_name “大灯(L&R)”对应已批准类别“前车灯”。", "source_id": "4:63", "source_part_type": "发动机盖", "target_part_type": "前车灯"}
+{"reason": "source_part_name “机盖”解释为发动机盖，对应已批准类别“发动机盖”；target_part_name “格栅灯(L&R)”为格栅内的灯，语义上更接近日间行车灯，故映射为已批准类别“日间行车灯”。", "source_id": "4:67", "source_part_type": "发动机盖", "target_part_type": "日间行车灯"}
+{"reason": "source_part_name “机盖”解释为发动机盖，对应已批准类别“发动机盖”；target_part_name “格栅(L&R)”直接映射为已批准类别“格栅1”。", "source_id": "4:71", "source_part_type": "发动机盖", "target_part_type": "格栅1"}
+{"reason": "source_part_name “大灯”在前部情境下映射为已批准类别“前车灯”；target_part_name “格栅(L&R)”映射为已批准类别“格栅1”。", "source_id": "4:75", "source_part_type": "前车灯", "target_part_type": "格栅1"}
+{"reason": "source_part_name “格栅灯”解释为格栅内灯具，映射为已批准类别“日间行车灯”；target_part_name “格栅(L&R)”映射为已批准类别“格栅1”。", "source_id": "4:79", "source_part_type": "日间行车灯", "target_part_type": "格栅1"}

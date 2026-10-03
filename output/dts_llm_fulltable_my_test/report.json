@@ -1,0 +1,12 @@
+{
+  "source_items": 20,
+  "llm_record": 20,
+  "accepted_records": 6,
+  "review_records": 14,
+  "vehicle_nodes": 4,
+  "part_nodes": 8,
+  "dts_relationships": 6,
+  "pdf_sha256": "ed246ab0d57745b3d185581cda1981bab186c2cb26b098d84dfde4c70337d606",
+  "workbook_sha256": "74fd5b89d8779c679136a40ab24dc76377223110325045f59bca68c3a26a364c",
+  "uploaded": false
+}
